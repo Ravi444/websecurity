@@ -1,0 +1,6 @@
+#base=js
+jquery.history.js
+jquery.xml2json.js
+jquery.twbsPagination.min.js
+jquery.autocomplete.js
+gsaSearch.js

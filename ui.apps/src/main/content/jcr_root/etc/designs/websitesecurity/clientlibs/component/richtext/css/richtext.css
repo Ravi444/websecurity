@@ -1,0 +1,8 @@
+.customBorder-yes{width:100%; border-top:3px solid #e4e4e4; padding-top:15px;}
+.customBorder-no{border:none;}
+.richtext-padding{padding-left:0px;}
+span.h4Size { margin-top: -8px; display: inline-block; }
+
+@media only screen and (max-width : 767px) {
+	.customBorder-yes{width:100%; border-top:2px solid #e4e4e4; padding-top:15px;}
+}

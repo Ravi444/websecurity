@@ -1,0 +1,18 @@
+
+
+<div class="c_rowSec clearfix">
+	<div class="c_imgSec">
+		<sly data-sly-test = "${properties.imageReference != NULL}">
+    		<img src="${properties.imageReference}" title="${properties.cwsimagetitle}" alt="${properties.alternatetext}">
+    	</sly>
+    </div>
+	<div class="c_imgDes">
+		<h3 class="${properties.titlecolor}">${properties.cwstitle}</h3>
+		${properties.cwsdescription @ context = 'html'}
+		<sly data-sly-test="${properties.cwslinkvalue != NULL && properties.cwslinkkey != NULL}">
+    		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/cws/js/cwslinks.js">
+    			<a href="${object.path}" target="${object.target}">${object.text}</a>
+    		</sly>
+    	</sly>
+    </div>
+</div>

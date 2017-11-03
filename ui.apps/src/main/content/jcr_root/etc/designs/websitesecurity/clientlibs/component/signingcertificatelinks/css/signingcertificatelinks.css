@@ -1,0 +1,120 @@
+/* Signing Certificate Links CSS*/
+
+/*Signingcertificatelinks Outer*/
+.c-signingcertificatelinks .certificate-container{padding:95px 0 0;}
+
+/*Signingcertificatelinks Heading*/
+.c-signingcertificatelinks .certificate-container h5{padding:0 0 20px 0;}
+.c-signingcertificatelinks .certificate-container h2{padding:0 0 50px 0;}
+
+
+/*Signingcertificatelinks Table*/
+.c-signingcertificatelinksTable, .c-signingcertificatelinksTable tr, .c-signingcertificatelinksTable td {padding:0;font-weight:700;}
+
+/*Signingcertificatelinks Button*/
+.c-signingcertificatelinks .signing-link-button{vertical-align:middle;  width:90px; height:45px; text-align:right;}
+.c-signingcertificatelinks .signing-link-button .green{color:#ffffff;	font-size:14px;	background: #4cd362;text-transform:uppercase;font-weight:700;text-align:center;	padding:10px;display:inline-block;width:92px;height:auto;margin-left:13px;}
+
+/*Signingcertificatelinks Price*/
+.c-signingcertificatelinks .code-signing .price_color{color:#666666; font-size:20px;}
+.c-signingcertificatelinks .signing-link-price{vertical-align:middle;  width:42%; height:45px; text-align:right;}
+.c-signingcertificatelinks .signing-link-price .price_color{color:#666666; font-size:20px;}
+
+/*Signingcertificatelinks Content Outer*/
+.c-signingcertificatelinks .signing-linktitle{vertical-align:middle; width:78%; height:45px;}
+.c-signingcertificatelinks.code-signing a{font-weight:600;padding-right:20px;font-size:20px;}
+.c-signingcertificatelinks.code-signing a:hover{text-decoration:none;}
+.c-signingcertificatelinks .signing-link-button .green:hover{background:#37bd4d;}
+
+/*Signingcertificatelinks FirstChild*/
+.c-signingcertificatelinks .code-signing:first-child, .code-signing:first-child{border-top:1px #e4e4e4 solid;}
+
+
+/*Signingcertificatelinks AEM CSS*/
+.c-signingcertificatelinks.code-signing.border-bottom-yes{border-bottom:1px #e4e4e4 solid;padding:10px 0px 10px 0px;font-weight:700;}
+.c-signingcertificatelinks.code-signing.border-bottom-no{padding:10px 0px 10px 0px;font-weight:700;}
+
+
+
+/*********************************************************************************
+
+ @media only screen and (max-width : 1200px)
+
+*********************************************************************************/
+ @media only screen and (max-width : 1200px) {
+
+
+/*Signingcertificatelinks Content Outer*/
+.c-signingcertificatelinks .signing-linktitle{height:48px;}
+.c-signingcertificatelinks.code-signing a{font-weight:600;font-size:16px;}
+
+/*Signingcertificatelinks Button*/
+.c-signingcertificatelinks .code-signing .green{font-size:14px;  font-weight:700;} 
+
+
+/*Signingcertificatelinks Price*/
+.c-signingcertificatelinks.code-signing .price_color{font-size:16px;}
+
+
+}
+
+
+/*********************************************************************************
+
+ @media only screen and (max-width : 979px)
+
+*********************************************************************************/
+@media only screen and (max-width : 979px) {
+
+
+/*Signingcertificatelinks Content Outer*/
+.c-signingcertificatelinks .signing-linktitle{width:68%;}
+.c-signingcertificatelinks .code-signing a{font-weight:600;font-size:16px; padding-right:0px;}
+
+/*Signingcertificatelinks Button*/
+.c-signingcertificatelinks .code-signing .green {font-size:14px; font-weight:700;}
+
+
+/*Signingcertificatelinks Price*/
+.c-signingcertificatelinks .code-signing .price_color{font-size: 16px;}
+
+
+/*Signingcertificatelinks Table*/
+.c-signingcertificatelinksTable td, .c-signingcertificatelinks .code-signing, .c-signingcertificatelinksTable, .c-signingcertificatelinksTable tr { min-height: 53px;}
+
+.c-signingcertificatelinks .code-signing .header{width:54%;}
+
+}
+
+
+/*********************************************************************************
+
+ @media only screen and (max-width : 767px) 
+
+*********************************************************************************/
+ @media only screen and (max-width : 767px) {  
+
+
+/*Signingcertificatelinks Table*/
+.c-signingcertificatelinks .code-signing, .c-signingcertificatelinksTable, .c-signingcertificatelinksTable tr, .c-signingcertificatelinksTable td{}
+
+/*Signingcertificatelinks Price*/
+.c-signingcertificatelinks .code-signing .price_color{font-size:16px;font-weight:600;}
+
+/*Signingcertificatelinks Button*/
+.c-signingcertificatelinks .code-signing .green{font-size:0.74em;width:82px;height:40px;font-weight:700px;line-height:20px;}
+.c-signingcertificatelinks .code-signing .green {font-size:12px; font-weight:700;}
+
+/*Signingcertificatelinks Content Outer*/
+.code-signing a{font-weight: 600;font-size:16px;}
+
+
+/*Signingcertificatelinks Heading*/
+.c-signingcertificatelinks .certificate-container h5{ font-size:1em; font-weight:600;}
+.c-signingcertificatelinks .certificate-container h4{ font-size:1.56em;}
+
+
+/*Signingcertificatelinks AEM CSS*/
+.signingcertificatelinks.code-signing.border-bottom-yes:nth-child(1){border-bottom:0px;}
+.nospacingright.c-signingcertificatelinks .code-signing.border-bottom-yes{border-bottom:1px solid #e4e4e4;}
+}

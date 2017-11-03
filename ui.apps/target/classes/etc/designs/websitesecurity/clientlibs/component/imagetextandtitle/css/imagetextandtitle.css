@@ -1,0 +1,242 @@
+/**************************************************************common classes for home and product page starts*************************************************************/
+.c-case-block {
+	display: block;
+}
+.c-case-block p {
+	margin:0;
+}
+.c-case-block_imgBox {
+	width:100%;
+	margin-bottom:25px; height:160px;
+}
+.c-case-block_imgBox img{height:100%;}
+.c-case-block h3 {
+	padding-bottom:20px;
+	padding-top:10px;
+}
+.c-case-block-links a {
+	font-size: 14px;
+}
+
+
+/**************************************************************common classes for home and product page ends*************************************************************/
+
+/*****************************************************************************Home page  starts******************************************************************************/
+/********************************************imagetextandtitlecomponent with out bg Starts*********************************************/
+.imagetextandtitlecomponent.spacingtopMargin{margin-top:91px;}
+.imagetextandtitlecomponent .certificate-container {padding-top: 0;	padding-bottom: 0;}
+.imagetextandtitlecomponent .certificate-container h2{padding-bottom:32px;}
+.imagetextandtitlecomponent .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlecomponent .c-case-block h3 {
+	padding-bottom:13px;
+	padding-top:0px;
+}
+.imagetextandtitlecomponent .c-case-block-links {
+	padding-top:14px;
+}
+.imagetextandtitlecomponent .c-case-block {
+	margin-bottom:0px
+}
+.imagetextandtitlecomponent .c-case-block-links a {
+	display: inline-block;
+	padding-bottom: 4px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+/******************************************** imagetextandtitlecomponent with out bg Ends********************************************/
+/*****************************************************************************Home page ends******************************************************************************/
+
+/*****************************************************************************Product page starts******************************************************************************/
+/********************************************imagetextandtitlecomponent with bg Starts*********************************************/
+.imagetextandtitlebackground.spacingtopMargin {margin-top:91px;}
+.imagetextandtitlebackground .certificate-container {padding-top: 98px;	padding-bottom: 108px;}
+.imagetextandtitlebackground .certificate-container h2{padding-bottom:32px;}
+.imagetextandtitlebackground .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlebackground .c-case-block_imgBox {
+	margin-bottom: 34px;
+}
+.imagetextandtitlebackground .c-case-block h6 {
+	font-weight:700;
+}
+.imagetextandtitlebackground .c-case-block h3 {
+	padding-bottom:15px;
+}
+.imagetextandtitlebackground .certificate-container p.viewAll {
+	padding-top:35px;
+}
+/******************************************** imagetextandtitlecomponent with bg Ends********************************************/
+
+/*****************************************************************************product page ends******************************************************************************/
+
+
+/*****************************************************************************Media query starts******************************************************************************/
+ @media only screen and (max-width: 1200px) {
+/********************************************common classes starts********************************************/	
+.img-text-link h3 {
+	padding-bottom:15px;
+	font-size: 30px;
+}
+.imagetextandtitle .c-case-block h6 {
+	font-weight: 600;
+}
+.c-case-block_imgBox{height:113px;}
+/********************************************common classes ends********************************************/
+
+/********************************************imagetextandtitlecomponent starts********************************************/	
+.imagetextandtitlecomponent.spacingtopMargin{margin-top:91px;}
+.imagetextandtitlecomponent .certificate-container {padding-top: 0;	padding-bottom: 0;}
+.imagetextandtitlecomponent .certificate-container h2{padding-bottom:32px;}
+.imagetextandtitlecomponent .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlecomponent .c-case-block {
+	margin-bottom:80px
+}
+.imagetextandtitlecomponent .c-case-block-links a {
+	display: inline-block;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+/********************************************imagetextandtitlecomponent ends********************************************/	
+
+/******************************************** imagetextandtitlebackground starts********************************************/
+.imagetextandtitlebackground.spacingtopMargin{margin-top:83px;}
+.imagetextandtitlebackground .certificate-container {padding-top: 110px;	padding-bottom: 96px;}
+.imagetextandtitlebackground .certificate-container h2{padding-bottom:45px;}
+.imagetextandtitlebackground .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlebackground .certificate-container p.viewAll {
+	padding-top:0px;
+}
+.imagetextandtitlebackground .c-case-block {
+	margin-bottom:35px;
+}
+.imagetextandtitlebackground .c-case-block h6 {
+	font-weight:700;
+}
+/******************************************** imagetextandtitlebackground ends********************************************/
+}
+@media only screen and (max-width: 991px) {
+/********************************************common classes Starts*********************************************/
+.c-case-block_imgBox {
+	height:160px;
+}
+/********************************************common classes ends*********************************************/
+
+/********************************************imagetextandtitlecomponent with out bg Starts*********************************************/
+.imagetextandtitlecomponent.spacingtopMargin{margin-top:91px;}
+.imagetextandtitlecomponent .certificate-container {padding-top: 0;	padding-bottom: 0;}
+.imagetextandtitlecomponent .certificate-container h2{padding-bottom:32px;}
+.imagetextandtitlecomponent .certificate-container h5{padding-bottom:26px;}
+
+.imagetextandtitlecomponent .c-case-block-links a {
+	display: inline-block;
+	padding-bottom: 0px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.imagetextandtitlecomponent .c-case-block {
+	margin-bottom:40px
+}
+.imagetextandtitlebackground .c-imagetexttitle-middle, .imagetextandtitlecomponent .c-imagetexttitle-middle{padding-right:0;}
+/******************************************** imagetextandtitlecomponent with out bg Ends********************************************/
+
+/********************************************imagetextandtitlecomponent with bg Starts*********************************************/
+.imagetextandtitlebackground.spacingtopMargin {margin-top:92px;}
+.imagetextandtitlebackground .certificate-container {padding-top: 110px;	padding-bottom: 86px;}
+.imagetextandtitlebackground .certificate-container h2{padding-bottom:45px;}
+.imagetextandtitlebackground .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlebackground .c-case-block h6 {
+	font-weight:700;
+}
+.imagetextandtitlebackground .certificate-container p.viewAll {
+	padding-top:0px;
+}
+/******************************************** imagetextandtitlecomponent with bg Ends********************************************/
+}
+ @media only screen and (max-width: 767px) {
+/********************************************common classes starts*********************************************/
+.c-case-block {
+	height: auto;
+	margin-bottom:0px;
+}
+.imagetextandtitle h3 {
+	font-size:22px;
+}
+.c-case-block_imgBox {
+	height:auto;
+	margin-bottom:20px;
+}
+.c-case-block_imgBox img {
+	width:100%;
+}
+.img-text-link h3 {
+	padding-bottom:12px;
+	font-size: 22px;
+}
+.imagetextandtitle .c-case-block h6 {
+	padding-bottom:0px;
+	font-weight: 600;
+}
+.c-case-block_imgBox {
+	height:auto;
+}
+.imagetextandtitlebackground .c-imagetexttitle-middle, .imagetextandtitlecomponent .c-imagetexttitle-middle{padding-right:15px;}
+/********************************************common classes ends*********************************************/
+
+/********************************************imagetextandtitlecomponent with out bg Starts*********************************************/
+.imagetextandtitlecomponent.spacingtopMargin {margin-top:91px;}
+.imagetextandtitlecomponent .certificate-container {padding-top: 0;	padding-bottom: 0;}
+.imagetextandtitlecomponent .certificate-container h2{padding-bottom:32px;}
+.imagetextandtitlecomponent .certificate-container h5{padding-bottom:26px;}
+.imagetextandtitlecomponent .c-case-block-links a {
+	display: inline-block;
+	padding-bottom:3px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.imagetextandtitlecomponent .c-case-block {
+	margin-bottom:82px
+}
+.imagetextandtitlecomponent .c-case-block h3 {
+	padding-bottom:20px
+}
+/******************************************** imagetextandtitlecomponent with out bg Ends********************************************/
+
+/********************************************imagetextandtitlecomponent with bg Starts*********************************************/
+.imagetextandtitlebackground.spacingtopMargin {margin-top:35px;}
+.imagetextandtitlebackground .certificate-container {padding-top: 50px;	padding-bottom: 60px;}
+.imagetextandtitlebackground .certificate-container h2{padding-bottom:23px;}
+.imagetextandtitlebackground .certificate-container h5{padding-bottom:22px;}
+.imagetextandtitlebackground .c-case-block h6 {
+	font-weight:700;
+}
+.imagetextandtitlebackground .c-case-block {
+	margin-bottom: 45px;
+}
+.imagetextandtitlebackground .certificate-container p.viewAll {
+	padding-top:0px;
+}
+.imagetextandtitlebackground .c-case-block {
+	margin-bottom:35px
+}
+.imagetextandtitlebackground .c-case-block_imgBox {
+	padding-top:0px
+}
+.imagetextandtitlebackground .c-case-block h3 {
+	padding-bottom:10px
+}
+/******************************************** imagetextandtitlecomponent with bg Ends********************************************/
+
+
+}
+ @media only screen and (max-width:480px) {
+.c-case-block {
+	margin-bottom:40px;
+}
+.imagetextandtitlebackground .c-case-block h6 {
+	font-weight:700;
+}
+.imagetextandtitlecomponent .c-case-block {
+	margin-bottom:82px
+}
+}
+/*****************************************************************************Media query ends******************************************************************************/

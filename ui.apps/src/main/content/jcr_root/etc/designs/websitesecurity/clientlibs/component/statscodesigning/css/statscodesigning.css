@@ -1,0 +1,211 @@
+/*stat css start */
+/********************************************stat component starts********************************************/
+.c_pricing.spacingtopMargin{margin-top:70px;}
+/********************************************stat component ends********************************************/
+/*************************************************
+Static component for Code Signing 2 Large Desktop
+*************************************************/
+
+.c_pricing {
+	background: #eeeeee;
+	padding:60px 0;
+	color: #464646;
+}
+.c_pricing .pricing__pricetag {
+	font-size: 7rem;
+	line-height: 7.125rem;
+	color: #666;
+	font-weight: lighter;
+}
+.c_pricing .pricing__price-subtext {
+	line-height: 3rem;
+	margin-bottom: 16px;
+	font-size: 1.6rem;
+}
+.c_pricing .btn-buy-green {
+	font-size: 1.3rem;
+    background-color:#4cd362;
+    padding:1rem 0;
+    width:93px;
+    text-align:center;
+    color:#ffffff;
+    font-weight:700;
+    border-radius:0;
+}
+
+.c_pricing .btn-buy-green:hover {
+    background-color: #37bd4d;
+}
+
+.c_pricing .pricing__includes {
+	font-size: 2rem;
+	margin-top: 8px;
+    font-weight:600;
+    color:#666666;
+}
+
+
+
+.c_pricing .pricing__includes-list {
+	font-size: 2rem;
+	margin-top: 16px;
+	color: #666;
+	padding-left: 0;
+}
+
+
+.c_pricing .pricing__includes-list li {
+	line-height: 3rem;
+	margin-left: 18px;
+	padding-left: 0;
+    list-style-type: square;
+    color: #fdbb30 ;
+}
+
+
+
+
+.c_pricing .pricing__customize {
+	background-repeat: repeat-x;
+	background-image: -webkit-linear-gradient(45deg, #00addd, #00619e);
+	background-image: -o-linear-gradient(45deg, #00addd, #00619e);
+	background-image: linear-gradient(45deg, #00addd, #00619e);
+	padding: 35px 0 47px 30px;
+	color: #fff;
+}
+.c_pricing .pricing__customize .pricing__customize-text {
+	font-size: 2rem;
+	margin-bottom: 16px;
+}
+.c_pricing .pricing__customize .pricing__customize-select label {
+	font-size: 1.6rem;
+	line-height: 1.65rem;
+	margin-right: 14px;
+	padding: 3px 0;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 16px;
+}
+ .c_pricing .pricing__customize .pricing__customize-select .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+	 width:119px; 
+	 height:48px; 
+	 text-align:left; 
+     color: #999999; 
+     border:1px solid #e4e4e4;
+     border-right:0;
+}
+
+
+.pricing__customize-select div{display:inline-block;}
+.pricing__customize-select .btn-group > .btn + .dropdown-toggle{height:48px;}
+.pricing__customize-select .btn-default:focus, .pricing__customize-select .btn-default.focus, .pricing__customize-select .btn-default:hover, .pricing__customize-select .btn-default:active, .pricing__customize-select .btn-default.active, .pricing__customize-select.open > .pricing__customize-select .dropdown-toggle.btn-default{
+    color: #999999;
+    background-color:#ffffff;
+    border:1px solid #e4e4e4;
+    box-shadow:none;
+    outline:0;
+    border-right:0;
+
+}
+
+.pricing__customize-select .btn-group > .btn + .dropdown-toggle{
+    padding-right:12px;
+    padding-left:12px;
+    color:#999999;
+    border:1px solid #e4e4e4;
+    border-left:0;
+}
+.pricing__customize-select .btn-group > .btn + .dropdown-toggle:before{
+    border-left:1px solid #e4e4e4;
+    height:28px;
+    width:1px;
+    content:"";
+    top:10px;
+    left:1px;
+    position:absolute;
+
+}
+
+.pricing__tile-sec{padding-left:0;}
+.pricing__tile-main{margin-right:45px;}
+.pricing__customize-select span.caret {border-top: 6px dashed #767676; border-right: 6px solid transparent; border-left: 6px solid transparent;}
+.c_pricing .pricing__customize .btn-default:active, .c_pricing .pricing__customize .btn-default.active, .c_pricing .pricing__customize .open > .dropdown-toggle.btn-default{background-color:#ffffff;}
+.c_pricing .pricing__customize .dropdown-menu {top:45px; min-width:157px;}
+
+
+
+/*************************************************
+Static component for Code Signing 2 Small Desktop
+*************************************************/
+
+ @media (max-width: 1200px) {
+ .c_pricing{padding:0;}
+ .c_pricing .pricing__tile-main{padding:70px 40px 70px 95px;}
+ .c_pricing .pricing__tile-sec{padding:150px 0 0 50px;}
+ .c_pricing .pricing__customize{background-image:none !important;}
+.c_pricing .pricing__tile-sec{background-repeat: repeat-x;
+ background-image: -webkit-linear-gradient(45deg, #00addd, #00619e);
+ background-image: -o-linear-gradient(45deg, #00addd, #00619e);
+ background-image: linear-gradient(45deg, #00addd, #00619e);}
+.pricing__tile-main{margin-right:0;}
+.c_pricing .pricing__includes{margin-top:40px;}
+.c_pricing .pricing__customize .pricing__customize-text{margin-bottom:25px;} 
+
+
+}
+
+
+/*************************************************
+Static component for Code Signing 2 Ipad 
+*************************************************/
+
+
+ @media (max-width: 992px) {
+.c_pricing .pricing__tile-sec{padding-left:50px;}
+ .c_pricing .pricing__tile-sec .pricing__customize{padding-left:0;}
+.pricing__customize-select div{display:block;}
+.c_pricing .pricing__tile-main{padding-left:44px;  padding-right:35px;}
+
+}
+
+/*************************************************
+Static component for Code Signing 2 Mobile 
+*************************************************/
+
+ @media (max-width: 767px) {
+.c_pricing_mobilepadd{padding:0 15px;}
+.c_pricing .pricing__tile-main{padding: 50px 45px;text-align:center;}
+.c_pricing .pricing__tile-sec{padding:50px 45px 55px;}
+.c_pricing .btn-buy-green{width:100%;}
+.c_pricing .pricing__tile-main div{padding:0;}
+.c_pricing .pricing__tile-main .col-lg-6:nth-child(2){text-align:left; width:280px; margin:0 auto; padding:0;}
+.c_pricing .pricing__tile-sec .pricing__customize{padding-top:0; width:280px; margin:0 auto;}
+.c_pricing .pricing__includes{font-size:1.6rem;}
+.c_pricing .pricing__includes-list li{font-size:1.6rem;}
+.c_pricing .pricing__customize .pricing__customize-select .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){width:198px;}
+.c_pricing .pricing__customize .dropdown-menu{min-width:234px;}
+
+
+.pricing__customize-select .btn-group > .btn + .dropdown-toggle{height:48px;}
+.pricing__customize-select .dropdown.open .dropdown-toggle{height:50px;}
+
+/********************************************stat component starts********************************************/
+.c_pricing.spacingtopMargin{margin-top:50px;}
+/********************************************stat component ends********************************************/
+
+
+
+}
+
+
+ @media (max-width: 480px) {
+.c_pricing .pricing__tile-main{padding: 50px 30px}
+.c_pricing .pricing__tile-sec{padding:50px 23px 55px;}
+.c_pricing .pricing__customize .pricing__customize-select .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){width:160px;}
+.c_pricing .pricing__tile-sec .pricing__customize{width: 230px;}
+.c_pricing .pricing__tile-main .col-lg-6:nth-child(2){width:240px;}
+.c_pricing .pricing__customize .dropdown-menu{min-width:196px;}
+
+
+.pricing__customize-select .btn-group > .btn + .dropdown-toggle{height:48px;}
+
+}

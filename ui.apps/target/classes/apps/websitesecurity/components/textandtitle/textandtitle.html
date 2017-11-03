@@ -1,0 +1,35 @@
+<!--certificate block starts-->
+
+<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/textandtitle/js/textandtitlelink.js">
+<a href="${object.path}" target="${object.target}">
+<div class="c-certificate-block matchHeight"> 
+<!--certificate block heading h6 starts-->
+	<sly data-sly-test ="${properties.title != NULL}">
+		<h6 class="${properties.titlecolor}">${properties.title}</h6>
+	</sly>
+	<!--certificate block heading h6 ends--> 
+	<!--certificate block heading h5 starts-->
+	<sly data-sly-test ="${properties.subtitle1 != NULL}">
+		<h5 class="${properties.subtitlecolor}">${properties.subtitle1}</h5>
+	</sly>
+	<!--certificate block heading h5 ends--> 
+	<!--certificate block heading h4 starts-->
+
+
+			
+				<h4>
+                    
+						${object.text}
+					
+                </h4>
+			
+		
+
+	<!--certificate block heading h4 ends--> 
+	<!--certificate block discription starts-->
+	<sly data-sly-test ="${properties.description != NULL}"> ${properties.description @ context = 'html'} </sly>
+	<!--certificate block discription starts-->
+</div>
+</a>
+</sly>
+<!--certificate block starts-->

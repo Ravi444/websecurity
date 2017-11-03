@@ -1,0 +1,57 @@
+<!--case block starts-->
+<div class="c-case-block matchHeight"> 
+	<!--case block image section starts-->
+	<div class="c-case-block_imgBox">
+        <img src="${properties.imageReference}" class="img-responsive" title="${properties.imgtitle}" alt="${properties.alternatetext}" />
+    </div>
+  	<!--case block image section ends--> 
+  	<!--case block content section starts-->
+  	<sly data-sly-test ="${properties.title1 != NULL}">
+    	<h6 class = "${properties.titlecolor}">${properties.title1}</h6>
+  	</sly>
+  	<sly data-sly-test ="${properties.subtitle != NULL}">
+    	<h3 class = "${properties.subtitlecolor}">${properties.subtitle}</h3>
+  	</sly>
+	<sly data-sly-test ="${properties.linkkey != NULL}">
+		<sly data-sly-test ="${properties.linkpathoverlay== 'linkpath'}">
+  	<div class="img-text-link"  data-sly-test="${properties.linkvalue != NULL && properties.linkkey != NULL}">
+    	<h3>
+			<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/imagetextandtitle/js/imagetextandtitlelinkchecker.js">
+				<a href="${object.path}" target="${object.target}">${object.text}</a>
+    		</sly>
+		</h3>
+  	</div>
+</sly>
+<sly data-sly-test ="${properties.linkpathoverlay == 'link_overlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.TextOverlayData' @ overlayurl = properties.dropvalue}">
+										 <sly data-sly-test ="${properties.textvidoverlay == 'textoverlay'}">
+                                            <h3> <a href="#" data-toggle="modal" data-target="#textModal" class="textpopup overlay_popup" data-id="${properties.textvidoverlay}" data-backdrop="static" data-keyboard="false" data-textOverlayTitle="${cpt2.textOverlayTitle}" data-textOverlayDescription="${cpt2.textOverlayDescription}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}">${properties.linkkey}</a></h3>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+										</sly>
+                                        </sly>
+										<sly data-sly-test ="${properties.textvidoverlay == 'vidoverlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.VideoOverlayData' @ overlayurl = properties.dropvalue}">
+											<sly data-sly-test ="${cpt2.vendor == 'brightcove'}">
+                                            <h3> <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-playerID="${cpt2.playerID}" data-playerKey="${cpt2.playerKey}" data-videoID="${cpt2.videoID}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.linkkey}</a></h3>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                             </sly>
+                                               <sly data-sly-test ="${cpt2.vendor == 'youtube' || cpt2.vendor == 'ustudio' }">
+                                                <h3><a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-theVideo="${cpt2.embedCode@ context='unsafe'} " data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.linkkey}</a></h3>
+												<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                                </sly>
+
+										 </sly>
+                                        </sly>
+								    </sly>
+								</sly>
+  	<!--case block link section starts--> 
+ 	<p class= "${properties.descriptioncolor}">${properties.description @ context = 'html'}</p>
+  	<sly data-sly-use.cpt="websitesecurity.core.utilities.TitleList">
+    	<div class="c-case-block-links" data-sly-list.key="${cpt.listData}">
+			<a href="${key.path}" target="${key.target}">${key.title}</a><br>
+		</div>
+	</sly>
+	<!--case block link section ends--> 
+	<!--case block content section ends--> 
+</div>
+<!--case block starts--> 

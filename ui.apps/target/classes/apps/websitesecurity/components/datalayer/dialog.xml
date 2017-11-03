@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Omniture Details"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="panel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <jsrequired
+                jcr:primaryType="cq:Widget"
+                defaultValue="datalayernonprod"
+                fieldDescription="Select The Environment"
+                fieldLabel="Environment"
+                name="./environment"
+                type="select"
+                xtype="selection">
+                <options jcr:primaryType="cq:WidgetCollection">
+                    <Production
+                        jcr:primaryType="nt:unstructured"
+                        text="Production"
+                        value="datalayerprod"/>
+                    <NonProduction
+                        jcr:primaryType="nt:unstructured"
+                        text="Non-Production"
+                        value="datalayernonprod"/>
+                </options>
+            </jsrequired>
+            <Ensighten
+                jcr:primaryType="cq:Widget"
+                fieldDescription="Provide the Ensighten Url"
+                fieldLabel="Ensighten Url"
+                name="./ensighten"
+                xtype="textfield"/>
+        </items>
+    </items>
+</jcr:root>

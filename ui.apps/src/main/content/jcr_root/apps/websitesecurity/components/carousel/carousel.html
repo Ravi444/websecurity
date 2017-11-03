@@ -1,0 +1,23 @@
+
+<div class="container-fluid content c-spc">
+  <div id="carousel-generic" class="carousel slide" data-ride="carousel" data-sly-use.cpt="websitesecurity.core.utilities.Carousal"> 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" data-sly-list="${cpt.listData}">
+      <div class="${itemList.first?'item active':'item'}">
+        <div class="row">
+          <div class="col-xs-12 c-spc">
+            <div class="thumbnail adjust1">
+              <div class="${item.background_color} gradient-sec text-center">
+                <h2><img src="${item.image}" title = "${properties.alttext}" alt="${properties.alternatetext}" class="img-responsive"/></h2>
+                <p>${item.description}</p>
+                <span>${item.subtitle}</span>
+                <p class="read text-center"> <a href=${item.path} target=${item.target}>${item.link}</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controls --> 
+    <a class="left carousel-control1 img-responsive" href="#carousel-generic" data-slide="prev"> <span class="bx-prev"></span> </a> <a class="right carousel-control1 img-responsive" href="#carousel-generic" data-slide="next"> <span class="bx-next"></span> </a> </div>
+</div>

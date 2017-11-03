@@ -1,0 +1,23 @@
+<div class="c-signingcertificatelinks code-signing matchHeight ${properties.bottomborder} clearfix">
+	<table width="100%" class="c-signingcertificatelinksTable">
+		<tr>
+			<td class="signing-linktitle">
+                <sly data-sly-test="${properties.linkpath != NULL && properties.linktitle != NULL}">
+              		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/signingcertificatelinks/js/signingcertificatelink.js">
+                        <a href="${object.path}" target="${object.target}">${object.text}</a>
+                    </sly>
+				</sly>
+            </td>
+      		<td class="signing-link-price">
+                <div class="price_color">${properties.price}</div>
+            </td>
+      		<td class="signing-link-button">
+                <sly data-sly-test="${properties.buttonpath != NULL && properties.buttontext != NULL}">
+              		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/signingcertificatelinks/js/signingcertificatelink2.js">
+                        <a href="${object.path}" target="${object.target}" type="button" class="green">${object.text}</a>
+                    </sly>
+				</sly>
+            </td>
+		</tr>
+	</table>
+</div>

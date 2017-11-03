@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Container with Icon Text and Title"
+    width="1000"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Component Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="none"
+                        fieldDescription="Choose the color for the container Background"
+                        fieldLabel="Background Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="none"
+                                value="none"/>
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="charcoal grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="lightest grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="light grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="midgrey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="slate_grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="sky blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient grad1-sec text-center"/>
+                            <dark_x0020__x0020_gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark Gradient"
+                                value="blue-gradient3 text-center"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="white"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="red"
+                                value="red_bg"/>
+                        </options>
+                    </selection>
+                    <Title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        maxLength="30"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <Subtitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter Subtitle"
+                        fieldLabel="Subtitle"
+                        maxLength="30"
+                        name="./subtitle"
+                        validateValue="function(field){var temp=this.getValue();if(temp.length>100){this.markInvalid(&quot;Description should not exceed 100 characters&quot;);return false;}else{this.clearInvalid();return true;}}"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[paste-wordhtml]"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </Subtitle>
+                    <margintop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Margin Top Required"
+                        fieldLabel="Margin Top Required"
+                        name="./margintop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="spacingtopMargin"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="nospacingmargin"/>
+                        </options>
+                    </margintop>
+                    <bordertoprequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Border Top Required"
+                        fieldLabel="Border Top Required"
+                        name="./bordertop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="borderTopPresent"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="borderTopAbsent"/>
+                        </options>
+                    </bordertoprequired>
+                    <Component_x0020_Data
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data (Maximum No of fields: 3)"
+                        fieldLabel="Component Data"
+                        name="./devdata1"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <Image
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Icon Path"
+                                fieldLabel="Icon Path"
+                                name="./image"
+                                xtype="pathfield"/>
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Title"
+                                fieldLabel="Title"
+                                maxLength="30"
+                                name="./title"
+                                xtype="textfield"/>
+                            <desc
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Description"
+                                fieldLabel="Description"
+                                maxLength="200"
+                                name="./description"
+                                xtype="textarea"/>
+                            <links
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Link Title"
+                                fieldLabel="Link Title"
+                                maxLength="25"
+                                name="./linkText"
+                                xtype="textfield"/>
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Specify the path for link"
+                                fieldLabel="Link Path"
+                                name="./linkPath"
+                                xtype="pathfield"/>
+                            <alttext
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Alternate Text for the Image"
+                                fieldLabel="Alternate text"
+                                maxLength="30"
+                                name="./altText"
+                                xtype="textfield"/>
+                            <imagetitle
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter the Title for the Image"
+                                fieldLabel="Image Title"
+                                maxLength="30"
+                                name="./imgTitle"
+                                xtype="textfield"/>
+                        </fieldConfig>
+                    </Component_x0020_Data>
+                </items>
+            </Component_x0020_details>
+        </items>
+    </items>
+</jcr:root>

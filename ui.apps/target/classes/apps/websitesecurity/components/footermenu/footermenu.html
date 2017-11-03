@@ -1,0 +1,22 @@
+<!--footermenu html start-->
+<sly data-sly-use.cpt="websitesecurity.core.utilities.TitleList">
+	<div class="container-fluid c-footer-primary-links ${properties.margintop}">
+    	<div class="container">
+			<div class="row ">
+				<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 nospacingleft">
+					<ul class="list-inline" data-sly-list.key="${cpt.listData}">
+						<li><a href="${key.path}" target="${key.target}">${key.title}</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 mobile-view c-country-sec united-icon nospacingright">
+					<div class="rightAlignBox-icon">
+						<ul>
+							<li class="globe-icon"><img src="${properties.iconimage}"/><a>${properties.countryname}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</sly>
+<!--footermenu html end-->

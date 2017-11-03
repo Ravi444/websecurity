@@ -1,0 +1,8 @@
+<div class="c-country-option">
+	<h4>${properties.heading} <span class="glyphicon glyphicon-menu-right"></span></h4>
+	<ul data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+		<sly data-sly-list.key="${cpt.listData}">
+			<li> <a href=${key.path} target="${key.target}">${key.title}</a> </li>
+		</sly>
+	</ul>
+</div>

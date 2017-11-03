@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Footer Menu "
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Footer Menu Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <menu_x0020_data
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="Footer's Menu Data"
+                        maxItems="6"
+                        name="./devdata"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <multifield
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Unique text for the Link."
+                                fieldLabel="Link"
+                                maxLength="20"
+                                name="./title"
+                                xtype="textfield"/>
+                            <urlpath
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Specify the path for the Link."
+                                fieldLabel="Link Path"
+                                name="./path"
+                                xtype="pathfield"/>
+                        </fieldConfig>
+                    </menu_x0020_data>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Name of  Country"
+                        fieldLabel="Country Title"
+                        maxLength="15"
+                        name="./countryname"
+                        xtype="textfield"/>
+                    <image
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter path of icon"
+                        fieldLabel="Icon Path"
+                        name="./iconimage"
+                        xtype="pathfield"/>
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide alt text"
+                        fieldLabel="Image Alt Text"
+                        name="./imagetitle"
+                        xtype="textfield"/>
+                    <alternatetextforimage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Alternate text for image"
+                        fieldLabel="Alternate Text for Image"
+                        maxLength="30"
+                        name="./alternatetext"
+                        xtype="textfield"/>
+                    <margintop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Margin Top Required"
+                        fieldLabel="Margin Top Required"
+                        name="./margintop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="spacingtopMargin"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="nospacingmargin"/>
+                        </options>
+                    </margintop>
+                </items>
+            </Component_x0020_details>
+        </items>
+    </items>
+</jcr:root>

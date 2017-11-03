@@ -1,0 +1,193 @@
+/*Container With Tabs for product Start*/
+.c-product-container .richtext-padding h3 sub, sup {font-size:55%}
+.c-product-container .nav-tabs > li > a {outline:none;}
+.c-product-container .nav-tabs > li.active > a, .c-product-container .nav-tabs > li.active > a:focus, .c-product-container .nav-tabs > li.active > a:hover { border-width: 0; }
+.c-product-container .nav-tabs > li > a::after { content: ""; background: #00addd; height: 4px; position: absolute; width: 100%; left: 0px; bottom: -4px; transition: all 250ms ease 0s; transform: scale(0); }
+.c-product-container .nav-tabs > li.active > a::after, .c-product-container .nav-tabs > li:hover > a::after { transform: scale(1); }
+.c-product-container .nav-tabs > li.active > a, .c-product-container .nav-tabs > li > a:hover { border: none; color: #4285F4; background: transparent;}
+.c-product-container .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.c-product-container .tab-pane  > h3 {padding-bottom:22px;}
+
+.c-product-container .tab-pane h3 { font-size:22px; padding-bottom:22px; line-height:31px;}
+.c-product-container .tab-content  h4 {color:#00addd; font-size:20px; padding-top:12px;}
+.c-product-container .subProduct h6 {padding:24px 0;}
+
+.c-product-container .tab-pane { padding: 10px 0 30px 0;}
+.c-product-container .c_products {margin-bottom: 30px;}
+.c-product-container  .c_products .nav-tabs.nav-justified {border-bottom:none;}
+.c-product-container .nav-tabs.nav-justified{width:100%;	border-bottom: 4px solid #DDD;}
+.c-product-container .nav-tabs.nav-justified > .active > a, .c-product-container .nav-tabs.nav-justified > .active > a:focus, .c-product-container .nav-tabs.nav-justified > .active > a:hover {
+border:none; color:#464646; font-weight:700;}
+.c-product-container .nav-tabs.nav-justified > li > a {border-bottom:none;border-radius:4px 4px 0 0; font-size:16px;  color:#464646;}
+.c-product-container .nav > li > a, .c-product-container .nav > li > a:hover{position:relative; display:block;  padding:10px 10px 15px;border:none;  color:#464646;}
+.c-product-container .no-padding-right {padding-right:0;}
+.c-product-container .no-padding-left {padding-left:0;}
+.c-product-container .subProduct p {color:#15ccff; font-size:25px; line-height:27px;}
+.c-product-container .tab-pane span.learnMore {font-size:14px; color:#00addd;}
+
+
+.c-product-container{padding:110px 0 0px;}
+.c-product-container .c_products .nav-tabs.nav-justified{border-bottom:4px solid #e4e4e4; width:auto;}
+.c-product-container .c_products .tab-content{padding:0; width:100%; float:left;  }
+.c-product-container .c_products .c_product-tabs{padding:0; text-align:center; margin-bottom:45px;}
+.c-product-container .c_product-tabs .nav-tabs.nav-justified > li{float:none; display:inline-block; width:inherit;}
+.c-product-container .c_products .tab-content .tab-pane{width:100%;}
+.c-product-container .c_products .product-content-container{padding-left:0;}
+.c-product-container .c_products .product-image-container{padding-right:0; margin-bottom:40px;}
+
+.c-product-container .product .nav-tabs > li:hover > a:after{background:none; border-bottom:none;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(1){padding-left:0;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(4){padding-right:0;}
+.c-product-container .product-content-container p{margin-bottom:0;}
+
+/*Container With Tabs for content padding*/
+.c-product-container .richtext-padding {margin-bottom:40px;}
+.c-product-container .richtext .richtext-padding p a {font-size:20px;}
+.c-product-container  .richtextpaddingtwenty { padding-bottom:20px; }
+.c-product-container  .richtextpaddingfourty { padding-bottom:40px; }
+
+.c-product-container .c_moreHeading { padding-bottom: 20px; width: 50%; margin: 0 25%;}
+.c-product-container .nav-tabs.nav-justified.productTab > li, .c-product-container .nav-tabs.nav-justified.productTab > li:hover, .c-product-container .nav-tabs.nav-justified.productTab > li.active { margin: 0 10px; padding:  0; }
+.c-product-container .nav-tabs.nav-justified.productTab > li.active > a, .c-product-container .nav-tabs.nav-justified.productTab > li:hover > a, .c-product-container .nav-tabs.nav-justified.productTab > li > a  { padding: 15px 0;}
+span.h4Size {font-size:14px;}
+
+.sup{font-size:14px;}
+
+#CQrte span.h4Size {font-size:14px;}
+/*.richtextpaddingzero p{ margin-bottom:5px; display: inline-block; font-weight:700;}*/
+.richtextpaddingzero p{ margin-bottom:0px; display: inline-block;}
+.tab-content .richtextnobottommargin, .tab-content .richtextpaddingzero{margin-bottom:0;}
+
+
+ /*Container With Tabs for product ipad */
+@media screen and (min-width:768px) and (max-width:991px) {
+.c-product-container .c_products .c_product-tabs .nav-tabs.nav-justified > li{width:25%;}
+.c-product-container .c_products .c_product-tabs{padding-right:15px;}
+.c-product-container .c_products .nav > li > a, .c-product-container .c_products .nav > li > a:hover{padding-left:12px; padding-right:12px;}
+.c-product-container .c_products .box-for-product{margin-top:0px;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(1){width:33.33333333%;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(2){display:none;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(3){width:33.33333333%;}
+.c-product-container .c_products .box-for-product div:nth-child(4){width:33.33333333%;}
+.c-product-container .c_products .product-content-container{padding-left:0; padding-right: 0;}
+.c-product-container .c_moreHeading { padding-bottom: 0px; width: 100%; margin: 0;}
+.c-product-container .tab-pane h3 {font-size: 22px; padding-bottom: 10px;}
+.c-product-container .nav-tabs.nav-justified.productTab > li, .c-product-container .nav-tabs.nav-justified.productTab > li:hover, .c-product-container .nav-tabs.nav-justified.productTab > li.active{margin:0 25px;}
+/*.c-product-container .richtext-padding {margin-bottom: 20px;}*/
+.c-product-container .richtextpaddingzero p span { margin-bottom: 0px; display: inline-block;}
+.tab-content .richtextnobottommargin, .tab-content .richtextpaddingzero{min-height:160px;}
+.product-content-container .no-padding-left:nth-child(1){padding-right:20px;}
+.product-content-container .no-padding-left:nth-child(2){padding-right:0; padding-left:20px;}
+.c-product-container{padding:88px 0 0px;}
+}
+
+/*Container With Tabs for product Small Desktop */
+
+
+/*********************************************************************************
+
+@media screen and (min-width:992px) and (max-width: 1200px)
+
+*********************************************************************************/ 
+@media screen and (min-width:992px) and (max-width: 1200px) {
+.c-product-container .c_products .box-for-product{margin-top:30px;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(1){width:33.33333333%;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(2){display:none;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(3){width:33.33333333%;}
+.c-product-container .c_products .box-for-product div:nth-child(4){width:33.33333333%;}
+.c-product-container .tab-pane h3 { font-size:22px;}
+.c-product-container .c-product-container .c_moreHeading { padding-bottom: 40px; width: 80%; margin: 0 10%;}
+.c-product-container .c_products .product-content-container{padding-left:0; padding-right: 0;}
+.product-image-container{display:none;}
+
+.c-product-container .product-content-container .no-padding-left:nth-child(1){padding-right:20px;}
+.c-product-container .product-content-container .no-padding-left:nth-child(2){padding-right:0; padding-left:20px;}
+.c-product-container .product-content-container .richtext-padding:nth-child(1){ padding-left: 0px; padding-right:0;}
+.c-product-container .tab-pane h3 {font-size: 22px; padding-bottom: 10px;}
+.product-content-container .box-for-product{display:none; visibility:hidden;}
+
+/*.richtext-padding {margin-bottom:30px;}*/
+.c-product-container .richtext-padding h3 { font-size:22px;}
+.c-product-container{padding:80px 0 0px;}
+
+.c-product-container .nav-tabs.nav-justified.productTab > li, .c-product-container .nav-tabs.nav-justified.productTab > li:hover, .c-product-container .nav-tabs.nav-justified.productTab > li.active { margin: 0 17px; }
+
+
+
+
+}
+
+/*********************************************************************************
+
+@media screen and (max-width: 500px)
+
+*********************************************************************************/ 
+@media screen and (min-width:320px) and (max-width: 566px) {
+.c-product-container .padding-zero {padding:0;}
+.c-product-container .subProduct p {color:#15ccff; font-size:25px; line-height:27px; padding-bottom:20px;}
+.c-product-container .productTab.nav-justified > li {float: left;}
+.c-product-container .productTab > li {float: left; margin-bottom: -1px; width:30%}
+.c-product-container .remove-padding-left-right-zero {padding-left:0; padding-right:0; }
+.c-product-container .nav-tabs.nav-justified > li > a {margin-bottom:0px;}
+.c-product-container .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > li > a {margin-top:1px !important}
+.c-product-container .richtextpaddingzero p span { margin-bottom: 0px; display: inline-block;}
+.c-product-container .nav-tabs.nav-justified > li > a{margin-bottom:-1px;}
+}
+
+
+
+/*********************************************************************************
+
+@media screen and (min-width:567px) and (max-width:767px)
+
+*********************************************************************************/ 
+@media screen and (min-width:567px) and (max-width:767px) {
+.c-product-container .c_products .nav-tabs > li > a::after{bottom:-9px;}
+ 
+
+}
+
+/*********************************************************************************
+
+@media screen and (min-width:567px) and (max-width:767px)
+
+*********************************************************************************/ 
+@media screen and (min-width:320px) and (max-width:566px) {
+.c-product-container .c_products .nav-tabs > li > a::after{bottom:-3px;}
+
+
+}
+
+
+/*********************************************************************************
+
+@media screen and (min-width:320px) and (max-width:767px)
+
+*********************************************************************************/            
+@media screen and (min-width:320px) and (max-width:767px) {
+.c-product-container .c_moreHeading{padding-left:15px; padding-right:15px; width:inherit; margin:0;}
+.c-product-container .c_products .tab-content .tab-pane {padding-left:15px;}
+.c-product-container .c_product-tabs .nav-tabs.nav-justified > li{width:31%;}
+.c-product-container .c_products .nav > li > a, .c-product-container .c_products .nav > li > a:hover{padding-left:2px; padding-right:2px;}
+.c-product-container .c_products .c_product-tabs{padding-right:15px; padding-left:15px;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(1){padding-left:15px;}
+.c-product-container .c_products .box-for-product div.col-sm-6:nth-child(4){padding-right:15px;}
+.c-product-container .c_products .columnLength{border-bottom:none;}
+.c-product-container .c_products .customBorder-yes{padding-bottom:15px;}
+.c-product-container .c_products .product-content-container{padding:0 15px;}
+span.h4Size { font-size: 12px; margin-bottom: 40px;}
+.c-product-container .nav-tabs.nav-justified.productTab > li, .c-product-container .nav-tabs.nav-justified.productTab > li:hover, .c-product-container .nav-tabs.nav-justified.productTab > li.active { margin: 0; }
+.c-product-container .tab-pane h3 {font-size: 22px; padding-bottom: 10px; line-height:31px;}
+.c-product-container .c_products .c_product-tabs { margin-bottom: 15px;}
+
+/*.c-product-container .richtext-padding {margin-bottom:20px;}*/
+.c-product-container .richtextpaddingzero p span { margin-bottom:0px; display: inline-block;}
+.c-product-container .richtextpaddingtwenty{margin-bottom:0px;}
+.c-product-container .richtext-padding{margin-bottom:0px;}
+.c-product-container{padding:75px 0 0px;}
+.c-product-container .c_products .tab-content .tab-pane {padding-left:15px;  }
+.c-product-container .nav-tabs.nav-justified > li > a {font-size:12px;}
+.product-content-container .nospacingleft, .product-content-container .nospacingright{padding-left:0; padding-right:0;}
+.tab-content .richtextnobottommargin, .tab-content .richtextpaddingzero{min-height:auto;}
+} 
+/*Container With Tabs for product End*/

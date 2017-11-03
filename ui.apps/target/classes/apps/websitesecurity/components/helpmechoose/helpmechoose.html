@@ -1,0 +1,15 @@
+<!-- *********************************** For Header Help Me Choose Component Starts ********************************* -->
+	<div class="helpMeBox">
+		<div class="tpl-colRight1 matchHeight ${properties.helpmechoosebgcolor}">
+			 <sly data-sly-test="${properties.helpmechoosetitle != NULL}">
+				<sly data-sly-use.helpmechooseobject="/etc/designs/websitesecurity/clientlibs/component/helpmechoose/js/helpmechooselink.js">
+					<h4>
+                        <a class="${properties.titlecolor}" href="${helpmechooseobject.path}" target="${helpmechooseobject.target}">${helpmechooseobject.text}</a>
+                    </h4>
+                 </sly>
+
+              </sly>
+			<p>${properties.helpmechoosedesc}</p>
+		</div>
+	</div>
+<!-- *********************************** For Header Help Me Choose Component Ends ********************************* -->

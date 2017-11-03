@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    cq:lastReplicated="{Date}2017-02-20T17:24:28.678-07:00"
+    cq:lastReplicatedBy="sasi"
+    cq:lastReplicationAction="Activate"
+    jcr:lastModified="{Date}2017-02-20T17:23:42.383-07:00"
+    jcr:lastModifiedBy="sasi"
+    jcr:mixinTypes="[cq:ReplicationStatus,rep:AccessControllable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Websitesecurity Analytics"
+    sling:resourceType="cq/tagging/components/tag">
+    <site-section/>
+    <site-sub-section/>
+    <site-sub-sub-section/>
+    <custom-name/>
+</jcr:root>

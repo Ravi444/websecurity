@@ -1,0 +1,317 @@
+
+
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='custommultifieldfield'}"/>
+
+</div>
+ <!-- <div data-sly-test="${!author}">
+  	 
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='header'}"/>
+</div>-->
+<div class="container-fluid ${properties.spacingtop} ${properties.spacingbottom} ${properties.margintop} ${properties.color} ${properties.component}">
+
+  <div class="container" >
+    <div class ="certificate-container  ${properties.borderbottom}  ${properties.bordertop}">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 text-center">
+          <sly data-sly-test ="${properties.title1 != NULL}">
+            <h5 class="${properties.titlecolor}">${properties.title1}</h5>
+          </sly>
+          <sly data-sly-test ="${properties.subtitle != NULL}">
+            <h2 class="${properties.subtitlecolor} ">${properties.subtitle @ context = 'html'}</h2>
+          </sly>
+          <sly data-sly-test ="${properties.subtitle1 != NULL}"> <span class="${properties.subtitle1color}">${properties.subtitle1}</span> </sly>
+          <sly data-sly-test ="${properties.desc != NULL}">
+            <p class="${properties.desccolor}">${properties.desc  @ context = 'html'}</p>
+          </sly>
+        </div>
+      </div>
+      <sly data-sly-test ="${properties.innerborder == 'Yes'}">
+      <div class="c-spacingboth-mobview">
+        <div class="row ${properties.innercolor} ${properties.bordercolor}">
+          <sly data-sly-test ="${properties.coltype == '8-4-col'}">
+          <div class="col-md-8 col-lg-8 nospacingleft">
+            <sly data-sly-resource="${'col-8-4-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-md-4 col-lg-4 nospacingright">
+            <sly data-sly-resource="${'col-8-4-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '4-8-col'}">
+          <div class="col-md-4 col-lg-4 nospacingleft">
+            <sly data-sly-resource="${'col-4-8-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-md-8 col-lg-8 nospacingright">
+            <sly data-sly-resource="${'col-4-8-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '4-4-4-col'}">
+          <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 nospacingleft" >
+            <sly data-sly-resource="${'col-4-4-4-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12" >
+            <sly data-sly-resource="${'col-4-4-4-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12 hidden-12 col-sm-12 nospacingright">
+            <sly data-sly-resource="${'col-4-4-4-3' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test= "${properties.coltype == '3-3-3-3-col'}">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nospacingleft">
+            <sly data-sly-resource="${'col-3-3-3-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <sly data-sly-resource="${'col-3-3-3-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <sly data-sly-resource="${'col-3-3-3-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nospacingright">
+            <sly data-sly-resource="${'col-3-3-3-3-4' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test= "${properties.coltype == '6-6-col'}">
+          <div class="col-lg-6 col-md-6 nospacingleft" >
+            <sly data-sly-resource="${'col-6-6-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-6 col-md-6 nospacingright">
+            <sly data-sly-resource="${'col-6-6-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '3-9-col'}">
+          <div class="col-lg-3 col-md-3 nospacingleft">
+            <sly data-sly-resource="${'col-3-9-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-9 col-md-9 nospacingright">
+            <sly data-sly-resource="${'col-3-9-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '9-3-col'}">
+          <div class="col-lg-9 col-md-9 nospacingleft">
+            <sly data-sly-resource="${'col-9-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 nospacingright">
+            <sly data-sly-resource="${'col-9-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '3-3-6-col'}">
+          <div class="col-lg-3 col-md-3 nospacingleft" >
+            <sly data-sly-resource="${'col-3-3-6-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3" >
+            <sly data-sly-resource="${'col-3-3-6-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-6 col-md-6 nospacingright">
+            <sly data-sly-resource="${'col-3-3-6-3' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '6-3-3-col'}">
+          <div class="col-lg-6 col-md-6 nospacingleft" >
+            <sly data-sly-resource="${'col-6-3-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3" >
+            <sly data-sly-resource="${'col-6-3-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 nospacingright">
+            <sly data-sly-resource="${'col-6-3-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '3-6-3-col'}">
+          <div class="col-lg-3 col-md-3 nospacingleft" >
+            <sly data-sly-resource="${'col-3-6-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-6 col-md-6" >
+            <sly data-sly-resource="${'col-3-6-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          <div class="col-lg-3 col-md-3 nospacingright">
+            <sly data-sly-resource="${'col-3-6-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <sly data-sly-test="${properties.coltype == '12-col'}">
+          <div class="col-lg-12 col-md-12 nospacingright nospacingleft">
+            <sly data-sly-resource="${'col-12-1' @ resourceType='/libs/foundation/components/parsys'}" />
+          </div>
+          </sly>
+          <div class="titleTextComp">
+            <sly data-sly-test= "${properties.coltype == '2-2-2-2-col'}">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 nospacingleft" >
+              <sly data-sly-resource="${'col-2-2-2-2-1' @ resourceType='/libs/foundation/components/parsys'}" />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+              <sly data-sly-resource="${'col-2-2-2-2-2' @ resourceType='/libs/foundation/components/parsys'}" />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+              <sly data-sly-resource="${'col-2-2-2-2-3' @ resourceType='/libs/foundation/components/parsys'}" />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+              <sly data-sly-resource="${'col-2-2-2-2-4' @ resourceType='/libs/foundation/components/parsys'}" />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 nospacingright" >
+              <sly data-sly-resource="${'col-2-2-2-2-5' @ resourceType='/libs/foundation/components/parsys'}" />
+            </div>
+            <div class="titleandtextsecborder clearfix"></div>
+            <div class="clearfix"></div>
+            </sly>
+          </div>
+          <sly data-sly-test="${properties.linkborder == 'No'}">
+            <sly  data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+              <p class="more-link text-center ${properties.linkbordercolor}" data-sly-list.key="${cpt.listData}"><a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp; </p>
+            </sly>
+          </sly>
+          <sly data-sly-test="${properties.linkborder == 'Yes'}">
+            <sly  data-sly-use.cpt1="websitesecurity.core.utilities.MultiFieldLinks">
+              <p class="viewAll text-center clear ${properties.linkbordercolor}" data-sly-list.key="${cpt1.listData}"><a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp; </p>
+            </sly>
+          </sly>
+          <sly data-sly-test="${properties.button == 'yes'}">
+            <sly   data-sly-use.buttonlist="websitesecurity.core.utilities.MultiFieldButtons">${buttonlist.listData}
+              <div class="text-center" data-sly-list.key="${buttonlist.listData}"> <a href="${key.path}" type="button" class="green" target="${key.target}">${key.title}</a>&nbsp;&nbsp; </div>
+            </sly>
+          </sly>
+        </div>
+      </div>
+      </sly>
+      <sly data-sly-test ="${properties.innerborder == 'No'}">
+      <div class="clearfix ${properties.innercolor}">
+        <sly data-sly-test ="${properties.coltype == '8-4-col'}">
+        <div class="col-lg-8 col-md-8 nospacingleft">
+          <sly data-sly-resource="${'col-8-4-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-4 col-md-4 nospacingright">
+          <sly data-sly-resource="${'col-8-4-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '4-8-col'}">
+        <div class="col-lg-4 col-md-4 nospacingleft">
+          <sly data-sly-resource="${'col-4-8-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-8 col-md-8 nospacingright">
+          <sly data-sly-resource="${'col-4-8-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '4-4-4-col'}">
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 nospacingleft" >
+          <sly data-sly-resource="${'col-4-4-4-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 c-imagetexttitle-middle" >
+          <sly data-sly-resource="${'col-4-4-4-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 hidden-sm c-space nospacingright">
+          <sly data-sly-resource="${'col-4-4-4-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test= "${properties.coltype == '3-3-3-3-col'}">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 nospacingleft">
+          <sly data-sly-resource="${'col-3-3-3-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <sly data-sly-resource="${'col-3-3-3-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 c-tab_bottomspace">
+          <sly data-sly-resource="${'col-3-3-3-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 c-tab_bottomspace c-mob_bottomspace nospacingright">
+          <sly data-sly-resource="${'col-3-3-3-3-4' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '6-6-col'}">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nospacingleft">
+          <sly data-sly-resource="${'col-6-6-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nospacingright">
+          <sly data-sly-resource="${'col-6-6-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '3-9-col'}">
+        <div class="col-lg-3 col-md-3 nospacingleft">
+          <sly data-sly-resource="${'col-3-9-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-9 col-md-9 nospacingright">
+          <sly data-sly-resource="${'col-3-9-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '9-3-col'}">
+        <div class="col-lg-9 col-md-9 nospacingleft">
+          <sly data-sly-resource="${'col-9-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-3 nospacingright">
+          <sly data-sly-resource="${'col-9-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '3-3-6-col'}">
+        <div class="col-lg-3 col-md-3 nospacingleft" >
+          <sly data-sly-resource="${'col-3-3-6-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-3" >
+          <sly data-sly-resource="${'col-3-3-6-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-6 col-md-6 nospacingright">
+          <sly data-sly-resource="${'col-3-3-6-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '6-3-3-col'}">
+        <div class="col-lg-6 col-md-6 nospacingleft" >
+          <sly data-sly-resource="${'col-6-3-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-3" >
+          <sly data-sly-resource="${'col-6-3-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-3 nospacingright ">
+          <sly data-sly-resource="${'col-6-3-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '3-6-3-col'}">
+        <div class="col-lg-3 col-md-3 nospacingleft" >
+          <sly data-sly-resource="${'col-3-6-3-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-6 col-md-6" >
+          <sly data-sly-resource="${'col-3-6-3-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-3 col-md-3 nospacingright">
+          <sly data-sly-resource="${'col-3-6-3-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test="${properties.coltype == '12-col'}">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nospacingleft nospacingright">
+          <sly data-sly-resource="${'col-12-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <sly data-sly-test= "${properties.coltype == '2-2-2-2-col'}">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 nospacingleft" >
+          <sly data-sly-resource="${'col-2-2-2-2-1' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+          <sly data-sly-resource="${'col-2-2-2-2-2' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+          <sly data-sly-resource="${'col-2-2-2-2-3' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" >
+          <sly data-sly-resource="${'col-2-2-2-2-4' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 nospacingright" >
+          <sly data-sly-resource="${'col-2-2-2-2-5' @ resourceType='/libs/foundation/components/parsys'}" />
+        </div>
+        </sly>
+        <div class="clear"></div>
+        <sly data-sly-test="${properties.linkborder == 'No'}">
+          <sly  data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+            <p class="more-link text-center ${properties.linkbordercolor}" data-sly-list.key="${cpt.listData}"><a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp;</p>
+          </sly>
+        </sly>
+        <sly data-sly-test="${properties.linkborder == 'Yes'}">
+          <sly  data-sly-use.cpt1="websitesecurity.core.utilities.MultiFieldLinks">
+            <p class="viewAll text-center ${properties.linkbordercolor}" data-sly-list.key="${cpt1.listData}"> <a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp; </p>
+          </sly>
+        </sly>
+        <sly data-sly-test="${properties.button == 'yes'}">
+          <sly data-sly-use.buttonlist="websitesecurity.core.utilities.MultiFieldButtons">
+            <div class="text-center" data-sly-list.key="${buttonlist.listData}"> <a type="button" class="green" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp; </div>
+          </sly>
+        </sly>
+      </div>
+      <div class="clear"></div>
+      </sly>
+    </div>
+  </div>
+</div>

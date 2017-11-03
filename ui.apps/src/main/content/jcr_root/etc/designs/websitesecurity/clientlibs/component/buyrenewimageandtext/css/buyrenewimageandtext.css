@@ -1,0 +1,282 @@
+/**************************************************CommonClasses STARTS********************************************/
+
+/* video container start */
+.buyrenew_imageandtext {
+	background:#efefef;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC {
+	padding:110px 0 76px 0px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video {
+	display:block;
+	text-align:center;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video img {
+	text-align:right;
+	display:inline;
+	max-width:auto;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+	padding-bottom:23px;
+	padding-right: 45px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h5 {
+	padding:0 0 20px 0;
+	font-size:16px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content {
+	padding-top:0px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p.more-link {
+	text-align:left;
+	padding:0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p {
+	color:#464646;
+	line-height:26px;
+	font-size:16px;
+	padding-bottom:48px;
+	margin:0;
+	clear:both;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content .more-link {
+	padding:0;
+	margin:0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content .more-link a {
+	font-size:14px;
+	font-weight:700;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .contentPara {
+	width:100%;
+}
+/* .video{height:40%;} */
+
+.more-link a {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 8px;
+	border-bottom: 0px solid rgb(253, 187, 48);
+}
+.colmLinkOuter {
+	margin:0px 0px 0px 20px;
+	padding:0px;
+	color:#fdbb30;
+	font-size:16px;
+	font-weight: 700;
+}
+.colmLinkOuter li {
+	width:50%;
+	list-style-type: square;
+	float:left;
+	padding:0 0 10px 0;
+}
+.colmLinkOuter li a: hover {
+	color:#15ccff;
+}
+.colmLinkOuter li a: focus {
+	color:#15ccff;
+}
+.security_grey {
+	margin:0px 0px 0px 0;
+	padding:0px;
+	color:#464646;
+	font-size:16px;
+}
+.security_grey li {
+	width:48%;
+	list-style-type: square;
+	float:left;
+	padding:0 0 10px 0px;
+	color:#464646;
+	margin-right:10px;
+}
+.datalist {
+	margin-right:40px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p {
+	padding-right:21px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p.viewAll {
+	padding:0;
+	margin:0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p.viewAll a {
+	padding-bottom:6px;
+	display:inline-block;
+}
+.datalist {
+	margin-right:30px;
+}
+
+/**************************************************CommonClasses ENDS************************************************/
+
+
+
+ @media only screen and (max-width : 1200px) {
+ .c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+padding-right:0px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h5 {
+font-size:16px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+font-size:30px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p {
+font-size:16px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content .more-link a {
+font-size:14px;
+font-weight:700;
+}
+}
+ @media only screen and (max-width : 979px) {
+ .c-buyrenew_imageandtext .buy-renew-videoC .norton-block .video-content h2 {
+letter-spacing:-2px;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .video {
+width:auto;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .norton-block .video-content h2 {
+padding-right:0px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC {
+padding-top: 0;
+margin-top:100px;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .video {
+text-align:left;
+}
+ .c-buyrenew_imageandtext .c-buyrenew_imageandtext .buy-renew-videoC .video-content {
+padding-top:0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h5, .c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+padding-bottom:25px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+letter-spacing:-0.7px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p {
+padding-bottom:30px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video {
+padding-top:88px;
+}
+ .security_grey li {
+ width:33%;
+}
+ .security li {
+ width:33%;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .video {
+width:auto;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video img {
+width:auto;
+height:auto;
+text-align:left;
+}
+}
+ @media only screen and (max-width : 767px) {
+ .c-buyrenew_imageandtext .buy-renew-videoC .norton-block .video-content h2 {
+letter-spacing:-2px;
+}
+ .norton-img-mob {
+margin-top:-107px;
+padding-right:0;
+}
+ .norton-img-mob img {
+float:right
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .viewAll {
+width:25%;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .video-content h5, .c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+padding-bottom:20px;
+}
+.norton-img-mob {
+padding-right:59px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video img {
+width:auto;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h5 {
+font-size:12px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+font-size:25px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content a {
+font-size:12px;
+}
+ .security_grey li {
+ width:100%;
+}
+ .security li {
+ width:100%;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video, .c-buyrenew_imageandtext .buy-renew-videoC .video img {
+text-align:left;
+width:auto;
+}
+.contentPara {
+width:auto;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC {
+margin-top:50px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .viewAll {
+width:auto;
+}
+.viewAll a:hover {
+ text-decoration: none;
+ color: #15ccff;
+ border-bottom: 3px solid #15ccff;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video {
+float:right;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content {
+position:relative;
+z-index:1;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content p.viewAll a {
+padding-bottom:3px;
+}
+}
+ @media all and (max-width: 480px) and (min-width: 320px) {
+ .c-buyrenew_imageandtext .buy-renew-videoC {
+padding-top: 0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+font-size: 30px;
+font-weight: 300;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h5 {
+padding: 0 0 20px 0;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .video-content h2 {
+padding-bottom: 15px;
+padding-right: 0px;
+}
+.c-buyrenew_imageandtext .buy-renew-videoC .viewAll {
+width:auto;
+}
+ .norton-img-mob {
+display: inline-block;
+ padding-top: 5px;
+ float: right;
+ text-align: right;
+ padding-right: 21px;
+ width: 67%;
+}
+ .norton-img-mob img {
+float:none;
+}
+ .c-buyrenew_imageandtext .buy-renew-videoC .video {
+padding-top:20px;
+float:right;
+}
+}

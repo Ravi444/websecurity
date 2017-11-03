@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Icon"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Icons Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <images
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Click the '+' to add a new Image"
+                        fieldLabel="Image's Data"
+                        maxItems="5"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter unique Image."
+                                fieldLabel="Image"
+                                name="./title"
+                                xtype="pathfield"/>
+                            <urlpath
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Specify the Alt text for the Image"
+                                fieldLabel="Alt Text"
+                                name="./path"
+                                xtype="textfield"/>
+                        </fieldConfig>
+                    </images>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,516 @@
+/*moxiechat starts here*/
+#chat {
+    width: 607px;
+    padding: 0 4px;
+    text-align: left;
+}
+
+#chat > img {
+    margin-left: -4px;
+}
+
+#chat * {
+    font-family: Arial;
+    font-size:11px;
+    color:#777878;
+}
+
+#chat h1 {
+    font-size: 24px;
+    color: #666;
+    line-height: 28px;
+    margin: 16px 0 0 0;
+    font-weight: normal;
+    text-align: center;
+    max-width: 498px;
+}
+
+#chat h2 {
+    font-size: 18px;
+    color: #666;
+    line-height: 20px;
+    margin: 16px 0 0 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+#chat p {
+    margin: 5px 0;
+}
+
+.moxiechat {
+    min-height: 50px;
+    min-width: 160px;
+    display: block;
+    position: relative;
+}
+.subtext, .chat-unavailable, .chat-available {position: absolute; display: none; font-weight: 600; }
+.moxieimg {position: relative; z-index:100; /*visibility: hidden;*/ display:none;}
+
+
+#chat .chatBtns .chat-available {
+    background: #fff;
+    border: 1px solid #72a826;
+    padding: 4px 9px;
+    color: #72a826;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+ #chat .chatBtns .chat-unavailable {
+    background: #fff;
+    border: 1px solid #777878;
+    padding: 4px 9px;
+    color: #777878;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#chat .chatBtns .chat-available a,
+#chat .chatBtns .chat-available a:visited {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #72a826;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#chat .chatBtns .chat-unavailable a,
+#chat .chatBtns .chat-unavailable a:visited {
+    text-decoration: underline;
+    font-weight: normal;
+    color: #72a826;
+    font-size: 12px;
+    line-height: 14px;
+}
+/*moxiechat ends here*/
+
+/*popup starts here*/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/*popup ends here*/
+
+
+
+
+/*contact us starts here*/
+
+.contactus .cg_float-contact .popup-bubble .bubble-header{margin:-15px -15px 15px -29px; padding-left:29px; font-size: 14px;
+    font-weight: 700;}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/*-----------------------------------------*/
+
+.cg_float-contact {
+	position: fixed;
+	bottom: 0;
+	/*left: 15px;*/
+    right: 15px;
+    z-index:10000;
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .cg_float-contact {
+ right:30px;
+
+}
+
+    }
+
+.cg_float-contact .ico-c {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+}
+
+.cg_float-contact .popup-button {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-color: #fdbb30;
+}
+
+.cg_float-contact .popup-button:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	height: 25px;
+	width: 28px;
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-bell.png") no-repeat left top;
+}
+
+.cg_float-contact .popup-button a {
+	display: inline-block;
+	padding: 15px 30px 15px 60px;
+	color: #fff;
+	line-height: 1.8rem;
+	font-size: 14px;
+    font-weight:700;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+}
+
+.cg_float-contact .popup-button a:hover {
+	text-decoration: none;
+}
+
+.cg_float-contact .popup-bubble {
+	min-width: 240px;
+	display: none;
+	position: absolute;
+	bottom: 65px;
+	padding: 15px 15px 0px 29px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 10px 4px #999;
+	box-shadow: 0px 1px 5px 1px #999;
+    right:0px;
+}
+
+/*.cg_float-contact .popup-bubble:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    left: 10%;
+    box-sizing: border-box;
+    border: 10px solid white;
+    border-color: #ffffff #ffffff #ffffff #ffffff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+*/
+
+.cg_float-contact .popup-bubble:after{
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+margin-left: -0.5em;
+/*left: 10%;*/
+right:10%;
+box-sizing: border-box;
+border:10px solid #ffffff;
+border-color: #ffffff #ffffff #ffffff #ffffff;
+transform-origin: 0 0;
+transform: rotate(-45deg);
+box-shadow: -2px 3px 3px 0 #999999;
+
+
+            }
+
+.chatLink{font-size:16px; font-weight:600;}
+
+.cg_float-contact .popup-bubble .bubble-header {
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: -15px;
+	padding: 15px;
+	background-color: #fdbb30;
+	color: #fff;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.cg_float-contact .popup-bubble .bubble-header .glyphicon {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+/*.cg_float-contact .popup-bubble .bubble-header a.bubble-close {
+	float:right;
+    width:13px;
+    height:13px;
+
+    background: url("/content/dam/websitesecurity/contactus/desktop/images/cross.png") no-repeat right center;
+}*/
+.cg_float-contact .popup-bubble .bubble-header a.bubble-close:hover{cursor:pointer;}
+.cg_float-contact .popup-bubble .bubble-header a.bubble-close:after {
+    float:right;
+    content: "\2715";
+    font-size: 16px;
+    color: #fff;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .ico-c-phone {
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-phone.png") no-repeat left 0; width:25px; height:25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .ico-c-email {
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-email.png") no-repeat left 0;width:25px; height:25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .ico-c-chat {
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-chat.png") no-repeat left 0;width:25px; height:25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text ul {
+	list-style: none;
+
+	font-weight:600;
+	font-size:16px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list {
+	margin-bottom: 15px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list .ico-c {
+	left: -40px;
+    vertical-align: baseline;
+    top:-4px; 
+}
+span.ico-c.ico-c-email {line-height:0;}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li {
+	display: block;
+    padding:0;
+    margin:0;
+    line-height:0;
+	padding-top:10px;
+    padding-left: 40px;
+	line-height: 30px;
+vertical-align: baseline;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li a {
+	position: relative;
+	color: #464646;
+    margin:0;
+    padding:0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li a:hover {
+	text-decoration: none;
+	color: #00addd;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li a:hover .ico-c-phone
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-phone.png") no-repeat 0 -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li a:hover .ico-c-email
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-email.png") no-repeat 0 -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .options-list li a:hover .ico-c-chat
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-c-chat.png") no-repeat 0 -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section .social-heading
+	{
+	text-transform: uppercase;
+	border-bottom: 1px solid #e4e4e4;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+    color:#464646;
+    font-size:14px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section .ico-s-facebook
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-facebook.png") no-repeat left 0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section .ico-s-linkedin
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-linkedin.png") no-repeat left 0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section .ico-s-twitter
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-twitter.png") no-repeat left 0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section .ico-s-youtube
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-youtube.png") no-repeat left 0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul {
+	margin: 15px 0;
+	padding: 0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-right: 5px; 
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li a {
+	font-size: 0%;
+	position: relative;
+    width:25px;
+    height:25px;
+    outline:0;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li a:hover .ico-s-facebook
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-facebook.png") no-repeat left -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li a:hover .ico-s-linkedin
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-linkedin.png") no-repeat left -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li a:hover .ico-s-twitter
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-twitter.png") no-repeat left -25px;
+}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li a:hover .ico-s-youtube
+	{
+	background: url("/content/dam/websitesecurity/contactus/desktop/images/ico-s-youtube.png") no-repeat left -25px;
+}
+
+@media all and (max-width: 1200px) and (min-width: 968px){
+    .mobiletest-div{display:none;}
+}
+
+@media all and (max-width: 968px) and (min-width: 767px){
+    .mobiletest-div{display:none;}
+}
+
+ @media all and (max-width: 767px) and (min-width: 320px) {
+.mobiletest-div{display:none;}
+.contactus .cg_float-contact .popup-bubble .bubble-header{font-size:12px;}
+.cg_float-contact .popup-bubble .bubble-text ul{font-size:13.5px;}
+.cg_float-contact .popup-bubble .bubble-text .social-section .social-heading{font-size:12px;}
+
+.cg_float-contact .popup-bubble .bubble-text .social-section ul li{}
+.cg_float-contact {
+	width:auto;
+	left: 50%;
+    transform: translate(-50%, 0);
+}
+/*.cg_float-contact .popup-bubble:after {
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid black;
+    border-color: transparent transparent #ffffff #ffffff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -2px 2px 3px 0 #999999;
+    left: 40%;
+} */
+
+
+.cg_float-contact .popup-bubble:after {
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid black;
+    border-color:#ffffff #ffffff #ffffff #ffffff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -2px 2px 1px 0 #999999;
+    left: 40%;
+} 
+
+
+.popup-bubble{margin-left:-20%;}
+
+}
+@media only screen and (max-width: 380px) {
+.cg_float-contact .popup-button a {
+    display: inline-block;
+    padding: 15px 15px 15px 54px;
+    color: #fff;
+    line-height: 1.8rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+.cg_float-contact .popup-bubble {
+    min-width: 240px;
+    display: none;
+    position: absolute;
+    bottom: 65px;
+    padding: 15px 15px 0px 29px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 3px 10px 4px #999;
+    box-shadow: 0px 1px 5px 1px #999;
+    }
+}            
+
+@media only screen and (min-width: 280px) and (max-width:767px) {
+.cg_float-contact .popup-bubble:after{left:50%; margin-left:-11px;}
+.cg_float-contact .popup-bubble{margin-left:-39px;  right:initial;}              
+.contactus .cg_float-contact .popup-bubble .bubble-header{margin-bottom:10px;}
+.cg_float-contact .popup-bubble .bubble-text .options-list{margin-bottom:0;}
+.cg_float-contact .popup-bubble .bubble-text .options-list li{line-height:25px;}
+.cg_float-contact{width:auto; left:48%; transform:translate(-50%, 0);}
+.cg_float-contact{right:inherit;}
+}  
+/*contact us ends here*/

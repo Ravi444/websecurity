@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch){var tabs=['img','alternatetab','componentdetails','overlay','path'];var index=tabs.indexOf(tab);if(index==-1)return;for(var i=3;i&lt;tabs.length;i++){if(index==i) {this.unhideTabStripItem(i);}else {this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Image and Text"
+    width="{Long}1000"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <alternatetab
+            jcr:primaryType="cq:Widget"
+            title="Text Overlay Details">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Description"
+                    itemId="textmessage"
+                    name="./overlaytext"
+                    xtype="richtext"/>
+                <textoverlaytitle
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Text Overlay Title"
+                    itemId="textoverlaytitle"
+                    name="./textoverlaytitle"
+                    xtype="textfield"/>
+            </items>
+        </alternatetab>
+        <componentdetails
+            jcr:primaryType="cq:Widget"
+            title="Video Overlay Details">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Title"
+                    itemId="videotitle"
+                    name="./videotitle"
+                    xtype="textfield"/>
+                <vendor
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Vendor"
+                    itemId="vendor"
+                    name="./vendor"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;youtube&quot; || value == &quot;ustudio&quot;){dlg.getComponent('embedCode').show();dlg.getComponent('playerID').hide();dlg.getComponent('playerKey').hide();dlg.getComponent('videoID').hide();}else{dlg.getComponent('embedCode').hide();dlg.getComponent('playerID').show();dlg.getComponent('playerKey').show();dlg.getComponent('videoID').show();}}&#xa;"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <youtube
+                            jcr:primaryType="nt:unstructured"
+                            text="You Tube"
+                            value="youtube"/>
+                        <brightcove
+                            jcr:primaryType="nt:unstructured"
+                            text="Bright Cove"
+                            value="brightcove"/>
+                        <ustudio
+                            jcr:primaryType="nt:unstructured"
+                            text="Ustudio"
+                            value="ustudio"/>
+                    </options>
+                </vendor>
+                <embedCode
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="https://embed.ustudio.com/embed/DTkChBHtXcx2/U2gkpRTWbgvc"
+                    fieldLabel="Embed Code"
+                    height="{Long}125"
+                    itemId="embedCode"
+                    name="./embedCode"
+                    value="https://embed.ustudio.com/embed/DTkChBHtXcx2/U2gkpRTWbgvc"
+                    xtype="textarea"/>
+                <playerID
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="1155633140001"
+                    fieldDescription=""
+                    fieldLabel="Player ID:"
+                    fieldSubLabel=""
+                    itemId="playerID"
+                    name="./playerID"
+                    value="1155633140001"
+                    xtype="textfield"/>
+                <playerKey
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                    fieldDescription=""
+                    fieldLabel="Player Key:"
+                    fieldSubLabel=""
+                    itemId="playerKey"
+                    name="./playerKey"
+                    value="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                    xtype="textfield"/>
+                <videoID
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="2705903283001"
+                    fieldLabel="videoID"
+                    itemId="videoID"
+                    name="./videoID"
+                    value="2705903283001"
+                    xtype="textfield"/>
+            </items>
+        </componentdetails>
+        <Close
+            jcr:primaryType="cq:Widget"
+            title="Close Icons">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <closebutton
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Close Icon"
+                    itemId="closebutton"
+                    name="./closeicon"
+                    xtype="pathfield"/>
+                <hovericon
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="On hover Close Icon"
+                    itemId="hovericon"
+                    name="./hoverclose"
+                    xtype="pathfield"/>
+            </items>
+        </Close>
+    </items>
+</jcr:root>

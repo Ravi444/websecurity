@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:description=""
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Site Sub Sub Section"
+    sling:resourceType="cq/tagging/components/tag">
+    <code-signing-certificates/>
+    <code-signing-certificates-and-services/>
+    <ssl-certificates/>
+    <ssl-tls-certificate/>
+    <manage-code-signing-certificates/>
+    <complete-website-security/>
+</jcr:root>

@@ -1,0 +1,8 @@
+<div class="">
+	<h4>${properties.title} <span class=""></span></h4>
+	<ul data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+		<sly data-sly-list.key="${cpt.listData}">
+			<li> <a href=${key.path} target="${key.target}">${key.title}</a> </li>
+		</sly>
+	</ul>
+</div>

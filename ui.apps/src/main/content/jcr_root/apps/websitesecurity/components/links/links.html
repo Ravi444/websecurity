@@ -1,0 +1,11 @@
+<!--link component starts-->
+<div class="c-links-container">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nospacingleft nospacingright">
+		<ul data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+			<sly data-sly-list.key="${cpt.listData}">
+				<li> <a href="${key.path}" target="${key.target}">${key.title}</a> </li>
+			</sly>
+		</ul>
+	</div>
+</div>
+<!--link component ends-->

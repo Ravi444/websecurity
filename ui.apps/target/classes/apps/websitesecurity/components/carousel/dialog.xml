@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Carousel"
+    width="1000"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Carousel Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <carousal_x0020_Data
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="Carousel Data"
+                        name="./devdata1"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <Image
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Icon Path"
+                                fieldLabel="Icon Path"
+                                name="./image"
+                                xtype="pathfield"/>
+                            <desc
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Description"
+                                fieldLabel="Description"
+                                maxLength="520"
+                                name="./desc"
+                                xtype="textarea"/>
+                            <subtitle
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Subtitle"
+                                fieldLabel="Subtitle"
+                                maxLength="30"
+                                name="./subtitle"
+                                xtype="textfield"/>
+                            <links
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Link Title"
+                                fieldLabel="Link Title"
+                                maxLength="25"
+                                name="./link"
+                                xtype="textfield"/>
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Specify the path for link"
+                                fieldLabel="Link Path"
+                                name="./path"
+                                xtype="pathfield"/>
+                            <selection
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Choose the color for the container background"
+                                fieldLabel="Background Color"
+                                name="./color"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <charcoal_grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Charcoal Grey"
+                                        value="charcoal_grey_bg"/>
+                                    <grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Grey"
+                                        value="grey_bg"/>
+                                    <lightest_grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Lightest Grey"
+                                        value="lightest_grey_bg"/>
+                                    <light_grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Light Grey"
+                                        value="light_grey_bg"/>
+                                    <midgrey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Mid Grey"
+                                        value="midgrey_bg"/>
+                                    <slate_grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Slate Grey"
+                                        value="slate_grey_bg"/>
+                                    <ash
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Ash"
+                                        value="ash_bg"/>
+                                    <Symantec_x0020_Gold
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Symantec Gold"
+                                        value="symantec_gold_bg"/>
+                                    <pink
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Pink"
+                                        value="pink_bg"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Sky Blue"
+                                        value="sky_blue_bg"/>
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Black"
+                                        value="black_bg"/>
+                                    <gradient
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Gradient"
+                                        value="blue-gradient grad1-sec text-center"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="White"
+                                        value="white_bg"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Green"
+                                        value="green_bg"/>
+                                    <purple
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Purple"
+                                        value="purple_bg"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Red"
+                                        value="red_bg"/>
+                                </options>
+                            </selection>
+                            <imagetitle
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter Image Title"
+                                fieldLabel="Image Title"
+                                maxLength="30"
+                                name="./alttext"
+                                xtype="textfield"/>
+                        </fieldConfig>
+                    </carousal_x0020_Data>
+                </items>
+            </Component_x0020_details>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,18 @@
+ <sly data-sly-use.wcmModes="/libs/wcm/foundation/components/page/initwcm.js"></sly>
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='custommultifieldfieldcategory'}"/>
+
+</div>
+
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='apps.sslSecurity'}"/>
+
+
+
+<template data-sly-template.third="${@ x}" >
+<sly data-sly-test="${x== 'datalayernonprod'}">
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='datalayernonprodsym'}"/>
+</sly>
+<sly data-sly-test="${x == 'datalayerprod'}">
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='datalayerprodsym'}"/>
+</sly>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="websitesecurity.core.utilities.GSASearchConfigFactoryService" configuration-policy="require">
+        <implementation class="websitesecurity.core.utilities.GSASearchConfigFactoryService"/>
+        <service servicefactory="false">
+            <provide interface="websitesecurity.core.utilities.GSASearchConfigFactoryService"/>
+        </service>
+        <property name="service.description" value="Website Security GSA Global Search Configuration"/>
+        <property name="service.vendor" value="Symantec"/>
+        <property name="GSA_HOST" value=""/>
+        <property name="PARTNER_GSA_HOST" value=""/>
+        <property name="CLIENT" value="websec_en_US"/>
+        <property name="SITE" value="websec_en_US"/>
+        <property name="MAX_RESULTS" value="100"/>
+        <property name="RESULTS_PER_PAGE" value="10"/>
+        <property name="service.pid" value="websitesecurity.core.utilities.GSASearchConfigFactoryService"/>
+    </scr:component>
+</components>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Expired Certificate"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Title
+                jcr:primaryType="cq:Panel"
+                title="Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter title"
+                        fieldLabel="Title"
+                        maxLength="25"
+                        name="./certificatetitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <titlepath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the Path for the Title"
+                        fieldLabel="Title Path"
+                        name="./certificatetitlepath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color of the title text"
+                        fieldLabel="Title Color"
+                        name="./titlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <Link_x0020_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title of the Link"
+                        fieldLabel="Link Title"
+                        name="./cwslinkkey"
+                        xtype="textfield"/>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path of the link"
+                        fieldLabel="Link path"
+                        name="./cwslinkvalue"
+                        xtype="textfield"/>
+                </items>
+            </Title>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Footer Bottom"
+    width="700"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Footer Bottom Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Links"
+                        maxItems="6"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            optionsProvider="Ejst.x3.provideOptions"
+                            xtype="ejstcustom"/>
+                    </links>
+                    <disclaimer
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter disclaimer text"
+                        fieldLabel="Disclaimer Text"
+                        name="./disclaimer"
+                        xtype="textfield"/>
+                    <social_x0020_icons
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="Social Icons"
+                        maxItems="5"
+                        name="./devdata1"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <icon
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Select image"
+                                fieldLabel="Icon"
+                                name="./iconclass"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <Twitter
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Twitter"
+                                        value="fa-twitter"/>
+                                    <Facebook
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Facebook"
+                                        value="fa-facebook-square"/>
+                                    <Linkedin
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Linkedin"
+                                        value="fa-linkedin-square"/>
+                                    <google-plus
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Google Plus"
+                                        value="fa-google-plus"/>
+                                    <youtube
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Youtube"
+                                        value="fa-youtube-play"/>
+                                </options>
+                            </icon>
+                            <iconredirectlink
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Specify the Link for the Icon"
+                                fieldLabel="Icon Redirect Link"
+                                name="./iconlink"
+                                xtype="pathfield"/>
+                        </fieldConfig>
+                    </social_x0020_icons>
+                    <footer_x0020_image
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify Footer Image Path"
+                        fieldLabel="Footer Image"
+                        name="./footerimage"
+                        xtype="pathfield"/>
+                    <footerimagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify Footer Image Path"
+                        fieldLabel="Footer Image Path"
+                        name="./imagepath"
+                        xtype="textfield"/>
+                </items>
+            </Component_x0020_details>
+            <socialicons
+                jcr:primaryType="cq:Panel"
+                title="Social Icons Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <twittericon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Twitter Icon Path"
+                        fieldLabel="Twitter Path"
+                        name="./twitter"
+                        xtype="textfield"/>
+                    <facebookicon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter facebook Icon Path"
+                        fieldLabel="Facebook Path"
+                        name="./facebook"
+                        xtype="textfield"/>
+                    <linkedinicon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Linkedin Icon Path"
+                        fieldLabel="Linkedin Path"
+                        name="./linkedin"
+                        xtype="textfield"/>
+                    <googleplus
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Google Plus Icon Path"
+                        fieldLabel="Google Plus Path"
+                        name="./google"
+                        xtype="textfield"/>
+                    <youtubeicon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Youtube Icon Path"
+                        fieldLabel="Youtube Path"
+                        name="./youtube"
+                        xtype="textfield"/>
+                </items>
+            </socialicons>
+        </items>
+    </items>
+</jcr:root>

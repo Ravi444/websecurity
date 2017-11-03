@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="websitesecurity.core.utilities.URLMappingConfigFactoryService">
+        <implementation class="websitesecurity.core.utilities.URLMappingConfigFactoryService"/>
+        <service servicefactory="false">
+            <provide interface="websitesecurity.core.utilities.URLMappingConfigFactoryService"/>
+        </service>
+        <property name="service.description" value="Symantec Dispatcher URL Mapping Configuration"/>
+        <property name="service.vendor" value="Symantec"/>
+        <property name="urlPattern">
+            default
+            /es/mx/
+            /pt/br/
+            /fr/ca/
+            /en/uk/
+            /fr/fr/
+            /de/de/
+            /en/ca/
+            /en/aa/
+            /ja/jp/
+            /zh/cn/
+            /ko/kr/
+            /en/au/
+            /en/hk/
+            /en/in/
+            /en/sg/
+        </property>
+        <property name="folderPath">
+            /content/symantec/english/en/
+            /content/symantec/spanish/es_mx/
+            /content/symantec/portuguese/pt_br/
+            /content/symantec/french/fr_ca/
+            /content/symantec/english/en_gb/
+            /content/symantec/french/fr_fr/
+            /content/symantec/german/de_de/
+            /content/symantec/english/en_ca/
+            /content/symantec/english/en_aa/
+            /content/symantec/japanese/jp_ja/
+            /content/symantec/simplifiedchinese/cn_zh/
+            /content/symantec/korean/ko_kr/
+            /content/symantec/english/en_au/
+            /content/symantec/english/en_hk/
+            /content/symantec/english/en_in/
+            /content/symantec/english/en_sg/
+        </property>
+        <property name="service.pid" value="websitesecurity.core.utilities.URLMappingConfigFactoryService"/>
+        <reference name="mSlingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindMSlingSettingsService" unbind="unbindMSlingSettingsService"/>
+    </scr:component>
+</components>

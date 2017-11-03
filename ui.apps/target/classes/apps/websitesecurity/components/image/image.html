@@ -1,0 +1,18 @@
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='custommultifieldfield'}"/>
+
+</div>
+ <!-- <div data-sly-test="${!author}">
+  	 
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='header'}"/>
+</div>-->
+
+
+<div class="hidden-xs hidden-sm hidden-md">
+	<sly data-sly-test="${properties.imageReference != NULL}">
+		<img src="${properties.imageReference}" width="385" height="486" title="${properties.imgtitle}" alt="${properties.alternatetext}"/>
+	</sly>
+	<sly data-sly-test="${properties.imageReference == NULL}">
+		<img alt="${properties.alternatetext}"/>
+	</sly>
+</div>

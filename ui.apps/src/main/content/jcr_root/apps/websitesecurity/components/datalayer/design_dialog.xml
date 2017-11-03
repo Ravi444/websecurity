@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <custom
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Acronyms - Product"
+                maxItems="{Long}15"
+                name="./acro"
+                xtype="multifield">
+                <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="multifieldpanel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldDescription="Full Product Name (No Typos please!)"
+                            fieldLabel="Long Name"
+                            key="title"
+                            width="200"
+                            xtype="textfield"/>
+                        <abbr
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            fieldDescription="Acronym (Abbreviation) in CAPS -  No dots please! "
+                            fieldLabel="Acronym"
+                            key="abbr"
+                            width="200"
+                            xtype="textfield"/>
+                    </items>
+                </fieldConfig>
+            </custom>
+        </items>
+    </items>
+</jcr:root>

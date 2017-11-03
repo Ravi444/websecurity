@@ -1,0 +1,319 @@
+<sly data-sly-test ="${properties.seoselection == 'Yes'}"> 
+<sly data-sly-test.scheme="${request.scheme}"/>
+<sly data-sly-test.servername="${request.serverName}"/>
+<sly data-sly-test.serverport="${request.serverPort}"/>
+<sly data-sly-test.domain="${scheme}://${servername}"/>
+<sly data-sly-test.val="${request.requestURI}"/>
+<sly data-sly-test.URL="${domain}${val}"/>
+<sly data-sly-test.path="${currentPage.path}"/>
+
+<sly data-sly-use.seodata="websitesecurity.core.utilities.SeoIntegration">
+<sly data-sly-test.count="${seodata.country}">
+<sly data-sly-test.lang="${seodata.language}">
+<link rel="alternate" href="${currentPage.path}.html" hreflang="${lang}-${count}" />
+</sly>
+</sly>
+
+<sly data-sly-test.logo="${seodata.logoValues}"></sly>
+<ul data-sly-list.key="${seodata.videoValue}">
+<sly data-sly-test="${key == 'thumbnail'}">
+<sly data-sly-test.thumbnailValue="${seodata.videoValue[key]}"/>
+<sly data-sly-test ="${thumbnailValue == 'NULL'}"
+<sly data-sly-test.thumbnail="${thumbnailValue}">
+</sly>
+<sly data-sly-test ="${thumbnailValue != 'NULL'}"
+<sly data-sly-test.thumbnail="${thumbnailValue}">
+</sly>
+</sly>
+
+<sly data-sly-test="${key == 'title'}">
+<sly data-sly-test.titleValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'creadted'}">
+<sly data-sly-test.creadtedValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'description'}">
+<sly data-sly-test.descriptionValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'embedCode'}">
+<sly data-sly-test.embedCodeValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'vendor'}">
+<sly data-sly-test.vendorValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'alttext'}">
+<sly data-sly-test.alttextValue="${seodata.videoValue[key]}"/>
+</sly>
+<sly data-sly-test="${key == 'duration'}">
+<sly data-sly-test.durationValue="${seodata.videoValue[key]}"/>
+</sly>
+</ul>
+</sly>
+
+<style>
+ol { list-style-type: none;}
+ul { list-style-type: none;}
+</style>
+
+<sly data-sly-test = "${currentPage.title == 'Secure Site Pro EV'}" >
+<script data-schema="WebSite" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+"isBasedOn": 
+ {
+"@type": "Product",
+"name": "${currentPage.pageTitle @ context="scriptString"}",
+"description": "${currentPage.description @ context="scriptString"}",
+"brand": 
+{
+"@type": "Thing",
+"name": "Symantec"
+},
+"offers": 
+{
+"@type": "Offer",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"seller":
+{
+"@type": "Organization",
+"name": "Symantec Website Security"
+}
+}
+  }
+  }
+</script>
+</sly>
+
+<sly data-sly-test = "${currentPage.title == 'Secure Site Pro'}" >
+<script data-schema="WebSite" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+"isBasedOn": 
+ {
+"@type": "Product",
+"name": "${currentPage.pageTitle @ context="scriptString"}",
+"description": "${currentPage.description @ context="scriptString"}",
+"brand": 
+{
+"@type": "Thing",
+"name": "Symantec"
+},
+"offers": 
+{
+"@type": "Offer",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"seller":
+{
+"@type": "Organization",
+"name": "Symantec Website Security"
+}
+}
+  }
+  }
+</script>
+</sly>
+
+<sly data-sly-test = "${currentPage.title == 'Secure Site with EV'}" >
+<script data-schema="WebSite" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+"isBasedOn": 
+ {
+"@type": "Product",
+"name": "${currentPage.pageTitle @ context="scriptString"}",
+"description": "${currentPage.description @ context="scriptString"}",
+"brand": 
+{
+"@type": "Thing",
+"name": "Symantec"
+},
+"offers": 
+{
+"@type": "Offer",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"seller":
+{
+"@type": "Organization",
+"name": "Symantec Website Security"
+}
+}
+  }
+  }
+</script>
+</sly>
+
+<sly data-sly-test = "${currentPage.title == 'Secure Site Wildcard'}" >
+<script data-schema="WebSite" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+"isBasedOn": 
+ {
+"@type": "Product",
+"name": "${currentPage.pageTitle @ context="scriptString"}",
+"description": "${currentPage.description @ context="scriptString"}",
+"brand": 
+{
+"@type": "Thing",
+"name": "Symantec"
+},
+"offers": 
+{
+"@type": "Offer",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"seller":
+{
+"@type": "Organization",
+"name": "Symantec Website Security"
+}
+}
+  }
+  }
+</script>
+</sly>
+
+<sly data-sly-test = "${currentPage.title == 'Secure Site'}" >
+<script data-schema="WebSite" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+"isBasedOn": 
+ {
+"@type": "Product",
+"name": "${currentPage.pageTitle @ context="scriptString"}",
+"description": "${currentPage.description @ context="scriptString"}",
+"brand": 
+{
+"@type": "Thing",
+"name": "Symantec"
+},
+"offers": 
+{
+"@type": "Offer",
+"priceCurrency": "USD",
+"availability": "https://schema.org/InStock",
+"seller":
+{
+"@type": "Organization",
+"name": "Symantec Website Security"
+}
+}
+}
+}
+</script>
+</sly>
+
+
+
+
+<sly data-sly-test = "${currentPage.title == 'Homepage'}">
+
+<script data-schema="Organization" type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"name": "Symantec Website Security",
+ "url": "https://www.websecurity.symantec.com",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "${path @ context="scriptString"}/search.html?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+
+
+<script data-schema="Organization" type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name" : "Symantec Website Security",
+ "url": "https://www.websecurity.symantec.com",
+ "logo": "${logo @ context="scriptString"}",
+ 
+"address":
+{ "@type": "postaladdress", "streetAddress": "[487 East Middlefield Road]", "addresslocality": "[mountain view]", "addressregion": "[california]", "addresscountry": "[united states]", "postalCode": "[94043]" }
+,
+"telephone": "[(650) 527-8000]",
+"faxNumber": "[(331) 426-85301]",
+"email": "[enterprise-sslsupport@symantec.com]"
+}
+</script>
+
+
+<div itemscope itemtype="https://schema.org/Organization">
+<sly data-sly-use.seodata2="websitesecurity.core.utilities.SeoIntegration">
+<ul data-sly-list.key1="${seodata2.getSocialValues}">
+<li>
+<meta itemprop="sameAs" href="${seodata2.socialValues[key1]}">
+</li>
+</ul>
+</sly>  
+</div>
+
+<div itemscope itemtype="https://schema.org/VideoObject">
+  <sly data-sly-test = "${vendorValue == 'youtube'}">
+  <meta itemprop="name" content="${titleValue}"/>
+  <meta itemprop="description" content="${descriptionValue}"/>
+  <meta itemprop="thumbnailUrl" src="${thumbnail}" alt="${alttextValue}" />
+  <meta itemprop="uploadDate" content="${creadtedValue}" />
+  <meta itemprop="duration" content="${durationValue}" />
+  <link itemprop="embedUrl" href="${embedCodeValue}" />
+  </sly>
+  <sly data-sly-test = "${vendorValue == 'ustudio'}">
+  <meta itemprop="name" content="${titleValue}"/>
+  <meta itemprop="description" content="${descriptionValue}"/>
+  <meta itemprop="thumbnailUrl" src="${thumbnail}" alt="${alttextValue}" />
+  <meta itemprop="uploadDate" content="${creadtedValue}" />
+  <meta itemprop="duration" content="${durationValue}" />
+  <link itemprop="embedUrl" href="${embedCodeValue}" />
+  </sly>
+  <sly data-sly-test = "${vendorValue == 'brightcove'}">
+  <meta itemprop="name" content="${titleValue}"/>
+  <meta itemprop="description" content=""/>
+  <meta itemprop="thumbnailUrl" src="${thumbnail}" alt="${alttextValue}" />
+  <meta itemprop="uploadDate" content="${creadtedValue}"/>
+  <meta itemprop="duration" content="${durationValue}" />
+  <link itemprop="embedUrl" href="" />
+  </sly>
+
+</div>
+</sly>
+
+<sly data-sly-test = "${currentPage.title != 'Homepage'}">
+<sly data-sly-use.breadcrumb="${'websitesecurity.core.utilities.BreadcrumbUse'}">
+<sly data-sly-use.homedata="websitesecurity.core.utilities.SeoIntegration">
+<sly data-sly-test.baseTitle="${homedata.getContenttitle}">
+<sly data-sly-test.basePath="${homedata.getBasepath}">
+<ol data-sly-test="${breadcrumb.navList}" data-sly-list.element="${breadcrumb.navList}" vocab="https://schema.org/" typeof="BreadcrumbList">
+<li data-sly-test="${!elementList.last}" property="itemListElement" typeof="ListItem">
+<sly data-sly-test="${elementList.first}" property="itemListElement" typeof="ListItem">
+	<a property="item" typeof="WebPage" href="${domain}${basePath}.html">
+	<meta property="name" content=${baseTitle}></a>
+    <meta property="position" content="${elementList.count}">
+</sly>
+<sly data-sly-test="${!elementList.first}" property="itemListElement" typeof="ListItem">
+	<a property="item" typeof="WebPage" href="${domain}${element.path}.html">
+	<meta property="name" content=${element.title}></a>
+    <meta property="position" content="${elementList.count}">
+</sly>		
+</li>
+<li data-sly-test="${elementList.last}" property="itemListElement" typeof="ListItem">
+<a property="item" typeof="WebPage" href="${domain}${element.path}.html">
+<meta property="name" content=${element.title}></a>
+<meta property="position" content="${elementList.count}"></li>
+</ol>
+</sly>
+</sly>    
+ </sly>
+</sly>
+</sly>
+<!--SEO Implementation End--> 
+</sly>

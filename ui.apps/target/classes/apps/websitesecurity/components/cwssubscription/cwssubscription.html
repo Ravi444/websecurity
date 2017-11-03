@@ -1,0 +1,22 @@
+<!-- *********************************** CWS Subscription Starts ********************************* -->
+
+<div class="container-fluid subscription-outer-space  ${properties.cwsouterspace}">
+	<div class="container">
+		<div class="c-subscription clearfix ${properties.cwssubscriptionbgcolor}">
+			<div class="outer">
+				<h2>${properties.cwssubscriptiontitle}</h2>
+				<p>${properties.cwssubscriptiondescription}</p>
+			</div>
+  			<div class="clearfix visible-xs"></div>
+			<div class="right_outerSubs">
+    			<sly data-sly-test="${properties.cwssubscriptionlinkvalue != NULL && properties.cwssubscriptionlinkkey != NULL}">
+    				<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/cwssubscription/js/cwssubscriptionlinks.js">
+    					<a class="contact_button" href="${object.path}" target="${object.target}">${object.text}</a>
+    				</sly>
+    			</sly>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- *********************************** CWS Subscription Ends ********************************* -->

@@ -1,0 +1,34 @@
+
+/* widgets */
+#CQ .customwidget-label {
+    margin-top:10px;
+    margin-right:5px;
+    font-weight:lighter;
+    font-size:15px;
+}
+
+#CQ .customwidget-label-2 {
+    margin-top:10px;
+    margin-right:5px;
+    margin-left:20px;
+}
+
+#CQ .customwidget-1 {
+    width:400px;
+    margin-top:4px;
+    margin-right:10px;
+}
+
+#CQ .customwidget-2 {
+    /*width:400px;*/
+    margin-top:0px;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+#CQ .customwidget-3 {
+    width:300px;
+    margin-top:4px;
+    margin-right:10px;
+    margin-left:5px;
+}

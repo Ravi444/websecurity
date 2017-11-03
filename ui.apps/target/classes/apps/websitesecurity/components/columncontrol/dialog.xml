@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    modal="{Boolean}true"
+    title="Column Control"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <colctrl
+                jcr:primaryType="cq:Widget"
+                title="Column control"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <coltype
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        editable="true"
+                        fieldDescription="select the type of column control to generate. Note: once columns are generated they cannot be re-generated."
+                        fieldLabel="Column type"
+                        name="./coltype"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <col-12
+                                jcr:primaryType="nt:unstructured"
+                                text="1 column (100)"
+                                value="12-col"/>
+                            <col-9-3
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column (75-25)"
+                                value="9-3-col"/>
+                            <col-3-9
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column (25-75)"
+                                value="3-9-col"/>
+                            <col-8-4
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column (60-30)"
+                                value="8-4-col"/>
+                            <col-4-8
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column (30-60)"
+                                value="4-8-col"/>
+                            <col-6-6
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column (50-50)"
+                                value="6-6-col"/>
+                            <col-6-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Column (50-25-25)"
+                                value="6-3-3-col"/>
+                            <col-3-6-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Column (25-50-25)"
+                                value="3-6-3-col"/>
+                            <col-3-3-6
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Column (25-25-50)"
+                                value="3-3-6-col"/>
+                            <col-4-4-4
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Column (33-33-33)"
+                                value="4-4-4-col"/>
+                            <col-3-3-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="4 Column (25-25-25-25)"
+                                value="3-3-3-3-col"/>
+                            <col-2-2-2-2
+                                jcr:primaryType="nt:unstructured"
+                                text="5 Columns (20-20-20-20-20)"
+                                value="2-2-2-2-col"/>
+                            <header-col-3-3-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="Header 4 Column (25-25-25-25)"
+                                value="3-3-3-3-col-header"/>
+                            <header-col-6-6
+                                jcr:primaryType="nt:unstructured"
+                                text="Header 2 Column (50-50)"
+                                value="6-6-col-header"/>
+                            <containerEx-col-6-6
+                                jcr:primaryType="nt:unstructured"
+                                text="Container Extension Column (50-50)"
+                                value="6-6-col-containerEx"/>
+                        </options>
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </coltype>
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Background Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient grad1-sec text-center"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_bg"/>
+                        </options>
+                    </color>
+                </items>
+            </colctrl>
+        </items>
+    </items>
+</jcr:root>

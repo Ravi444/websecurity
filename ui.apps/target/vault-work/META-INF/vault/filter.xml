@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/websitesecurity">
+        <exclude pattern="/apps/websitesecurity/install" />
+    </filter>
+    <filter root="/apps/sling" />
+    <filter root="/etc/designs/websitesecurity"/>
+	<filter root="/etc/tags/Analytics"/> 
+	<filter root="/etc/tags/taxonomy"/>
+	<filter root="/etc/tags/GSATags"/>
+</workspaceFilter>

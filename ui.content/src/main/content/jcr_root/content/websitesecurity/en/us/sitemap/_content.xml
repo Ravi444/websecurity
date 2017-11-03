@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-02-17T06:58:08.901-07:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-02-21T07:18:39.531-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:tags="[Analytics:site-section/websitesecurity,Analytics:site-sub-section/sitemap,Analytics:custom-name/home]"
+        cq:template="/apps/websitesecurity/templates/sitemappage"
+        jcr:description="Website Security Sitemap"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sitemap"
+        jcr:uuid="9a457b39-1b28-4c70-b628-81ee9abc9dc5"
+        sling:resourceType="/apps/websitesecurity/components/page/sitemappage"
+        canlink="https://www.websitesecurity.symantec.com/sitemap"
+        keywords="sitemap, website security"
+        pageTitle="Sitemap | Website Security | Symantec">
+        <par1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <containercomponent
+                jcr:created="{Date}2016-11-28T00:41:34.635-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-10T17:51:23.285+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/containersection"
+                button="no"
+                color="blue-gradient3 text-center"
+                component="sitemapcomponent"
+                innerborder="No"
+                innercolor="none"
+                linkborder="No"
+                linkbordercolor="border_yellow"
+                linkcolor="sky_blue_font"
+                margintop="nospacingmargin"
+                spacingbottom="nospacingpaddingbottom"
+                spacingtop="nospacingpaddingtop"
+                subtitle="Site Map"
+                subtitlecolor="white_font"/>
+            <sitemapcontainer
+                jcr:created="{Date}2017-01-05T12:20:44.434+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-05T13:48:46.862+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/sitemapcontainer"
+                coltype="4-4-4-col"
+                title1="Products">
+                <col-4-4-4-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:24:56.655+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-12T13:52:30.146+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Help Me Choose Wizard"
+                        titlepath="/content/SSLWebsiteSecurity/en/en-us/homepage"/>
+                    <sitemaplinks_339897575
+                        jcr:created="{Date}2017-01-05T12:42:26.161+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T12:53:35.369+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Feature/Product1&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product2&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product3&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product4&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product5&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product6&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Feature/Product7&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="Complete Website Security"/>
+                </col-4-4-4-1>
+                <col-4-4-4-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:54:08.691+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-12T14:07:24.774+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Secure Site&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site Pro&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site with EV&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site Pro with EV&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="SSL Certificates"
+                        titlepath="#"/>
+                    <sitemaplinks_291477455
+                        jcr:created="{Date}2017-01-05T12:56:54.035+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-13T13:45:16.105+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Extended Validation&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Microsoft Authenticode&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Java&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Microsoft Office &amp; VBA&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="Code Signing Certificates"/>
+                </col-4-4-4-2>
+                <col-4-4-4-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:58:29.695+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-19T15:17:40.474+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Adobe AIR&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Windows Phone&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Windows Phone Private Enterprise&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Android&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Authentic Document IDs for Brew&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        sitemap_spacingtop="sitemap_top"/>
+                    <sitemaplinks_906795504
+                        jcr:created="{Date}2017-01-05T12:59:35.729+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T12:59:52.219+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Norton Shopping Guarantee"/>
+                </col-4-4-4-3>
+            </sitemapcontainer>
+            <sitemapcontainer_1902886061
+                jcr:created="{Date}2017-01-05T13:01:43.727+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-05T13:02:12.931+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/sitemapcontainer"
+                coltype="4-4-4-col"
+                title1="Buy/Renew">
+                <col-4-4-4-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:24:56.655+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:03:11.867+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Secure Site&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site Pro&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site with EV&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site Prod with EV&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Secure Site Wildcard&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="SSL/TLS Certificates"/>
+                    <sitemaplinks_339897575
+                        jcr:created="{Date}2017-01-05T12:42:26.161+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:03:46.499+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="\{&quot;text&quot;:&quot;Secure App Service&quot;,&quot;url&quot;:&quot;#&quot;}"
+                        title1="Manage Code Signing Certificates"/>
+                </col-4-4-4-1>
+                <col-4-4-4-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:54:08.691+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:06:04.247+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Extended Validation&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Microsoft Authenticode&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Java&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Microsoft Office &amp; VBA&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Adobe Air&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Windows Phone&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Windows Phone Private Enterprise&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Android&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Authentic Document IDs for Brew&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="Code Signing Certificates"/>
+                </col-4-4-4-2>
+                <col-4-4-4-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T12:58:29.695+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:06:41.204+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Contact Sales"/>
+                    <sitemaplinks_906795504
+                        jcr:created="{Date}2017-01-05T12:59:35.729+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:06:55.103+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Compare Products"/>
+                    <sitemaplinks_16356900
+                        jcr:created="{Date}2017-01-05T13:07:08.036+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:07:18.238+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Expired Certificates"/>
+                </col-4-4-4-3>
+            </sitemapcontainer_1902886061>
+            <sitemapcontainer_695283389
+                jcr:created="{Date}2017-01-05T13:07:51.997+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-05T13:08:19.468+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/sitemapcontainer"
+                coltype="4-4-4-col"
+                title1="Support">
+                <col-4-4-4-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T13:08:29.015+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:09:14.271+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Support for Enterprise&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Support for Retail&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Support for Partner&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="Support by Category"/>
+                    <sitemaplinks_492866369
+                        jcr:created="{Date}2017-01-05T13:09:32.429+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:09:54.550+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Certificate Intelligence Center&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;SSL/TLS Certificates&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        title1="Suppirt by Product"/>
+                </col-4-4-4-1>
+                <col-4-4-4-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T13:10:04.768+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-19T15:38:53.793+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Code Signing Certificates&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Norton Shopping Guarantee&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        sitemap_spacingtop="sitemap_top"
+                        spacingtopsmalldesktop="sitemap_top_small"/>
+                    <sitemaplinks_1254903986
+                        jcr:created="{Date}2017-01-05T13:11:15.483+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-19T15:39:47.239+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        links="[{&quot;text&quot;:&quot;Support Tools&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Support Resources&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Support Alerts&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Support News&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        sitemap_spacingtop="siteamap_nospacingpaddingtop"
+                        spacingtopsmalldesktop="siteamap_nospacingpaddingtop_small"
+                        title1="Other Support"/>
+                </col-4-4-4-2>
+                <col-4-4-4-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <sitemaplinks
+                        jcr:created="{Date}2017-01-05T13:12:05.294+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-05T13:12:34.403+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/sitemaplinks"
+                        title1="Contact Support"/>
+                </col-4-4-4-3>
+            </sitemapcontainer_695283389>
+        </par1>
+        <image
+            jcr:lastModified="{Date}2017-02-17T06:58:08.890-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <headermain jcr:primaryType="nt:unstructured">
+            <headerpar1
+                jcr:lastModified="{Date}2017-01-18T17:18:49.111+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <iparsys_fake_par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/iparsys/par"/>
+            </headerpar1>
+        </headermain>
+        <contactus jcr:primaryType="nt:unstructured">
+            <contactus
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <contactus
+                    jcr:created="{Date}2017-02-02T12:48:00.034+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-02-02T12:50:55.285+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="websitesecurity/components/contactus"
+                    channelportid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    channelquestid="14A134B2-D11F-48C5-A599-F84A3BF179DD"
+                    channelstyleid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    chatbusinessrequirement="channel"
+                    codesigningportid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    codesigningquestid="587019B8-4A4D-4828-9CA4-0EC6B0B515A1"
+                    codesigningstyleid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    commercialportid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    commercialquestid="7513053D-949E-47CF-8E32-2DF92D1713F5"
+                    commercialstyleid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    displaylivechat="Yes"
+                    ecommerceportid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    ecommercequestid="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    ecommercestyleid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    email="test@symantec.com"
+                    emailtext="Email us"
+                    hostref="symctrust.ehosts.net"
+                    iconclass="[ico-c ico-s-facebook,ico-c ico-s-linkedin,ico-c ico-s-twitter,ico-c ico-s-youtube]"
+                    iconlink="[https://www.facebook.com/Symantec/,https://www.linkedin.com/company/symantec,https://twitter.com/symantec,https://www.youtube.com/user/symantec]"
+                    livechatlable="Live"
+                    nsgportid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    nsgquestid="6D366610-8D23-4DFA-B172-B9767FA0A42B"
+                    nsgstyleid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    numberofitems="4"
+                    phonenumber="1-800-721-3934"
+                    popupwindow="popuprequired"
+                    socialicontitle="Follow Us"
+                    title="Contact Us"
+                    unavailablepath="#"
+                    unavailabletext="Unavailable"/>
+            </contactus>
+        </contactus>
+    </jcr:content>
+</jcr:root>

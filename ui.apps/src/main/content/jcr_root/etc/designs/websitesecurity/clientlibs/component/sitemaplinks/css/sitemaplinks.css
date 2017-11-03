@@ -1,0 +1,47 @@
+.c-site-map{margin:0px; padding:0px; font-size:16px;}
+.c-site-map .site-map li{margin:0px 0px 0px 36px;}
+.c-site-map .site-map li .site-map li a{margin:4px 0px 5px 0px; display:table;}
+.c-site-map .sitemap_top{margin-top:30px;} 
+
+
+
+/*********************************************************************************
+Media Query section (min-width :992px) and (max-width :1200px)
+*********************************************************************************/
+@media only screen and (min-width :992px) and (max-width :1200px){
+.c-site-map .sitemap_top{margin-top:0px;} 
+.c-site-map .sitemap_top_small{margin-top:30px;}
+
+
+}
+
+
+
+/*********************************************************************************
+Media Query section (min-width :768px) and (max-width : 991px)
+*********************************************************************************/
+@media only screen and (min-width :768px) and (max-width : 991px)  {
+.c-site-map .sitemap_top{margin-top:0px;} 
+.c-site-map .site-map li{margin-bottom:0px;}
+.c-site-map .sitemap_top_small{margin-top:30px;}
+}
+
+
+
+/*********************************************************************************
+Media Query section (min-width : 480px) and (max-width : 767px)
+*********************************************************************************/
+@media only screen and (min-width : 480px) and (max-width : 767px)  {
+.c-site-map .sitemap_top{margin-top:0px;} 
+.c-site-map .site-map li .site-map li a{margin:4px 0px 0px 0px;}
+
+}
+
+
+/*********************************************************************************
+Media Query section (min-width : 320px) and (max-width : 479px)
+*********************************************************************************/
+@media only screen and (min-width : 320px) and (max-width : 479px)  {
+.c-site-map .sitemap_top{margin-top:0px;} 
+.c-site-map .site-map li .site-map li a{margin:4px 0px 0px 0px;}
+}

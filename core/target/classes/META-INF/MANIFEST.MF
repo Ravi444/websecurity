@@ -1,0 +1,89 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1501049414873
+Build-Jdk: 1.8.0_141
+Built-By: ranjan-ra
+Bundle-Description: Core bundle for websitesecurity
+Bundle-ManifestVersion: 2
+Bundle-Name: websitesecurity - Core
+Bundle-SymbolicName: websitesecurity.core
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: websitesecurity.core.helpmechoose;uses:="com.adobe.cq.si
+ ghtly,com.day.cq.search,javax.jcr,org.apache.sling.api.resource,org.slf
+ 4j,websitesecurity.core.models";version="1.0.0",websitesecurity.core.mo
+ dels;uses:="org.apache.sling.api.resource,org.apache.sling.commons.json
+ ";version="1.0.0",websitesecurity.core;version="2.0",websitesecurity.co
+ re.servlets;uses:="com.adobe.granite.xss,javax.servlet,org.apache.http.
+ client,org.apache.sling.api,org.apache.sling.api.resource,org.apache.sl
+ ing.api.servlets,org.apache.sling.settings,org.slf4j,websitesecurity.co
+ re.utilities";version="1.0.0",websitesecurity.core.utilities;uses:="com
+ .adobe.cq.sightly,com.day.cq.replication,com.day.cq.search,com.day.cq.t
+ agging,com.day.cq.wcm.api,javax.jcr,javax.jcr.query,org.apache.http.cli
+ ent,org.apache.sling.api,org.apache.sling.api.resource,org.apache.sling
+ .commons.json,org.apache.sling.settings,org.osgi.service.component,org.
+ slf4j,websitesecurity.core.models";version="1.0.0"
+Import-Package: com.adobe.cq.sightly;version="[2.5,3)",com.adobe.granite
+ .xss;version="[1.1,2)",com.day.cq.commons;version="[6.0,7)",com.day.cq.
+ dam.api;version="[1.16,2)",com.day.cq.replication;version="[6.1,7)",com
+ .day.cq.search;version="[1.2,2)",com.day.cq.search.result;version="[1.2
+ ,2)",com.day.cq.tagging;version="[5.8,6)",com.day.cq.wcm.api;version="[
+ 1.17,2)",com.day.cq.wcm.foundation;version="[5.20,6)",javax.jcr;version
+ ="[2.0,3)",javax.jcr.query;version="[2.0,3)",javax.servlet,javax.servle
+ t.http,org.apache.commons.lang,org.apache.commons.lang3;version="[3.0,4
+ )",org.apache.commons.lang3.exception;version="[3.0,4)",org.apache.http
+ ,org.apache.http.client,org.apache.http.client.methods,org.apache.http.
+ impl.client,org.apache.http.util,org.apache.jackrabbit.api.security.use
+ r;version="[2.4,3)",org.apache.sling.api;version="[2.3,3)",org.apache.s
+ ling.api.resource;version="[2.9,3)",org.apache.sling.api.scripting;vers
+ ion="[2.2,3)",org.apache.sling.api.servlets;version="[2.1,3)",org.apach
+ e.sling.commons.json;version="[2.0,3)",org.apache.sling.commons.osgi;ve
+ rsion="[2.4,3)",org.apache.sling.servlets.post;version="[2.3,3)",org.ap
+ ache.sling.settings;version="[1.3,2)",org.osgi.service.component;versio
+ n="[1.1,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="websitesecurity.core.helpmechoose.HMCRecommendationService";se
+ rvice.vendor=Adobe,osgi.service;effective:=active;objectClass="websites
+ ecurity.core.utilities.ReadService";service.vendor=Adobe,osgi.service;e
+ ffective:=active;objectClass="websitesecurity.core.utilities.URLMapping
+ ConfigFactoryService";service.description="Symantec Dispatcher URL Mapp
+ ing Configuration";service.vendor=Symantec,osgi.service;effective:=acti
+ ve;objectClass="javax.servlet.Servlet";service.description="Website Sec
+ urity GSA Global Search";service.vendor=Symantec,osgi.service;effective
+ :=active;objectClass="websitesecurity.core.utilities.Search";service.de
+ scription=" Product A-Z Search";service.vendor=Symantec,osgi.service;ef
+ fective:=active;objectClass="websitesecurity.core.utilities.GSASearchCo
+ nfigFactoryService";service.description="Website Security GSA Global Se
+ arch Configuration";service.vendor=Symantec;GSA_HOST="";PARTNER_GSA_HOS
+ T="";CLIENT=websec_en_US;SITE=websec_en_US;MAX_RESULTS=100;RESULTS_PER_
+ PAGE=10,osgi.service;effective:=active;objectClass="websitesecurity.cor
+ e.utilities.CarouselCountService";service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =com.day.cq.search.QueryBuilder)",osgi.service;effective:=active;filter
+ :="(objectClass=com.adobe.granite.xss.XSSAPI)",osgi.service;effective:=
+ active;filter:="(objectClass=websitesecurity.core.utilities.Search)",os
+ gi.service;effective:=active;filter:="(objectClass=org.apache.sling.set
+ tings.SlingSettingsService)",osgi.service;effective:=active;filter:="(o
+ bjectClass=websitesecurity.core.utilities.GSASearchConfigFactoryService
+ )",osgi.service;effective:=active;filter:="(objectClass=websitesecurity
+ .core.utilities.URLMappingConfigFactoryService)",osgi.service;effective
+ :=active;filter:="(objectClass=org.apache.sling.api.resource.ResourceRe
+ solverFactory)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/websitesecurity.core.servlets.ProdcutAZSearc
+ hServlet.xml,OSGI-INF/websitesecurity.core.utilities.GSASearchConfigFac
+ toryService.xml,OSGI-INF/websitesecurity.core.helpmechoose.HMCRecommend
+ ationData.xml,OSGI-INF/websitesecurity.core.servlets.OverlayServlet.xml
+ ,OSGI-INF/websitesecurity.core.servlets.VideoDataServlet.xml,OSGI-INF/w
+ ebsitesecurity.core.servlets.GlobalGSASearchServlet.xml,OSGI-INF/websit
+ esecurity.core.utilities.CarouselImageTextTitleData.xml,OSGI-INF/websit
+ esecurity.core.servlets.MailServlet.xml,OSGI-INF/websitesecurity.core.s
+ ervlets.CategoriesServlet.xml,OSGI-INF/websitesecurity.core.servlets.Fi
+ lterCategoryChilds.xml,OSGI-INF/websitesecurity.core.utilities.Search.x
+ ml,OSGI-INF/websitesecurity.core.servlets.CampaignServlet.xml,OSGI-INF/
+ websitesecurity.core.utilities.URLMappingConfigFactoryService.xml,OSGI-
+ INF/websitesecurity.core.servlets.HmcProductdata.xml,OSGI-INF/websitese
+ curity.core.servlets.FilterCategoryParent.xml,OSGI-INF/websitesecurity.
+ core.servlets.UseCaseFilterServlet.xml,OSGI-INF/websitesecurity.core.ut
+ ilities.DatalayerTagsFetching.xml
+Sling-Model-Packages: websitesecurity.core
+Tool: Bnd-2.3.0.201405100607

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    title="Single Image"
+    width="1000"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Image &amp; Text "
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imgalttext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter the Title for image"
+                    fieldLabel="Image Title"
+                    maxLength="20"
+                    name="./imgtitle"
+                    xtype="textfield"/>
+                <alternatetext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image"
+                    fieldLabel="Alternate Text for Image"
+                    maxLength="40"
+                    name="./alternatetext"
+                    xtype="textfield"/>
+            </items>
+        </list>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fieldLabel="Logo Image"
+            fileNameParameter="./imageName"
+            fileReferenceParameter="./imageReference"
+            mapParameter="./imageMap"
+            name="./image"
+            rotateParameter="./imageRotate"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage">
+            <listeners jcr:primaryType="nt:unstructured"/>
+        </image>
+    </items>
+</jcr:root>

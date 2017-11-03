@@ -1,0 +1,6 @@
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-20 19:18:10.052
+!MESSAGE Manifest websitesecurity:websitesecurity.it.tests:bundle:1 : Unused Private-Package instructions, no such package(s) on the class path: [!*]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-20 19:18:10.052
+!MESSAGE Manifest websitesecurity:websitesecurity.it.tests:bundle:1 : The JAR is empty: The instructions for the JAR named websitesecurity.it.tests did not cause any content to be included, this is likely wrong

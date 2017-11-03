@@ -1,0 +1,102 @@
+/*TextComponent*/
+
+
+/*TextComponent Outer*/
+.c-textcomponent{display:block; word-wrap: break-word;}
+.c-textcomponent .fixedWidth{width:63%; display:block;}
+.c-textcomponent .boxContainerSec{padding:40px 10px 35px 20px; text-align:left; min-height:261px;}
+
+/*TextComponent Heading*/
+.c-textcomponent .boxContainerSec h6, .boxContainerSec h2, .boxContainerSec1 h6, .boxContainerSec1 h2{padding-bottom:25px;}
+.c-textcomponent .boxContainerSec h6{font-size:16px; line-height:18px; font-weight:600;}
+/*.c-textcomponent .boxContainerSec h2{font-size:26px; line-height:28px; padding-top:0; min-height:108px;}*/
+.c-textcomponent .boxContainerSec h2{font-size:26px; line-height:28px; padding-top:0; min-height:137px;}
+
+/*TextComponent Paragraph*/
+.c-textcomponent .boxContainerSec p, .boxContainerSec1 p{padding:0;}
+.c-textcomponent .boxContainerSec p a, .boxContainerSec1 p a{color:#fff; font-size:14px; text-transform:uppercase; font-weight:700; padding:0;}
+.c-textcomponent .boxContainerSec p a:hover{color:#15ccff;}
+
+/*TextComponent Images Section*/
+.c-textcomponent .image-sec-none{display:none;}
+.c-textcomponent .image-sec{display:block;}
+.c-textcomponent .boxContainerSec.image-sec{padding:0;}
+
+/*TextComponent BlueGradientBox*/
+.blueGradientBox{
+background: #00addd; /* Old browsers */
+background: /*-moz-linear-gradient(left,  #00619e 0%, #7db9e8 100%);  FF3.6-15 */ -moz-linear-gradient(45deg, #00619e, #00addd);
+background: /*-webkit-linear-gradient(left,  #00619e 0%,#7db9e8 100%);  Chrome10-25,Safari5.1-6 */-webkit-linear-gradient(45deg, #00619e, #00addd);
+background: /*linear-gradient(to right,  #00619e 0%,#7db9e8 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */linear-gradient(45deg, #00619e, #00addd);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e',GradientType=1 ); /* IE6-9 */
+}
+
+
+.c-textcomponent .textInnerSpacing{padding:40px 10px 35px 25px; min-height:290px;}
+.paddingbottom{padding:80px 0 80px 0;}
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 1200px)
+
+*********************************************************************************/
+@media only screen and (max-width : 1200px) {
+.c-textcomponent .image-sec-none{display:block;}
+.c-textcomponent .image-sec{display:none;}
+.c-textcomponent .boxContainerSec{min-height:307px;}
+}
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 991px)
+
+*********************************************************************************/
+@media only screen and (max-width : 991px) {
+
+/*TextComponent Outer*/
+.c-textcomponent .boxContainerSec{min-height:233px; padding:22px 42px 25px 25px;}
+.tabSpacing{padding-right:0;}
+.left-tabSpacing{padding-left:0;}
+.left-tabSpacing{padding-right:0;}
+
+/*TextComponent Images Section*/
+.c-textcomponent .firstBoxTab, .image-sec{margin-bottom:30px;}
+.c-textcomponent .image-sec-none{display:none;}
+.c-textcomponent .image-sec{display:block;}
+
+.c-textcomponent .tabSpacing{padding-right:0;padding-left:0;}
+
+
+
+}
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 767px)
+
+*********************************************************************************/
+@media only screen and (max-width : 767px) {
+
+/*TextComponent Outer*/
+.c-textcomponent .boxContainerSec{padding:22px 10px 25px 25px;  min-height:auto; margin-bottom:15px;}
+
+/*TextComponent Heading*/
+.c-textcomponent .boxContainerSec h6, .boxContainerSec h2, .boxContainerSec1 h6, .boxContainerSec1 h2{padding-bottom:20px;}
+.c-textcomponent .boxContainerSec h6{font-size:16px; line-height:18px;}
+.c-textcomponent .boxContainerSec h2{font-size:22px; line-height:28px; padding-top:0; min-height:auto;}
+
+/*TextComponent Paragraph*/
+.c-textcomponent .boxContainerSec p a, .c-textcomponent .boxContainerSec1 p a{color:#fff; font-size:12px;}
+
+/*TextComponent Images Section*/
+.c-textcomponent .image-sec-none{display:block;}
+.c-textcomponent .image-sec{display:none;}
+
+
+.c-textcomponent .mobileSpacing{padding:0 15px;}
+}

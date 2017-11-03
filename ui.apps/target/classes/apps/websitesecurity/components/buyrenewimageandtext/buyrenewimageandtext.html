@@ -1,0 +1,32 @@
+
+
+
+<!-- *********************************** Buy Renew Image and Text Starts ********************************* -->
+<div class="container-fluid ${properties.innercolor}">
+  <div class="bg-color c-buyrenew_imageandtext">
+    <div class="container buy-renew-videoC">
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+          <div class="video-content">
+            <h5 class="${properties.titlecolor}">${properties.title1}</h5>
+            <h2 class="${properties.subtitlecolor}">${properties.subtitle}</h2>
+                <div class="contentPara">
+					<p class= "${properties.descriptioncolor}">${properties.desc @ context = 'html'}</p>
+				</div>
+				<p class="viewAll">
+    			<sly data-sly-test="${properties.linkvalue != NULL && properties.linktitle != NULL}">
+    				<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/buyrenewimageandtext/js/buyrenewimageandtextlink.js">
+    					<a href="${object.path}" target="${object.target}">${object.text}</a>
+    				</sly>
+    			</sly>
+    			</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 norton-img-mob" data-sly-test="${properties.imageReference !=NULL}">
+          <div class="video"><img src="${properties.imageReference}" class="img-responsive"  alt="${properties.alternatetext}" title="${properties.imgtitle}"  /></div>
+        </div>
+      </div>
+	</div>
+  </div>
+</div>
+<!-- *********************************** Buy Renew Image and Text Ends ********************************* -->

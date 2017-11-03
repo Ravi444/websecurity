@@ -1,0 +1,200 @@
+<!-- *******************************************Video Container Starts********************************************************************************************** -->
+<div class="container-fluid ${properties.imageouterspace}  video-container ${properties.innercolor}">
+	<div class="bg-color">
+		<div class="container ${properties.requiredbgpadding}">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nospacingleft removeRightSpace">
+				<!-- *************Video Content Link alignments Starts****************************************************************** -->
+				<div class="video-content">
+					<sly data-sly-test="${properties.title1 != NULL}">
+						<h5 class="${properties.titlecolor}">${properties.title1}</h5>
+					</sly>
+					<h2 class="${properties.subtitlecolor}">${properties.subtitle}</h2>
+					<div class="contentPara">
+						<p class="${properties.descriptioncolor}">${properties.desc @ context = 'html'}</p>
+					</div>
+					<div class="colmLinkOuter no-left-space clearfix">
+						<sly data-sly-test="${properties.bullets == 'Bulleted_Links'}">
+							<div class="colmLink">
+								<sly data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+									<ul class="security" data-sly-list.key="${cpt.listData}">
+										<li><a class="${properties.linkcolor}" href="${key.path}" target="${key.target}" >${key.title}</a></li>
+									</ul>
+								</sly>
+							</div>
+						</sly>
+						<sly data-sly-test="${properties.bullets == 'Bulleted_Links'}">
+							<div class="colmLink">
+								<sly data-sly-use.cpt="websitesecurity.core.utilities.ImageAndTextRightLinks">
+									<ul class="security" data-sly-list.key="${cpt.listData}">
+										<li><a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a></li>
+									</ul>
+								</sly>
+							</div>
+						</sly>
+					</div>
+					<!-- *************Video Content Link alignments Starts****************************************************************** -->
+					<sly data-sly-test="${properties.bullets == 'Bulleted_Text'}">
+						<div class="colmLinkOuter clearfix">
+							<div class="colmLink">
+								<ul class="${properties.bulletcolor} left-class" data-sly-list.lefttext="${properties.multifiledLeftText}">
+									<li><span>${lefttext}</span></li>
+								</ul>
+							</div>
+							<div class="colmLink ipad-right">
+								<ul class="${properties.bulletcolor} right-class" data-sly-list.righttext="${properties.multifiledRightText}">
+									<li><span>${righttext}</span></li>
+								</ul>
+							</div>
+							<div class="column_fullwidth">
+								<ul class="${properties.bulletcolor} left-class" data-sly-list.centertext="${properties.centerbulletedtext}">
+									<li><span>${centertext}</span></li>
+								</ul>
+							</div>
+						</div>
+					</sly>
+					<!-- *************Video Content Link alignments Ends****************************************************************** -->
+				</div>
+				<!-- *************Video Content Ends****************************************************************** -->
+
+				<!-- *************Non_Bulleted_Links Starts****************************************************************** -->
+				<sly data-sly-test="${properties.bullets == 'Non_Bulleted_Links'}">
+					<sly data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+						<p class="more-link multiple-links" data-sly-list.key="${cpt.listData}">
+							<a class="datalist" href="${key.path}" target="${key.target}" >${key.title}</a>
+						</p>
+					</sly>
+				</sly>
+				<!-- *************Non_Bulleted_Links Ends****************************************************************** -->
+
+				<!-- *************Border Link Not Required Starts****************************************************************** -->
+				<sly data-sly-test="${properties.linkborder1 == 'No'}">
+					<p class="more-link ">
+                        <sly data-sly-test="${properties.linkvalue != NULL && properties.linktitle != NULL}">
+							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/imageandtext/js/imageandtextlinkchecker.js">
+    							<a href="${object.path}" target="${object.target}">${object.text}</a>
+    						</sly>
+    					</sly>
+					</p>
+				</sly>
+				<!-- *************Border Link Not Required Ends****************************************************************** -->
+
+				<!-- *************Border Link Required Starts****************************************************************** -->
+				<sly data-sly-test="${properties.linkborder1 == 'Yes'}">
+					<p class="viewAll button-center">
+                        <sly data-sly-test="${properties.linkvalue != NULL && properties.linktitle != NULL}">
+							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/imageandtext/js/imageandtextlinkchecker.js">
+    							<a href="${object.path}" target="${object.target}">${object.text}</a>
+    						</sly>
+    					</sly>
+					</p>
+				</sly>
+				<!-- *************Border Link Required Ends****************************************************************** -->
+			</div>
+			
+			<!-- *************Video Section Starts****************************************************************** -->
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 video-section video-section-right nospacingright left-no-space ">
+				<sly data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldButtons">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nospacingright left-no-space hidden-md hidden-lg visible-xs visible-sm viewalllink-smalldevice">
+						<p class="viewAll text-center for-viewall no-top-space ${properties.linkbordercolor}" data-sly-list.key="${cpt.listData}">
+							<a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp;
+						</p>
+					</div>
+				</sly>
+				<sly data-sly-test="${properties.listFrom == 'video'}">
+					<div id="videoContentSec">
+						<sly data-sly-test="${properties.snapshot !=NULL}">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 video-icon-container">
+								<sly data-sly-test="${properties.icon != NULL}">
+									<sly data-sly-test="${properties.vendor == 'youtube'}">
+                                        <a href="#" data-id="${properties.vendor}" data-toggle="modal" data-target="#videoModal" data-theVideo="${properties.youtubeembedCode @ context='unsafe'}" class="videopopup" data-backdrop="static" data-keyboard="false">
+                                            <img src="${properties.icon}" />
+                                        </a>
+                                    </sly>
+                                    <sly data-sly-test="${properties.vendor == 'ustudio'}">
+                                        <a href="#" data-id="${properties.vendor}" data-toggle="modal" data-target="#videoModal" data-ustudioVideo="${properties.ustudioembedCode @ context='unsafe'}" class="videopopup" data-backdrop="static" data-keyboard="false">
+                                            <img src="${properties.icon}" />
+                                        </a>
+                                    </sly>
+                                    <sly data-sly-test="${properties.vendor == 'brightcove'}">
+                                        <a href="#" data-id="${properties.vendor}" data-toggle="modal" data-target="#videoModal" class="videopopup" data-backdrop="static" data-keyboard="false">
+                                            <img src="${properties.icon}" />
+                                        </a>
+                                    </sly>
+								</sly>
+								<p> ${properties.videosubtitle} <span> ${properties.videoduration} </span></p>
+							</div>
+						</sly>
+						<img src="${properties.snapshot}" class="img-responsive" title="${properties.imgtitle}" alt="${properties.alternatetext}" />
+					</div>
+				</sly>
+				<sly data-sly-test="${properties.listFrom == 'image'}">
+					<div class="imageSec">
+						<sly data-sly-test="${properties.imageReference !=NULL}">
+							<div id="imageSection">
+								<div class="video">
+									<img src="${properties.imageReference}" class="img-responsive" title="${properties.imgtitle}" alt="${properties.alternatetext}" />
+								</div>
+							</div>
+						</sly>
+					</div>
+				</sly>
+			</div>
+			<!-- *************Video Section Ends****************************************************************** -->
+			
+
+            <sly data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldButtons">
+			<!-- *************Video Section's Bottom Link Starts****************************************************************** -->
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nospacingright left-no-space visible-md visible-lg hidden-xs hidden-sm">
+					<p class="viewAll text-center for-viewall ${properties.linkbordercolor}" data-sly-list.key="${cpt.listData}">
+						<a class="${properties.linkcolor}" href="${key.path}" target="${key.target}">${key.title}</a>&nbsp;&nbsp;&nbsp;
+					</p>
+				</div>
+			<!-- *************Video Section's Bottom Link Ends****************************************************************** -->
+
+
+            </sly>
+		</div>
+	</div>
+</div>
+<!-- *******************************************Video Container Ends********************************************************************************************** -->
+
+<!-- *******************************************Right Text variation Starts********************************************************************************************** -->
+
+<!-- *******************************************Right Text variation Ends********************************************************************************************** -->
+
+<sly data-sly-test="${properties.description && properties.description != ''}">${properties.description @ context='html'}</sly>
+<div class="modal imageantextmodal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" data-id="${properties.vendor}">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class=" col-md-12 col-sm-12 col-xs-12">
+					<div class=" col-md-10 col-sm-10 col-xs-10">
+						<h2>${properties.videotitle}</h2>
+					</div>
+					<div class=" col-md-2 col-sm-2 col-xs-2">
+						<button type="button" class="close videoclose" data-dismiss="modal" aria-hidden="true">
+							<img class="close-button" src="${properties.closeicon}">
+							<img class="hoverClose-button" src="${properties.hoverclose}">
+						</button>
+					</div>
+				</div>
+				<div>
+					<sly data-sly-test="${properties.vendor == 'youtube'}">
+						<iframe id="youtubeVideo" width="100%" height="100%" src="" allowfullscreen></iframe>
+					</sly>
+                    <sly data-sly-test="${properties.vendor == 'ustudio'}">
+						<iframe id="ustudioVideo" width="100%" height="100%" src="" allowfullscreen></iframe>
+					</sly>
+					<sly data-sly-test="${properties.vendor == 'brightcove'}">
+                        <input type="hidden" class="playerId" value="${properties.playerID}" />
+                        <input type="hidden" class="playerKey" value="${properties.playerKey}" />
+                        <input type="hidden" class="videoPlayer" value="${properties.videoID}" />
+
+						<div  class="video_data_container"></div>
+
+                        </sly>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

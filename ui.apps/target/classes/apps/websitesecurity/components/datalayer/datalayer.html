@@ -1,0 +1,12 @@
+<sly data-sly-use.data="/apps/websitesecurity/components/page/basepage/headlibs.html" data-sly-call="${data.third @ x=properties.ensighten}"></sly>
+
+<sly data-sly-use.layer="websitesecurity.core.utilities.DataLayer"></sly>  
+
+<script type="text/javascript"> window.symcDataLayer = JSON.parse('${layer.datalayer @ context="scriptString"}');</script>
+
+ <sly data-sly-use.data="/apps/websitesecurity/components/page/basepage/footerlibs.html" data-sly-call="${data.third @ x=properties.environment}"></sly>
+
+
+
+
+

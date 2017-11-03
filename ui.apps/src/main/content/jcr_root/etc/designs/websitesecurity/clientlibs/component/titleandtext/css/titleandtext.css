@@ -1,0 +1,9 @@
+.tab-device{padding-right:0 !important;}
+.tab-device h4{font-size:20px; font-weight:600; margin-bottom:10px;}
+
+ @media only screen and (max-width : 767px) {
+.titleandtext1 p {
+	display:none;
+}
+}
+

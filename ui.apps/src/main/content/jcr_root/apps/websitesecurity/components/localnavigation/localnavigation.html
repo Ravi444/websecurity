@@ -1,0 +1,42 @@
+<!--local nav starts-->
+
+<div id="c-nav-anchor"></div>
+<div class="container-fluid navbar nav_bg">
+  <div class="nav_bgBox">
+    <div class="container">
+      <div class="outer_area">
+        <sly data-sly-use.menuobj="websitesecurity.core.utilities.LocalNavigation"> 
+          <!--mobile browse starts-->
+          <p class="c_mobile-view ${properties.titlecolor}">${properties.title1}</p>
+          <!--mobile browse ends--> 
+          <!--sticky nav starts-->
+          <ul id="nav_secure" class="nav navbar-nav" data-sly-list.key="${menuobj.map}">
+            <li><a href="#${menuobj.map[key]}">${key}</a></li>
+          </ul>
+          <!--sticky nav ends--> 
+        </sly>
+
+        <!--renew button section starts-->
+        
+        <sly data-sly-test="${properties.menurightlinkkey != NULL}">
+          <div class="renew_button"> <span>
+            <sly data-sly-test="${properties.menurightlinkvalue != NULL && properties.menurightlinkkey != NULL}">
+              <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/localnavigation/js/localnavigationlink.js"> <a href="${object.path}" target="${object.target}">${object.text}</a> </sly>
+            </sly>
+            </span> </div>
+        </sly>
+        
+        <!--renew button section ends--> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<sly data-sly-use.menudivobj="websitesecurity.core.utilities.LocalNavigation">
+  <sly data-sly-list.key="${menudivobj.map}">
+    <div id="${menudivobj.map[key]}" class="c-localnav-box clearfix">
+      <div data-sly-resource="${'menuparsys{0}' @ format=keyList.count, resourceType='foundation/components/parsys'}"></div>
+    </div>
+  </sly>
+</sly>
+<!--local nav ends--> 

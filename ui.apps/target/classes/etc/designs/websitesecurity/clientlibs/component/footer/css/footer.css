@@ -1,0 +1,531 @@
+/* footer container start */
+.sm-sec-desk.desktop-view > ul{display:inline-block;vertical-align: middle;}
+.rightAreaSocial .desktop-view li{ display:inline-block; width:auto;} 
+.rightAreaSocial .desktop-view li a{ display:inline-block; padding:13px;}
+.s-twitter, .s-fb, .s-linkden, .s-googleplus, .s-youtube{background: url("/content/dam/websitesecurity/footer/images/social-icon-sprite.png") no-repeat ;  }
+.s-twitter:hover, .s-fb:hover, .s-linkden:hover, .s-googleplus:hover, .s-youtube:hover{background-position:0px -38px;  }
+.homeicon{vertical-align: text-bottom;}
+
+.s-fb{background-position:-40px 0px;  }
+.s-linkden{background-position:-84px 0px;  }
+.s-googleplus{background-position:-120px 0px;  }
+.s-youtube{background-position:-161px 0px;  }
+
+
+.s-fb:hover{background-position:-40px -38px;  }
+.s-linkden:hover{background-position:-84px -38px;  }
+.s-googleplus:hover{background-position:-120px -38px;  }
+.s-youtube:hover{background-position:-161px -38px;  }
+
+.rightAlignBox-icon .globe-icon {
+	/*background: url("/content/dam/websitesecurity/footer/images/globalImg.png") no-repeat left center;*/
+	/*display:inline;*/
+    display:inline;
+}
+.rightAlignBox-icon .globe-icon:hover {
+	/*background: url("/content/dam/websitesecurity/footer/images/world-icon.png") no-repeat left center;*/
+}
+.rightAlignBox-icon {
+	text-align:right;
+}
+.rightAlignBox-icon .globe-icon a {
+	color:#fff;
+	font-size:16px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 0 10px;
+}
+.rightAlignBox-icon li {
+	cursor:pointer;
+}
+.sm-sec-desk .fa {
+	font-size:26px;
+	color:#999999;
+}
+.sm-sec-desk a {
+	margin-right:15px;
+}
+.sm-sec-desk .fa:hover {
+	color:#fff;
+}
+.c-footer-links-container p {
+	color:#fff;
+	font-weight: bold;
+}
+.norton-logo {
+	margin-left:14px;
+}
+.linka p a {
+	color:#fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.c-social-media-links .list-inline > li {
+	padding-left:6px;
+	padding-right:0px;
+}
+.linka p a:hover {
+	text-decoration:none;
+	color:#15ccff !important;
+}
+.c-footer-links-container li{margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;}
+.c-footer-links-container a {
+	color: #999;
+	line-height: 18px;
+
+}
+.c-footer-links-container a:hover {
+	text-decoration:none;
+}
+.breadCrumbSec {
+	font-size:14px;
+}
+.breadCrumbSec img {
+	margin-top:-5px;
+}
+.c-social-media-links {
+	color: #999;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.c-social-media-links li, .c-social-media-links li a {
+	line-height:14px;
+}
+.c-social-media-links li a:hover {
+	text-decoration:none;
+}
+.c-social-media-links li a {
+	border:none;
+}
+.c-footer-links-container .footerColumn {
+	width:20%;
+}
+.c-footer-primary-links {
+	background: #333;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.c-footer-primary-links ul {
+	padding-bottom:0;
+	margin-bottom:0;
+    display:inline-block;
+}
+.c-footer-primary-links a {
+	color:#fff;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.c-footer-primary-links a:hover {
+	color:#15ccff;
+	text-decoration:none;
+}
+#my-component .c-footer-primary-links p {
+	margin-bottom:0;
+	padding-bottom:0;
+	text-align:right;
+	background:url("/content/dam/websitesecurity/common/Desktop/images/globalImg.png") no-repeat 0 3px;
+	float:right;
+	padding-left:20px;
+}
+.c-country-sec p {
+	color: #fff;
+}
+.c-footer-links-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.c-footer-container a {
+	color:#999;
+	line-height: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.c-footer-container .c-footer-block a:hover {
+	color:#15ccff;
+}
+.c-social-media-links {
+	color:#999;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.c-social-media-links .list-inline li {
+	font-size: 14px;
+	padding-right:10px;
+}
+.c-social-media-links .list-inline li a {
+	color:#999;
+}
+.c-social-media-links .list-inline li a:hover {
+	color:#15ccff;
+}
+
+#norton-sec-logo a {
+	padding-right:0px;
+}
+.pp {
+	display:none;
+}
+.c-social-media-links a:last-child {
+	border:none;
+}
+.c-social-media-links a:hover {
+	color:#15ccff;
+}
+.c-social-media-links .list-inline {
+	margin-bottom:0;
+}
+.c-social-media-links .list-inline li {
+	border-right:1px solid #ccc;
+}
+.c-social-media-links .list-inline li:last-child {
+	border:none;
+}
+.c-social-media-links {
+	font-size:14px;
+}
+.sm-sec {
+	text-align:center;
+	padding-right:20px;
+}
+/*.my-component ul li{display:block;}*/
+
+.footerColumn {
+	width:24%;
+}
+.bg-color-grey {
+	background:#464646;
+}
+a.breadcrumb-node {
+	text-decoration:none;
+	color:#999;
+}
+.breadcrumb {
+	background-color: #464646;
+	margin:0!important;
+	padding: 0!important;
+}
+.noDisplay {
+	display:none;
+}
+.c-social-media-links .disclaimer {
+	line-height:36px;
+}
+.laptop-view {
+	display:none;
+}
+.sm-sec-desk a {
+	padding-right: 0px;
+}
+.sm-sec-desk img {
+	margin-right: 19px;
+}
+.breadCrumbSec {
+	padding-left: 0;
+	margin-top: 30px;
+	color:#999;
+}
+/* end */
+
+
+
+.container.breadCrumbSec {
+	padding:20px 15px;
+	margin-left: 35px;
+}
+.container.breadCrumbSec a:hover {
+	text-decoration:none;
+}
+/*.footermenu{margin-top:40px;}*/
+
+.c-footer-links-container .col-lg-2 {
+	width:20%;
+	height:205px;
+}
+.mf-hide {
+	display:none;
+}
+.united-icon img {
+	float:left;
+	padding-top:3px;
+}
+.united-icon p {
+	float:left;
+	padding-left:10px;
+}
+.rightAlignBox {
+	float:right;
+}
+.united-icon p {
+	margin:0;
+}
+.rightAreaSocial {
+	float:right;
+}
+.sm-sec-tab a:hover {
+	color:#ffffff;
+}
+
+
+.c-footer-links-container li{
+	display: block;
+	}
+
+ @media only screen and (max-width : 1200px) {
+
+.mobile-view li{display:inline-block; width:4%;} 
+.mobile-view li a{display:inline-block; padding:13px;}
+ .c-footer-links-container .col-lg-2 {
+width:20%;
+}
+.c-footer-links-container .col-md-4, .c-footer-links-container .col-sm-4 {
+width: 33.33333333%;
+}
+.breadCrumbSec {
+font-size:16px;
+}
+ .container.breadCrumbSec {
+padding:20px 15px;
+margin-left: 20px;
+}
+.desktop-view {
+display:none;
+}
+.laptop-view {
+display:block;
+}
+.sm-sec-desk {
+display:none;
+}
+.mf-hide {
+display:block;
+}
+ .sm-sec-tab .fa {
+font-size:26px;
+color:#999;
+}
+.sm-sec-tab .fa:hover {
+color:#fff;
+}
+ .c-footer-links-container .col-lg-2 {
+width:33.33333333%;
+}
+.c-footer-links-container .col-md-4 {
+width:33.33333333%;
+}
+.c-footer-links-container .col-md-4:nth-child(3) {
+padding-right:0;
+}
+.c-footer-links-container .col-md-4:nth-child(4) {
+padding-left:0;
+}
+.sm-sec-tab a {
+margin-right: 9px;
+margin-top:15px;
+padding: 0px;
+display:inline-block;
+}
+.c-social-media-links {
+padding-bottom:100px;
+clear:left;
+}
+}
+ @media only screen and (max-width : 991px) {
+    .mobile-view li{display:inline-block; width:5%;} 
+.mobile-view li a{display:inline-block; padding:13px;}
+.united-icon {
+padding-left:35px;
+}
+.c-footer-links-container .col-lg-2 {
+width:20%;
+}
+.c-footer-links-container .col-md-4, .c-footer-links-container .col-sm-4 {
+width: 33.33333333%
+}
+span.mobile-view {
+display:block;
+}
+.c-footer-primary-links .col-sm-2 {
+padding:0;
+}
+.breadCrumbSec {
+font-size:16px;
+}
+.sm-sec-desk .fa {
+font-size:27px;
+}
+ .c-footer-links-container .col-lg-2 {
+width:16.66%;
+}
+.c-footer-links-container .col-md-4 {
+width:33.33333333%;
+}
+.c-footer-links-container .col-sm-6 {
+width:50%;
+}
+.c-footer-links-container .col-md-4:nth-child(2) {
+padding-right:0;
+padding-left:0px;
+}
+.c-footer-links-container .col-md-4:nth-child(3) {
+padding-right:15px;
+padding-left:0px;
+}
+.c-footer-links-container .col-md-4:nth-child(4) {
+padding-left:0;
+padding-right:0;
+}
+.c-footer-links-container .col-md-4:nth-child(5) {
+padding-left:0;
+}
+.c-social-media-links .sm-sec-tab a {
+
+
+margin-top:0px;
+}
+.footerbottom .bg-color-grey .c-social-media-links {
+padding-top:0px;
+}
+.bottome_spacing {
+margin-bottom:20px;
+}
+.sm-sec-tab .fa.fa-google-plus {
+font-size:22px;
+margin-top:2px;
+}
+.sm-sec-tab .fa.fa-youtube-play {
+font-size:27px;
+margin-top:4px;
+}
+.bottome_spacing {
+margin-bottom:15px;
+}
+.c-social-media-links .nospacingleft {
+padding-right:0;
+}
+}
+ @media only screen and (max-width : 767px) {
+      .mobile-view li{width:auto;} 
+.c-footer-links-container .col-lg-2 {
+width:20%;
+}
+.c-footer-links-container .col-md-4, .c-footer-links-container .col-sm-4 {
+width: 33.33333333%
+}
+.c-footer-links-container .col-xs-6 {
+width:50%;
+height:220px;
+}
+.pp {
+display:block;
+}
+ span.disclaimer {
+text-align:center;
+display:block;
+}
+
+.c-social-media-links ul {
+text-align:center;
+}
+.c-social-media-links span.text-align {
+text-align:center;
+}
+ div.mobile-view > p {
+display:none;
+}
+.c-footer-primary-links ul {width:100%;}
+.footermenu ul li {
+width:49%;
+margin-bottom: 15px;
+vertical-align:middle;
+}
+ .breadCrumbSec, .linka p a {
+font-size:15px;
+font-weight:600;
+}
+.c-social-media-links {
+padding-top:0px;
+padding-bottom:80px;
+}
+.c-social-media-links span {
+float:none;
+text-align:center;
+}
+span.mobile-view {
+display:block;
+margin-top:20px;
+}
+.c-country-sec img {
+text-align:center;
+margin:0px auto;
+}
+#norton-sec-logo {
+display:block;
+margin-bottom:28px;
+margin-top:28px;
+}
+.c-footer-primary-links {
+padding-bottom:0;
+}
+.c-social-media-links img {
+width:auto;
+}
+.breadCrumbSec {
+display:block;
+}
+.united-icon {
+display:none;
+}
+.sm-sec-desk .fa {
+font-size:26px;
+}
+ .c-footer-links-container .col-lg-2 {
+width:16.66%;
+}
+.c-footer-links-container .col-md-4 {
+width:33.33333333%;
+}
+.c-footer-links-container .col-xs-6 {
+width:50%;
+}
+ .c-footer-links-container .col-md-4:nth-child(2) {
+padding-right:0;
+padding-left:0px;
+}
+.c-footer-links-container .col-md-4:nth-child(4) {
+padding-right:0;
+padding-left:0px;
+}
+.c-footer-links-container, .c-footer-links-container .col-md-4:nth-child(3), .c-footer-links-container .col-md-4:nth-child(5) {
+padding-left:15px;
+}
+.breadCrumbSec {
+padding-left:15px;
+}
+.sm-sec-tab a {
+margin-right:11px;
+}
+.rightAreaSocial {
+float:left;
+width:100%;
+}
+.footerbottom {
+margin-top:-68px;
+}
+.c-footer-links-container .col-xs-6 {
+height:auto;
+}
+ .footerbottom .bg-color-grey .c-social-media-links {
+padding-top:15%;
+}
+}
+@media only screen and (max-width : 480px) {
+ .c-social-media-links img {
+width:auto;
+}
+.c-social-media-links .disclaimer {
+	line-height:24px;
+}
+}

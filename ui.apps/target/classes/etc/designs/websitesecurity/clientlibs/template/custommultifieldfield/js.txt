@@ -1,0 +1,13 @@
+#base=js
+CustomWidget.js
+dynamicmultifield.js
+custommultifield.js
+customcompositefield.js
+components.js
+TextFieldCustomWidget.js
+custom.js
+color-picker.js
+
+
+
+

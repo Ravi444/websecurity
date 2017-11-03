@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Signing Certificate Links"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Links_x0020_with_x0020_Button
+                jcr:primaryType="cq:Panel"
+                title="Links with Button">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Link_x0020_title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title of the Link"
+                        fieldLabel="Link Title"
+                        name="./linktitle"
+                        xtype="textfield"/>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path of the link"
+                        fieldLabel="Link path"
+                        name="./linkpath"
+                        xtype="pathfield"/>
+                    <price
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Price"
+                        fieldLabel="Price"
+                        name="./price"
+                        xtype="textfield"/>
+                    <button_x0020_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the text of the Button"
+                        fieldLabel="Button Text"
+                        name="./buttontext"
+                        xtype="textfield"/>
+                    <button_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path of the button"
+                        fieldLabel="Button Path"
+                        name="./buttonpath"
+                        xtype="pathfield"/>
+                    <bottom_x0020_border
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="border-bottom-no"
+                        fieldDescription="Bottom border required"
+                        fieldLabel="Bottom Border"
+                        name="./bottomborder"
+                        type="select"
+                        value="border-bottom-no"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="border-bottom-yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="border-bottom-no"/>
+                        </options>
+                    </bottom_x0020_border>
+                </items>
+            </Links_x0020_with_x0020_Button>
+        </items>
+    </items>
+</jcr:root>

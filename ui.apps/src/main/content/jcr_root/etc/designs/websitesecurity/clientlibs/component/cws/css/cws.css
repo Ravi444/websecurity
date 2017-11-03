@@ -1,0 +1,16 @@
+/*Css for Complete Website Security of header Section*/
+.header .tabPanels .nav-cws-container{padding-left:0; padding-top:14px; position:relative;}
+.header .tabPanels .nav-padding-left{padding-left:0;}
+.header .tabPanels .nav-cws-container p{margin-bottom:5px;}
+
+.c_rowSec{display:block;}
+.c_imgSec{width:87px;padding-right:12px; margin-right:0; float:left; position:absolute;}
+.c_imgSec img{width:100%;}
+.c_imgDes{padding-left:87px;}
+.c_imgDes a {font-size:14px; text-transform:uppercase; text-decoration:none; font-weight:700;}
+.tab-pane .c_imgDes h3 {display:block;padding-bottom:12px; font-size:36px; line-height:28px;}
+/*Css for Complete Website Security of header Section end*/
+
+@media only screen and (min-width :768px)  and (max-width :991px) {
+.tab-pane .c_imgDes h3{line-height:35px;}
+}

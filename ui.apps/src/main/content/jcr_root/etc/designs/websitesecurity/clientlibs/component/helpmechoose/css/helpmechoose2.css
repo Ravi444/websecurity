@@ -1,0 +1,29 @@
+/**************************************************CommonClasses for Help Me Choose STARTS********************************************/
+.tpl-colRight1{display:block; padding:23px 25px 29px; color:#fff; overflow:hidden;}
+.helpMeBox h4{display:block; color:#fff; padding-bottom:1px; font-size:24px; line-height:30px;}
+.helpMeBox p{color:#fff;}
+.small-device1{padding-left:0 !important;}
+.small-device1 .tpl-colRight1, .small-device2 .tpl-colRight1{margin-bottom:0;}
+.blue-gradient-helpmechoose {background: #00619e;
+    background: -moz-linear-gradient(-120deg, #00619e, #00addd);
+    background: -webkit-linear-gradient(-120deg, #00619e, #00addd);
+    background: linear-gradient(-120deg, #00619e, #00addd);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619e', endColorstr='#7db9e8',GradientType=1 );
+}
+/**************************************************Common Classes Help Me Choose ENDS************************************************/
+
+/****************************************Media Query for Responive Devices STARTS*********************************************/
+@media all and (max-width: 991px) and (min-width: 310px) {
+.second-tab .helpmechoose{
+        float: left;
+    width: 47%;
+    margin-right: 5%;
+
+    }
+.second-tab .helpmechoose2{
+        float: left;
+    width: 48%;
+
+        }
+}
+/****************************************Media Query for Responive Devices ENDS*********************************************/

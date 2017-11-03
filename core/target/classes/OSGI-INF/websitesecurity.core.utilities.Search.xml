@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="websitesecurity.core.utilities.Search">
+        <implementation class="websitesecurity.core.utilities.Search"/>
+        <service servicefactory="false">
+            <provide interface="websitesecurity.core.utilities.Search"/>
+        </service>
+        <property name="service.description" value=" Product A-Z Search"/>
+        <property name="service.vendor" value="Symantec"/>
+        <property name="service.pid" value="websitesecurity.core.utilities.Search"/>
+        <reference name="mapService" interface="websitesecurity.core.utilities.URLMappingConfigFactoryService" cardinality="1..1" policy="static" bind="bindMapService" unbind="unbindMapService"/>
+    </scr:component>
+</components>

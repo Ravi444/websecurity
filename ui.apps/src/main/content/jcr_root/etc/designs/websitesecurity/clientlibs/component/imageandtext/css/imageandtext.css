@@ -1,0 +1,157 @@
+/********************************************image and text starts********************************************/
+.componentouterspace.video-container{padding:75px 0 0;}
+.nocomponentouterspace.video-container{margin:75px 0 0;}
+
+/********************************************image and text ends********************************************/
+
+/****************************Video container Start**************************************/
+.video-content h2{padding-bottom:20px; padding-right: 68px;font-size:40px;}
+.video-content h5{padding:0 0 14px 0;font-size:16px;}
+.video-content{ padding-bottom:25px;}
+.video-content p{line-height:26px;font-size:16px;margin-bottom: 0px;padding-right: 67px; }
+.video-container .more-link{margin:0; padding:0;}
+.video-container .more-link a { font-size: 14px; text-transform: uppercase; font-weight: 700; padding:0; margin:0;}
+.video-container .img-responsive{width:100%;padding:0;}
+.video-container .video-section-right{padding-left:0;}
+.security{ margin:0px 0px 0px 20px; padding:0px; color:#fdbb30; font-size:16px;}
+.security li{ list-style-type: square; float:left; padding:15px 10px 15px 0px; width:95%;}
+.security_grey{ padding:0px; color:#464646; font-size:16px;}
+.security_grey li{ list-style-type: square;  padding:10px 9px 10px 0px; color:#464646;}
+.security_yellow li{ list-style-type: square;  padding:10px 9px 10px 0px; color:#fdbb30; width:93%;}
+.security_yellow li span {color: #464646;}
+.colmLinkOuter{padding-left:16px; margin-top:10px;}
+.colmLink{display:inline-block; width:48%; float:left;}
+.column_fullwidth{width:100%;}
+.colmLink li a{font-weight:700;}
+.colmLink .security_grey li span, .colmLink .security_yellow li span{color:#464646;}
+.video-content-left .colmLinkOuter{padding-left:10px;}
+
+.imgSpaceTopBoth{padding:60px 0px;}
+.noimgSpace{padding:0px;}
+.viewAll.text-center.for-viewall{padding-top:30px;}
+.video-container .more-link a.datalist{margin-right:40px;}
+/***************************Video container End**************************************/
+
+/***************************video container overlay Start**************************************/
+.videoclose .close-button { display: block;}
+.videoclose .hoverClose-button { display: none; }
+.videoclose:hover .hoverClose-button { display: block;}
+.videoclose:hover .close-button { display: none; }
+.modal-backdrop.in { opacity: .7}
+.datalist{ margin-right:40px;}
+.video-icon-container{position:absolute; bottom:0; left:0; padding-left:0; background-color:rgba(0, 0, 0, 0.3);}
+.video-icon-container a.videopopup{width:60px; height:60px; background-color:#fdbb30; padding-top:20px; display:inline-block; text-align:center; z-index:999;}
+.video-icon-container a.videopopup:hover{background-color:#f9a626;}
+.video-icon-container a.videopopup img{width:auto;}
+.video-icon-container p{display:inline-flex; padding:0 0 0 10px; color:#fff; font-weight:700; margin-bottom:0;}
+.video-icon-container p span{font-size:14px; font-weight:normal; padding-left:5px;}
+.popupvideo-overlay { width: 100%; height: 100%!important;  background:rgba(0, 0, 0, 0.7); display: none; position: fixed; top: 0; z-index: 99;}
+.video-container-popupBox { width:100%;position:relative; display:none; z-index:99999; box-sizing:border-box; background:rgba(0, 0, 0, 0.7);}
+.video-container-popupBox a.videoclose { color:#15ccff; font-size:16px; position:absolute; top:56px; right:58px; width:23px; height:23px; border-radius:10px; text-align:center; background:url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-crossButton.png") no-repeat; }
+.video-container-popupBox a.videoclose:hover{text-decoration:none; background:url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-close-over.png") no-repeat;}
+.video-container iframe {width: 100%;}
+.modal {padding-left: 17px; z-index:999999999;}
+.video-title{font-size:40px; font-weight:300; margin:40px 0px 30px 0px;}
+.video-hide{ display:none;}
+.video-title{font-size:40px; font-weight:300; margin:40px 0px 30px 0px;}
+#videoModal .modal-dialog{width:100%; margin:0 auto; background:none; box-shadow: none;}
+#videoModal .modal-content { box-shadow: none;}
+#videoModal .modal-dialog .modal-content{background:transparent; margin-top:0px; border:0px; border-radius:0px; padding:0px;}
+#videoModal .modal-body .button{color:#fff;}
+#videoModal .button.close{color:#fff; position:absolute;right:-20px;top:-46px; font-size: 70px; text-align: right;}
+#videoModal .close{font-size:50px; opacity:1; color:#fff; position:absolute; top:5px; right:-20px;}
+#videoModal .modal-content .modal-body{padding:20px 20px 20px  0;}
+#videoModal .modal-content .modal-body h2{display:inline-block; left:30px; position:relative; /*top:60px;*/ top:15px; color:#fff;} 
+#videoModal .modal object, #videoModal .modal iframe#youtubeVideo { padding:0px; width: 90%; margin-left: 60px;}
+#videoModal .modal.fade.in {padding-right:0px!important;}
+#videoModal .close:hover, #videoModal .close:focus{opacity:1; color:#fff;}
+#videoModal .video-section-right .video-icon-container{padding-left:15px;}
+#videoModal .modal { padding-top: 20px;}
+
+
+/* ************************************Media Query Start************************************* */
+@media only screen and (min-width : 992px) and (max-width : 1200px){
+#videoModal .modal-content .modal-body{padding:20px 30px 20px  0;}
+.video-content h2{font-size:30px;}
+.colmLink li{padding-right:33px;}
+.video-icon-container{padding:0 15px 0 0;}
+}
+
+@media only screen and (max-width : 991px) {
+/****************************Video container for Desktop Start**************************************/    
+.video-content h2{padding-bottom:20px;padding-right:0; font-size:30px;}
+.video-content h5{padding-bottom:20px;}
+.video-content p{padding-right:0;}
+.video-container .more-link, .video-container .viewAll.button-center{margin-bottom:38px;}
+.security_grey li{padding:10px 33px 10px 0px;}
+.left-no-space {padding-left:0px;}
+.removeRightSpace{ padding-right:0px}
+.viewalllink-smalldevice .viewAll.text-center.for-viewall{padding:0 0 40px;}
+.video-icon-container{padding:0;}
+.colmLink.ipad-right{ float:right;}
+.video-content{padding-left:0;} 
+.modal-open .modal { padding-top: 20px;}
+/***********************************Video container for Desktop Ends***************************************/
+
+/*********************************video container overlay Starts**************************************/
+#videoModal .modal-content .modal-body h2{left:0px; padding-bottom: 10px;}
+#videoModal.modal object, #videoModal.modal iframe#youtubeVideo { margin-left: 0}
+#videoModal .modal-content .modal-body{padding:0px; padding-right: 20px;}
+.modal-backdrop{padding:46px;}
+.close{top:25px; right:25px;}
+#videoModal .modal-body .col-md-12 { margin-bottom: 20px;}
+.video-section-right .video-icon-container{padding-left:0px;}
+
+/********************************video container overlay Ends**************************************/
+}
+
+@media only screen and (max-width : 767px) {
+/*********************************Video container for Tablet Start**************************************/
+.left-no-space{padding-left:15px;}
+.removeRightSpace{ padding-right:15px}
+.imgSpaceTopBoth{padding:40px 0px;}
+.video-container p.more-link.multiple-links{text-align:left;}
+.video-content{padding: 0 15px 10px 0px;}
+.video-container .more-link{margin-bottom:0;}
+.video-container .more-link, .video-container .viewAll.button-center {margin-bottom: 19px;}
+.video-content h2{padding-bottom:15px; font-size:25px;font-weight: 300;}
+.video-content h5{font-size:12px; padding-bottom:25px;}
+.video-container .more-link a{font-size:12px;}
+.video-container .video-section-right{padding-left:15px;}
+.security_grey li{width:100%;}
+.security li{ width:100%;}
+.colmLink{width:100%;}
+.viewalllink-smalldevice{padding:25px 0 0;}
+.viewalllink-smalldevice.mng{ margin:-25px 0 0 0;}
+.viewalllink-smalldevice .viewAll.text-center.for-viewall{padding-bottom:25px;}
+.viewalllink-smalldevice .viewAll.text-center.for-viewall.no-top-space{margin-top:-51px;}
+.video-container .more-link, .video-container .viewAll.button-center{margin-bottom:20px;}
+.componentouterspace.video-container{padding:30px 0 0;}
+#videoContentSec{position:relative;}
+.video-section-right .video-icon-container{padding-left:0;}
+.video-content-left.video-content{padding-left:15px;}
+
+
+/**********************************Video container for Tablet End**************************************/
+
+/********************************video container overlay Start**************************************/
+#videoModal.modal object, #videoModal.modal iframe#youtubeVideo { margin-left: 0; padding: 10px 0 0; width: 95%; margin-top:50px;}
+#videoModal .modal-content .modal-body h2{left:-15px;}
+.video-icon-container{left:0px;}
+.video-icon-container p{padding:0 0 0 10px; width:78%;}
+.video-icon-container{padding:0 15px;}
+.colmLinkOuter.no-left-space{padding:0px;}
+.colmLinkOuter{margin-top:0;}
+
+/***********************************video container overlay Ends**************************************/
+}
+
+@media only screen and (max-width : 480px) {
+
+#videoModal.modal object, #videoModal.modal iframe#youtubeVideo {margin-top:0px; }
+.video-icon-container a.videopopup{padding-top:8px; width:40px; height:40px;}
+.video-icon-container p{width: 83%; font-size: 12px; line-height: 14px;}
+.video-content {padding: 0 15px 10px 0px;}    
+.video-container .more-link, .video-container .viewAll.button-center {margin-bottom: 19px;}
+}
+/****************************************Media Query Ends************************************* */

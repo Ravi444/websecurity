@@ -1,0 +1,51 @@
+#videoModal1 .modal-dialog{width:100%; margin:0 auto; background:none; box-shadow: none;}
+#videoModal1 .modal-content { box-shadow: none;}
+#videoModal1 .modal-dialog .modal-content{background:transparent; margin-top:0px; border:0px; border-radius:0px; padding:0px;}
+#videoModal1 .modal-body .button{color:#fff;}
+#videoModal1 .modal-body .col-md-12 { margin-bottom: 20px;}
+#videoModal1 .button.close{color:#fff; position:absolute;right:-20px;top:-46px; font-size: 70px; text-align: right;}
+#videoModal1 .close{font-size:50px; opacity:1; color:#fff; position:absolute; top:5px; right:-5px;}
+#videoModal1 .modal-content .modal-body{padding:20px 0px 20px  0;}
+#videoModal1 .modal-content .modal-body h2{display:inline-block; left:30px; position:static; top:15px; color:#fff;} 
+#videoModal1 .modal object, #videoModal .modal iframe#youtubeVideo { padding:0px; width: 90%; margin-left: 60px;}
+#videoModal1 .modal.fade.in {padding-right:0px!important;}
+#videoModal1 .close:hover, #videoModal .close:focus{opacity:1; color:#fff;}
+#videoModal1 .video-section-right .video-icon-container{padding-left:15px;}
+/* *************************video container overlay Ends************************************* */
+
+/***************************text overlay Start**************************************/
+#textModal .modal-dialog{width:780px;}
+#textModal .modal-body p { color: #333; margin-bottom: 20px; text-align:left;}
+#textModal .modal-body .col-md-12 { margin-bottom: 25px;}
+#textModal .modal-backdrop.in { opacity: .9;}
+#textModal .modal-header { border-bottom: none;}
+#textModal h4 {padding: 0;}
+#textModal .modal-content {padding:60px; border-radius:0; text-align:left !important;}
+#textModal .modal-content h2{padding-bottom:0;}
+#textModal .modal-content div{padding:0;}
+#textModal .hoverClose-button {display: none;}
+#textModal .textclose{position:absolute; right:-40px; top:-40px; opacity:1;}
+#textModal .close:hover .close-button {display: none;}
+#textModal .close:hover .hoverClose-button {display: block;}
+/* *************************text overlay Ends************************************* */
+
+@media screen and (max-width: 767px) {
+    #videoModal1 .modal-body .col-xs-10 { padding-left: 0;}
+    #videoModal1 .modal-content .modal-body h2 { font-size: 20px; left: 0; position: initial; text-align: left; }
+    #videoModal1 .close { right: 0;}
+    #videoModal1 .modal-content .modal-body{padding:20px 20px 20px  0;}
+	#textModal .modal-content { padding: 20px;}
+    #textModal .modal-body h2 {font-size: 24px; text-align: left;}
+    #textModal .modal-body .col-xs-10 {padding-left: 0;}
+    #textModal .modal-dialog{width:95%; margin:0;}
+    #textModal .textclose{right:-10px; top:-10px;}
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+    #videoModal1 .modal-content .modal-body { padding-right: 20px;}
+    #textModal .modal-dialog{width:700px;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+
+} 

@@ -1,0 +1,280 @@
+body{ font-family: ArticulatCF-Text !important } /*override body font*/
+.search-results-top {
+	padding-bottom: 0;
+}
+#gsasearch {
+	position: relative; margin: auto; width: 40%; padding: 100px 0 90px;
+}
+#gsasearch .btn-search { font-size: 22px; line-height: 22px; width: 42px; top: 0;
+    background: transparent; padding: 10px 5px; margin-left: -40px; outline: none; 
+    -webkit-padding-after: 12px;
+}
+
+#gsasearch h1{color: #fff;}
+
+.search-s-r .content { background: -webkit-linear-gradient(0deg, #00addd 0%, #00619e 100%);
+    background: -moz-linear-gradient(0deg, #00addd 0%, #00619e 100%); background: -o-linear-gradient(0deg, #00addd 0%, #00619e 100%);
+    background: -ms-linear-gradient(0deg, #00addd 0%, #00619e 100%); background: linear-gradient(90deg, #00addd 0%, #00619e 100%);
+    width: 100% height: 238px;
+}
+.search-s-r .content form input { background: transparent; border-bottom: 3px solid #fff; color: #fff; padding: 0 30px 0 5px; outline: none;
+	font-size: 26px; line-height: 48px; width: 90%;
+}
+.glyphicon.glyphicon-search { font-size: 20px; top: 5px; color: #fff;}
+.autocomplete-suggestions {background: rgb(255, 255, 255); padding: 10px 0; overflow-x: hidden;}
+section.right-col .pagination > li.prev.disabled > a { display: none;}
+/*.mobile-only h4 { padding: 0 0 10px 10px;}*/
+.mobile-only h4 {border:2px solid #fdbb30; width:150px; font-weight:bold; padding:12px; text-align:center; margin-bottom:20px;}
+
+.pagination {
+	float: right;
+	width: 65.6667%;
+}
+a.disabled {
+	text-decoration: none;
+	cursor: default;
+	color: black;
+}
+section.right-col .pagination {
+	float: none;
+	width: 100%;
+}
+section.right-col #search-results-list-pagination li {
+	padding: 0;
+	position: relative;
+	list-style: none;
+}
+
+section.right-col #search-results-list ul{ 
+        list-style: inherit; 
+        padding-left: 20px;   
+}
+
+section.right-col .pagination > li > a {
+	padding: 4px 12px;
+	margin-left: 0 !important;
+	color: #29649c;
+	font-weight: normal;
+}
+section.right-col .pagination > .active > a, section.right-col .pagination > .active > span, section.right-col .pagination > .active > a:hover, section.right-col .pagination > .active > span:hover, section.right-col .pagination > .active > a:focus, section.right-col .pagination > .active > span:focus {
+	background-color: transparent;
+	border-color: transparent;
+	font-weight: bold;
+	color: #717070;
+}
+section.right-col .pagination > li > a:hover, section.right-col .pagination > span:hover, section.right-col .pagination > a:focus, section.right-col .pagination > span:focus {
+	border-color: transparent;
+    text-decoration: underline;	
+}
+section.right-col #search-results-list-pagination li:before {
+	display: none;
+}
+section.right-col #search-results-list-pagination li.first, section.right-col #search-results-list-pagination li.last {
+	display: none;
+}
+section.right-col .pagination > li > a {
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+section.right-col .pagination > li.next > a, section.right-col .pagination > li.prev > a {
+	border: 1px solid #c4c4c4;
+	border-radius: 2px;
+	color: #29649c;
+}
+section.right-col .pagination > li.disabled > a {
+	color: #b5b5b5 !important;
+}
+section.right-col .pagination > li.prev > a:hover, section.right-col .pagination > li.prev > span:hover, section.right-col .pagination > li.prev > a:focus, section.right-col .pagination > li.prev > span:focus, section.right-col .pagination > li.next > a:hover, section.right-col .pagination > li.next > span:hover, section.right-col .pagination > li.next > a:focus, section.right-col .pagination > li.next > span:focus {
+	background-color: transparent;
+	border: 1px solid #c4c4c4;
+	color: #29649c;
+}
+.search-fliter.side-sub-nav .list-drop-menu li a:after, .search-fliter.side-sub-nav .list-drop-menu li.sub-items.current a:after {
+	margin-top: -4px;
+	margin-bottom: 4px;
+}
+
+.sub-items > ul {
+	padding-bottom: 35px !important;
+
+}
+
+li.sub-items > a {font-size:16px;
+    color: #000; padding-bottom:9px; display:block; font-weight: 700;}
+
+.s-r-how-many {font-size:40px; padding:0 0 36px 10px; line-height:40px;}
+.s-r-content {margin-bottom:14px; padding: 10px;}
+.s-r-content h5 {padding-bottom:0;}
+.s-r-content h5 a {font-size:26px; text-transform:none;}
+
+li.sub-items ul li {padding-left: 0;
+    font-weight:normal;
+    font-size: 16px;
+
+}
+
+
+li.sub-items ul li label{font-weight:normal; margin-bottom:8px; padding-left:23px; position:relative;}
+li.sub-items ul li label input{ float:left; margin-right:10px}
+
+.gsa-search-results.s-r.content.container-fluid {padding-top:60px; padding-bottom:60px;}
+
+.side-sub-nav .desktop-only {width:100%}
+.side-sub-nav .desktop-only h4 { width: 80%; padding:0 20px; line-height:36px; margin-bottom:20px; font-weight: 700; background-color:#fdbb30; color: #fff; cursor: inherit;}
+p.s-r-url {border-bottom:1px solid #ccc; padding-bottom:10px; margin: 0;}
+p.description { margin-top: 10px;}
+.s-r-sort-actions a{margin-left:20px; color:#464646; text-transform: uppercase; font-weight:bold; display:inline-block;}
+.s-r-sort-actions a.current {border-bottom:2px solid #fdbb30;}
+
+
+
+/* pagination Modified*/
+
+section.right-col .pagination > .active > a, section.right-col .pagination > .active > span, section.right-col .pagination > .active > a:hover, section.right-col .pagination > .active > span:hover, section.right-col .pagination > .active > a:focus, section.right-col .pagination > .active > span:focus {
+    background-color: #fdbb30;
+    border-color: transparent;
+    font-weight: bold;
+    color: #fff;
+}
+
+section.right-col .pagination > li > a {
+
+    border-radius: 2px;
+}
+
+section.right-col .pagination > li > a:hover, section.right-col .pagination > span:hover, section.right-col .pagination > a:focus, section.right-col .pagination > span:focus {
+	border-color: transparent;
+    text-decoration: underline;
+}
+
+section.right-col .pagination > li.prev > a, 
+section.right-col .pagination > li.next > a  {
+    border: 2px solid #fdbb30;
+    border-radius: 0px;
+    color:#464646;
+    font-size:13px; 
+    padding:6px 20px;
+    font-weight:bold; 
+    letter-spacing: 2px;
+}
+
+section.right-col .pagination > li.prev > a:focus, 
+section.right-col .pagination > li.next > a:focus, 
+section.right-col .pagination > li.prev > a:hover, 
+section.right-col .pagination > li.next > a:hover {
+	border: 2px solid transparent;
+	background-color: #fdbb30;
+	border-radius: 0px;
+    font-weight: bold;
+	font-size:13px;
+    color: #fff;
+	padding:6px 20px;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+section.right-col .pagination > li > a {border-radius: 0px;} 
+
+
+section.right-col .pagination > li.next > a {margin-left: 15px!important; display: block;}
+section.right-col .pagination > li.prev > a {margin-right: 15px; display: block;}
+section.right-col .pagination > li.next.disabled { display: none;}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.selectTick {
+	background-image: url(/content/dam/websitesecurity/gsasearch/Desktop/images/yes-tick-search.png);
+   	width: 14px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 0;
+    position:absolute;
+    left:0;
+    top:6px;
+}
+
+
+input[type=checkbox]:checked+.custom-check::before {
+  display: block;
+  color: red;
+  background-color: #fff;
+}
+
+.s-r-sort-actions {
+	padding-bottom: 36px;
+}
+
+.s-r-result.list-item:nth-child(even){
+    background:#f5f5f5;
+}
+
+.autocomplete-suggestions .autocomplete-suggestion {
+	color: #999;
+    font-size: 19px;
+    padding: 5px 10px ;
+}
+
+.autocomplete-suggestions .autocomplete-suggestion:hover {
+	background: #efefef
+}
+.autocomplete-suggestions .autocomplete-suggestion:focus {
+	background: #efefef
+}
+.autocomplete-selected {background: #efefef;}
+
+.sub-items .cat-label {
+            cursor: pointer;}
+.list-for-gsasearch {display: block;}
+.list-drop-menu.list-for-gsasearch div.col-sm-12 {display:none;}
+
+@media screen and (max-width: 767px) {
+	#gsasearch {padding:50px 0; width:80%;}
+    .s-r-content h5 a {font-size:20px !important;}
+.s-r-content p {font-size:16px;}
+.s-r-content {margin-bottom:35px; }
+    section.right-col .pagination > li.prev > a, section.right-col .pagination > li.next > a,
+    section.right-col .pagination > li.prev > a:focus, section.right-col .pagination > li.next > a:focus, 
+    section.right-col .pagination > li.prev > a:hover, section.right-col .pagination > li.next > a:hover {font-size: 11px !important;}
+    section.right-col .pagination > li.next > a { margin-left: 10px!important; }
+    section.right-col .pagination > li.prev > a { margin-right: 10px; }
+    .s-r-how-many {font-size:25px; line-height:30px;}
+	.list-for-gsasearch {display: none;}
+	.list-drop-menu.list-for-gsasearch { height: 400px; box-shadow: 0px 1px 5px 1px #999; padding: 20px 20px 20px 40px; position: absolute; width: 90%; z-index: 370; background: #fff; overflow:hidden}
+	.list-drop-menu.list-for-gsasearch div.col-sm-12 {padding-right: 0; padding-bottom: 20px; display: block;}
+	.list-drop-menu.list-for-gsasearch div.col-sm-12 .close-btn { cursor: pointer; padding: 20px 0 10px; background: url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-crossButton.png") no-repeat;}
+	.list-drop-menu.list-for-gsasearch div.col-sm-12 .close-btn:hover { background: url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-close-over.png") no-repeat;}
+	.side-sub-nav .desktop-only { margin-left: 10px;}
+	.side-sub-nav .desktop-only h4 { border: 2px solid #fdbb30; cursor: pointer; font-size: 18px; width: 150px; padding:0 25px; color:#464646; line-height:36px; margin-bottom:20px; font-weight: 700; background-color: #fff;}
+	.side-sub-nav .desktop-only h4:hover{background-color:#fdbb30; color: #fff;}
+	.s-r-sort-actions {padding: 0 10px 36px;}
+	section.right-col .pagination > li > a { margin-bottom: 10px;}
+.search-s-r .content form input { font-size: 18px;}
+
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+    #gsasearch { width: 580px;}
+    .s-r-content h5 a {font-size:20px !important;}
+.s-r-content p {font-size:16px;}
+.s-r-content {margin-bottom:35px; }
+	.list-for-gsasearch {display: none;}
+.side-sub-nav .desktop-only { margin-left: 10px;}
+	.side-sub-nav .desktop-only h4 { color:#464646; background-color: #fff; width: 150px; cursor: pointer; border: 2px solid #fdbb30;}
+	.side-sub-nav .desktop-only h4:hover{background-color:#fdbb30; color: #fff;}
+.list-drop-menu.list-for-gsasearch { box-shadow: 0px; padding: 20px; position: absolute; width: 50%; z-index: 370; background: #fff; top: 0;
+left: 0; height: 500px; overflow:hidden}
+.list-drop-menu.list-for-gsasearch div.col-sm-12 .close-btn { cursor: pointer; padding: 20px 0 10px; background: url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-crossButton.png") no-repeat;}
+.list-drop-menu.list-for-gsasearch div.col-sm-12 .close-btn:hover { background: url("/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&text-close-over.png") no-repeat;}
+.list-drop-menu.list-for-gsasearch div.col-sm-12 {display:block;}
+.s-r-sort-actions { padding-left: 10px;}
+section.right-col .pagination > li > a { margin-bottom: 10px;}
+.search-s-r .content form input { width: 560px; font-size: 18px;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+
+    #gsasearch .btn-search { line-height: 24px; margin-left: -40px; }
+    .side-sub-nav .desktop-only h4{width: 90%;}
+}

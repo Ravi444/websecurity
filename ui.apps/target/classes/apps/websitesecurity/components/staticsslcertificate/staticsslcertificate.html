@@ -1,0 +1,88 @@
+
+<script>
+
+function removebuybutton() {
+    $(".buy-link").removeClass("buy-link-above");
+    $(".chart-amt").removeClass("chart-amt-above");
+}
+function addbuybutton() {
+    $(".buy-link").addClass("buy-link-above");
+    $(".chart-amt").addClass("chart-amt-above");
+
+}
+
+
+
+$(window).on('load resize', function() {
+
+    if ($(window).width() < 768) {
+        removebuybutton();
+         $(".view-all-bg").text("View All Features");
+         $("#box5,#box6").hide();
+		 
+    } else {
+        addbuybutton();
+        removetext();
+		 $("#box5,#box6").show();
+    }
+});
+
+function removetext() {
+
+
+    if ($(window).width() > 768) { $(".left-features .fa-left:gt(3)").hide();}
+    $(".left-features .fa-left:gt(3)").hide();
+}
+
+function addtext() {
+
+    $(".left-features .fa-left:gt(0)").show();
+}
+$(document).ready(function() {
+    $('.view-all-bg, .view-all span').click(function() {
+        $('.Spropery-service-container').toggleClass("Spropery-service-height");
+        $(".view-all span").toggleClass("glyphicon-menu-down glyphicon-menu-up active");
+
+        if ($('.chart-show').hasClass('Spropery-service-height')) {
+            $(".view-all-bg").text("View Less Features");
+            $('html, body').animate({
+                scrollTop: $(".diff-txt").offset().top
+            }, 800);
+			removebuybutton();
+            addtext();
+           
+            if ($(window).width() < 768) {
+
+                $("#box1,#box2,#box3,#box4,#box5,#box6").show();
+                removebuybutton();
+            }
+        } else {
+            $(".view-all-bg").text("View All Features");
+            $('html, body').animate({
+                scrollTop: $(".back-cv").offset().top
+            }, 800);
+            addbuybutton();
+            removetext();
+            if ($(window).width() < 768) {
+                removebuybutton();
+ $("#box5,#box6").hide();
+            }
+        }
+    });
+
+    $('.matchHeight').matchHeight();
+    $('.matchHeight_head').matchHeight();
+
+    if ($(window).width() < 768) {
+ $("#box5,#box6").hide();
+        removebuybutton();
+
+    }
+});
+    </script>
+
+
+<div class="container-fluid back-cv ${properties.margintop}">
+
+   ${properties.staticssl @ context='html'}
+</div>

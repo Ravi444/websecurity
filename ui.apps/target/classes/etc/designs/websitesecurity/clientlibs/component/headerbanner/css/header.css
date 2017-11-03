@@ -1,0 +1,39 @@
+
+/*.tpl-header{background-color:#464646;color:#e4e4e4;	font-size:22px;}
+.tpl-logo{font-size:18px;}
+.tpl-mbSearch{padding-right:0px; font-size:22px; position:absolute; float:right; right:138px; top:15px;}
+.tpl-srcbtn{position:absolute;  float:right; right:90px;  top:15px;}
+.btn-default:hover{color:black; border:solid white;	background-color:white;}
+.tpl-rightText{font-size:15px; color:#e4e4e4; margin-left:10px;}
+.tpl-searchBarCol{right: 30px;}
+.tpl-countryBar{padding:10px 0px 0px 10px;}
+.tpl-btn{background-color:black;  font-weight:bold; color:gray;  border:solid black;}
+
+/* Search Bar Dropdown START
+	.tpl-dropDownList {
+	  position: relative;
+	  display: inline-block;
+	}  
+	input > .tpl-droplist {
+	  border: solid 1px black;
+	}
+	.tpl-droplist {
+		display:none;
+		list-style: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		margin: -1px 0 0;
+		padding: 0;
+		border: 1px solid black;
+		top: 32px;
+	}  
+	.tpl-droplist > li {
+		cursor: pointer;
+		height: 30px;
+		color: black;
+		background-color: #e4e4e4;
+		border: 1px solid white;
+	}
+/* Search Bar Dropdown END */

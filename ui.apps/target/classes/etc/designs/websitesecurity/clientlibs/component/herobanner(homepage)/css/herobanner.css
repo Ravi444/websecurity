@@ -1,0 +1,170 @@
+0/* tiles container start */
+.bgColorGrey{background:#464646;}
+
+/* Css For Herobanner Title Container */
+.herobanner .c_tiles-container{padding:10px 0px 0;}
+.herobanner .c_tiles-content-grey h2{word-wrap: break-word;text-align: center; width:100%; font-size:48px; margin:0; padding-bottom:0;}
+.herobanner .c_tiles-container .c_tiles-content-grey{text-align: center; display:inline-block; vertical-align:middle;  /*padding-top:180px; padding-bottom:142px;*/}
+.herobanner .c_tiles-container.c_tiles-right{width:56%; padding:90px 20px 90px 35px;}
+.herobanner .c_tiles-right h3{word-wrap: break-word;font-size: 34px;font-weight: 300;text-align: left; padding:0 0 30px 0; margin:0; min-height:165px;}
+
+/* Css For Herobanner paragraph Section */
+.herobanner .c_tiles-container.c_tiles-right p{padding-left:0}
+.herobanner .c_tiles-content-grey p{padding:27px 0 35px;text-align:center; margin:0 auto; width:100%; font-size:16px;}
+.herobanner p.c_moreLink{margin-bottom:0; padding:0 0 0 0;}
+.herobanner p.c_moreLink a{border-bottom:3px solid #fdbb30;text-decoration:none;padding-bottom:9px;font-size: 14px;font-weight: 700;text-align: center; color:#00addd;}
+.herobanner p.c_moreLink a:hover{border-bottom:3px solid #15ccff; color:#15ccff;}
+.herobanner p.c_moreLink{padding-bottom:10px;}
+
+/*Firefox CSS Section*/
+@-moz-document url-prefix() {.herobanner p.c_moreLink a{line-height:36px;}}
+/*End*/
+
+
+
+/* Css For Herobanner Image */
+.herobanner .c_herobanner-img2, .herobanner .c_herobanner-img3{padding:0;background-size:cover; background-size:100% 100%; background-position: right 0;}
+.herobanner .c_imgInsideBox{padding:50px 10px 44px 35px; display:block; min-height:315px;}
+.herobanner .c_tiles-container .c_tiles-right .c_herobanner-img1{ background-size:cover;padding:0; background-position:right 0;}
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{ overflow:hidden; font-size:36px;  padding-bottom:17px; min-height:212px; padding-right:65px;}
+.herobanner .c_tiles-right .c_herobanner-img2 p a, .herobanner .c_tiles-right .c_herobanner-img3 p a{border-bottom: 3px solid #fff;text-decoration:none;padding-bottom:9px;font-size: 14px;font-weight: 700;text-align: center; color:#fff; margin-bottom:30px;}
+.herobanner .c_tiles-right .c_herobanner-img2 p a:hover, .herobanner .c_tiles-right .c_herobanner-img3 p a:hover{color:#e4e4e4; border-bottom:3px solid #e4e4e4; }
+
+
+/* Css For Herobanner Section Padding */
+.herobanner .c_tiles-right.c_nopadding, .herobanner .c_nopadding{padding:0;}
+.herobanner .c_no-pad-rit{padding-right:0;}
+.herobanner .c_no-pad-left{padding-left:0;}
+.herobanner .c_herobannerHeading h2{text-align:center;}
+
+
+/* Css For Herobanner Left Right Container */
+.herobanner .c_herobannerbanner-left-container{padding:0 68px; height:175px;}
+.herobanner .c_herobannerbanner-left-container:before{/* create a full-height inline block pseudo-element */content: ' '; display:inline-block; vertical-align:middle; /* vertical alignment of the inline element */ height:100%;}
+.herobanner .c_herobannerbanner-right-container{padding:0;}
+.herobanner .c_herobannerbanner-left-container .c_tiles-content-grey p{padding-bottom:0}
+.herobanner .c_herobannerbanner-left-container .c_moreLink{margin-top:57px;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+     ::i-block-chrome, .herobanner .c_imgInsideBox{padding:50px 25px 44px 30px;}
+    ::i-block-chrome, .herobanner .c_tiles-container.c_tiles-right{width:71%; padding:90px 20px 90px 30px;}
+}
+
+/* @media For Herobanner Small Desktop */
+@media only screen and (max-width : 1200px) {
+ /* Css For Herobanner Containerp */   
+.herobanner .container{width:auto;}
+.herobanner .c_tiles-right h3{line-height:32px;font-size:24px;}
+.herobanner .c_tiles-container .c_tiles-right .c_herobanner-img1{background-size:cover; background-position:right 0;}
+.herobanner .c_tiles-content-grey h2{font-size:32px;}
+
+ /* Css For Herobanner Title And inner Container */ 
+.herobanner .c_imgInsideBox, .herobanner .herobanner .c_tiles-container.c_tiles-right{padding-left:25px; width:64%;}
+
+ /* Css For Herobanner Image */ 
+.herobanner .c_tiles-container.c_tiles-right{padding-left:25px; width:52%;}
+.herobanner .c_herobanner-img2{min-height:auto;}
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{font-size:24px;  padding-right: 25px; min-height:145px; width:78%;}
+.herobanner .c_herobanner-img2 .c_imgInsideBox, .herobanner .c_herobanner-img3 .c_imgInsideBox{width:100%;}
+.herobanner .c_imgInsideBox{padding-right:0;}
+
+ /* Css For Herobanner Left Right Container */ 
+.herobanner .c_herobannerbanner-left-container{padding:0 98px;}
+.herobanner .c_herobannerbanner-right-container{padding:0;}
+.herobanner .c_herobannerbanner-left-container .c_tiles-content-grey p{padding-bottom:0}
+.herobanner .c_herobannerbanner-left-container .c_moreLink{margin-top:40px;}
+}
+
+/* @media For Herobanner Ipadp */
+@media only screen and (max-width : 991px) {
+.herobanner .container{width:auto;}
+.herobanner .c_tiles-content-grey p{padding:25px 0 40px;}
+.herobanner .c_tiles-container{padding:0 0px 0;}
+/* Css For Herobanner Image */
+.herobanner .c_tiles-right .c_herobanner-img2, .herobanner .c_herobanner-img3{width:100%;}
+.herobanner .c_tiles-right .c_herobanner-img1, .herobanner .c_tiles-right .c_herobanner-img2, .herobanner .c_tiles-right .c_herobanner-img3{background-image:none;}  
+.herobanner .c_tiles-right .c_herobanner-img1{background:#F1f1f1;}
+.herobanner .c_tiles-right .c_herobanner-img2{background:#fdbb30;}
+.herobanner .c_tiles-right .c_herobanner-img3{background: #00619e; /* Old browsers */}
+.herobanner .c_tiles-right .c_herobanner-img1 h3, .herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{font-size:24px; padding-bottom:40px; min-height:auto;}
+.herobanner .c_tiles-container.c_tiles-right , .herobanner .c_herobanner-img2 , .herobanner .c_herobanner-img3{padding-bottom:50px;}
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{min-height:auto;}
+.herobanner  .c_tiles-right .c_herobanner-img3{background: #00619e; /* Old browsers */
+background:-moz-linear-gradient(45deg, #00addd, #00619e);background:-webkit-linear-gradient(45deg, #00addd, #00619e);background:linear-gradient(45deg, #00addd, #00619e);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e',GradientType=1 ); /* IE6-9 */}
+
+/* Css For Herobanner Title Container */
+.herobanner .c_tiles-container.c_tiles-right{width:95%;}
+.herobanner .c_tiles-content-grey h2{font-size:32px;}
+.herobanner .c_tiles-content-grey p{font-size:16px;}
+.herobanner p.c_moreLink, .herobanner p.c_moreLink a{font-size:14px; padding:0 0 9px 0;}
+.herobanner .c_imgInsideBox{padding:40px 0 0 40px; min-height:inherit;}
+.herobanner .c_tiles-container.c_tiles-right{padding-top:45px;}
+
+/* Css For Herobanner Left Right Container */
+.herobanner .c_herobannerbanner-left-container{padding:0 43px;}
+.herobanner .c_herobannerbanner-right-container{padding:0;}
+.herobanner .c_herobannerbanner-left-container .c_tiles-content-grey p{padding-bottom:0}
+.herobanner .c_herobannerbanner-left-container .c_moreLink{margin-top:34px;}
+.herobanner .c_imgInsideBox, .herobanner .c_tiles-container.c_tiles-right{padding-left:45px; padding-top:45px;}
+
+}
+
+/* @media For Herobanner Mobile */
+@media only screen and (max-width : 767px) {
+/* Css For Herobanner Container */
+.herobanner .c_tiles-container{padding:0 0px 0;}
+.herobanner{height:auto;}
+.herobanner .c_tiles-container.c_tiles-right{width:100%;}
+.herobanner .c_tiles-container .c_tiles-content-grey{padding:0;}
+.herobanner .c_tiles-container.c_tiles-right{padding:40px 35px; text-align:center;}
+
+/* Css For Herobanner Img */
+.herobanner .c_tiles-right .c_herobanner-img1, .herobanner .c_tiles-right .c_herobanner-img2{background-image:none;}
+.herobanner .c_tiles-right .c_herobanner-img2, .herobanner .c_tiles-right .c_herobanner-img3{width:50%;}
+.herobanner .c_tiles-right .c_herobanner-img1{background-color:#F1f1f1; background-image:none;}
+.herobanner  .c_tiles-right .c_herobanner-img2{background-color:#fdbb30;}
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{min-height:146px; padding-bottom:50px;}
+.herobanner .c_herobanner-img1, .herobanner .c_herobanner-img2 , .herobanner .c_herobanner-img3{padding-bottom:0;}
+.herobanner .c_herobanner-img2 .c_imgInsideBox, .herobanner .c_herobanner-img3 .c_imgInsideBox{padding:35px 20px 35px 40px;min-height:240px; position:relative;}
+.herobanner .c_herobanner-img2 h3, .herobanner .c_herobanner-img3 h3{padding-bottom:20px; font-size:25px; }
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{width:auto;}
+.herobanner .c_tiles-right .c_herobanner-img1 h3{margin:0 auto; width:69%;}
+.herobanner .c_tiles-right .c_herobanner-img1 h3{padding-bottom:30px; text-align:center;}
+.herobanner .c_herobanner-img2 .c_imgInsideBox p.c_moreLink, .herobanner .c_herobanner-img3 .c_imgInsideBox p.c_moreLink{font-size:12px;}
+
+/* Css For Herobanner Paragraph */
+.herobanner .c_tiles-content-grey p{padding:18px 0 30px 0;}
+.herobanner p.c_moreLink, .herobanner p.c_moreLink a{font-size:12px;}
+.herobanner .c_tiles-content-grey h2{font-size:35px;}
+.herobanner .c_tiles-content-grey p{font-size:16px;}
+
+/* Css For Herobanner Left Right Container */
+.herobanner .c_herobannerbanner-left-container:before{height:inherit;}
+.herobanner .c_herobannerbanner-left-container{padding:30px 20px 51px; height:inherit;}
+.herobanner .c_herobannerbanner-right-container{padding:0;}
+.herobanner .c_herobannerbanner-left-container .c_tiles-content-grey p{padding-bottom:0}
+.herobanner .c_herobannerbanner-left-container .c_moreLink{margin-top:35px;}
+.herobanner .c_tiles-right .c_herobanner-img2 p a, .herobanner .c_tiles-right .c_herobanner-img3 p a{font-size:13px;}
+
+
+}
+
+/* @media For Herobanner mobile max 480px */
+@media only screen and (max-width : 480px) {
+.herobanner .c_tiles-right .c_herobanner-img2 h3, .herobanner .c_tiles-right .c_herobanner-img3 h3{ font-size:25px; padding-right:0; min-height:220px;}
+.herobanner .c_herobanner-img2 .c_imgInsideBox, .herobanner .c_herobanner-img3 .c_imgInsideBox{padding:45px 18px; min-height:290px;}
+.herobanner .c_tiles-right .c_herobanner-img2 a, .herobanner .c_tiles-right .c_herobanner-img3 a{line-height:25px; font-size:12px;}
+.herobanner .c_tiles-right .c_herobanner-img1 h3{margin:0; width:auto; font-size:25px;}
+.herobanner .c_tiles-right .c_herobanner-img2 p a, .herobanner .c_tiles-right .c_herobanner-img3 p a{font-size:12px; padding-bottom:0px;}
+.herobanner .c_herobanner-img2 .c_imgInsideBox p.c_moreLink, .herobanner .c_herobanner-img2 .c_imgInsideBox p.c_moreLink a, .herobanner .c_herobanner-img3 .c_imgInsideBox p.c_moreLink, .herobanner .c_herobanner-img3 .c_imgInsideBox p.c_moreLink a{font-size:12px;}
+.herobanner .c_tiles-container.c_tiles-right{padding:45px 25px;}
+
+}
+
+
+/* @media For Herobanner mobile iPhone 5 landscape max 480px */
+@media only screen and (min-width : 567px) and (max-width : 580px) {
+.herobanner .c_tiles-right .c_herobanner-img3 h3{height:auto; padding-bottom:77px;}
+}

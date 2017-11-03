@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="websitesecurity.core.servlets.ProdcutAZSearchServlet">
+        <implementation class="websitesecurity.core.servlets.ProdcutAZSearchServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/websitesecurity/prodcutazsearch
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="websitesecurity.core.servlets.ProdcutAZSearchServlet"/>
+        <reference name="search" interface="websitesecurity.core.utilities.Search" cardinality="1..1" policy="static" bind="bindSearch" unbind="unbindSearch"/>
+        <reference name="sling" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindSling" unbind="unbindSling"/>
+    </scr:component>
+</components>

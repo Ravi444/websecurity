@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="CWS Subscription"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Imageproperties
+                jcr:primaryType="cq:Panel"
+                title="Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        maxLength="40"
+                        name="./cwssubscriptiontitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <Description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Description"
+                        fieldLabel="Description"
+                        maxLength="100"
+                        name="./cwssubscriptiondescription"
+                        xtype="textarea"/>
+                    <Bg_x0020_color
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for the background"
+                        fieldLabel="Background Color"
+                        name="./cwssubscriptionbgcolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient2"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_bg"/>
+                        </options>
+                    </Bg_x0020_color>
+                    <Link_x0020_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title of the Link"
+                        fieldLabel="Link Title"
+                        maxLength="15"
+                        name="./cwssubscriptionlinkkey"
+                        xtype="textfield"/>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path of the link"
+                        fieldLabel="Link path"
+                        name="./cwssubscriptionlinkvalue"
+                        xtype="pathfield"/>
+                    <marginrequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose Component Outer Space"
+                        fieldLabel="Component Outer Space"
+                        name="./cwsouterspace"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="componentouterspace"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="nocomponentouterspace"/>
+                        </options>
+                    </marginrequired>
+                </items>
+            </Imageproperties>
+        </items>
+    </items>
+</jcr:root>

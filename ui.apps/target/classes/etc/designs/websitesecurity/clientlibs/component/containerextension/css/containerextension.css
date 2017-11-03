@@ -1,0 +1,69 @@
+/*******************************************************View/*******************************************************View All Links Starts*****************************************************/
+/********************************************container ext starts********************************************/
+.c-containerext.componentouterspace{margin-top:105px;}
+.c-containerext .certificate-container{padding-top:105px;}
+.c-containerext.borderTopAbsent .certificate-container{padding-top:40px;}
+.c_viewalltoggle{padding: 45px 0 0;}
+.c_viewalltoggle .c_wrapper{ margin:0 auto; width:145px;}
+
+/*Firefox CSS Section*/
+@-moz-document url-prefix() {.c_viewalltoggle .c_wrapper{width:150px;}
+    }
+/*End*/
+
+
+
+.c-propery-service-container{overflow:hidden;}
+
+.c_viewalltoggle .c_wrapper span{cursor:pointer; text-transform:uppercase; text-align:center; font-weight:700; font-size:14px; line-height:16px; text-transform:uppercase;font-weight:700;color:#00addd; margin-bottom:10px;display:inline-block;}
+.c_viewalltoggle .c_wrapper span:hover{color:#15ccff;}
+.c_viewalltoggle .c_wrapper span.active{color:#ffffff;}
+
+.c_viewalltoggle .c_wrapper .text-center.view-all a{ font-size:14px; text-transform:uppercase; font-weight: 700;width:30px; height:30px; color:#00addd; border-radius:100%; border:1px solid #ccc; display:inline-block; vertical-align:middle; text-align:center; padding-top:3px;}
+.c_viewalltoggle .c_wrapper .text-center.view-all a:hover{background-color:#15ccff; color:#ffffff;}
+.c_viewalltoggle .c_wrapper .text-center.view-all a.active{color:#ffffff; background-color: #15ccff;}
+.c_viewalltoggle .c_wrapper .text-center.view-all a.active span, .c_viewalltoggle .c_wrapper .text-center.view-all a:hover span{color:#fff;}
+.c-propery-service-container.c-propery-service-flexiheight{height:auto; overflow:inherit;}
+.c_expand-content{display:none;}
+.containerextention .certificate-container .row p{padding-bottom:60px; margin:0;}
+.view-less-feature{display:none;}
+.c_viewalltoggle .c_wrapper span.view-less-feature.active{color:#15ccff;}
+
+/********************************************container ext ends********************************************/
+
+/********************************************************Media Query Starts*****************************************************/
+
+@media only screen and (max-width: 1200px) {
+/********************************************container ext starts********************************************/
+.c-containerext .certificate-container{padding-top:90px;}
+.c-containerext.componentouterspace{margin-top:100px;}
+.c-containerext.borderTopAbsent .certificate-container{padding-top:35px;}
+/********************************************container ext ends********************************************/
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+/********************************************container ext starts********************************************/
+.c-containerext.componentouterspace{margin-top:95px;}
+.c-containerext .certificate-container{padding-top:90px;}
+.c-containerext.borderTopAbsent .certificate-container{padding-top:37px;}
+/********************************************container ext ends********************************************/
+}
+
+@media only screen and (max-width: 767px) {
+/********************************************container ext starts********************************************/
+.c-containerext.componentouterspace{margin-top:50px;}
+.c-containerext .certificate-container{padding-top:47px;}
+.c-containerext.borderTopAbsent .certificate-container{padding-top:35px;}
+.c-propery-service-container.c-propery-service-flexiheight{overflow:inherit;}
+.containerextention .certificate-container .row p{padding-bottom:30px; margin:0;}
+/********************************************container ext ends********************************************/
+	
+}
+@media only screen and (max-width: 767px) {
+
+.c-propery-service-container.c-propery-service-flexiheight{height:auto; overflow:inherit;}
+}
+/*******************************************Media Query ENDS*****************************************************/            

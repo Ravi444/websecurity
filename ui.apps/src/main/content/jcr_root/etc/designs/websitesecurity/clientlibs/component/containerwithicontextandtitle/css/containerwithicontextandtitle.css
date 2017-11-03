@@ -1,0 +1,96 @@
+
+.c-img_Space_Width_Cws{padding-right: 10px;}
+.c-para_content{margin-bottom: 10x;text-align:left; color:#464646;}
+.c-anchor_link_text{text-align: left;}
+.c-title_Head_Space h5{color:  #999999;}
+.c-title_Head_Space h2{color:  #464646;}
+.c-remove_padd_bottom p:nth-child(2){margin-top:-10px;}
+.c-anchor_link_text{font-weight:700;font-size:14px;}
+.c-next_Line_Img h3{color:#464646;}
+.nospacingboth{padding-left:0; padding-right:0;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(2) {padding-left:0px; padding-right:15px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(3) {padding-left:0px; padding-right:8px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(4) {padding-left:7px; padding-right:0px;}
+.c-container_with_iconTextTitle.spacingtopMargin{margin-top:80px;}
+
+
+/****************************************Media Query for Large Desktop Start********************************************************/
+@media only screen and (min-width : 1200px) {
+.c-cws_Buy{margin-bottom:80px; padding-top:95px;}
+.c-img_Space_Width_Cws{width:55px;}
+.c-Table_Heading{margin-bottom:17px;}
+}
+/*Media Query for Large Desktop End*/
+
+/*Media Query for Small Desktop Start*/
+@media screen and (min-width:992px) and (max-width : 1200px) {
+.c-title_Head_Space h5{margin-bottom: 0px;}
+.c-title_Head_Space h2{margin-bottom: 0px;}
+.c-img_Space_Width_Cws{padding-right: 20px;width:55px;}
+.c-Table_Heading{margin-bottom:30px;}
+.c-para_content{margin-bottom: 33px;}
+.c-cws_Buy{margin-bottom:88px;padding-top:98px;}
+.c-Table_Heading h3{font-size:22px;}
+.c-anchor_link_text{font-size:14px;font-weight:700;}
+}
+/*Media Query for Small Desktop End*/
+
+/*Media Query for Tablet Starts */
+@media screen and (min-width:768px) and (max-width : 991px){
+.c-title_Head_Space h5{margin-bottom:0px;}
+.c-title_Head_Space h2{margin-bottom:0px;}
+.c-img_Space_Width_Cws{padding-right: 18px;padding-bottom:13px;}
+.c-Table_Heading{margin-bottom:25px;}
+.c-para_content{margin-bottom: 22px;}
+.c-cws_Buy{margin-bottom:75px;padding-top:98px;}
+.c-next_Line_Img{width:100%;float:left;}
+.c-Table_Heading h3{font-size:22px;}
+.c-anchor_link_text{font-size:14px;font-weight:700;}
+}
+/*Media Query for Tablet End */
+
+/*Media Query for Mobile/Iphone6 Start */
+@media screen and (min-width:480px) and (max-width : 767px){
+.c-title_Head_Space{margin-top:60px;}
+.c-title_Head_Space h2 {margin-bottom:0px;}    
+.c-img_Space_Width_Cws{padding-right: 19px;width:55px;}
+.c-Table_Heading{margin-bottom:14px;}
+.c-para_content{margin-bottom:10x;}
+.c-cws_Buy{margin-bottom:0px;padding-top:58;}
+.c-additional_product_cws{margin-bottom:35px;padding-left: 5px;}
+.c-Table_Heading h3{font-size:22px;}
+.c-anchor_link_text{font-size:12px;font-weight:700;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(2) {padding-left:15px; padding-right:15px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(3) {padding-left:15px; padding-right:15px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(4) {padding-left:15px; padding-right:15px;}
+}
+
+/*Media Query for Iphone 6 Start */
+@media only screen and (max-width:480px) {
+.c-title_Head_Space{margin-top:60px;}
+.c-additional_product_cws{margin-bottom:30px;padding-left: 5px;}
+.c-Table_Heading h3{font-size:22px;}
+.c-anchor_link_text{font-size:12px;font-weight:700;}
+.c-img_Space_Width_Cws {padding-right: 6px;width:55px;}
+.c-para_content {margin-bottom: 12px; text-align: left;}
+
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(2) {padding-left:15px; padding-right:15px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(3) {padding-left:15px; padding-right:15px;}
+.c-container_with_iconTextTitle .c-cws_Buy .row div:nth-child(4) {padding-left:15px; padding-right:15px;}
+}
+@media only screen and (max-width:340px) {
+
+}
+/*Media Query for Iphone 6 End */
+
+/*Media Query for landscape mode Start */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 670px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+/*Media Query for landscape mode End */
+
+/*Media Query for Mobile/Iphone6 End */

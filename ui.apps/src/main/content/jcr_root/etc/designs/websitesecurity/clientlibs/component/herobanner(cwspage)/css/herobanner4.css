@@ -1,0 +1,159 @@
+
+/*Main CSS*/
+.c-cwsbanner{background-size:100% 100%;padding:165px 0 55px;text-align:center;}
+
+/*Banner Center*/
+.c-cwsbanner .banner_center{margin: 0 auto; width:900px;}
+
+
+/*Banner Spacing*/
+.c-cwsbanner .banner_gapping{margin:90px 0 0 0;}
+
+
+/*Heading Section*/
+.c-cwsbanner_heading h6{ font-size:20px; padding-top:25px;}
+.c-cwsbanner_heading h2{ padding-bottom:0px; font-size:48px;}
+
+
+/*Boxes Section*/
+.c-cwsbanner .blue_box{width:33%; float:left; padding:35px 0;}
+.c-cwsbanner .blue_box.yellow_box{background:#fdbb30;}
+.c-cwsbanner .blue_box.grey_box{background-color:#464646;}
+
+
+/*Image Box Section*/
+.c-cwsbanner .cwsimgBox{height:50px; padding-bottom:20px;}
+.c-cwsbanner .imgBoxinside{ display:inline-block; height:50px;}
+
+
+
+/*Link Section*/
+.c-cwsbanner .link_more{color:#fff;font-size:14px;text-align:center;padding-top: 22px;}
+.c-cwsbanner .link_more a{color:#fff;border-bottom:3px #fff solid;width:100%;padding-bottom:9px;font-weight: 600; text-transform: uppercase;}
+.c-cwsbanner .link_more a:hover{color:#e4e4e4;text-decoration:none;border-bottom:3px #e4e4e4 solid;}
+.c-cwsbanner .link_more a:focus{text-decoration:none;}
+
+
+/*Download Section*/
+.download_link{color:#00addd;font-size:14px;text-align:center;padding-top: 22px;}
+.c-cwsbanner .link_more.download_link a{text-align:center;	border-bottom:3px #fdbb30 solid;padding-bottom:9px;width:100%;font-weight: 600;color:#00addd;}
+.c-cwsbanner .link_more.download_link a:hover{color:#15ccff;text-decoration:none;border-bottom: 3px solid #15ccff;}
+.download_link a:focus{	text-decoration:none;}
+
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 1200px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 1200px) {
+
+.c-cwsbanner .banner_center{width:860px;}
+.c-cwsbanner{padding-top:47px;background-size:inherit;}
+
+}
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 991px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 991px) {
+
+
+/*Main Section*/
+.c-cwsbanner{padding-top:135px;background-size:inherit;}
+.c-cwsbanner .banner_center{width:740px;}
+
+/*Heading Section*/
+.c-cwsbanner_heading h2{font-size:40px; padding-left:0px;padding-bottom:30px}
+.herobanner4 h6{ font-weight:600;}
+
+/*Boxes Section*/
+.c-cwsbanner .blue_box{width:30%;float:left;padding:35px 0;}
+
+
+}
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 767px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 767px) {
+
+/*Main Section*/
+.c-cwsbanner .banner_center{width:100%;}
+.c-cwsbanner{padding-top:47px; background-size:inherit;}
+
+
+/*Download Section*/
+.c-cwsbanner .download_link, .c-cwsbanner .link_more {padding-top:8px}
+.c-cwsbanner .download_link a{font-weight: 700;font-size: 14px;}
+
+/*Link Section*/
+.c-cwsbanner .link_more a {font-weight: 700;font-size: 12px;}
+.c-cwsbanner .link_more{display:inline-block;}
+
+/*Heading Section*/
+.c-cwsbanner_heading h6{font-size:16px;}
+.c-cwsbanner_heading h2{font-size:35px;}
+
+/*Gradient Section*/
+.c-cwsbanner_heading .blue-gradient2{padding-top:5px;}
+.c-cwsbanner_heading .symantec_gold_bg{padding:0px 0px 15px; 0px}
+
+
+/*Boxes Section*/
+.c-cwsbanner .blue_box{width:100%;}
+.c-cwsbanner .blue_box{margin-bottom:6px; padding:0px 0px 15px 0px;}
+.c-cwsbanner .imgBoxinside{width:60%;}
+.c-cwsbanner .imgBoxinside{height:auto;}
+.c-cwsbanner .img-responsive{display:inherit; padding-top:14px;}
+.herobanner-boxes .cwsimgBox{height:inherit;margin-right: 10px; width:auto; display:inline-block; padding-bottom:0;}
+
+/*Banner Gapping Section*/
+.c-cwsbanner .banner_gapping{margin:30px 0 0 0;}
+
+
+/*.hero-banner*/
+.c-cwsbanner .cws-banner{padding:0 15px;}
+.c-cwsbanner .left_spacing{padding-left:20px;}
+.sym_h2{padding-bottom:15px;}
+}
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 480px)
+
+*********************************************************************************/
+
+
+@media only screen and (max-width : 480px) {
+
+/*Main Section*/
+.c-cwsbanner{padding-top:47px; background-position:-59px -68px; background-size:inherit;}
+
+}
+
+
+/*********************************************************************************
+
+@media only screen and (max-width :320px)
+
+*********************************************************************************/
+
+@media only screen and (max-width :320px) {
+
+.c-cwsbanner{background-position:-59px -60px;}
+
+}

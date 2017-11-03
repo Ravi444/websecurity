@@ -1,0 +1,11 @@
+<sly data-sly-test="${properties.titleandtexttitle != NULL}">
+	<sly data-sly-use.titleandtextobject1="/etc/designs/websitesecurity/clientlibs/component/titleandtext/js/titleandtext.js">
+		<h4>
+
+            <a class="${properties.titlecolor}" href="${titleandtextobject1.path}" target="${titleandtextobject1.target}">${titleandtextobject1.text}</a>
+         </h4>
+	</sly>
+</sly>
+
+
+${properties.titleandtextdescription @ context='html'}

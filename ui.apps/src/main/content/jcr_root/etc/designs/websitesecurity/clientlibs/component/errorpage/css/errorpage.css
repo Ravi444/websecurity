@@ -1,0 +1,8 @@
+.c-error{width: 85%;margin-left: auto;margin-right: auto;text-align: center; padding:75px 10px 75px 10px; margin-top:75px; margin-bottom:100px; position: relative;}
+.c-error H2{padding:5px; font-family:arial; font-size:50px; list-style:italic; font-weight:600px; margin-bottom:20px;}
+.c-error H4{font-family:arial;}
+.c-error p{ font-size:24px; font-family:arial; list-style:italic; font-weight:300px;font-style: italic; line-height:36px;  margin-bottom:40px;}
+.c-error .error_link{margin:0 auto; width:100%;}
+.c-error .error_link li{margin-right:20px; font-size:15px; color:#ffffff; display:inline-block;}
+.c-error .error_link li:hover{border-bottom: 1px solid #ffffff;}
+.c-error .error_link li a{color:#ffffff;}

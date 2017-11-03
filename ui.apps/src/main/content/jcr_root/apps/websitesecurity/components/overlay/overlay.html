@@ -1,0 +1,127 @@
+<div class="modal videoModaloverlay1 fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModal1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+            <div class="modal-body videoModaloverlay">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="textModal" tabindex="-1" role="dialog" aria-labelledby="textModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+            <div class="modal-body">
+
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+                $(document).ready(function(){ 
+
+	$('.videopopup.overlay_popup').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        if(id == "brightcove") {
+            var playerid = $(this).attr('data-playerid');
+            var playerkey = $(this).attr('data-playerkey');
+            var videoid = $(this).attr('data-videoid');
+            var closeicon = $(this).attr('data-closeicon');
+            var hoverclose = $(this).attr('data-hoverclose');
+            var videotitle = $(this).attr('data-videotitle');
+
+            var htmlContent = "";
+            htmlContent += '<div class=" col-md-12 col-sm-12 col-xs-12">';
+            htmlContent +=   '<div class=" col-md-10 col-sm-10 col-xs-10">';
+            htmlContent +=     '<h2>'+videotitle+'</h2>';
+            htmlContent += 	'</div>';
+            htmlContent += 	  '<div class=" col-md-2 col-sm-2 col-xs-2">';
+            htmlContent += 		'<button type="button" class="close videoclose" data-dismiss="modal" aria-hidden="true">';
+            htmlContent += 		  '<img class="close-button" src="'+closeicon+'">';
+            htmlContent += 	      '<img class="hoverClose-button" src="'+hoverclose+'">';
+            htmlContent += 		'</button>';
+            htmlContent += 	  '</div>';
+            htmlContent += 	'</div>';
+            htmlContent += 	'<div>';
+			htmlContent +=    '<object type="application/x-shockwave-flash" id="myExperience1155633140001" width="100%" height="500" class="BrightcoveExperience BrightcoveExperienceID_9161" seamlesstabbing="undefined" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=100%25&amp;height=100%25&amp;flashID=myExperience1155633140001&amp;identifierClassName=BrightcoveExperienceID_9161&amp;bgcolor=%23FFFFFF&amp;playerID='+playerid+'&amp;playerKey='+playerkey+'&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;autoStart=true&amp;%40videoPlayer='+videoid+'&amp;debuggerID=&amp;startTime=1486468559092"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="window"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"></object>'
+            htmlContent += 	'</div>';
+
+            $('.videoModaloverlay1 .videoModaloverlay').html(htmlContent);
+            if($(window).width() < 768) {
+            	$('object').css({ 'height': 'auto', 'width': '100%'});
+            } else if ( $(window).width() == 768 && $(window).width() <1024) {
+				$('object').css({ 'height': '400px', 'width': '100%'});
+            }
+
+        } else if (id == "youtube" || id == "ustudio") {
+
+            var src = $(this).attr('data-theVideo').trim();
+            var closeicon = $(this).attr('data-closeicon');
+            var hoverclose = $(this).attr('data-hoverclose');
+            var videotitle = $(this).attr('data-videotitle');
+            src = src+"";
+
+            var htmlContent = "";
+            htmlContent += '<div class=" col-md-12 col-sm-12 col-xs-12">';
+            htmlContent +=   '<div class=" col-md-10 col-sm-10 col-xs-10">';
+            htmlContent +=     '<h2>'+videotitle+'</h2>';
+            htmlContent += 	'</div>';
+            htmlContent += 	  '<div class=" col-md-2 col-sm-2 col-xs-2">';
+            htmlContent += 		'<button type="button" class="close videoclose" data-dismiss="modal" aria-hidden="true">';
+            htmlContent += 		  '<img class="close-button" src="'+closeicon+'">';
+            htmlContent += 	      '<img class="hoverClose-button" src="'+hoverclose+'">';
+            htmlContent += 		'</button>';
+            htmlContent += 	  '</div>';
+            htmlContent += 	'</div>';
+            htmlContent += 	'<div>';
+            htmlContent += 	  '<iframe id="youtubeVideo" width="100%" height="100%" src="'+src+'" allowfullscreen></iframe>';
+            htmlContent += 	'</div>';
+
+            $('.videoModaloverlay1 .videoModaloverlay').html(htmlContent);
+        }
+
+        $('.videoclose').click(function() {
+            $('.videoModaloverlay1 .videoModaloverlay').html("");
+            $('.videoModaloverlay1').modal('hide');
+
+        });
+
+    });
+
+    $('.textpopup.overlay_popup').click( function(e) {
+        e.preventDefault();
+
+        var closeicon = $(this).attr('data-closeIcon');
+        var hoverclose = $(this).attr('data-hoverClose');
+        var texttitle = $(this).attr('data-textOverlayTitle');
+        var textDesc = $(this).attr('data-textOverlayDescription');
+
+
+		var htmlContent = "";
+        htmlContent += '<div class=" col-md-12 col-sm-12 col-xs-12">';
+		htmlContent +=   '<div class=" col-md-10 col-sm-10 col-xs-10">';
+		htmlContent +=     '<h2>'+texttitle+'</h2>';
+		htmlContent += 	'</div>';
+		htmlContent += 	  '<div class=" col-md-2 col-sm-2 col-xs-2">';
+		htmlContent += 		'<button type="button" class="close textclose" data-dismiss="modal" aria-hidden="true">';
+		htmlContent += 		  '<img class="close-button" src="'+closeicon+'">';
+		htmlContent += 	      '<img class="hoverClose-button" src="'+hoverclose+'">';
+		htmlContent += 		'</button>';
+		htmlContent += 	  '</div>';
+		htmlContent += 	'</div>';
+		htmlContent += 	'<div>';
+		htmlContent += 	  textDesc;
+		htmlContent += 	'</div>';
+
+        $('#textModal .modal-body').html(htmlContent);
+		$('.textclose').click(function() {
+            $('#textModal .modal-body').html("");
+            $('#textModal').modal('hide');
+        });
+	});
+
+
+});	
+ </script>  
+

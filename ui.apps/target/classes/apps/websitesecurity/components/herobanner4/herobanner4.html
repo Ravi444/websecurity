@@ -1,0 +1,127 @@
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='custommultifieldfield'}"/>
+
+</div>
+ <!-- <div data-sly-test="${!author}">
+  	 
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='header'}"/>
+</div>-->
+
+
+<div class="container-fluid c-cwsbanner" style="background-image:url('${properties.imageReference @ context='unsafe'}'); background-repeat: no-repeat;">
+	<div class="row">
+		<div class="container container_tab">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cws-banner">
+				<div class="row">
+					<h2 class = "sym_h2 ${properties.titlecolor}">${properties.headingtitle}</h2>
+					<h6 class = "${properties.subtitlecolor}">${properties.subtitle}</h6>
+				</div>
+				<div class="row banner_gapping">
+					<div class="banner_center herobanner-boxes">
+						<div class="blue_box ${properties.bgcolor1}">
+							<div class="cwsimgBox"> <div class="imgBoxinside"><img class="img-responsive" src="${properties.imageReference1}" title="${properties.imagetitle1}" alt="${properties.alternatetext1}"></div> </div>
+							<p class="link_more">
+                                <sly data-sly-test="${properties.image1link != NULL}">
+
+								 <sly data-sly-test ="${properties.linkpathoverlay1 == 'linkpath'}">
+									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/herobanner(cwspage)/js/links.js">
+    									<a href="${object.path}" target="${object.target}" class = "${properties.link1color}">${object.text}</a>
+    								</sly>
+                                    </sly>
+									<sly data-sly-test ="${properties.linkpathoverlay1 == 'link_overlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.TextOverlayData' @ overlayurl = properties.dropvalue1}">
+										 <sly data-sly-test ="${properties.textvidoverlay1 == 'textoverlay'}">
+                                             <a href="#" data-toggle="modal" data-target="#textModal" class="textpopup overlay_popup" data-id="${properties.textvidoverlay1}" data-backdrop="static" data-keyboard="false" data-textOverlayTitle="${cpt2.textOverlayTitle}" data-textOverlayDescription="${cpt2.textOverlayDescription}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}">${properties.image1link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+										</sly>
+                                        </sly>
+										<sly data-sly-test ="${properties.textvidoverlay1 == 'vidoverlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.VideoOverlayData' @ overlayurl = properties.dropvalue1}">
+											<sly data-sly-test ="${cpt2.vendor == 'brightcove'}">
+                                             <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-playerID="${cpt2.playerID}" data-playerKey="${cpt2.playerKey}" data-videoID="${cpt2.videoID}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image1link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                             </sly>
+                                               <sly data-sly-test ="${cpt2.vendor == 'youtube' || cpt2.vendor == 'ustudio' }">
+                                                <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-theVideo="${cpt2.embedCode@ context='unsafe'} " data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image1link}</a>
+												<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                                </sly>
+
+										 </sly>
+                                        </sly>
+								    </sly>
+
+                            </p>
+						</div>
+						<div class="blue_box ${properties.bgcolor2}">
+							<div class="cwsimgBox"> <div class="imgBoxinside"><img class="img-responsive" src="${properties.imageReference2}" title="${properties.imagetitle2}" alt="${properties.alternatetext2}"> </div></div>
+							<p class="link_more">
+                               <sly data-sly-test="${properties.image2link != NULL}">
+								 <sly data-sly-test ="${properties.linkpathoverlay2 == 'linkpath'}">
+									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/herobanner(cwspage)/js/links2.js">
+    									<a href="${object.path}" target="${object.target}" class = "${properties.link2color}">${object.text}</a>
+    								</sly>
+                                    </sly>
+									<sly data-sly-test ="${properties.linkpathoverlay2 == 'link_overlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.TextOverlayData' @ overlayurl = properties.dropvalue2}">
+										 <sly data-sly-test ="${properties.textvidoverlay2 == 'textoverlay'}">
+                                             <a href="#" data-toggle="modal" data-target="#textModal" class="textpopup overlay_popup" data-id="${properties.textvidoverlay2}" data-backdrop="static" data-keyboard="false" data-textOverlayTitle="${cpt2.textOverlayTitle}" data-textOverlayDescription="${cpt2.textOverlayDescription}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}">${properties.image2link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+										</sly>
+                                        </sly>
+										<sly data-sly-test ="${properties.textvidoverlay2 == 'vidoverlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.VideoOverlayData' @ overlayurl = properties.dropvalue2}">
+											<sly data-sly-test ="${cpt2.vendor == 'brightcove'}">
+                                             <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-playerID="${cpt2.playerID}" data-playerKey="${cpt2.playerKey}" data-videoID="${cpt2.videoID}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image2link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                             </sly>
+                                               <sly data-sly-test ="${cpt2.vendor == 'youtube' || cpt2.vendor == 'ustudio' }">
+                                                <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-theVideo="${cpt2.embedCode@ context='unsafe'} " data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image2link}</a>
+												<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                                </sly>
+
+										 </sly>
+                                        </sly>
+								    </sly>
+
+                            </p>
+						</div>
+						<div class="blue_box ${properties.bgcolor3}">
+							<div class="cwsimgBox left_spacing"> <div class="imgBoxinside"><img class="img-responsive" src="${properties.imageReference3}" title="${properties.imagetitle3}" alt="${properties.alternatetext3}"> </div></div>
+							<p class=" link_more download_link ">
+                                <sly data-sly-test="${properties.image3link != NULL}">
+								 <sly data-sly-test ="${properties.linkpathoverlay3 == 'linkpath'}">
+									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/herobanner(cwspage)/js/links3.js">
+    									<a href="${object.path}" target="${object.target}" class = "${properties.link3color}">${object.text}</a>
+    								</sly>
+                                    </sly>
+									<sly data-sly-test ="${properties.linkpathoverlay3 == 'link_overlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.TextOverlayData' @ overlayurl = properties.dropvalue3}">
+										 <sly data-sly-test ="${properties.textvidoverlay3 == 'textoverlay'}">
+                                             <a href="#" data-toggle="modal" data-target="#textModal" class="textpopup overlay_popup" data-id="${properties.textvidoverlay3}" data-backdrop="static" data-keyboard="false" data-textOverlayTitle="${cpt2.textOverlayTitle}" data-textOverlayDescription="${cpt2.textOverlayDescription}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}">${properties.image3link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+										</sly>
+                                        </sly>
+										<sly data-sly-test ="${properties.textvidoverlay3 == 'vidoverlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.VideoOverlayData' @ overlayurl = properties.dropvalue3}">
+											<sly data-sly-test ="${cpt2.vendor == 'brightcove'}">
+                                             <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-playerID="${cpt2.playerID}" data-playerKey="${cpt2.playerKey}" data-videoID="${cpt2.videoID}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image3link}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                             </sly>
+                                               <sly data-sly-test ="${cpt2.vendor == 'youtube' || cpt2.vendor == 'ustudio' }">
+                                                <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-theVideo="${cpt2.embedCode@ context='unsafe'} " data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.image3link}</a>
+												<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                                </sly>
+
+										 </sly>
+                                        </sly>
+								    </sly>
+
+                            </p>
+						</div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

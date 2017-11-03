@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Container"
+    width="1000"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <colctrl
+                jcr:primaryType="cq:Widget"
+                title="Column control"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <coltype
+                        jcr:primaryType="cq:Widget"
+                        editable="true"
+                        fieldDescription="Column type"
+                        fieldLabel="Column type"
+                        name="./coltype"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <col-12
+                                jcr:primaryType="nt:unstructured"
+                                text="1 Column (100)"
+                                value="12-col"/>
+                            <col-6-6
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Columns (50-50)"
+                                value="6-6-col"/>
+                            <col-3-9
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Columns(25-75)"
+                                value="3-9-col"/>
+                            <col-9-3
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Columns(75-25)"
+                                value="9-3-col"/>
+                            <col-4-8
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Columns(30-60)"
+                                value="4-8-col"/>
+                            <col-8-4
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Columns(60-30)"
+                                value="8-4-col"/>
+                            <col-4-4-4
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Columns(33-33-33)"
+                                value="4-4-4-col"/>
+                            <col-3-3-6
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Columns(25-25-50)"
+                                value="3-3-6-col"/>
+                            <col-3-6-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Columns(25-50-25)"
+                                value="3-6-3-col"/>
+                            <col-6-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Columns(50-25-25)"
+                                value="6-3-3-col"/>
+                            <col-3-3-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="4 Columns(25-25-25-25)"
+                                value="3-3-3-3-col"/>
+                            <col-2-2-2-2
+                                jcr:primaryType="nt:unstructured"
+                                text="5 Columns(20-20-20-20-20)"
+                                value="2-2-2-2-col"/>
+                            <no-value jcr:primaryType="nt:unstructured"/>
+                        </options>
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </coltype>
+                    <componentnames
+                        jcr:primaryType="cq:Widget"
+                        editable="true"
+                        fieldDescription="Select Component"
+                        fieldLabel="Component"
+                        name="./component"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <icontextandtitle
+                                jcr:primaryType="nt:unstructured"
+                                text="Icon Text and Title without Background"
+                                value="icontextandtitlecomponent"/>
+                            <icontextandtitlebackground
+                                jcr:primaryType="nt:unstructured"
+                                text="Icon Text and Title with Background"
+                                value="icontextandtitlebackground"/>
+                            <imagetextandtitle
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Text and Title without Background"
+                                value="imagetextandtitlecomponent"/>
+                            <magetextandtitlebackground
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Text and Title with Background"
+                                value="imagetextandtitlebackground"/>
+                            <textandtitle
+                                jcr:primaryType="nt:unstructured"
+                                text="Text and Title without Background"
+                                value="textandtitlecomponent"/>
+                            <textandtitlebackground
+                                jcr:primaryType="nt:unstructured"
+                                text="Text and Title with Background"
+                                value="textandtitlebackground"/>
+                            <sitemap
+                                jcr:primaryType="nt:unstructured"
+                                text="Site Map"
+                                value="c-sitemapcomponent"/>
+                            <imagecomponent
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Component with out Background"
+                                value="imagecomponent"/>
+                            <imagecomponentbackground
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Component with Background"
+                                value="imagecomponentbackground"/>
+                            <icons
+                                jcr:primaryType="nt:unstructured"
+                                text="Icons with Background"
+                                value="iconscomponent"/>
+                            <buyrenewbanner
+                                jcr:primaryType="nt:unstructured"
+                                text="Buy Renew Banner"
+                                value="buyrenewbanner"/>
+                            <secureappservicebanner
+                                jcr:primaryType="nt:unstructured"
+                                text="Secure App Service Banner"
+                                value="secureappservicebanner"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                text="links"
+                                value="linkcomponent"/>
+                            <signingcertificatelinks
+                                jcr:primaryType="nt:unstructured"
+                                text="Signing Certificate Links"
+                                value="signingcertificatelinks"/>
+                        </options>
+                    </componentnames>
+                    <margintop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Margin Top Required"
+                        fieldLabel="Margin Top Required"
+                        name="./margintop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="spacingtopMargin"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="nospacingmargin"/>
+                        </options>
+                    </margintop>
+                </items>
+            </colctrl>
+            <Component_x0020_Details
+                jcr:primaryType="cq:Panel"
+                title="Container Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        maxLength="60"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color of the title text"
+                        fieldLabel="Title Color"
+                        name="./titlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter Subtitle"
+                        fieldLabel="Subtitle"
+                        name="./subtitle"
+                        removeSingleParagraphContainer="{Boolean}true"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[paste-wordhtml]"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </subtitle>
+                    <subtitlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color of the sub title text"
+                        fieldLabel="Sub Title Color"
+                        name="./subtitlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitlecolor>
+                    <subtitle1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Subtitle1"
+                        fieldLabel="Subtitle1"
+                        maxLength="80"
+                        name="./subtitle1"
+                        xtype="textfield"/>
+                    <subtitle1color
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color of the sub title1 text"
+                        fieldLabel="Sub Title1 Color"
+                        name="./subtitle1color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitle1color>
+                    <desc
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter description"
+                        fieldLabel="Description "
+                        name="./desc"
+                        removeSingleParagraphContainer="{Boolean}true"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[paste-wordhtml]"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <colorpicker
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </desc>
+                    <desccolor
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="none"
+                        fieldDescription="Choose the color of the description"
+                        fieldLabel="Description Color"
+                        name="./desccolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </desccolor>
+                    <selection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="none"
+                        fieldDescription="Choose the color for the container background"
+                        fieldLabel="Background Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient grad1-sec text-center"/>
+                            <dark_x0020__x0020_gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark Gradient"
+                                value="blue-gradient3 text-center"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_bg"/>
+                        </options>
+                    </selection>
+                    <button
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Button Required"
+                        fieldLabel="Button Required"
+                        name="./button"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </button>
+                    <innerborder
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Inner border"
+                        fieldLabel="Inner border required"
+                        name="./innerborder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="Yes"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="No"/>
+                        </options>
+                    </innerborder>
+                    <innerselection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="none"
+                        fieldDescription="Choose the color for the container inner background"
+                        fieldLabel="Inner Background Color"
+                        name="./innercolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient grad1-sec text-center"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_bg"/>
+                        </options>
+                    </innerselection>
+                    <innerbordercolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the inner border color"
+                        fieldLabel="Inner Border Color"
+                        name="./bordercolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_border"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_border"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_border"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_border"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_border"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_border"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_border"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec yellow"
+                                value="symantec_gold_border"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_border"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_border"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_border"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_border"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_border"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_border"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_border"/>
+                        </options>
+                    </innerbordercolor>
+                    <linkborder
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Link Underline"
+                        fieldLabel="Link Underline Required"
+                        name="./linkborder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="Yes"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="No"/>
+                        </options>
+                    </linkborder>
+                    <linkbordercolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the Link Underline Color"
+                        fieldLabel="Link Underline Color"
+                        name="./linkbordercolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Symantec_x0020_yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="border_yellow"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="white"
+                                value="border_white"/>
+                        </options>
+                    </linkbordercolor>
+                    <linkcolor
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="black"
+                        fieldDescription="Choose the color of the Link"
+                        fieldLabel="Link Color"
+                        name="./linkcolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </linkcolor>
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Links"
+                        name="./links"
+                        orderable="{Boolean}false"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            xtype="ejstcustom"/>
+                    </links>
+                    <button_x0020_links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button Links"
+                        name="./buttons"
+                        orderable="{Boolean}false"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            optionsProvider="Ejst.x3.provideOptions"
+                            xtype="ejstcustom"/>
+                    </button_x0020_links>
+                    <borderrequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Border Bottom Required"
+                        fieldLabel="Border Bottom Required"
+                        name="./borderbottom"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="borderBottomPresent"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="borderBottomAbsent"/>
+                        </options>
+                    </borderrequired>
+                    <bordertoprequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Border Top Required"
+                        fieldLabel="Border Top Required"
+                        name="./bordertop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="borderTopPresent"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="borderTopAbsent"/>
+                        </options>
+                    </bordertoprequired>
+                </items>
+            </Component_x0020_Details>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,152 @@
+
+
+
+
+<!-- ***************For HomePage imageLeftTextRight/iconLeftTextRight Variation*************** -->
+<div data-sly-test ="${properties.listFrom == 'imagelefttextright'}">
+  <div class="c-additional-product-block matchHeight ${properties.bgcolor} ${properties.bordercolor}">
+    <div class="c_rowhead">
+      <table width="100%" class="c_rowhead_table">
+        <tr>
+          <td valign="middle"><div class="c_imgbox">
+              <sly data-sly-test = "${properties.imageReference != NULL}"><img src="${properties.imageReference}" class="c-product-icon1" title="${properties.imgtitle}" alt="${properties.alternatetext}" /> </sly>
+            </div></td>
+          <td valign="middle" class="c_headingbox"><h3 class="${properties.titlecolor}">${properties.title}</h3></td>
+        </tr>
+      </table>
+      <div class="clear"></div>
+    </div>
+    <p class="${properties.desccolor} matchHeight_head">${properties.description  @ context = 'html'}</p>
+
+    <p class="viewAllLink">
+        <sly data-sly-test ="${properties.linkkey != NULL}">
+		<sly data-sly-test ="${properties.linkpathoverlay== 'linkpath'}">
+    	<sly data-sly-test="${properties.linkkey != NULL && properties.linkvalue != NULL}">
+			<sly data-sly-use.iconlinkobject="/etc/designs/websitesecurity/clientlibs/component/icontextandtitle/js/links.js">
+            	<a href="${iconlinkobject.path}" target="${iconlinkobject.target}">${iconlinkobject.text}</a>
+        	</sly>
+        </sly>
+        </sly>
+        <sly data-sly-test ="${properties.linkpathoverlay == 'link_overlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.TextOverlayData' @ overlayurl = properties.dropvalue}">
+										 <sly data-sly-test ="${properties.textvidoverlay == 'textoverlay'}">
+                                            <a href="#" data-toggle="modal" data-target="#textModal" class="textpopup overlay_popup" data-id="${properties.textvidoverlay}" data-backdrop="static" data-keyboard="false" data-textOverlayTitle="${cpt2.textOverlayTitle}" data-textOverlayDescription="${cpt2.textOverlayDescription}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}">${properties.linkkey}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+										</sly>
+                                        </sly>
+										<sly data-sly-test ="${properties.textvidoverlay == 'vidoverlay'}">
+                                         <sly data-sly-use.cpt2="${'websitesecurity.core.utilities.VideoOverlayData' @ overlayurl = properties.dropvalue}">
+											<sly data-sly-test ="${cpt2.vendor == 'brightcove'}">
+                                            <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-playerID="${cpt2.playerID}" data-playerKey="${cpt2.playerKey}" data-videoID="${cpt2.videoID}" data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.linkkey}</a>
+											<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                             </sly>
+                                               <sly data-sly-test ="${cpt2.vendor == 'youtube' || cpt2.vendor == 'ustudio' }">
+                                                <a href="#" data-toggle="modal" data-id="${cpt2.vendor}" data-target="#videoModal1" class="videopopup overlay_popup" data-backdrop="static" data-keyboard="false" data-theVideo="${cpt2.embedCode@ context='unsafe'} " data-closeIcon="${cpt2.closeIcon}" data-hoverClose="${cpt2.hoverClose}" data-videoTitle="${cpt2.videoTitle}">${properties.linkkey}</a>
+												<sly data-sly-include="/apps/websitesecurity/components/overlay/overlay.html" data-sly-unwrap></sly>
+                                                </sly>
+
+										 </sly>
+                                        </sly>
+								    </sly>
+								</sly>
+          </p>
+
+  </div>
+</div>
+<!-- ***************For HomePage imageLeftTextRight/iconLeftTextRight Variation Ends************** --> 
+
+<!-- ****************For ProductPage imageLeftLinkRight/iconLeftLinkRight Variation*************** -->
+<div class="matchHeight ${properties.bgcolor1}" data-sly-test ="${properties.listFrom == 'imageleftlinkright'}">
+  <div class="c-product-section ${properties.bgcolor1}">
+    <h6 class="${properties.subtitle1color}">${properties.subtitle1}</h6>
+    <h5 class="${properties.subtitle2color}">${properties.subtitle2}</h5>
+    <div class="c_rowhead clear">
+      <table width="100%" class="c_rowheadtable">
+        <tr>
+          <td valign="middle" width="15%"><div class="c_imgboxproduct"> <img src="${properties.imageReference}" title="${properties.imgtitle}"> </div></td>
+          <td valign="middle">
+              	<h3>
+                	<sly data-sly-test="${properties.linkvalue1 != NULL && properties.linkkey1 != NULL}">
+                    	<sly data-sly-use.iconlinkobject2="/etc/designs/websitesecurity/clientlibs/component/icontextandtitle/js/imageleftlinkright.js">
+            				<a href="${iconlinkobject2.path}" target="${iconlinkobject2.target}">${iconlinkobject2.text}</a>
+        				</sly>
+                    </sly>
+                </h3>
+          </td>
+        </tr>
+      </table>
+      <div class="clear"></div>
+    </div>
+    <p class= "${properties.desccolor1}">${properties.description1 @ context = 'html'}</p> </div>
+</div>
+<!-- ****************For ProductPage imageLeftLinkRight/iconLeftLinkRight Variation Ends*************** --> 
+
+<!-- ***********************For imageCenterTextBelow/iconCenterTextBelow Variation Starts******************** -->
+<div data-sly-test ="${properties.listFrom == 'imagecentertextbelow'}">
+  <div class="c-certificates-icon matchHeight ${properties.bgcolor2}">
+    <div class="c_certificates-Img-block ">
+      <div class="c-certificates-Img"> <img src="${properties.imageReference}" class="c-img" title="${properties.imgtitle}" alt="${properties.alternatetext}"/></div>
+    </div>
+    <div class="c-certificatescontent" >
+      <h3 class="h3 ${properties.titlecolor1}">${properties.title1}</h3>
+      <p class= "${properties.desccolor2}">${properties.description2 @ context = 'html'}</p>
+    </div>
+  </div>
+</div>
+<!-- ***********************For imageCenterTextBelow/iconCenterTextBelow Variation Ends******************** --> 
+
+<!-- *************For smallImageLeftWithLink/smallIconLeftWithLink Variation Start************* -->
+<div data-sly-test ="${properties.listFrom == 'smallimageleftwithlinkortext'}">
+	<div data-sly-test ="${properties.opt == 'Text_Link'}">
+		<div class="c-icontextandtitleext ${properties.topborder} matchHeight ${properties.bgcolor4}">
+			<div class="c_iconhead clearfix">
+				<div class="c_iconhead_img">
+					<sly data-sly-test = "${properties.imageReference != NULL}">
+						<img src="${properties.imageReference}" class="img-responsive" title="${properties.imgtitle}" alt="${properties.alternatetext}" />
+					</sly>
+				</div>
+				<h3>
+					<sly data-sly-test="${properties.path4 != NULL && properties.link4 != NULL}">
+						<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/icontextandtitle/js/smallImageLeftWithLink.js">
+							<a href="${object.path}" target="${object.target}">${object.text}</a>
+						</sly>
+					</sly>
+
+				</h3>
+        		<div class="clear"></div>
+      		</div>
+      		<p class="${properties.desc1color}">${properties.description4  @ context = 'html'}</p>
+      		<span>
+            	<sly data-sly-test="${properties.linkvalue4 != NULL && properties.linkkey4 != NULL}">
+					<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/icontextandtitle/js/smallImageLeftWithLinktext.js">
+						<a href="${object.path}" class="${properties.textcolor}" target="${object.target}">${object.text}</a>
+					</sly>
+				</sly>
+            </span>
+        </div>
+	</div>
+	<div data-sly-test ="${properties.opt == 'Text'}">
+		<div class="${properties.topborder}">
+			<div class="c-icontextandtitleext matchHeight ${properties.bgcolor4}">
+				<div class="c_iconhead clearfix">
+                   <div class="c_iconhead_img">
+					<sly data-sly-test = "${properties.imageReference != NULL}">
+						<img src="${properties.imageReference}" class="img-responsive" title="${properties.imgtitle}" alt="${properties.alternatetext}" />
+					</sly>
+                   </div>
+					<h3 class="${properties.textcolor}">${properties.text}</h3>
+					<div class="clear"></div>
+				</div>
+				<p class="${properties.desc1color}">${properties.description4  @ context = 'html'}</p>
+				<span>
+                	<sly data-sly-test="${properties.linkvalue4 != NULL && properties.linkkey4 != NULL}">
+						<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/icontextandtitle/js/smallImageLeftWithLinktext.js">
+                            <a href="${object.path}" target="${object.target}">${object.text}</a>
+						</sly>
+					</sly>
+                </span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *************For smallImageLeftWithLink/smallIconLeftWithLink Variation Start************* --> 

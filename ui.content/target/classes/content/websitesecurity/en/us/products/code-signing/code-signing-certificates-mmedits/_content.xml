@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-02-17T07:54:10.529-07:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-02-21T07:18:36.869-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:tags="[Analytics:site-section,Analytics:site-section/websitesecurity,Analytics:site-sub-section/products,Analytics:custom-name/details]"
+        cq:template="/apps/websitesecurity/templates/codesigningcertificate"
+        jcr:description="This is Code Signing Certificate page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Code Signing Certificates-MMEdits"
+        jcr:uuid="afbdcbec-b058-467d-8fd6-33385fa1bcf6"
+        sling:resourceType="/apps/websitesecurity/components/page/codesigningcertificate"
+        pageTitle="Code Signing Certificate">
+        <par1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <containercomponent
+                jcr:created="{Date}2016-12-07T07:06:30.070-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-27T03:32:37.980-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/containersection"
+                color="blue-gradient3 text-center"
+                component="secureappservicebanner"
+                componentspace="no"
+                desc="Protect your content and apps with third-party authentication and validation from the world's most recognized name in website security."
+                desccolor="white_font"
+                innerborder="No"
+                innercolor="none"
+                linkborder="Yes"
+                linkbordercolor="border_white"
+                linkcolor="white_font"
+                links="\{&quot;text&quot;:&quot;Learn More&quot;,&quot;url&quot;:&quot;http://10.44.40.152:4502/content/websitesecurity/en/us/Products/complete-website-security/secure-app-services&quot;}"
+                margintop="nospacingmargin"
+                spacingbottom="nospacingpaddingbottom"
+                spacingtop="nospacingpaddingtop"
+                subtitle="Code Signing Certificates"
+                subtitlecolor="white_font"
+                titlepadding="2px"/>
+            <menunavigation
+                jcr:created="{Date}2016-12-07T07:24:11.368-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-09T17:50:07.258+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/localnavigation"
+                links="[{&quot;text&quot;:&quot;Overview&quot;\,&quot;url&quot;:&quot;Overview&quot;},{&quot;text&quot;:&quot;Certificates&quot;\,&quot;url&quot;:&quot;Enterprise&quot;},{&quot;text&quot;:&quot;Enterprise&quot;\,&quot;url&quot;:&quot;Certificates&quot;},{&quot;text&quot;:&quot;Why Symantec&quot;\,&quot;url&quot;:&quot;WhySymantec&quot;},{&quot;text&quot;:&quot;Fundamentals&quot;\,&quot;url&quot;:&quot;Fundamentals&quot;},{&quot;text&quot;:&quot;Resources&quot;\,&quot;url&quot;:&quot;Resources&quot;}]"
+                title1="Browse"
+                titlecolor="white_font">
+                <menuparsys1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <imageandtext
+                        jcr:created="{Date}2017-01-06T15:58:04.238+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-31T08:40:37.249-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/imageandtext"
+                        alignment1="text-left-image-right"
+                        alternatetext="SYMANTEC CODE SIGNING"
+                        alttext="Introduction"
+                        bullets="Non_Bulleted_Links"
+                        closeicon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-crossButton.png"
+                        desc="Symantec Code Signing provides explicit third-party confirmation of your publisher identity and your application integrity."
+                        embedCode="https://www.youtube.com/embed/lr4tgiiDhBs"
+                        hoverclose="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-close-over.png"
+                        icon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-playButton.png"
+                        imageouterspace="componentouterspace"
+                        imageReference="/content/dam/websitesecurity/imageandtext/Desktop/images/CWSSecureappservicespage-ImageandText-DesktopLarge.jpg"
+                        imageRotate="0"
+                        imgtitle="SYMANTEC CODE SIGNING"
+                        innercolor="white_bg"
+                        linkborder1="No"
+                        links="[{&quot;text&quot;:&quot;INCREASE DOWNLOADS\, INSTILL TRUST;&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;DOWNLOAD THE WHITE PAPER&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                        listFrom="video"
+                        playerID="1155633140001"
+                        playerKey="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                        snapshot="/content/dam/websitesecurity/imageandtext/Desktop/images/CWSSecureappservicespage-ImageandText-DesktopLarge.jpg"
+                        subtitle="Deliver apps and code to more customers on more platforms"
+                        subtitlecolor="charcoal_grey_font"
+                        title1="SYMANTEC CODE SIGNING"
+                        titlecolor="charcoal_grey_font"
+                        ustudioembedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"
+                        vendor="ustudio"
+                        videoID="2705903283001"
+                        videosubtitle="Introduction to Code Signing"
+                        videotitle="SYMANTEC CODE SIGNING"
+                        youtubeembedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"/>
+                    <containersection
+                        jcr:created="{Date}2017-01-05T20:17:36.569+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-23T05:10:49.964-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containersection"
+                        borderbottom="borderBottomAbsent"
+                        bordertop="borderTopPresent"
+                        color="none"
+                        coltype="4-4-4-col"
+                        component="icontextandtitlecomponent"
+                        desccolor="none"
+                        innerborder="Yes"
+                        innercolor="white_bg"
+                        linkborder="No"
+                        linkcolor="black"
+                        margintop="spacingtopMargin"
+                        spacingbottom="nospacingpaddingbottom"
+                        spacingtop="nospacingpaddingtop"
+                        subtitlecolor="black_font">
+                        <col-3-3-3-3-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:01.639-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-16T02:31:22.947-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alttext="Norton"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="border-bottom-no"
+                                description2="&lt;p>The most recognized trust mark on the Internet, available in 13 languages. Click to verify domain, company name, location, and malware scan status.&lt;/p>&#xa;"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-DesktopLarge1.png"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Norton Secured Seal"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-1>
+                        <col-3-3-3-3-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:06.390-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-15T02:40:21.342-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alttext="Seal-in-Search"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                description2="&lt;p>Norton Secured Seal displays near your link in search results and product reviews when viewed using an enabled browser.&lt;/p>&#xa;"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-DesktopLarge2.png"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Symantec Seal-in-Search"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-2>
+                        <col-3-3-3-3-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:08.219-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-16T02:34:12.933-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alttext="Maleware"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="border-bottom-no"
+                                description2="&lt;p>Daily scan of public web pages under your hostname to detect malicious code.&lt;/p>&#xa;"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-DesktopLarge4.png"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Daily Malware Scanning"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-4>
+                        <col-3-3-3-3-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:15.751-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-15T02:40:55.595-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alttext="Support"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                description2="&lt;p>Manage certificates. Customize large-scale threat protection. Secure your apps. All at once.&lt;/p>&#xa;"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-DesktopLarge3.png"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="24/7 Customer Support"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-3>
+                        <col-12-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"/>
+                        <col-4-4-4-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2017-01-12T13:34:16.055+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-10T05:24:46.302-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Secure Applications"
+                                alttext="Securing your Applications"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="Maintains integrity of files and apps by eliminating issues caused by lost and stolen signing keys"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/codesigningcertificate-Icon Text and Title-lock.jpg"
+                                imageRotate="0"
+                                imgtitle="Secure Applications"
+                                listFrom="imagecentertextbelow"
+                                opt="None"
+                                title1="Secure Applications"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-4-4-4-1>
+                        <col-4-4-4-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2017-01-12T13:34:27.350+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-10T05:25:42.839-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Customer Trust"
+                                alttext="Building Customer Trust"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="Protects customers against malware and other malicious threats"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecuresireproEVpage-Icon Text and Title-Encrypt.jpg"
+                                imageRotate="0"
+                                imgtitle="Customer Trust"
+                                listFrom="imagecentertextbelow"
+                                opt="None"
+                                title1="Customer Trust"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-4-4-4-2>
+                        <col-4-4-4-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2017-01-12T13:34:35.633+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-10T05:28:48.528-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Improved Distribution"
+                                alttext="Maximizing Distribution"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="Helps you maximize downloads and revenue, while you lower costs and extend market reach"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/codesigningcertificate-Icon Text and Title-arrow.jpg"
+                                imageRotate="0"
+                                imgtitle="Improved Distribution"
+                                listFrom="imagecentertextbelow"
+                                opt="None"
+                                title1="Improved Distribution"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-4-4-4-3>
+                    </containersection>
+                </menuparsys1>
+                <menuparsys2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <staticcontainerwitht
+                        jcr:created="{Date}2017-01-10T12:58:29.978+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-24T02:56:51.893-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/staticcontainerwithtabs"
+                        margintop="spacingtopMargin"
+                        staticcodesigning2="&lt;div class=&quot;c_tabs&quot;>&lt;div class=&quot;container-fluid&quot;>&lt;div class=&quot;container&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-lg-12 text-center&quot;>&lt;h2>Certificates for Every Platform&lt;/h2>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;tabscontainer&quot;>&lt;ul class=&quot;nav nav-tabs responsive-tabs&quot; role=&quot;tablist&quot;>&#xa;&lt;li role=&quot;presentation&quot; class=&quot;active&quot;>&lt;a href=&quot;#desktop-code-signing&quot; aria-controls=&quot;desktop-code-signing&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;>Desktop Code Signing&lt;/a>&lt;/li>&#xa;&lt;li role=&quot;presentation&quot;>&lt;a href=&quot;#mobile-code-signing&quot; aria-controls=&quot;mobile-code-signing&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;>Mobile Code Signing&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/div>&#xa;&lt;div class=&quot;tab-content&quot;>&lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;desktop-code-signing&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 tile-top bg-white &quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 padding-right0 padding-left0&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;#&quot;>Extended Validation (EV) for Microsoft®&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 col-sm-6 matchHeight tile-top_l&quot;>&lt;p>Ensure top-level security with every code signature. Symantec makes it easy to comply with Microsoft SHA-2 code signing requirements, so you can establish your reputation with Microsoft’s Smartscreen® filter immediately.&lt;/p>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-xs-12 col-sm-6 padding-right0 padding-left0 matchHeight&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-sm-12 col-md-6 matchHeight tile-top_m border-right0&quot;>&lt;ul>&#xa;&lt;li>Increase download confidence&lt;/li>&#xa;&lt;li>Reduce maintenance cost with time stamp&lt;/li>&#xa;&lt;li>Money back NetSure® Protection Plan&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-sm-12 col-md-6 matchHeight tile-top_r&quot;>&lt;div>starting at&lt;/div>&#xa;&lt;div class=&quot;prod-price&quot;>$699&lt;/div>&#xa;&lt;a class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot; href=&quot;https://forms.ws.symantec.com/cgi-bin/go.cgi?a=ZAEAM-3553-01-26&quot; role=&quot;button&quot;>Sales&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row prod-row&quot;>&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;https://www.symantec.com/code-signing/microsoft-authenticode/&quot;>Microsoft® Authenticode®&lt;/a>&lt;/div>&#xa;&lt;p>Digitally sign 32-bit or 64-bit user-mode (.exe, .cab, .dll, .ocx, .msi, .xpi, and .xap files) and kernel-mode software. Provider for Microsoft Windows Logo programs.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Manage all your certificates from one account&lt;/li>&#xa;&lt;li>Reduce maintenance cost with time stamp&lt;/li>&#xa;&lt;li>Money back NetSure® Protection Plan&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div class=&quot;prod-price&quot;>$499&lt;/div>&#xa;&lt;a href=&quot;https://www.symantec.com/code-signing/microsoft-authenticode/&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;https://www.symantec.com/code-signing/microsoft-office-vba/&quot;>Microsoft® Office and VBA&lt;/a>&lt;/div>&#xa;&lt;p>Digitally sign VBA objects and macros. For Microsoft Office and third-party applications using VBA – sign macros in Office and VBA environments.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Manage all your certificates from one account&lt;/li>&#xa;&lt;li>Reduce maintenance cost with time stamp&lt;/li>&#xa;&lt;li>Money back NetSure® Protection Plan&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div class=&quot;prod-price&quot;>$499&lt;/div>&#xa;&lt;a href=&quot;https://www.symantec.com/code-signing/microsoft-office-vba/&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;https://www.symantec.com/code-signing/java/&quot;>Java®&lt;/a>&lt;/div>&#xa;&lt;p>For Java applications for desktop, digitally sign .jar files and Netscape Object Signing. Recognized by Java Runtime Environment (JRE).&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Manage all your certificates from one account&lt;/li>&#xa;&lt;li>Reduce maintenance cost with time stamp&lt;/li>&#xa;&lt;li>Money back NetSure® Protection Plan&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div class=&quot;prod-price&quot;>$499&lt;/div>&#xa;&lt;a href=&quot;https://www.symantec.com/code-signing/java/&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;https://www.symantec.com/code-signing/adobe-air/&quot;>Adobe® Air&lt;/a>&lt;/div>&#xa;&lt;p>Digitally sign .air or.airi files. Validate the integrity of your Adobe AIR desktop applications.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Manage all your certificates from one account&lt;/li>&#xa;&lt;li>Reduce maintenance cost with time stamp&lt;/li>&#xa;&lt;li>Money back NetSure® Protection Plan&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div class=&quot;prod-price&quot;>$499&lt;/div>&#xa;&lt;a href=&quot;https://www.symantec.com/code-signing/adobe-air/&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row greybox-row bg-grey&quot;>&lt;div class=&quot;col-lg-8 col-md-9 col-lg-offset-1 col-sm-8 matchHeight&quot;>&lt;p>&lt;span class=&quot;grey-head&quot;>Need to Renew a Certificate?&lt;/span>&lt;br>&#xa;Sign in to your Account &amp;amp; renew through your personalized Certificate Management Console.&lt;/p>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-md-3 col-sm-4 matchHeight&quot;>&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-yellow-border no-border-radius text-uppercase&quot;>Renew Certificate&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;mobile-code-signing&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 tile-top bg-white&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 padding-right0 padding-left0&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;#&quot;>Code Signing Certificates for Windows® Phones&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-xs-12 col-sm-6 matchHeight tile-top_l&quot;>&lt;p>Digitally sign code for Windows Phone and Xbox 360 applications. Required for Microsoft App Hub service.&lt;/p>&#xa;&lt;a href=&quot;#&quot;>Register&lt;/a>&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#&quot;> Read Data Sheet&lt;/a>&lt;/div>&#xa;&lt;div class=&quot;col-xs-12 col-sm-6 matchHeight&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-sm-12 col-md-6 matchHeight tile-top_m&quot;>&lt;ul>&#xa;&lt;li>Lorem ipsum dolor&lt;/li>&#xa;&lt;li>sit amet consectetur&lt;/li>&#xa;&lt;li>ut enim ad minim&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-sm-12 col-md-6 matchHeight tile-top_r&quot;>&lt;div>starting at&lt;/div>&#xa;&lt;div class=&quot;prod-price&quot;>$699&lt;/div>&#xa;&lt;a class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot; href=&quot;#&quot; role=&quot;button&quot;>Buy&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row prod-row&quot;>&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;#&quot;>Code Signing Certificates for Windows® Phones Private Enterprise&lt;/a>&lt;/div>&#xa;&lt;p>Digitally sign code for Windows Phone Private Enterprise applications. Required for organizations using Microsoft’s Windows Phone Dev Center.&lt;/p>&#xa;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Renew&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;#&quot;>Code Signing for Android&lt;/a>&lt;/div>&#xa;&lt;p>Digitally sign and optimize .apk files for the Android platform. Automatically keep track of certificate keys and access full reporting of signing activity within the Symantec Code Signing Portal.&lt;/p>&#xa;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Read Data Sheet&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-6&quot;>&lt;div class=&quot;tile-prod bg-white matchHeight&quot;>&lt;div class=&quot;prod-head&quot;>&lt;a href=&quot;#&quot;>Authentic Document IDs for Brew&lt;/a>&lt;/div>&#xa;&lt;p>Become a commercial Brew developer. Digitally notarize Brew applications.&lt;/p>&#xa;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Buy&lt;/a>&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-buy-green no-border-radius text-uppercase&quot;>Renew&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;row greybox-row bg-grey&quot;>&lt;div class=&quot;col-lg-8 col-md-9 col-lg-offset-1 col-sm-8 matchHeight&quot;>&lt;p>&lt;span class=&quot;grey-head&quot;>Need to Renew a Certificate?&lt;/span>&lt;br>&#xa;Sign in to your Account &amp;amp; renew through your personalized Certificate Management Console.&lt;/p>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-3 col-sm-4 col-md-3 matchHeight&quot;>&lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-yellow-border no-border-radius text-uppercase&quot;>Renew Certificate&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>"/>
+                </menuparsys2>
+                <menuparsys3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <imageandtext
+                        jcr:created="{Date}2017-01-04T16:39:27.768+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-10T08:18:22.371-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/imageandtext"
+                        alignment1="text-left-image-right"
+                        alternatetext="Secure App Service"
+                        alttext="FPO"
+                        bulletcolor="security_grey"
+                        bullets="Bulleted_Text"
+                        centerbulletedtext="[Cloud-based code signing service,Approval queues and role-based access controls,Accountability and compliance reporting with audit logs]"
+                        closeicon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-crossButton.png"
+                        desc="Protect your business against major financial losses and brand damage with simplified, no-worry code signing visibility, agility, and security."
+                        embedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/U3CYAvBlzW08"
+                        hoverclose="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-close-over.png"
+                        icon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-playButton.png"
+                        imageouterspace="componentouterspace"
+                        imageReference="/content/dam/websitesecurity/imageandtext/Desktop/images/CWSSecureappservicespage-ImageandText-DesktopLarge2.jpg"
+                        imageRotate="0"
+                        imgtitle="Secure App Service"
+                        linkborder1="Yes"
+                        linktitle="LEARN MORE"
+                        linkvalue="/content/websitesecurity/en/us/products/code-signing"
+                        listFrom="video"
+                        multifiledText="[Lorem ipsum dolor sit amet\, consectetuer adipiscing elit.,Lorem ipsum dolor sit amet\, consectetuer adipiscing elit.,Lorem ipsum dolor sit amet\, consectetuer adipiscing elit.]"
+                        playerID="1155633140001"
+                        playerKey="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                        snapshot="/content/dam/websitesecurity/imageandtext/Desktop/images/SYM_Building.jpg"
+                        subtitle="Secure App Service for Enterprises"
+                        subtitlecolor="grey_font"
+                        titlecolor="grey_font"
+                        ustudioembedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"
+                        vendor="ustudio"
+                        videoduration="2.30"
+                        videoID="2705903283001"
+                        videosubtitle="Secure App Service – Code Signing"
+                        youtubeembedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"/>
+                </menuparsys3>
+                <menuparsys4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <containerwithicontex
+                        jcr:created="{Date}2016-12-20T05:21:44.513-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-17T05:14:08.660-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containerwithicontextandtitle"
+                        altText="[Beyond the call\, 24/7,Forward Thinking\, Always,Agility+Growth: Opportunity]"
+                        color="lightest_grey_bg"
+                        description="[When you need us\, we’re here. That’s why our Global Customer Service Satisfaction scores remain consistently above 90%.,Our security products and services are the product of 21 years of relentless problem solving. Choose yours here.,This is security built for business: Add and/or change your solutions according to your changing needs. Without missing a beat.]"
+                        image="[/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg,/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg,/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg]"
+                        imgTitle="[Beyond the call\, 24/7,Forward Thinking\, Always,Agility+Growth: Opportunity]"
+                        linkPath="[#,https://websecurity.symantec.com/support,#]"
+                        linkText="[Learn More, SUPPORT SERVICES,CASE STUDIES]"
+                        margintop="spacingtopMargin"
+                        numberofitems="3"
+                        subtitle="&lt;p>Active protection is powerful.&lt;/p>&#xa;&lt;p>Proactive defense is critical.&lt;/p>&#xa;"
+                        title="[Beyond the call\, 24/7,Forward Thinking\, Always,Agility+Growth: Opportunity]"
+                        title1="WHY SYMANTEC"/>
+                    <carousel
+                        cq:lastReplicated="{Date}2017-02-21T07:52:23.094-07:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:created="{Date}2016-12-05T23:11:56.654-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-31T07:38:52.577-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/carousel"
+                        alttext="[,]"
+                        color="[symantec_gold_bg,blue-gradient grad1-sec text-center]"
+                        desc="[Apache turned to Symantec for cloud-based code signing and SSL certificate management solutions. The results: streamlined\, secure code-signing access for 4\,000 developers across six continents\, minimized risk\, and on-demand SSL certificates in minutes instead of days.,For Ebay\, the world’s largest online marketplace\, brand protection is a top priority. The company has implemented a large portfolio of Symantec security solutions for everything from data loss prevention\, to endpoint security\, to managed security\, to encryption technologies.]"
+                        desc1="hello"
+                        image="[/content/dam/websitesecurity/Icons/Desktop/images/Homepage-Icons-Desktop-Apache.png,/content/dam/websitesecurity/carousel/desktop/images/Carousel.png]"
+                        link="[Read Success Story,Read Success Story]"
+                        numberofitems="2"
+                        path="[https://www.symantec.com/resources/customer_success/detail.jsp?cid=apache,https://www.symantec.com/resources/customer_success/detail.jsp?cid=ebay]"
+                        subtitle="[,]"/>
+                </menuparsys4>
+                <menuparsys5
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <containercomponent_1811965450
+                        jcr:created="{Date}2016-12-06T07:09:46.793-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-01-27T11:25:24.583-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containersection"
+                        coltype="12-col"
+                        component="linkcomponent"
+                        innerborder="No"
+                        linkborder="No"
+                        linkcolor="black"
+                        margintop="nospacingmargin"
+                        spacingbottom="nospacingpaddingbottom"
+                        spacingtop="nospacingpaddingtop"
+                        subtitle="Why Use Code Signing Certificates?"
+                        subtitlecolor="charcoal_grey_font"
+                        title1="CODE SIGNING FUNDAMENTALS"
+                        titlecolor="charcoal_grey_font">
+                        <col-6-6-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"/>
+                        <col-6-6-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"/>
+                        <col-12-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <links
+                                jcr:created="{Date}2016-12-15T06:30:37.144-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-01-27T11:27:50.568-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                buttons="[{&quot;text&quot;:&quot;How many code signing certificates do I need?&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Where can I learn more about code signing for Microsoft?&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;How does code signing work for Mobile developers?&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                                links="[{&quot;text&quot;:&quot;The difficulties of Code Signing management&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;How to prevent stolen keys&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Code Signing mandates and what you need to know&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Is there a better way to track my keys?&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Code Signing initiatives&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Implementing Code Signing&quot;\,&quot;url&quot;:&quot;#&quot;}]"/>
+                        </col-12-1>
+                    </containercomponent_1811965450>
+                    <text
+                        jcr:created="{Date}2017-01-06T16:46:25.972+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-15T02:46:53.525-07:00"
+                        jcr:lastModifiedBy="yukako_aizawa"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/text"
+                        drop1="blueGradientBox"
+                        drop2="symantec_gold_bg"
+                        drop3="charcoal_grey_bg"
+                        image="/content/dam/websitesecurity/textcomponent/Desktop/images/SSLCertificate-Textcomponent-TransparentImg.png"
+                        linktitle1="LEARN MORE"
+                        linktitle2="LEARN MORE"
+                        linktitle3="LEARN MORE"
+                        linkvalue1="#"
+                        linkvalue2="#"
+                        linkvalue3="#"
+                        subtitle1="Website Security Planning &amp; checklist"
+                        subtitle2="Why Encryption and Protection Are Not the Same"
+                        subtitle3="The Emergency of Certificate Transparency"
+                        subtitlecolor1="white_font"
+                        subtitlecolor2="white_font"
+                        subtitlecolor3="white_font"
+                        title1="Intrusion and Threat Protection"
+                        title2="Encryption"
+                        title3="Encryption"
+                        titlecolor1="symantec_gold_font"
+                        titlecolor2="charcoal_grey_font"
+                        titlecolor3="symantec_gold_font"/>
+                    <footermenu
+                        jcr:created="{Date}2016-12-13T00:08:59.491-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-06T14:05:59.404-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/footermenu"
+                        countryname="United States"
+                        iconimage="/content/dam/websitesecurity/footer/images/globalImg.png"
+                        margintop="spacingtopMargin"
+                        numberofitems="2"
+                        path="[#,https://www.symantec.com/about/newsroom]"
+                        title="[Sign In ,Newsletter Sign Up]"/>
+                </menuparsys5>
+            </menunavigation>
+        </par1>
+        <contactus
+            jcr:lastModified="{Date}2016-12-27T18:07:38.086+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="websitesecurity/components/contactus"
+            phonenumber="987654321"
+            title="Productspage">
+            <contactus
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <contactus
+                    jcr:created="{Date}2017-01-05T16:01:26.357+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-02-03T06:43:10.993-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="websitesecurity/components/contactus"
+                    callbackicon="/content/dam/websiteSecurity/footer/images/fb.png"
+                    channelportid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    channelquestid="14A134B2-D11F-48C5-A599-F84A3BF179DD"
+                    channelstyleid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    chatbusinessrequirement="ecommerce"
+                    codesigningportid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    codesigningquestid="587019B8-4A4D-4828-9CA4-0EC6B0B515A1"
+                    codesigningstyleid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    commercialportid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    commercialquestid="7513053D-949E-47CF-8E32-2DF92D1713F5"
+                    commercialstyleid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    contactlinkpath="/content/SSLWebsiteSecurity/en/en-us/homepage"
+                    contactlinktext="CALL BACK"
+                    displaylivechat="Yes"
+                    ecommerceportid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    ecommercequestid="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    ecommercestyleid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    email="test@symantec.com"
+                    emailicon="/content/dam/websitesecurity/footer/images/fb.png"
+                    emailtext="Email us"
+                    hostref="symctrust.ehosts.net"
+                    icon="/content/dam/websitesecurity/footer/images/fb.png"
+                    iconclass="[ico-c ico-s-facebook,ico-c ico-s-linkedin,ico-c ico-s-twitter,ico-c ico-s-youtube]"
+                    iconlink="[https://www.facebook.com/Symantec/,https://www.linkedin.com/company/symantec,https://www.twitter.com/Symantec/,https://www.youtube.com/Symantec/]"
+                    livechaticon="/content/dam/websitesecurity/footer/images/fb.png"
+                    livechatlable="Live"
+                    nsgportid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    nsgquestid="6D366610-8D23-4DFA-B172-B9767FA0A42B"
+                    nsgstyleid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    numberofitems="4"
+                    phoneicon="/content/dam/websitesecurity/footer/images/fb.png"
+                    phonenumber="1-866-893-6565"
+                    popupwindow="popuprequired"
+                    portid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    questid="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    socialicontitle="Follow Us"
+                    styleid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    title="Contact us"
+                    unavailable="Unavailable123"
+                    unavailablepath="/content/SSLWebsiteSecurity/en"
+                    unavailabletext="Unavailable"/>
+            </contactus>
+        </contactus>
+        <image
+            jcr:lastModified="{Date}2017-02-17T07:54:10.517-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Utility Language"
+    width="1100"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <menu
+                jcr:primaryType="cq:Widget"
+                title="utility Language"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Continent Name"
+                        fieldLabel="Continent"
+                        name="./continent"
+                        xtype="textfield"/>
+                    <languages
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Countries"
+                        itemId="multiID"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            optionsProvider="Ejst.x3.provideOptions"
+                            xtype="ejstcustom"/>
+                    </languages>
+                </items>
+            </menu>
+        </items>
+    </items>
+</jcr:root>

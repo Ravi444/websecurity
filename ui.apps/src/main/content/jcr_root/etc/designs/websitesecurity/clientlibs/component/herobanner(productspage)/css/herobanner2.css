@@ -1,0 +1,179 @@
+/*product page styles */
+
+/*HeroBannerProduct background Position*/
+.herobanner2 .container-fluid{background-size:cover; background-position:0px -57px;}
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container {padding: 105px 0 115px;background-size:cover;}
+
+/*HeroBannerProduct Paragraph*/
+.herobanner2 .c-product-banner-container p {margin:25px 0;word-wrap: break-word;width: 100%;font-size:16px;line-height:26px;}
+
+/*HeroBannerProduct Heading*/
+.herobanner2 .c-product-banner-container h5 {padding-bottom: 35px;font-size:16px;}
+.herobanner2 .c-product-banner-container h2 {padding-bottom: 0px;font-size:48px;}
+
+/*HeroBannerProduct Link*/
+.herobanner2 .listLink{ padding-top:10px;}
+.herobanner2 .c-product-banner-container .listLink a {display: inline-block;margin-right: 40px;border-bottom: 3px solid #fdbb30;text-decoration: none;padding-bottom: 12px;color:  #00addd;font-size: 14px;font-weight: 700;line-height: 16px;text-align: left;text-transform:uppercase;}
+.herobanner2 .c-product-banner-container .listLink a:hover, .herobanner2 .c-product-banner-container .listLink a:focus {border-bottom: 3px solid #00addd;text-decoration: none;}
+
+
+/*HeroBannerProduct Content Area*/
+.contentArea {width:50%;}
+
+/*HeroBannerProduct All Devices View*/
+.smallDesktopVer, .tabletVer, .mobilrVer{display:none;}
+
+
+/*HeroBannerProduct LargeDesktop*/
+.largerViewVer{display:block;}
+
+
+
+/*********************************************************************************
+
+@media screen and (min-width : 992px) and (max-width : 1200px)
+
+*********************************************************************************/
+
+@media screen and (min-width : 992px) and (max-width : 1200px) {
+
+/*HeroBannerProduct background Position*/
+.herobanner2 .container-fluid{background-size:inherit; background-position:-189px -58px;}
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container {padding: 105px 0 115px;}
+
+/*HeroBannerProduct Content Area*/
+.contentArea{width:66%;}
+
+}
+
+/*********************************************************************************
+
+@media screen and (min-width : 768px) and (max-width : 991px)
+
+*********************************************************************************/
+@media screen and (min-width : 768px) and (max-width : 991px) {
+
+
+/*HeroBannerProduct background Position*/
+.herobanner2 .container-fluid{ background-size:151%;background-position:-182px 0;}
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container {padding:105px 0 120px;}
+
+/*HeroBannerProduct Content Area*/
+.contentArea {width:84%;}
+}
+
+/*********************************************************************************
+
+@media screen and (min-width : 320px) and (max-width : 767px)
+
+*********************************************************************************/
+@media screen and (min-width : 320px) and (max-width : 767px) {
+
+/*HeroBannerProduct background Position*/
+.herobanner2 .container-fluid {
+    background-position:left 50%;
+    background-size:cover;
+}
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container {padding: 50px 0;}
+
+/*HeroBannerProduct Link*/
+.herobanner2 .c-product-banner-container .listLink a{font-size:12px;}
+.herobanner2 .c-product-banner-container .listLink a {margin-right:30px;}
+
+
+/*HeroBannerProduct Heading*/
+.herobanner2 .c-product-banner-container h5 {padding-bottom:20px; font-size:12px; padding-bottom:27px;}
+.herobanner2 .c-product-banner-container h2 {padding-bottom:0px; font-size:35px;}
+
+/*HeroBannerProduct Paragraph*/
+.herobanner2 .c-product-banner-container p {padding-bottom:2px;}
+
+/*HeroBannerProduct Content Area*/
+.contentArea{padding-left:40px; width:82%;}
+}
+
+
+
+
+/*********************************************************************************
+
+@media screen and (min-width : 310px) and (max-width : 320px)
+
+*********************************************************************************/
+
+@media screen and (min-width : 310px) and (max-width : 320px) {
+/*HeroBannerProduct Content Area*/
+.contentArea {width:100%;padding:0 15px;}
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container h2{font-size:35px;}
+
+/*HeroBannerProduct Link*/
+.herobanner2 .c-product-banner-container .listLink a{margin-right:12px;}
+.herobanner2 .c-product-banner-container .listLink a{font-size:12px;}
+
+}
+
+/*********************************************************************************
+
+@media screen and (min-width : 321px) and (max-width : 375px)
+
+*********************************************************************************/
+@media screen and (min-width : 321px) and (max-width : 375px) {
+
+/*HeroBannerProduct Content Area*/
+.contentArea {width:90%;}
+
+}
+
+/*********************************************************************************
+
+@media screen and (min-width : 479px) and (max-width : 480px)
+
+*********************************************************************************/
+@media screen and (min-width : 479px) and (max-width : 480px) {
+
+/*HeroBannerProduct Content Area*/
+.contentArea {width:88%;}
+}
+
+
+/*********************************************************************************
+
+@media screen and (min-width : 639px) and (max-width : 640px)
+
+*********************************************************************************/
+@media screen and (min-width : 639px) and (max-width : 640px) {
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container{padding:72px 0;}
+
+}
+
+/*********************************************************************************
+
+@media screen and (min-width : 641px) and (max-width : 736px)
+
+*********************************************************************************/
+@media screen and (min-width : 641px) and (max-width : 736px) {
+
+/*HeroBannerProduct InnerSpace*/
+.herobanner2 .c-product-banner-container{padding:82px 0;}
+
+}
+
+
+
+
+
+
+
+

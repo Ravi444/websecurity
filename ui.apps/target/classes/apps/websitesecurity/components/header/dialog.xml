@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Header"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <menu
+                jcr:primaryType="cq:Widget"
+                title="Header Menu"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <m1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="Navigation List"
+                        maxItems="6"
+                        name="./devdata"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter text for the Link."
+                                fieldLabel="Link"
+                                maxLengthText="15"
+                                name="./title"
+                                xtype="textfield"/>
+                            <urlpath
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter the path for the Link."
+                                fieldLabel="Link Path"
+                                name="./path"
+                                xtype="pathfield"/>
+                            <div
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter div ID it should be unique."
+                                fieldLabel="Div ID"
+                                maxLengthText="15"
+                                name="./div"
+                                xtype="textfield"/>
+                        </fieldConfig>
+                    </m1>
+                </items>
+            </menu>
+            <Imageproperties
+                jcr:primaryType="cq:Panel"
+                title="Logo Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <logotitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide the title for the image."
+                        fieldLabel="Logo Title"
+                        name="./headerimagetitle"
+                        xtype="textfield"/>
+                    <path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path for the Title."
+                        fieldLabel="Logo Reference"
+                        name="./headerlogopath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <Sign_x0020_In
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide the title for Sign In."
+                        fieldLabel="Sign In Title"
+                        name="./headersignintitle"
+                        xtype="textfield"/>
+                    <Sign_x0020_In_x0020_path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path for the Title."
+                        fieldLabel="Logo Reference"
+                        name="./headersigninpath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <search_x0020_logotitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide the title."
+                        fieldLabel="Search Logo Title"
+                        name="./searchlogotitle"
+                        xtype="textfield"/>
+                    <search_x0020_image_x0020_path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path of the Image."
+                        fieldLabel="Search Logo Reference"
+                        name="./searchlogopath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <globe_x0020_logotitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide the title."
+                        fieldLabel="Globe Logo Title"
+                        name="./globelogotitle"
+                        xtype="textfield"/>
+                    <globe_x0020_image_x0020_path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path of the Image."
+                        fieldLabel="Globe Logo Reference"
+                        name="./globelogopath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </Imageproperties>
+            <image
+                jcr:primaryType="cq:Widget"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Logo Image"
+                fileNameParameter="./imageName"
+                fileReferenceParameter="./imageReference"
+                mapParameter="./imageMap"
+                name="./image"
+                rotateParameter="./imageRotate"
+                sizeLimit="100"
+                title="Image"
+                xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

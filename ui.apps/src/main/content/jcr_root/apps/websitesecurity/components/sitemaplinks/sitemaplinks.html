@@ -1,0 +1,14 @@
+<sly data-sly-test="${properties.title1 != NULL}">
+	<h3>
+    	<sly data-sly-test="${properties.titlepath != NULL && properties.title1 != NULL}">
+    		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/sitemaplinks/js/sitemaplinks.js">
+                <a class="${properties.linkcolor}" href="${object.path}" target="${object.target}">${object.text}</a>
+    		</sly>
+    	</sly>
+    </h3>
+</sly>
+<sly  data-sly-use.cpt1="websitesecurity.core.utilities.MultiFieldLinks">
+	<ul class="${properties.sitemap_spacingtop} ${properties.spacingtopsmalldesktop}">
+    	<li data-sly-list.key="${cpt1.listData}"> <a class="clearfix ${properties.linkcolor}" href=${key.path} target="${key.target}">${key.title}</a></li>
+    </ul>
+</sly>

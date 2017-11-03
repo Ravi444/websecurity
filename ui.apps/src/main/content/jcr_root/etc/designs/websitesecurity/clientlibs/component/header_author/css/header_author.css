@@ -1,0 +1,188 @@
+/*Header Top Section */
+.c-tpl-header{background-color:#464646; font-size:13px; line-height:normal; letter-spacing:1px; height:40px; text-transform:uppercase; font-weight:700; color:#fff; margin-bottom:20px;}
+.c-tpl-header .tpl-symc-grey-header{width:100%; float:left;}
+.c-tpl-header .c_tpl-logo{float:left; padding:0; line-height:inherit;}
+.c-tpl-header .c_tpl-logo a{font-size:13px;	line-height:24px; color:#cccccc;}
+.c-tpl-header .c_tpl-logo a:hover, .c_tpl-logo a:focus{text-decoration:none;}
+
+.c-tpl-header .c_h_topRightContainer{float:right; text-align:right; position:relative;}
+.c-tpl-header .c_search-top{float:none;font-size:13px; position:relative; width:100px; line-height:24px; display:inline-block; margin-right:10px; padding:8px 0 8px 15px;}
+.c-tpl-header .c_search-top button{border:none;	background:none; margin-right:10px;	float:left; display:inline-block; outline:0;}
+.c-tpl-header .c_search-top input{font-size:13px; line-height:24px; display:inline-block; letter-spacing:1px; width:100%; color:#cccccc; outline:0;	border:none; background:none;float:left;text-transform:uppercase; font-weight:700; position:absolute;
+left:0; padding-left:40px;}
+
+/*Css For IE Brouser*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+.c-tpl-header .c_search-top input{padding-bottom:7px;}
+}
+.c-tpl-header .c_search-top input{padding-bottom:9px;}
+/*Css For IE Brouser End*/
+
+.c-tpl-header .c_sel-country{display:inline-block;  cursor:pointer; padding:8px 15px;}
+.c-tpl-header .c_sel-country p{font-size:13px;line-height:24px;float:right;color:#cccccc;font-weight:700;margin-bottom:0;}
+.c-tpl-header .globeImg{float:left; padding-right:10px; font-size:13px; display:inline-block;}
+.c-tpl-header .c_tpl-logo{padding:8px 0;}
+/*Header Top Section End*/
+
+/*Css For Header logo*/
+.c_headerSec{position:relative; margin-bottom:25px;}
+.c_logo{float:left;padding-right:15px;width:360px;}
+.c_logo h1{display:block;	height:50px;width:360px;}
+.c_logo img{width:100%;}
+
+/*Css For Header Right Section*/
+.c_rightSec{float:left;width:70%;padding-top:20px;} 
+
+/*Css For Header Navigation*/
+.c_mobButtonOuter{text-align:right; position:relative;}
+.tpl-headRightText{display:inline-block;}
+.c_rightSec ul{display:inline-block;}
+.c_rightSec li{float:left;width:auto;	padding:0 1px;}
+.c_rightSec li a{color:#464646;font-size:16px;line-height:20px; padding-left:14px; padding-right:14px;  padding-bottom:33px;font-weight:700;text-decoration:none; position:relative;}
+.c_rightSec li a:hover, .c_rightSec li a:focus, .c_rightSec li:hover a {color:#464646;text-decoration:none;}
+.c_rightSec li a:hover:after, .c_rightSec li a.navActive:after{height:4px; width:100%; background-color:#fdbb30; position:absolute; content:""; left:0; top:30px;}
+
+/*Css For Header Sign In*/
+.tpl-signIn {float:right;text-align:center;	width:102px;border:2px solid #fdbb30;margin-top:-5px;margin-left:9px;   display:inline-block;vertical-align:middle;}
+.tpl-signIn a{padding:7px 0;text-transform:uppercase;font-size:13px;line-height:17px;color:#464646;	font-weight:700;display:block;}
+.tpl-signIn a:hover, .tpl-signIn a:focus {background:#fdbb30;color:#fff;text-decoration:none;}
+
+/*Css For Header Navigation Title*/
+.navTitle{display:block;padding-bottom:20px;}
+.navTitle h2{font-size:16px;font-weight:700;text-transform:uppercase;  padding-bottom:0;}
+.navTitle h2 a{color:#464646;}
+.navTitle h2 a:hover{color:#15ccff ;}
+.navTitle i {vertical-align:top; margin-top:1px;}
+
+/*Css For Header Dropdown Navigation Title*/
+.tabPanels{position:relative;display:none;left:0;width:100%;-webkit-box-shadow: 0px 20px 24px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 20px 24px 0px rgba(0,0,0,0.3);box-shadow: 0px 20px 24px 0px rgba(0,0,0,0.3);padding:10px 0px 35px;background:#fff;z-index:999;}
+#navLinks li a span{display:none;} 
+.tabPanels .top-border{border-top:2px solid #efefef; padding-top:34px; float:left;}
+
+/*Css For Header Dropdown Navigation Title*/
+.c_mobile-search-container, .c_mobile-globe-container{display:none;}
+.show_hide{display:block!important;}
+
+/*Css For Header back button for mobile*/
+.backButtonSec{display:none;}
+
+
+/* Heade Search */
+.ui-autocomplete{background-color:#333333; padding:10px 0;  top:40px !important; color:#cccccc; width:346px !important; overflow:auto;}
+.ui-autocomplete .autocomplete-suggestion{padding:10px 28px; cursor:pointer; font-size: 16px;}
+.ui-autocomplete .autocomplete-suggestion:hover{background-color:#464646; color:#15ccff;} 
+
+
+/*CSS For Signin*/
+.c-signin-popup-container{position:relative; float:right;}
+
+
+ @media only screen and (max-width : 1200px) {
+/*Css For Header logo*/
+.c_logo{width:100%;}
+
+/*Css For Header Navigation menu right*/
+.c_rightSec{width:100%;}
+.c_rightSec ul{float:left;}
+.c_rightSec ul > li:first-child{padding-left:0;}
+
+/*Css For Header Navigation Title*/
+.navTitle{display:block; padding-bottom:28px;}
+}
+
+@media only screen and (max-width : 991px) {
+.c_rightSec{width:100%;}
+.c_rightSec li a{padding-left:11px; padding-right:11px;}
+}
+
+
+
+@media only screen and (max-width :767px) {
+ /*Css For top Header*/
+.c_headerSec{position:relative; padding:0 15px 5px; margin-bottom:0;}
+.c_headerSec h1{height:inherit;}
+
+ /*Css For Header Logo*/
+.c_logo{display:inline-block; width:200px; float:left;}
+.c_logo img{width:100%;}
+.c_logo h1{width:inherit;}
+
+/*Css For Header menu Navigation*/
+.c_rightSec{display:inline-block; width:inherit; float:right; padding-top:5px;}
+.c_rightSec ul#navLinks {position:absolute;right:0;background:#efefef;padding:30px 30px 75px 30px;width:100%;z-index:9;}
+.c_rightSec ul#navLinks > li{display:block;border-bottom:1px solid #e4e4e4;padding:15px 0;float:none;	width:100%;}
+.c_rightSec li a{border:none;display:block;padding-bottom:0; color:#464646; font-size:20px; font-weight:normal;}
+.c_rightSec li a:hover, .c_rightSec li a:focus, .c_rightSec li:hover a{border:none;}
+.c_rightSec li a:hover:after{display:none;}
+.tpl-signIn{width:96px;	border:2px solid #fdbb30;position:absolute;	top:420px;	left:21px;z-index:99;}
+
+/*Css For Header menu Link*/
+#navLinks li a span{display:inline-block; float:right; margin-top:2px; color:#cccccc;}
+
+/*Css For Header Mobile Menu Navigation*/
+.c_mobButtonOuter{text-align:left; display:none; position:inherit;}
+.c_mobilemenuicon-container{display:inline-block; height:55px;}
+.c_mobilemenuicon-container span{display:inline-block; margin:0 5px; cursor:pointer; padding:17px 8px;} 
+.c_mobilemenuicon-container span.globeImg{float:none;}
+.c_mobilemenuicon-container span.searchfor-mobile button{background:none; width:100%; height:100%; position:absolute; top:0; left:0; outline:none;}
+.c_mobilemenuicon-container span.active{background-color:#efefef;}
+/*Css For Header Mobile Menu Navigation*/
+.c_mobilemenuicon-container span.menuButton .active{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-CrossImg.png"); background-repeat:no-repeat;}
+.c_mobilemenuicon-container span.globeImg .active{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-CrossImg.png"); background-repeat:no-repeat; background-color:#efefef;}
+.c_mobilemenuicon-container span.searchfor-mobile .active{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-CrossImg.png"); background-repeat:no-repeat; background-color:#efefef;}
+
+/*Css For Header Mobile Menu Navigation */
+.c_mobilemenuicon-container span.searchfor-mobile i{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-SearchMob.png"); background-repeat:no-repeat; width:20px; height:21px; position:relative; display:block; background-size:100% 100%;}
+.c_mobilemenuicon-container span.globeImg i{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-GlobeMobImg.png"); background-repeat:no-repeat; width:20px; height:21px;  display:block; background-size:100% 100%;}
+.c_mobilemenuicon-container span.menuButton i{background-image:url("/content/dam/websitesecurity/header/Mobile/Basepage-Header-MobNavIcon.png"); background-repeat:no-repeat; width:20px; height:21px; display:block; background-size:100% 100%;}
+
+
+/*Css For Header Globe Language*/
+.c_mobile-globe-container{position:absolute;right:0;background:#efefef;padding:30px 30px 25px 30px;width:100%;z-index:9;}
+.c_mobile-globe-container.countryShowDiv{display:block;}
+/*Css For Header Search*/
+.c_mobile-search-container{position:absolute;right:0;background:#efefef;padding:30px 30px 25px 30px;width:100%;z-index:9;}
+.c_mobile-search-container .c_search-top{width:100%; border-bottom:1px solid #464646; padding-bottom:7px;}
+.c_mobile-search-container .c_search-top button{float:right; margin-right:0; background:none;}
+.c_mobile-search-container .c_search-top input{padding-left:0; color:#464646; background-color:#efefef; outline:0;}
+.c_mobile-search-container .c_search-top img{width:50%;}
+.ui-autocomplete{top:150px !important; color:#cccccc; width:91% !important;}
+.c_mobile-search-container.searchDivShow{display:block;}
+
+/*Css For Header menu tabpanel*/
+.tabPanels{padding:20px 30px 25px 30px;background:#efefef; top:inherit; margin-top:-5px;}
+.tab-device{width:100% !important;}
+.backButtonSec, .backButtonthirdlevel{font-weight:700; display:inline-block; margin-bottom:20px; cursor:pointer;}
+.backButtonSec i, .backButtonthirdlevel i{vertical-align:top; margin-top:4px;}
+
+/*Css For Header menu tabpanel*/
+.nav-padding-left h4 span, .code-sining-certificate h4 span{display:inline-block; float:right; margin-top:2px; color:#cccccc;}
+.showHide{display:block;}
+
+/*Css For Header menu navigation Title*/
+.navTitle{display:block; padding-bottom:15px; border-bottom:1px solid #e4e4e4; margin-bottom:10px;}
+.navTitle i{display:none;}
+.c_rightSec li a.navActive:after{height:0px; width:100%; background:none;}
+
+/*Css for Header Autosuggest*/
+.mobileUi-autocomplete{background-color:#333333; padding:10px 0;  color:#cccccc; overflow:auto; margin-top: 20px;}
+.mobileUi-autocomplete .autocomplete-suggestion{padding:10px 28px; cursor:pointer; font-size: 16px;}
+.mobileUi-autocomplete .autocomplete-suggestion:hover{background-color:#464646; color:#15ccff;} 
+
+/*Css for Header Autosuggest*/
+.mobileUi-autocomplete{background-color:#333333; padding:10px 0;  color:#cccccc; overflow:auto; margin-top: 20px;}
+.mobileUi-autocomplete .autocomplete-suggestion{padding:10px 28px; cursor:pointer; font-size: 16px;}
+.mobileUi-autocomplete .autocomplete-suggestion:hover{background-color:#464646; color:#15ccff;} 
+
+}
+
+
+
+@media only screen and (max-width : 480px) {
+/*Css For Header logo*/
+.c_logo{width:160px;}
+/*Css For Header icon Container*/
+.c_mobilemenuicon-container span{margin:0;}
+}

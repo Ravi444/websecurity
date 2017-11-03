@@ -1,0 +1,33 @@
+ <div data-sly-include="headlibs.html" data-sly-unwrap></div>
+ <meta http-equiv="X-UA-Compatible" content="IE=11; IE=8; IE=7;">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<sly data-sly-test = "${currentPage.name == 'homepage'}">
+
+ <meta name="google-site-verification" content="tXlq6jkymbVChsOr0nBQcHFJQm_V3VlTGqv09E-6RmQ" />
+
+</sly>
+<meta data-sly-use.cpt="websitesecurity.core.utilities.PageHelper" />
+ <meta data-sly-test="${cpt.segmentTags}" data-sly-unwrap>
+	<meta name="Segment" content="${cpt.segmentTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.resourceTags}" data-sly-unwrap>
+	<meta name="Resource" content="${cpt.resourceTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.productTags}" data-sly-unwrap>
+	<meta name="Products" content="${cpt.productTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.categoryTags}" data-sly-unwrap>
+	<meta name="Category" content="${cpt.categoryTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.industryTags}" data-sly-unwrap>
+	<meta name="Industry" content="${cpt.industryTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.trendTags}" data-sly-unwrap>
+	<meta name="Trend" content="${cpt.trendTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.serviceTags}" data-sly-unwrap>
+	<meta name="Services" content="${cpt.serviceTags @ context='unsafe'}"/>
+</meta>
+<meta data-sly-test="${cpt.partnerResourceTags}" data-sly-unwrap>
+	<meta name="Partner_Resources" content="${cpt.partnerResourceTags @ context='unsafe'}"/>
+</meta>

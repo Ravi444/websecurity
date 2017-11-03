@@ -1,0 +1,84 @@
+<sly data-sly-use.headerobj="websitesecurity.core.utilities.Header">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="c_headerSec clearfix">
+        <div id="exTab1">
+          <div class="c_logo">
+            <h1>
+				<sly data-sly-test="${properties.imageReference != NULL && properties.headerimagetitle != NULL}">
+					<sly data-sly-use.headerobject="/etc/designs/websitesecurity/clientlibs/component/header/js/headerlogolink.js">
+						<a href="${headerobject.path}" target="${headerobject.target}">
+							<img src="${properties.imageReference}" title="${properties.headerimagetitle}"/>
+						</a>
+        			</sly>
+        		</sly>
+			</h1>
+          </div>
+          <div class="c_rightSec">
+            <div class="hidden-md hidden-lg hidden-sm visible-xs c_mobilemenuicon-container"> <span class="searchfor-mobile"><i>
+              <button type="submit"></button>
+              </i></span> <span class="globeImg"><i></i></span> <span class="menuButton"><i></i></span> </div>
+            
+            <!-- HTML for Mobile Search -->
+            <div class="c_mobile-search-container">
+              <div class="c_search-top">
+                <form name="search" id="gsaSearchHeader" action="">
+                  <input type="text" name="mobileSuggest" id="mobileSuggest" class="mobileSuggest" maxlength="256" value="${gsaSearch.searchQuery @ context='unsafe'}" placeholder="SEARCH" autocomplete="on">
+                  <input type="hidden" name="hiddenSuggest" id="hiddenSuggest" class="hiddenSuggest" value="${gsaSearch.searchQuery @ context='unsafe'}">
+                  <button id="btn-header-submit" type="button"><img src="${properties.searchlogopath}"></button>
+                </form>
+              </div>
+            </div>
+            <!-- HTML for Mobile Search End --> 
+            
+            <!-- HTML for Mobile Country Langauge -->
+            <div class="c_mobile-globe-container"></div>
+            <!-- HTML for Mobile Country Langauge End -->
+            
+            <div class="c_mobButtonOuter">
+              <ul id="navLinks" data-sly-list="${headerobj.listData}">
+                <li><a href="${item.path}" data-href="#${item.divid}" target="${item.target}" class="tablinks">${item.title}<span class="glyphicon glyphicon-menu-right"></span></a></li>
+              </ul>
+              <div class="tpl-signIn"><a href="${properties.headersigninpath}.html">${properties.headersignintitle}</a></div>
+              
+              <!-- Signin popup HTML Start -->
+              <div class="c-signin-popup-container">
+                <div class="c-signin_popup-inner">
+                  <div class="signinback"><span class="backButton"><i class="glyphicon glyphicon-menu-left"></i> Back</span></div>
+                  <span class="arrow-up"></span>
+                  <sly data-sly-resource ="${@path='signin', resourceType='foundation/components/parsys'}"></sly>
+                </div>
+              </div>
+              <!-- Signin popup HTML end --> 
+              
+            </div>
+          </div>
+        </div>
+        <!-- --------Navigation Bar End---------- --> 
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="clearfix">
+      <sly data-sly-list="${headerobj.listData}">
+        <div class="tab-pane tabPanels" id="${item.divid}">
+          <div class="container">
+            <div class="backButtonSec"><span class="backButton"><i class="glyphicon glyphicon-menu-left"></i> Back</span></div>
+            <div class="backButtonthirdlevel"><i class="glyphicon glyphicon-menu-left"></i> Back</div>
+            <div class="navTitle">
+              <h2><a href="${item.path}">${item.title} <i class="glyphicon glyphicon-menu-right"></i></a></h2>
+            </div>
+            <sly data-sly-resource="${'headerparsys{0}' @ format=itemList.count, resourceType='foundation/components/parsys'}"></sly>
+          </div>
+        </div>
+      </sly>
+    </div>
+  </div>
+</sly>
+<sly data-sly-use.wcmModes="/libs/wcm/foundation/components/page/initwcm.js"></sly>
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='header_author'}"/>
+</div>
+<div data-sly-test="${!author}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='header'}"/>
+</div>

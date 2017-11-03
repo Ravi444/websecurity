@@ -1,0 +1,50 @@
+
+
+<div class="container-fluid bg-color-grey" >
+	<div class="container c-social-media-links">
+		<div class="row ">
+
+			<div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 nospacingleft bottome_spacing" data-sly-use.cpt="websitesecurity.core.utilities.MultiFieldLinks">
+				<ul class="list-inline text-align" data-sly-list.key="${cpt.listData}">
+					<li><a href=${key.path} target="${key.target}">${key.title}</a></li>
+				</ul>
+				<span class="disclaimer">${properties.disclaimer}</span> 
+			</div>
+			<div class="col-lg-4 col-md-3 col-sm-3 mobile-view c-country-sec nospacingright " data-sly-use.icon="websitesecurity.core.utilities.FooterBottomIcons">
+				<div class="rightAreaSocial">
+					<span class="sm-sec-desk desktop-view">
+
+						<ul>
+						<li><a class="s-twitter" href="${properties.twitter}" ></a></li>
+						<li><a class="s-fb" href="${properties.facebook}"></a></li>
+						<li><a class="s-linkden" href="${properties.linkedin}"></a></li>
+						<li><a class="s-googleplus" href="${properties.google}"></a></li>
+						<li><a class="s-youtube" href="${properties.youtube}"></a></li>
+						</ul>
+					</span>
+					<div class="clearfix visible-xs"></div>
+
+					<span id="norton-sec-logo">
+					<script type="text/javascript" src="${properties.imagepath}"></script>
+					<img class="norton-logo" name="seal" oncontextmenu="return false;" border="0" usemap="#sealmap_medium" alt=""> 
+					
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 mf-hide nospacingleft nospacingright">
+				<span class="sm-sec-tab laptop-view mobile-view">
+
+					<ul>
+						<li><a class="s-twitter" href="${properties.twitter}"></a></li>
+						<li><a class="s-fb" href="${properties.facebook}"></a></li>
+						<li><a class="s-linkden" href="${properties.linkedin}"></a></li>
+						<li><a class="s-googleplus" href="${properties.google}"></a></li>
+						<li><a class="s-youtube" href="${properties.youtube}"></a></li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>

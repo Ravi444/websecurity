@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Header Navlist"
+    width="1100"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <menu
+                jcr:primaryType="cq:Widget"
+                title="List Data"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <listFrom
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the type of the list."
+                        fieldLabel="List selection"
+                        name="./listFrom"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <products
+                                jcr:primaryType="nt:unstructured"
+                                text="Products"
+                                value="products"/>
+                            <products_double
+                                jcr:primaryType="nt:unstructured"
+                                text="Products Doublelist"
+                                value="products_doublelist"/>
+                            <buyrenew
+                                jcr:primaryType="nt:unstructured"
+                                text="Buy/renew"
+                                value="buyrenew"/>
+                        </options>
+                    </listFrom>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title"
+                        fieldLabel="Heading"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <titlepath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the title"
+                        fieldLabel="Heading path"
+                        name="./headingpath"
+                        xtype="pathfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Charcoal Grey"
+                        fieldDescription="Choose the color of the Heading"
+                        fieldLabel="Heading Color"
+                        name="./titlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                        </options>
+                    </titlecolor>
+                    <ullink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the text for the LinkTitle1 (only for Buy/Renew option)"
+                        fieldLabel="Link Title1"
+                        name="./ullink"
+                        xtype="textfield"/>
+                    <m1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="List Data"
+                        name="./devdata"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <multifield
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter text for the Link"
+                                fieldLabel="Link"
+                                name="./title"
+                                xtype="textfield"/>
+                            <urlpath
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Specify the path for the Link"
+                                fieldLabel="Link Path"
+                                name="./path"
+                                xtype="pathfield"/>
+                            <Buttonname
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enter text for the Button(only for Buy/Renew option)"
+                                fieldLabel="Button Label"
+                                name="./buttontitle"
+                                xtype="textfield"/>
+                        </fieldConfig>
+                    </m1>
+                </items>
+            </menu>
+        </items>
+    </items>
+</jcr:root>

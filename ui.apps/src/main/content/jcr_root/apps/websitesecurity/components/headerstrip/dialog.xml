@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Header Strip"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Title
+                jcr:primaryType="cq:Panel"
+                title="Header Strip Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Enter the title."
+                        fieldLabel="Title"
+                        maxLength="32"
+                        name="./headerbannertitle"
+                        xtype="textfield"/>
+                    <path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the path for the title."
+                        fieldLabel="Path"
+                        name="./headerbannerpath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the place holder value."
+                        fieldLabel="Search Place holder"
+                        maxLength="10"
+                        name="./headerbannersearch"
+                        xtype="textfield"/>
+                    <prop2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the country name."
+                        fieldLabel="Country name"
+                        maxLength="15"
+                        name="./headerbannercountry"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <search
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the image for the search icon"
+                        fieldLabel="Search Image"
+                        name="./searchpath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <globe
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the image for the globe icon"
+                        fieldLabel="Globe Image"
+                        name="./globepath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <searchpage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        blankText="Please enter the missing text"
+                        fieldDescription="Enter the path of the Search Page."
+                        fieldLabel="Search Page Path"
+                        name="./searchpagepath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <gsatagpath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        blankText="Please enter the missing text"
+                        fieldDescription="Enter the GSA tagging Path. This will be added to page meta tags."
+                        fieldLabel="GSA Tagging Path"
+                        name="./gsatagpath"
+                        rootPath="/etc/tags"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <autosuggestpath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        blankText="Please enter the missing text"
+                        fieldDescription="Enter the path for Autosuggest tagging for GSA"
+                        fieldLabel="Autosuggest Tagging Path - GSA"
+                        name="./autosuggestpath"
+                        rootPath="/etc/tags"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </Title>
+        </items>
+    </items>
+</jcr:root>

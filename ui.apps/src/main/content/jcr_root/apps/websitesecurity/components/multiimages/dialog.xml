@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel"
+    manageTabs="function(tab,noSwitch){var tabs=['list','desktop','mobile'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}&#xa;"
+    title="Multi Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <largedesktop
+            jcr:primaryType="cq:Widget"
+            title="Large Desktop"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <largedesktopImage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Large Desktop View Image"
+                    fieldLabel="Large Desktop View Image"
+                    name="./largedesktoppath"
+                    xtype="pathfield"/>
+                <alttext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify Title for Large Desktop Image"
+                    fieldLabel="Image Title for Large Desktop"
+                    name="./largedesktopimgtitle"
+                    xtype="textfield"/>
+                <alternatetext1
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image1"
+                    fieldLabel="Alternate Text for Image1"
+                    maxLength="40"
+                    name="./alternatetext1"
+                    xtype="textfield"/>
+            </items>
+        </largedesktop>
+        <desktop
+            jcr:primaryType="cq:Widget"
+            title="Desktop Image"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <desktopImage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Desktop View Image"
+                    fieldLabel="Desktop View Image"
+                    name="./desktoppath"
+                    xtype="pathfield"/>
+                <alttext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Title for Desktop Image"
+                    fieldLabel="Image Title for Desktop"
+                    name="./desktopimgtitle"
+                    xtype="textfield"/>
+                <alternatetext2
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image2"
+                    fieldLabel="Alternate Text for Image2"
+                    maxLength="40"
+                    name="./alternatetext2"
+                    xtype="textfield"/>
+            </items>
+        </desktop>
+        <tablet
+            jcr:primaryType="cq:Widget"
+            title="Tablet Image"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabletImage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Tablet View Image"
+                    fieldLabel="Tablet View Image"
+                    name="./tabletpath"
+                    xtype="pathfield"/>
+                <alttext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Title for Tablet Image"
+                    fieldLabel="Image Title for Tablet"
+                    name="./tabletimgtitle"
+                    xtype="textfield"/>
+                <alternatetext3
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image3"
+                    fieldLabel="Alternate Text for Image3"
+                    maxLength="40"
+                    name="./alternatetext3"
+                    xtype="textfield"/>
+            </items>
+        </tablet>
+        <mobile
+            jcr:primaryType="cq:Widget"
+            title="Mobile Image"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <mobileImage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Mobile View Image"
+                    fieldLabel="Mobile View Image"
+                    name="./mobilepath"
+                    xtype="pathfield"/>
+                <alttext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Title for  Mobile Image"
+                    fieldLabel="Image Title for Mobile"
+                    name="./mobileimgtitle"
+                    xtype="textfield"/>
+                <alternatetext4
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image4"
+                    fieldLabel="Alternate Text for Image4"
+                    maxLength="40"
+                    name="./alternatetext4"
+                    xtype="textfield"/>
+            </items>
+        </mobile>
+    </items>
+</jcr:root>

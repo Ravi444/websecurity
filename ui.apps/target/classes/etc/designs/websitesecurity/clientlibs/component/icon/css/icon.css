@@ -1,0 +1,75 @@
+/******************************************** icon component Starts********************************************/
+.iconscomponent.spacingtopMargin{margin-top:150px;}
+.iconscomponent .certificate-container {padding:130px 0 117px;}
+.iconscomponent .certificate-container h2 {padding-bottom:50px;}
+.c-imagecolumns_imgcontainer ul{text-align:left;}
+.c-imagecolumns_imgcontainer li {margin:0 10px;width: 18%; display:inline-block; vertical-align:middle}
+.c-imagecolumns {margin-bottom:60px;}
+
+/******************************************** icon component Ends********************************************/
+ @media only screen and (max-width : 1200px) {
+/******************************************** icon component Starts********************************************/
+.iconscomponent.spacingtopMargin{margin-top:63px;}
+.iconscomponent .certificate-container {padding:130px 0 117px;}
+.iconscomponent .certificate-container h2 {padding-bottom:64px;}
+
+.c-imagecolumns_imgcontainer li {
+	width: 22%;
+}
+.c-imagecolumns_imgcontainer li:nth-child(5) {
+	display:none;
+}
+/******************************************** icon component Ends********************************************/
+}
+ @media only screen and (max-width : 991px) {
+/******************************************** icon component Starts********************************************/
+.iconscomponent.spacingtopMargin{margin-top:70px;}
+.iconscomponent .certificate-container {padding:130px 0 117px;}
+.iconscomponent .certificate-container h2 {padding-bottom:66px;}
+.c-imagecolumns_imgcontainer li {
+	width: 28%;
+
+}
+.c-imagecolumns_imgcontainer li:nth-child(5), .c-imagecolumns_imgcontainer li:nth-child(4) {
+	display: none;
+}
+/******************************************** icon component Ends********************************************/
+}
+ @media only screen and (max-width : 767px) {
+	 /******************************************** icon component Starts********************************************/
+.iconscomponent.spacingtopMargin{margin-top:30px;}
+.iconscomponent .certificate-container {padding:80px 0 70px;}
+.iconscomponent .certificate-container h2 {padding-bottom:40px;}
+.c-imagecolumns {margin-bottom:50px;}
+.c-imagecolumns_imgcontainer li {
+	width: auto;
+}
+.c-imagecolumns_imgcontainer li:nth-child(5), .c-imagecolumns_imgcontainer li:nth-child(4), .c-imagecolumns_imgcontainer li:nth-child(3) {
+	display: none;
+}
+.iconscomponent .certificate-container h2 {
+	font-weight:300;
+}
+.iconscomponent .viewAll a {
+	font-weight:300;
+	font-size:12px;
+}
+/******************************************** icon component Ends********************************************/
+}
+@media only screen and (max-width : 480px) {
+.c-imagecolumns_imgcontainer li {
+	width: auto;
+}
+.c-imagecolumns_imgcontainer li {
+	width: 43%;
+	min-height: auto;
+}
+.c-imagecolumns_imgcontainer li img {
+	width: 100%;
+}
+}
+ @media only screen and (min-width : 280px) and (max-width : 479px) {
+.c-imagecolumns_imgcontainer li {
+	width: 40%;
+}
+}

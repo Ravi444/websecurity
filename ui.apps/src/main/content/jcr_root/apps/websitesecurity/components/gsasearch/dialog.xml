@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="GSA Search Result"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Panel"
+                title="Search Bar Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Leave blank for default - &quot;Search&quot;"
+                        fieldLabel="Search Bar Title"
+                        name="./searchBarTitle"
+                        xtype="textfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Security"
+                        fieldDescription="Leave blank for default - &quot;Security&quot;"
+                        fieldLabel="Search Bar Text(default)"
+                        name="./searchText"
+                        value="Security"
+                        xtype="textfield"/>
+                    <autosuggestpath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        blankText="Please enter the missing text"
+                        fieldDescription="Enter the path for Autosuggest tagging for GSA"
+                        fieldLabel="Autosuggest Tagging Path - GSA"
+                        name="./autosuggestpathgsa"
+                        rootPath="/etc/tags"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <Client
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="GSA Client (CLIENT) Override"
+                        fieldLabel="Client Override"
+                        name="./clientOverride"
+                        xtype="textfield"/>
+                    <Site
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="GSA Site (SITE) Override"
+                        fieldLabel="Site Override"
+                        name="./siteOverride"
+                        xtype="textfield"/>
+                </items>
+            </tab>
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Search Results"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <SortTextSelection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="no"
+                        fieldDescription="Text to be displayed in Sort By Selection"
+                        fieldLabel="Is &quot;Sort Type&quot; Selection required ?"
+                        name="./sortTextSelection"
+                        type="select"
+                        value="no"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            render="function(box, value) {&#xa;    var dlg = box.findParentByType('panel');&#xa;    if (value == &quot;yes&quot;) {&#xa;&#x9;&#x9;dlg.getComponent(&quot;sortText&quot;).show(); &#xa;    } else {&#xa;        dlg.getComponent(&quot;sortText&quot;).hide(); &#xa;    }&#xa;}"
+                            selectionchanged="function(box, value) {&#xa;    var dlg = box.findParentByType('panel');&#xa;    if (value == &quot;yes&quot;) {&#xa;&#x9;&#x9;dlg.getComponent(&quot;sortText&quot;).show(); &#xa;    } else {&#xa;        dlg.getComponent(&quot;sortText&quot;).hide(); &#xa;    }&#xa;}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </SortTextSelection>
+                    <sortText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be displayed in Sort By filter"
+                        fieldLabel="Sort Type Text"
+                        itemId="sortText"
+                        name="./sortText"
+                        xtype="textfield"/>
+                    <refineText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be displayed in Refine Search Heading. By Default text is &quot;Refine Search&quot;"
+                        fieldLabel="Refine Search Text"
+                        itemId="refineText"
+                        name="./refineText"
+                        xtype="textfield"/>
+                    <clearFilterText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be displayed for Clear Filter link. By Default text is &quot;Clear Filters&quot;"
+                        fieldLabel="Clear Filter Text"
+                        itemId="clearFilterText"
+                        name="./clearFilterText"
+                        xtype="textfield"/>
+                    <DisplayResultURLSelection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="no"
+                        fieldDescription="Switch to control the visibility of the Result URL from the Search Result section. This is a single switch for all results."
+                        fieldLabel="Display Result URL in Searched Results ?"
+                        name="./displayResultURLSelection"
+                        type="select"
+                        value="no"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="no"/>
+                        </options>
+                    </DisplayResultURLSelection>
+                    <previousText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be displayed in Previous Link result navigation"
+                        fieldLabel="Previous Link Text"
+                        itemId="previousText"
+                        name="./previousText"
+                        xtype="textfield"/>
+                    <nextText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be displayed in Next Link result navigation"
+                        fieldLabel="Next Link Text"
+                        itemId="nextText"
+                        name="./nextText"
+                        xtype="textfield"/>
+                    <isRichTextFlag
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./textIsRich"
+                        value="true"
+                        xtype="hidden"/>
+                    <rteLabel
+                        jcr:primaryType="cq:Widget"
+                        bottommargin="true"
+                        html="&lt;b>&quot;No Results&quot; Suggestion Text&lt;/b>"
+                        name="./rteLabel"
+                        tag="h1"
+                        xtype="static"/>
+                    <noResultSuggestion
+                        jcr:primaryType="cq:Widget"
+                        name="./noResultsSuggestion"
+                        width="{Long}650"
+                        xtype="richtext"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:lastReplicated="{Date}2017-02-17T09:40:42.923-07:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Dialog"
+    title="Chart"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Panel"
+                title="Left Image Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selection
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="none"
+                        fieldDescription="Choose the color for the container background"
+                        fieldLabel="Background Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_bg"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_bg"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_bg"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_bg"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_bg"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_bg"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_bg"/>
+                            <Symantec_x0020_Gold
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_bg"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_bg"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_bg"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_bg"/>
+                            <gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Gradient"
+                                value="blue-gradient grad1-sec text-center"/>
+                            <dark_x0020__x0020_gradient
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark Gradient"
+                                value="blue-gradient3 text-center"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_bg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_bg"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_bg"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_bg"/>
+                        </options>
+                    </selection>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title of component"
+                        fieldLabel="Title"
+                        maxLength="51"
+                        name="./charttitle"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the  Title color"
+                        fieldLabel="Title Color"
+                        name="./charttitlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <charttitle1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the  upper title"
+                        fieldLabel="Upper Title"
+                        maxLength="40"
+                        name="./charttitle1"
+                        xtype="textfield"/>
+                    <title1color
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the  upper Title color"
+                        fieldLabel="Upper Title Color"
+                        name="./variantscolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </title1color>
+                    <charttitle2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the lower title"
+                        fieldLabel="Lower Title"
+                        maxLength="37"
+                        name="./charttitle2"
+                        xtype="textfield"/>
+                    <title2color
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the lower title color"
+                        fieldLabel="Lower Title Color"
+                        name="./boltscolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </title2color>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Link Title"
+                        fieldLabel="Link Text"
+                        maxLength="24"
+                        name="./link"
+                        xtype="textfield"/>
+                    <img
+                        jcr:primaryType="cq:Widget"
+                        allowblank="false"
+                        fieldDescription="Specify the Path of the image"
+                        fieldLabel="Image1"
+                        name="./image"
+                        title="Image"
+                        xtype="pathfield"/>
+                    <Img2
+                        jcr:primaryType="cq:Widget"
+                        allowblank="false"
+                        fieldDescription="Specify the Path of the image"
+                        fieldLabel="Image2"
+                        name="./image2"
+                        title="Image"
+                        xtype="pathfield"/>
+                    <linkpathoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue=""
+                        fieldDescription="Select Link Path Or Overlay"
+                        fieldLabel="&#x9;&#xa;Link Path Or Overlay"
+                        name="./linkpathoverlay1"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;link_overlay&quot;){dlg.getComponent('overlayID').show();dlg.getComponent('linkpathID').hide();dlg.getComponent('overlayID1').show();}else{dlg.getComponent('linkpathID').show();dlg.getComponent('overlayID').hide();dlg.getComponent('overlayID1').hide();}}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="nt:unstructured"
+                                text="Link Path"
+                                value="linkpath"/>
+                            <overlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Overlay On Link"
+                                value="link_overlay"/>
+                        </options>
+                    </linkpathoverlay>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the Link"
+                        fieldLabel="Link path"
+                        itemId="linkpathID"
+                        name="./linkvalue1"
+                        xtype="pathfield"/>
+                    <textvidoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue=""
+                        fieldDescription="Select Text or Video"
+                        fieldLabel="Text or Video"
+                        itemId="overlayID"
+                        name="./textvidoverlay1"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Overlay"
+                                value="textoverlay"/>
+                            <vidoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Video Overlay"
+                                value="vidoverlay"/>
+                        </options>
+                    </textvidoverlay>
+                    <dropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select Overlay"
+                        fieldLabel="Overlay"
+                        itemId="overlayID1"
+                        name="./dropvalue1"
+                        options="/bin/websitesecurity/overlayoptions"
+                        type="select"
+                        value="text"
+                        xtype="selection"/>
+                    <variants
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the percentage"
+                        fieldLabel="Upper Percentage"
+                        maxValue="99"
+                        name="./variants"
+                        xtype="textfield"/>
+                    <variantssign
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose sign for variants"
+                        fieldLabel="Upper Sign"
+                        name="./variantssign"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value=""/>
+                            <positive
+                                jcr:primaryType="nt:unstructured"
+                                text="Positive"
+                                value="+"/>
+                            <negative
+                                jcr:primaryType="nt:unstructured"
+                                text="Negative"
+                                value="-"/>
+                        </options>
+                    </variantssign>
+                    <blots
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the percentage"
+                        fieldLabel="Lower Percentage"
+                        maxValue="99"
+                        name="./blots"
+                        xtype="textfield"/>
+                    <blotssign
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose sign for blots"
+                        fieldLabel="Lower Sign"
+                        name="./blotssign"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value=""/>
+                            <positive
+                                jcr:primaryType="nt:unstructured"
+                                text="Positive"
+                                value="+"/>
+                            <negative
+                                jcr:primaryType="nt:unstructured"
+                                text="Negative"
+                                value="-"/>
+                        </options>
+                    </blotssign>
+                    <titleforimg
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Title for Image1"
+                        fieldLabel="Title for Image 1"
+                        maxLength="51"
+                        name="./imgtitle1"
+                        xtype="textfield"/>
+                    <titleforimg2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Title for Image2"
+                        fieldLabel="Title for Image 2"
+                        maxLength="51"
+                        name="./imgtitle2"
+                        xtype="textfield"/>
+                    <alternatetextforimage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Alternate text for image1"
+                        fieldLabel="Alternate Text for Image1"
+                        maxLength="30"
+                        name="./alternatetext1"
+                        xtype="textfield"/>
+                    <alternatetextforimage2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Alternate text for image2"
+                        fieldLabel="Alternate Text for Image2"
+                        maxLength="30"
+                        name="./alternatetext2"
+                        xtype="textfield"/>
+                </items>
+            </tab>
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Upper Middle Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title"
+                        fieldLabel="Title"
+                        maxLength="45"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for Title"
+                        fieldLabel="Title  color"
+                        name="./title1color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the subtitle"
+                        fieldLabel="Subtitle"
+                        maxLength="51"
+                        name="./subtitle1"
+                        xtype="textfield"/>
+                    <subtitlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for SubTitle"
+                        fieldLabel="Subtitle  Color"
+                        name="./subtitle1color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitlecolor>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Description"
+                        fieldLabel="Description"
+                        name="./desc1"
+                        validateValue="function(field){var temp=this.getValue();if(temp.length>158){this.markInvalid(&quot;Description should not exceed 150 characters&quot;);return false;}else if(temp.length == 0){this.markInvalid(&quot;Enter Description&quot;);return false;}else{this.clearInvalid();return true;}}"
+                        xtype="richtext"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Link Title"
+                        fieldLabel="Link Text"
+                        maxLength="24"
+                        name="./link1"
+                        xtype="textfield"/>
+                    <linkpath
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldDescription="Specify the path of the Link"
+                        fieldLabel="Link Path"
+                        name="./path1"
+                        xtype="pathfield"/>
+                    <linkpathoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue=""
+                        fieldDescription="Select Link Path Or Overlay"
+                        fieldLabel="&#x9;&#xa;Link Path Or Overlay"
+                        name="./linkpathoverlay2"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;link_overlay&quot;){dlg.getComponent('overlayID').show();dlg.getComponent('linkpathID').hide();dlg.getComponent('overlayID1').show();}else{dlg.getComponent('linkpathID').show();dlg.getComponent('overlayID').hide();dlg.getComponent('overlayID1').hide();}}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="nt:unstructured"
+                                text="Link Path"
+                                value="linkpath"/>
+                            <overlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Overlay On Link"
+                                value="link_overlay"/>
+                        </options>
+                    </linkpathoverlay>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the Link"
+                        fieldLabel="Link path"
+                        itemId="linkpathID"
+                        name="./linkvalue2"
+                        xtype="pathfield"/>
+                    <textvidoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue=""
+                        fieldDescription="Select Text or Video"
+                        fieldLabel="Text or Video"
+                        itemId="overlayID"
+                        name="./textvidoverlay2"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Overlay"
+                                value="textoverlay"/>
+                            <vidoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Video Overlay"
+                                value="vidoverlay"/>
+                        </options>
+                    </textvidoverlay>
+                    <dropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select Overlay"
+                        fieldLabel="Overlay"
+                        itemId="overlayID1"
+                        name="./dropvalue2"
+                        options="/bin/websitesecurity/overlayoptions"
+                        type="select"
+                        value="text"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Upper Right Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title"
+                        fieldLabel="Title"
+                        maxLength="55"
+                        name="./title2"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for Title"
+                        fieldLabel="Title Color"
+                        name="./title2color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the subtitle"
+                        fieldLabel="SubTitle"
+                        maxLength="66"
+                        name="./subtitle2"
+                        xtype="textfield"/>
+                    <subtitlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for SubTitle"
+                        fieldLabel="SubTitle  Color"
+                        name="./subtitle2color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitlecolor>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Link Title"
+                        fieldLabel="Link Text"
+                        maxLength="25"
+                        name="./link2"
+                        xtype="textfield"/>
+                    <linkpathoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue=""
+                        fieldDescription="Select Link Path Or Overlay"
+                        fieldLabel="&#x9;&#xa;Link Path Or Overlay"
+                        name="./linkpathoverlay3"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;link_overlay&quot;){dlg.getComponent('overlayID').show();dlg.getComponent('linkpathID').hide();dlg.getComponent('overlayID1').show();}else{dlg.getComponent('linkpathID').show();dlg.getComponent('overlayID').hide();dlg.getComponent('overlayID1').hide();}}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="nt:unstructured"
+                                text="Link Path"
+                                value="linkpath"/>
+                            <overlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Overlay On Link"
+                                value="link_overlay"/>
+                        </options>
+                    </linkpathoverlay>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the Link"
+                        fieldLabel="Link path"
+                        itemId="linkpathID"
+                        name="./linkvalue3"
+                        xtype="pathfield"/>
+                    <textvidoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue=""
+                        fieldDescription="Select Text or Video"
+                        fieldLabel="Text or Video"
+                        itemId="overlayID"
+                        name="./textvidoverlay3"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Overlay"
+                                value="textoverlay"/>
+                            <vidoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Video Overlay"
+                                value="vidoverlay"/>
+                        </options>
+                    </textvidoverlay>
+                    <dropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select Overlay"
+                        fieldLabel="Overlay"
+                        itemId="overlayID1"
+                        name="./dropvalue3"
+                        options="/bin/websitesecurity/overlayoptions"
+                        type="select"
+                        value="text"
+                        xtype="selection"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Lower Middle Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title"
+                        fieldLabel="Title"
+                        maxLength="37"
+                        name="./title3"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for Title"
+                        fieldLabel="Title Color"
+                        name="./title3color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the subtitle"
+                        fieldLabel="SubTitle"
+                        maxLength="57"
+                        name="./subtitle3"
+                        xtype="textfield"/>
+                    <subtitlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for SubTitle"
+                        fieldLabel="SubTitle  Color"
+                        name="./subtitle3color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitlecolor>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Link Title"
+                        fieldLabel="Link Text"
+                        maxLength="20"
+                        name="./link3"
+                        xtype="textfield"/>
+                    <linkpathoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue=""
+                        fieldDescription="Select Link Path Or Overlay"
+                        fieldLabel="&#x9;&#xa;Link Path Or Overlay"
+                        name="./linkpathoverlay4"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;link_overlay&quot;){dlg.getComponent('overlayID').show();dlg.getComponent('linkpathID').hide();dlg.getComponent('overlayID1').show();}else{dlg.getComponent('linkpathID').show();dlg.getComponent('overlayID').hide();dlg.getComponent('overlayID1').hide();}}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="nt:unstructured"
+                                text="Link Path"
+                                value="linkpath"/>
+                            <overlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Overlay On Link"
+                                value="link_overlay"/>
+                        </options>
+                    </linkpathoverlay>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the Link"
+                        fieldLabel="Link path"
+                        itemId="linkpathID"
+                        name="./linkvalue4"
+                        xtype="pathfield"/>
+                    <textvidoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue=""
+                        fieldDescription="Select Text or Video"
+                        fieldLabel="Text or Video"
+                        itemId="overlayID"
+                        name="./textvidoverlay4"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Overlay"
+                                value="textoverlay"/>
+                            <vidoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Video Overlay"
+                                value="vidoverlay"/>
+                        </options>
+                    </textvidoverlay>
+                    <dropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select Overlay"
+                        fieldLabel="Overlay"
+                        itemId="overlayID1"
+                        name="./dropvalue4"
+                        options="/bin/websitesecurity/overlayoptions"
+                        type="select"
+                        value="text"
+                        xtype="selection"/>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="Lower Right Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title"
+                        fieldLabel="Title"
+                        maxLength="29"
+                        name="./title4"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for Title"
+                        fieldLabel="Title Color"
+                        name="./title4color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the subtitle"
+                        fieldLabel="SubTitle"
+                        maxLength="67"
+                        name="./subtitle4"
+                        xtype="textfield"/>
+                    <subtitlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color for SubTitle"
+                        fieldLabel="SubTitle  Color"
+                        name="./subtitle4color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </subtitlecolor>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Description"
+                        fieldLabel="Description"
+                        name="./desc4"
+                        validateValue="function(field){var temp=this.getValue();if(temp.length>158){this.markInvalid(&quot;Description should not exceed 150 characters&quot;);return false;}else if(temp.length == 0){this.markInvalid(&quot;Enter Description&quot;);return false;}else{this.clearInvalid();return true;}}"
+                        xtype="richtext"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter the Link Title"
+                        fieldLabel="Link Text"
+                        maxLength="12"
+                        name="./link4"
+                        xtype="textfield"/>
+                    <linkpathoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue=""
+                        fieldDescription="Select Link Path Or Overlay"
+                        fieldLabel="&#x9;&#xa;Link Path Or Overlay"
+                        name="./linkpathoverlay5"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;link_overlay&quot;){dlg.getComponent('overlayID').show();dlg.getComponent('linkpathID').hide();dlg.getComponent('overlayID1').show();}else{dlg.getComponent('linkpathID').show();dlg.getComponent('overlayID').hide();dlg.getComponent('overlayID1').hide();}}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="nt:unstructured"
+                                text="Link Path"
+                                value="linkpath"/>
+                            <overlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Overlay On Link"
+                                value="link_overlay"/>
+                        </options>
+                    </linkpathoverlay>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path for the Link"
+                        fieldLabel="Link path"
+                        itemId="linkpathID"
+                        name="./linkvalue5"
+                        xtype="pathfield"/>
+                    <textvidoverlay
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue=""
+                        fieldDescription="Select Text or Video"
+                        fieldLabel="Text or Video"
+                        itemId="overlayID"
+                        name="./textvidoverlay5"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Overlay"
+                                value="textoverlay"/>
+                            <vidoverlay
+                                jcr:primaryType="nt:unstructured"
+                                text="Video Overlay"
+                                value="vidoverlay"/>
+                        </options>
+                    </textvidoverlay>
+                    <dropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select Overlay"
+                        fieldLabel="Overlay"
+                        itemId="overlayID1"
+                        name="./dropvalue5"
+                        options="/bin/websitesecurity/overlayoptions"
+                        type="select"
+                        value="text"
+                        xtype="selection"/>
+                </items>
+            </tab4>
+        </items>
+    </items>
+</jcr:root>

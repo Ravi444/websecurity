@@ -1,0 +1,80 @@
+/*********************************************************************************
+Header Section (Banner)
+*********************************************************************************/
+
+.c-sitemapcomponent{padding:95px 0px; margin-bottom:80px;}
+.c-sitemapcomponent h2{padding-bottom:0px;}
+.c-sitemapcontainer{margin-bottom:85px;}
+
+/*********************************************************************************
+SiteMap Heading Link
+*********************************************************************************/
+.c-site-map h2{margin:0px 0px 10px 0px; color:#464646; font-size:40px; font-weight:300; padding:0px;}
+.c-site-map h2 span{font-weight:700; color:#464646; font-size:20px;  display:inline-block; margin:0 auto; vertical-align:top; margin-top:13px; margin-left:13px;}
+.c-site-map h3{margin:30px 0px 0px 0px; font-size:26px;}
+.c-sitemapcomponent h2.white_font {font-size:48px;} 
+
+
+/*********************************************************************************
+Media Query section (min-width :992px) and (max-width :1200px)
+*********************************************************************************/
+
+
+@media only screen and (min-width :992px) and (max-width :1200px) {
+.c-sitemapcomponent{padding:100px 0px 100px 0px;}
+.spacing_left{padding-left:0px;}
+.c-sitemapcontainer{margin-bottom:115px;}
+.col-lg-4:nth-child(3){clear:left;}
+}
+
+
+/***************************End***************************/
+
+
+/*********************************************************************************
+Media Query section (min-width : 768px) and (max-width : 991px)
+*********************************************************************************/
+
+@media only screen and (min-width : 768px) and (max-width : 991px)  {
+.c-sitemapcomponent{padding:95px 0px 95px 0px; margin-bottom:70px;}
+.c-site-map h3{margin:25px 0px 0px 0px;}
+.c-site-map h3 a{line-height:35px;} 
+.c-site-map .site-map li{margin-bottom:0px;}    
+.c-sitemapcontainer{margin-bottom:105px;}
+.spacing_left{padding-left:0px;}
+.c-site-map h2{margin:0px 0px 4px 0px;}
+.clear_both{clear:left;}
+
+}
+
+/***************************End***************************/
+
+
+
+
+/*********************************************************************************
+Media Query section (min-width : 480px) and (max-width : 767px)
+*********************************************************************************/
+
+@media only screen and (min-width : 480px) and (max-width : 767px)  {
+
+.c-sitemapcomponent{padding:105px 0px 105px 0px; margin-bottom:45px;}
+
+
+
+}
+
+/***************************End***************************/
+
+/*********************************************************************************
+Media Query section (min-width : 320px) and (max-width : 479px)
+*********************************************************************************/
+
+
+@media only screen and (min-width : 320px) and (max-width : 479px)  {
+
+.c-sitemapcomponent{padding:105px 0px 105px 0px; margin-bottom:35px;}
+.c-site-map h2{margin:0px;}
+}
+
+/***************************End***************************/

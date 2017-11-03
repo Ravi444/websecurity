@@ -1,0 +1,30 @@
+<div class="hidden-xs">
+  <div class="${properties.componentinnerspace} c-tpl-header">
+    <div class="container">
+      <div class="tpl-symc-grey-header">
+        <div class="c_tpl-logo">
+          <sly data-sly-test="${properties.headerbannerpath != NULL && properties.headerbannertitle != NULL}">
+            <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/headerbanner/js/headerstriplinks.js"> <a href="${object.path}">${object.text}</a> </sly>
+          </sly>
+        </div>
+        <div class="c_h_topRightContainer">
+          <div class="c_search-top">
+            <form name="search" id="gsaSearchHeader" action="">
+              <button id="btn-header-submit" type="button"> <img src="${properties.searchpath}"> </button>
+              <input type="text" name="suggest" id="suggest" class="suggest" maxlength="256" placeholder="${properties.headerbannersearch || 'Search'}" autocomplete="on">
+            </form>
+          </div>
+          <div class="c_sel-country">
+            <p><span class="globeImg-desktop"><img src="${properties.globepath}"></span><span class="tpl-headRightText">${properties.headerbannercountry}</span> </p>
+          </div>
+          <div class="c_sel_countryShowContainer">
+            <sly data-sly-resource ="${@path='language', resourceType='foundation/components/parsys'}"></sly>
+          </div>
+        </div>
+        <input type="hidden" name="hdnSearchPath" id="hdnSearchPath" value=${properties.searchpagepath}>
+        <input type="hidden" name="hdnAutoSuggestPath" id="hdnAutoSuggestPath" value=${properties.autosuggestpath}>
+        <input type="hidden" name="hdnGsaTagPath" id="hdnGsaTagPath" value=${properties.gsatagpath}>
+      </div>
+    </div>
+  </div>
+</div>

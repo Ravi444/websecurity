@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/websitesecurity.core.utilities.GSASearchConfigFactoryService">
+    <OCD id="websitesecurity.core.utilities.GSASearchConfigFactoryService" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.description">
+        <AD id="GSA_HOST" type="String" default="" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.GSA_HOST.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.GSA_HOST.description"/>
+        <AD id="PARTNER_GSA_HOST" type="String" default="" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.PARTNER_GSA_HOST.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.PARTNER_GSA_HOST.description"/>
+        <AD id="CLIENT" type="String" default="websec_en_US" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.CLIENT.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.CLIENT.description"/>
+        <AD id="SITE" type="String" default="websec_en_US" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.SITE.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.SITE.description"/>
+        <AD id="MAX_RESULTS" type="String" default="100" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.MAX_RESULTS.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.MAX_RESULTS.description"/>
+        <AD id="RESULTS_PER_PAGE" type="String" default="10" name="%websitesecurity.core.utilities.GSASearchConfigFactoryService.RESULTS_PER_PAGE.name" description="%websitesecurity.core.utilities.GSASearchConfigFactoryService.RESULTS_PER_PAGE.description"/>
+    </OCD>
+    <Designate pid="websitesecurity.core.utilities.GSASearchConfigFactoryService">
+        <Object ocdref="websitesecurity.core.utilities.GSASearchConfigFactoryService"/>
+    </Designate>
+</metatype:MetaData>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>${currentPage.pageTitle}</title>
+<meta name="description" content="${currentPage.description}"/>
+<meta name="keywords" content="${properties.keywords}"/>
+
+<sly data-sly-test.scheme="${request.scheme}"/>
+<sly data-sly-test.servername="${request.serverName}"/>
+<sly data-sly-test.serverport="${request.serverPort}"/>
+<sly data-sly-test.domain="${scheme}://${servername}:${serverport}"/>
+<sly data-sly-test.val="${request.requestURI}"/>
+<sly data-sly-test.URL="${domain}${val}"/>
+<sly data-sly-test.path="${domain}${currentPage.path}"/>
+
+
+<sly data-sly-test ="${properties.canlink != NULL}">
+<link rel="canonical" href="${properties.canlink}"/>
+</sly>
+<sly data-sly-test ="${properties.canlink == NULL}">
+<link rel="canonical" href="${domain}${currentPage.path}.html">
+</sly>
+
+
+
+<link rel="shortcut icon" href="/content/dam/websitesecurity/header/Desktop/images/favicon.ico" />
+<div data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap></div>
+<div data-sly-resource="${'seo' @resourceType='/apps/websitesecurity/components/seointegration'}"></div>
+<div data-sly-include="head.html" data-sly-unwrap></div>
+</head>
+<div data-sly-include="body.html" data-sly-unwrap></div>
+</html>

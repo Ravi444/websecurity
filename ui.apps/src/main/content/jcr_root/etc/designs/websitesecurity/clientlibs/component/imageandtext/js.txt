@@ -1,0 +1,3 @@
+#base=js
+imageandtext.js
+fancybox.js

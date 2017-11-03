@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/websitesecurity.core.utilities.URLMappingConfigFactoryService">
+    <OCD id="websitesecurity.core.utilities.URLMappingConfigFactoryService" name="%websitesecurity.core.utilities.URLMappingConfigFactoryService.name" description="%websitesecurity.core.utilities.URLMappingConfigFactoryService.description">
+        <AD id="urlPattern" type="String" default="default,/es/mx/,/pt/br/,/fr/ca/,/en/uk/,/fr/fr/,/de/de/,/en/ca/,/en/aa/,/ja/jp/,/zh/cn/,/ko/kr/,/en/au/,/en/hk/,/en/in/,/en/sg/" name="%websitesecurity.core.utilities.URLMappingConfigFactoryService.urlPattern.name" description="%websitesecurity.core.utilities.URLMappingConfigFactoryService.urlPattern.description" cardinality="2147483647"/>
+        <AD id="folderPath" type="String" default="/content/symantec/english/en/,/content/symantec/spanish/es_mx/,/content/symantec/portuguese/pt_br/,/content/symantec/french/fr_ca/,/content/symantec/english/en_gb/,/content/symantec/french/fr_fr/,/content/symantec/german/de_de/,/content/symantec/english/en_ca/,/content/symantec/english/en_aa/,/content/symantec/japanese/jp_ja/,/content/symantec/simplifiedchinese/cn_zh/,/content/symantec/korean/ko_kr/,/content/symantec/english/en_au/,/content/symantec/english/en_hk/,/content/symantec/english/en_in/,/content/symantec/english/en_sg/" name="%websitesecurity.core.utilities.URLMappingConfigFactoryService.folderPath.name" description="%websitesecurity.core.utilities.URLMappingConfigFactoryService.folderPath.description" cardinality="2147483647"/>
+    </OCD>
+    <Designate pid="websitesecurity.core.utilities.URLMappingConfigFactoryService">
+        <Object ocdref="websitesecurity.core.utilities.URLMappingConfigFactoryService"/>
+    </Designate>
+</metatype:MetaData>

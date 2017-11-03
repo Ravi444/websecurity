@@ -1,0 +1,16 @@
+
+
+
+	<sly data-sly-use.certificateobject1="/etc/designs/websitesecurity/clientlibs/component/expiredcertificate/js/expiredcertificate.js">
+		<h4>
+            <a class="${properties.titlecolor}" href="${certificateobject1.path}"target="${certificateobject1.target}">${certificateobject1.text}</a>
+		</h4>
+    </sly>
+
+
+
+<sly data-sly-test="${properties.cwslinkvalue != NULL && properties.cwslinkkey != NULL}">
+	<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/cws/js/cwslinks.js">
+		<a href="${object.path}" target="${object.target}">${object.text}</a>
+	</sly>
+</sly>

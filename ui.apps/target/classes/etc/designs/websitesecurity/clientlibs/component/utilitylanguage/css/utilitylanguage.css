@@ -1,0 +1,31 @@
+/* Utility Langauge CSS*/
+.c_sel_countryShowContainer{background-color:#333333; padding:20px 0; display:none; position:absolute; right:0; top:40px; width:890px; z-index:99; box-sizing:border-box;}
+.sel_showCountry{display:block;}
+.sel_addBGColor{background-color:#333333;}
+
+.c_sel_countryShowContainer h4{font-size:16px; text-align:left; color:#cccccc; text-transform:capitalize; margin-bottom:15px; font-weight:700;}
+.c_sel_countryShowContainer ul li {text-align:left; padding:7px 0 7px 0px;}
+.c_sel_countryShowContainer ul li a{font-size:16px; color:#cccccc; text-transform:capitalize; font-weight:normal;}
+.c_sel_countryShowContainer h4 span{display:none;}
+.c_sel_countryShowContainer .buyandrenew-nav{padding-right:0;}
+
+
+/* Utility Langauge @media CSS*/
+@media only screen and (min-width :768px) and (max-width : 991px) {
+.headerstrip .c_h_topRightContainer{position:inherit !important;}
+.c_sel_countryShowContainer{width:100%;}
+}
+
+
+/* Utility Langauge @media CSS*/
+@media only screen and (min-width :320px) and (max-width : 767px) {
+.c_sel_countryShowContainer{width:100%; background-color:none; position:relative; top:0; display:block; padding:0;}
+.c_sel_countryShowContainer h4{font-size:14px; text-align:left; color:#464646; text-transform:capitalize; margin-bottom:15px;}
+.c_sel_countryShowContainer ul{width:100%;}
+.c_sel_countryShowContainer ul li{width:100%; padding-left:0; border-bottom:1px solid #e4e4e4;}
+.c_sel_countryShowContainer ul li a{font-size:16px; color:#464646; text-transform:capitalize; font-weight:normal;}
+.c_sel_countryShowContainer h4 span{display:inline-block; position:absolute; right:0; top:11px; color:#cccccc; }
+.c_sel_countryShowContainer h4{margin-bottom:0; padding:10px 0 12px 0; border-bottom:1px solid #e4e4e4; width:100%; font-size:20px; cursor:pointer;}
+.c_sel_countryShowContainer .buyandrenew-nav, .c_sel_countryShowContainer .buyandrenew-nav2, .c_sel_countryShowContainer .buyandrenew-nav-box{padding:0;}
+.c_sel_countryShowContainer .buyandrenew-nav ul li:last-child, .c_sel_countryShowContainer .buyandrenew-nav2 ul li:last-child{padding-bottom:7px;}
+}

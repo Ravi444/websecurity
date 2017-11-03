@@ -1,0 +1,34 @@
+<div class="container-fluid ${properties.color}">
+  <sly data-sly-use.cpt1="websitesecurity.core.utilities.ContainerWithTabs">
+    <div class="container">
+      <div class="certificate-container c-product-container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-center c_moreHeading">
+            <sly data-sly-test="${properties.title1 != NULL}">
+              <h5 class="${properties.titlecolor}">${properties.title1}</h5>
+            </sly>
+            <sly data-sly-test="${properties.subtitle != NULL}">
+              <h2 class="${properties.subtitlecolor}">${properties.subtitle}</h2>
+            </sly>
+            <sly data-sly-test="${properties.subtitle1 != NULL}"> <span class="${properties.subtitle1color}">${properties.subtitle1}</span> </sly>
+          </div>
+          <div class="c_products">
+            <div class="col-md-12 col-sm-12 col-xs-12 c_product-tabs">
+              <ul class="nav nav-tabs nav-justified productTab" role="tablist" data-sly-list="${cpt1.tabsdata}">
+                <li role="presentation" class="${itemList.first ? 'active' : ' '}"> <a href="#${item.path}" aria-controls="#${item.path}" role="tab" data-toggle="tab">${item.link}</a> </li>
+              </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <sly data-sly-list="${cpt1.tabsdata}">
+                <div role="tabpanel" class="${itemList.first ? 'tab-pane active' : 'tab-pane'}" id="${item.path}">
+                  <sly data-sly-resource="${'headerparsys{0}' @ format=itemList.count, resourceType='foundation/components/parsys'}"></sly>
+                </div>
+              </sly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sly>
+</div>

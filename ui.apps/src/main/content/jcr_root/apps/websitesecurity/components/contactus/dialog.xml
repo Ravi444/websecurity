@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch){var tabs=['Social Icons', 'Title', 'phone', 'callback', 'email', 'chat', 'ecommerce', 'codesigning', 'commercial', 'channel', 'nsg'];var index=tabs.indexOf(tab);if(index==-1)return;for(var i=6;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else {this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    modal="{Boolean}true"
+    title="Contact Us"
+    width="750"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <Social_x0020_Icons
+            jcr:primaryType="cq:Panel"
+            title="Social Icons">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <followus
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Title"
+                    fieldLabel="Follow Us"
+                    name="./socialicontitle"
+                    xtype="textfield"/>
+                <social_x0020_icons
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new data"
+                    fieldLabel="Social Icons"
+                    maxItems="4"
+                    name="./devdata1"
+                    xtype="custommultifield">
+                    <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                        <icon
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select image"
+                            fieldLabel="Icon"
+                            name="./iconclass"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <Twitter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Twitter"
+                                    value="ico-c ico-s-twitter"/>
+                                <Facebook
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Facebook"
+                                    value="ico-c ico-s-facebook"/>
+                                <Linkedin
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Linkedin"
+                                    value="ico-c ico-s-linkedin"/>
+                                <youtube
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Youtube"
+                                    value="ico-c ico-s-youtube"/>
+                            </options>
+                        </icon>
+                        <iconredirectlink
+                            jcr:primaryType="cq:Widget"
+                            autoWidth="{Boolean}true"
+                            fieldDescription="Specify the Link for the Icon"
+                            fieldLabel="Icon Redirect Link"
+                            name="./iconlink"
+                            xtype="pathfield"/>
+                    </fieldConfig>
+                </social_x0020_icons>
+            </items>
+        </Social_x0020_Icons>
+        <Title
+            jcr:primaryType="cq:Panel"
+            title="Title">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <contactustitle
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Title"
+                    fieldLabel="Contact Us Title"
+                    name="./title"
+                    xtype="textfield"/>
+            </items>
+        </Title>
+        <phone
+            jcr:primaryType="cq:Panel"
+            title="Phone">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <phone
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Phone Number"
+                    fieldLabel="Phone Number"
+                    name="./phonenumber"
+                    xtype="textfield"/>
+            </items>
+        </phone>
+        <callback
+            jcr:primaryType="cq:Panel"
+            title="Call Back">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <contactlinktext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Title"
+                    fieldLabel="Call Back Text"
+                    maxLength="15"
+                    name="./contactlinktext"
+                    xtype="textfield"/>
+                <contactlinkpath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Path"
+                    fieldLabel="Call Back Page Path"
+                    name="./contactlinkpath"
+                    xtype="pathfield"/>
+            </items>
+        </callback>
+        <email
+            jcr:primaryType="cq:Panel"
+            title="Email">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <toemail
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Email"
+                    fieldLabel="To mail :"
+                    maxLength="45"
+                    name="./email"
+                    regex="/^[A-za-z0-9]+[\\._]*[A-za-z0-9]*@[A-za-z.-]+[\\.]+[A-Za-z]{2,4}$/"
+                    regexText="Please enter valid email address"
+                    xtype="textfield"/>
+                <emailtext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Email Lable"
+                    fieldLabel="Email Lable"
+                    maxLength="15"
+                    name="./emailtext"
+                    xtype="textfield"/>
+            </items>
+        </email>
+        <chat
+            jcr:primaryType="cq:Panel"
+            title="Live Chat">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <hostref
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="symctrust.ehosts.net"
+                    fieldDescription="Enter the host reference"
+                    fieldLabel="Host Reference"
+                    name="./hostref"
+                    value="symctrust.ehosts.net"
+                    xtype="textfield"/>
+                <businesstype
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Select the type of the business."
+                    fieldLabel="Business Type"
+                    name="./chatbusinessrequirement"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <Ecommerce_x0028_SALES_x0020_AMERICAS_x0020_SYMANTEC_x0020_ECOMMERCE_x0020_ENG_x0029_
+                            jcr:primaryType="nt:unstructured"
+                            text="Ecommerce"
+                            value="ecommerce"/>
+                        <Code_x0020_Signing_x0020_Products_x0020__x0028_SALES_x0020_GLOBAL_x0020_SYMANTEC_x0020_CODESIGNING_x0020_ENG_x0029_
+                            jcr:primaryType="nt:unstructured"
+                            text="Code Signing Products"
+                            value="codesigning"/>
+                        <Commercial_x0020__x0028_SALES_x0020_AMERICAS_x0020_SYMANTEC_x0020_COMMERCIAL_x0020_ENG_x0029_
+                            jcr:primaryType="nt:unstructured"
+                            text="Commercial"
+                            value="commercial"/>
+                        <Channel_x0020__x0028_SALES_x0020_AMERICAS_x0020_SYMANTEC_x0020_CHANNEL_x0020_ENG_x0029_
+                            jcr:primaryType="nt:unstructured"
+                            text="Channel"
+                            value="channel"/>
+                        <Norton_x0020_Shopping_x0020_Guarantee_x0020__x0028_SALES_x0020_GLOBAL_x0020_SYMANTEC_x0020_NSG_x0020_AMERICAS_x0020_ENG_x0029_
+                            jcr:primaryType="nt:unstructured"
+                            text="Norton Shopping Guarantee"
+                            value="nsg"/>
+                    </options>
+                </businesstype>
+                <popup
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select popup option"
+                    fieldLabel="Popup for Chat"
+                    name="./popupwindow"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <popuprequired
+                            jcr:primaryType="nt:unstructured"
+                            text="Open in new tab"
+                            value="popuprequired"/>
+                        <popupnotrequired
+                            jcr:primaryType="nt:unstructured"
+                            text="Open in the same tab"
+                            value="popupnotrequired"/>
+                    </options>
+                </popup>
+                <livechat
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the chat available"
+                    fieldLabel="Live Chat Text"
+                    maxLength="15"
+                    name="./livechatlable"
+                    xtype="textfield"/>
+                <display
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose appropriate option"
+                    fieldLabel="Display Unavailable Chat Link"
+                    name="./displaylivechat"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <Yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="Yes"/>
+                        <No
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="No"/>
+                    </options>
+                </display>
+                <contactus
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text for the chat unavailable"
+                    fieldLabel="Live Chat Unavailable Link Text"
+                    maxLength="15"
+                    name="./unavailabletext"
+                    xtype="textfield"/>
+                <unavailablepath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the path"
+                    fieldLabel="Live Chat Unavailable Link Path"
+                    name="./unavailablepath"
+                    xtype="pathfield"/>
+            </items>
+        </chat>
+        <ecommerce
+            jcr:primaryType="cq:Panel"
+            title="E-commerce">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(6); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <questid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    fieldDescription="Enter the quest id"
+                    fieldLabel="Quest ID"
+                    name="./ecommercequestid"
+                    value="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    xtype="textfield"/>
+                <portid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    fieldDescription="Enter the port id"
+                    fieldLabel="Port ID"
+                    name="./ecommerceportid"
+                    value="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    xtype="textfield"/>
+                <styleid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    fieldDescription="Enter the styleID"
+                    fieldLabel="Style ID"
+                    name="./ecommercestyleid"
+                    value="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    xtype="textfield"/>
+            </items>
+        </ecommerce>
+        <codesigning
+            jcr:primaryType="cq:Panel"
+            title="Code Signing">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(7); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <questid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="587019B8-4A4D-4828-9CA4-0EC6B0B515A1"
+                    fieldDescription="Enter the quest id"
+                    fieldLabel="Quest ID"
+                    name="./codesigningquestid"
+                    value="587019B8-4A4D-4828-9CA4-0EC6B0B515A1"
+                    xtype="textfield"/>
+                <portid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="54E9F750-E413-44F3-84C6-8643B486A341"
+                    fieldDescription="Enter the port id"
+                    fieldLabel="Port ID"
+                    name="./codesigningportid"
+                    value="54E9F750-E413-44F3-84C6-8643B486A341"
+                    xtype="textfield"/>
+                <styleid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="54E9F750-E413-44F3-84C6-8643B486A341"
+                    fieldDescription="Enter the styleID"
+                    fieldLabel="Style ID"
+                    name="./codesigningstyleid"
+                    value="54E9F750-E413-44F3-84C6-8643B486A341"
+                    xtype="textfield"/>
+            </items>
+        </codesigning>
+        <commercial
+            jcr:primaryType="cq:Panel"
+            title="Commercial">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(8); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <questid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="7513053D-949E-47CF-8E32-2DF92D1713F5"
+                    fieldDescription="Enter the quest id"
+                    fieldLabel="Quest ID"
+                    name="./commercialquestid"
+                    value="7513053D-949E-47CF-8E32-2DF92D1713F5"
+                    xtype="textfield"/>
+                <portid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    fieldDescription="Enter the port id"
+                    fieldLabel="Port ID"
+                    name="./commercialportid"
+                    value="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    xtype="textfield"/>
+                <styleid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    fieldDescription="Enter the styleID"
+                    fieldLabel="Style ID"
+                    name="./commercialstyleid"
+                    value="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    xtype="textfield"/>
+            </items>
+        </commercial>
+        <channel
+            jcr:primaryType="cq:Panel"
+            title="Channel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(9); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <questid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="14A134B2-D11F-48C5-A599-F84A3BF179DD"
+                    fieldDescription="Enter the quest id"
+                    fieldLabel="Quest ID"
+                    name="./channelquestid"
+                    value="14A134B2-D11F-48C5-A599-F84A3BF179DD"
+                    xtype="textfield"/>
+                <portid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    fieldDescription="Enter the port id"
+                    fieldLabel="Port ID"
+                    name="./channelportid"
+                    value="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    xtype="textfield"/>
+                <styleid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    fieldDescription="Enter the styleID"
+                    fieldLabel="Style ID"
+                    name="./channelstyleid"
+                    value="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    xtype="textfield"/>
+            </items>
+        </channel>
+        <nsg
+            jcr:primaryType="cq:Panel"
+            title="Norton Shopping Guarantee">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(10); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <questid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="6D366610-8D23-4DFA-B172-B9767FA0A42B"
+                    fieldDescription="Enter the quest id"
+                    fieldLabel="Quest ID"
+                    name="./nsgquestid"
+                    value="6D366610-8D23-4DFA-B172-B9767FA0A42B"
+                    xtype="textfield"/>
+                <portid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    fieldDescription="Enter the port id"
+                    fieldLabel="Port ID"
+                    name="./nsgportid"
+                    value="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    xtype="textfield"/>
+                <styleid
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    fieldDescription="Enter the styleID"
+                    fieldLabel="Style ID"
+                    name="./nsgstyleid"
+                    value="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    xtype="textfield"/>
+            </items>
+        </nsg>
+    </items>
+</jcr:root>

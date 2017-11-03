@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch){var tabs=['list','image','video'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Image and Text"
+    width="{Long}1000"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Image &amp; Text "
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imgalttext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Title of the Image."
+                    fieldLabel="Image Title"
+                    maxLength="25"
+                    name="./imgtitle"
+                    xtype="textfield"/>
+                <alternatetextforimage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Alternate text for image"
+                    fieldLabel="Alternate Text for Image"
+                    maxLength="30"
+                    name="./alternatetext"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter title"
+                    fieldLabel="Title"
+                    maxLength="50"
+                    name="./title1"
+                    xtype="textfield"/>
+                <titlecolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Title"
+                    fieldLabel="Title  Color"
+                    name="./titlecolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="charcoal grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="lightest grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="light grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="midgrey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="slate_grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="ash"
+                            value="ash_font"/>
+                        <Symantec_x0020_Gold
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="sky blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="white"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="red"
+                            value="red_font"/>
+                    </options>
+                </titlecolor>
+                <subtitle
+                    jcr:primaryType="nt:unstructured"
+                    allowBlank="false"
+                    fieldDescription="Enter Subtitle"
+                    fieldLabel="Sub-Title"
+                    maxLength="80"
+                    name="./subtitle"
+                    xtype="textfield"/>
+                <subtitlecolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Sub Title"
+                    fieldLabel="SubTitle  Color"
+                    name="./subtitlecolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="charcoal grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="lightest grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="light grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="midgrey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="slate_grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="ash"
+                            value="ash_font"/>
+                        <Symantec_x0020_Gold
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="sky blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="white"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="red"
+                            value="red_font"/>
+                    </options>
+                </subtitlecolor>
+                <desc
+                    jcr:primaryType="nt:unstructured"
+                    allowBlank="false"
+                    fieldDescription="Enter description"
+                    fieldLabel="Description "
+                    name="./desc"
+                    removeSingleParagraphContainer="{Boolean}true"
+                    validateValue="function(field){var temp=this.getValue();if(temp.length>350){this.markInvalid(&quot;Description should not exceed 350 characters&quot;);return false;}else{this.clearInvalid();return true;}}"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <format
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <lists
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="[paste-wordhtml]"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <spellcheck
+                            jcr:primaryType="nt:unstructured"
+                            features="*"
+                            invalidStyle="background-color: #ffdddd;"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </desc>
+                <description_x0020_color
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Description"
+                    fieldLabel="Description color"
+                    name="./descriptioncolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="Mid Grey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Slate Grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_font"/>
+                        <yellow
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="Pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="Black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_font"/>
+                    </options>
+                </description_x0020_color>
+                <Link_x0020_title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="true"
+                    fieldDescription="Enter the text "
+                    fieldLabel="Single Link Text"
+                    maxLength="40"
+                    name="./linktitle"
+                    xtype="textfield"/>
+                <Link_x0020_path
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="true"
+                    fieldDescription="Enter the path"
+                    fieldLabel="Single Link Path"
+                    name="./linkvalue"
+                    xtype="pathfield"/>
+                <selection
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="none"
+                    fieldDescription="Choose the color for the container background"
+                    fieldLabel="Background Color"
+                    name="./innercolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <none
+                            jcr:primaryType="nt:unstructured"
+                            text="None"
+                            value="none"/>
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_bg"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="grey_bg"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_bg"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_bg"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="Mid Grey"
+                            value="midgrey_bg"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Slate Grey"
+                            value="slate_grey_bg"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_bg"/>
+                        <Symantec_x0020_Gold
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_bg"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="Pink"
+                            value="pink_bg"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_bg"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="Black"
+                            value="black_bg"/>
+                        <gradient
+                            jcr:primaryType="nt:unstructured"
+                            text="Gradient"
+                            value="blue-gradient grad1-sec text-center"/>
+                        <dark_x0020__x0020_gradient
+                            jcr:primaryType="nt:unstructured"
+                            text="Dark Gradient"
+                            value="blue-gradient3 text-center"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_bg"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_bg"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_bg"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_bg"/>
+                    </options>
+                </selection>
+            </items>
+        </list>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fieldLabel="Logo Image"
+            fileNameParameter="./imageName"
+            fileReferenceParameter="./imageReference"
+            mapParameter="./imageMap"
+            name="./image"
+            rotateParameter="./imageRotate"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage"/>
+    </items>
+</jcr:root>

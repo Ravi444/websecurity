@@ -1,0 +1,36 @@
+/********************************************image component with bg Starts********************************************/
+.imagecomponentbackground .certificate-container{padding:90px 0 90px;}
+.imagecomponentbackground .certificate-container h2 {	padding-bottom:26px;}
+.imagecomponentbackground.spacingtopMargin{margin-top:80px;}
+.landscape-mobile-view{display:none;}
+.potrait-mobile-view{display:none;}
+.imagecomponentbackground span{padding-bottom:50px; display:block;}
+.imagecomp-img-area{display:block; clear:both; padding-bottom:70px;}
+/******************************************** image component with bg Ends********************************************/
+
+
+/*media query starts*/
+@media only screen and (max-width : 1200px) {
+.imagecomponentbackground span{padding-bottom:50px;}
+}
+
+@media only screen and (max-width : 979px) {
+.landscape-mobile-view{display:block;}
+.potrait-mobile-view{display:none;}
+.imagecomponentbackground span{padding-bottom:50px;}
+.imagecomp-img-area{display:block; clear:both; padding-bottom:50px;}
+.imagecomponentbackground .certificate-container h2 {font-size:39px;}
+}
+@media only screen and (max-width : 767px) {
+.potrait-mobile-view{display:block;}
+.landscape-mobile-view{display:none;}
+.imagecomponentbackground span{padding-bottom:50px;}
+
+}
+@media only screen and (max-width : 480px) {
+.potrait-mobile-view{display:block; padding:0;}
+.potrait-mobile-view img{width:60%; margin-left:-34px;}
+.imagecomponentbackground .certificate-container h2{font-size:25px;}
+}
+/*media query ends*/
+

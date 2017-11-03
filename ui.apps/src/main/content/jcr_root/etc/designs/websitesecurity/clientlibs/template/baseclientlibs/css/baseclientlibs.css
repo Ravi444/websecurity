@@ -1,0 +1,287 @@
+/********************************************common classes starts********************************************/
+* {	margin:0;padding:0;	border:none;}
+body {font-size:16px;line-height:24px;	font-family: "ArticulatCF-Text";color:#333;}
+h1 {margin:0;padding:0;	font-size: 48px;font-weight: normal;}
+h2 {margin:0;padding:0;	font-size: 40px;font-weight: 300;padding-bottom:30px}
+h3 {margin:0;padding:0;	font-size: 26px;font-weight: normal;}
+h4 {margin:0;padding:0;	font-size: 20px;font-weight: normal;}
+h5 {margin:0;padding:0;	font-size: 16px;font-weight: 600;text-transform: uppercase;	padding-bottom:25px}
+h6 {margin:0;padding:0;	font-size: 16px;font-weight: normal;}
+ul {list-style:none;}
+ol {list-style:none;}
+a {color:#00addd;}
+a:hover {color:#15ccff;	text-decoration: none;}
+a:focus {text-decoration: none;	color:#15ccff;}
+.desc_font {font-size:20px;	line-height:30px;}
+.no-pad-mar {padding:0;	margin:0;}
+.clear {clear:both;}
+.m-r-25 {margin-right:25px;}
+/********************************************common classes ends********************************************/
+
+
+/********************************************Removing column spacing 15px********************************************/
+.nospacingleft {padding-left:0;}
+.nospacingright {padding-right:0;}
+/*.col-lg-4:nth-child(3) {padding-right:0;}
+.col-lg-3:nth-child(4) {padding-right:0;}*/
+.col-lg-12 {padding-right:0}
+/********************************************Removing column spacing 15px********************************************/
+
+
+/********************************************for link border colors********************************************/
+p.viewAll {display: block;padding: 0;margin:0;}
+p.more-link {display: block;}
+.more-link a {font-size:14px;text-transform:uppercase;font-weight: 700;	border-bottom: 3px solid #fdbb30;padding-bottom: 8px;}
+.more-link a:hover {text-decoration:none;}
+.more-link a:focus {text-decoration:none;}
+.viewAll.border_white a {border-bottom:3px solid #fff;}
+.viewAll a {border-bottom: 3px solid #fdbb30;padding-bottom: 5px;text-transform:uppercase;font-size:14px;font-weight: 700;}
+.viewAll a:hover {text-decoration: none;color:#15ccff;border-bottom: 3px solid #15ccff;}
+.viewAll a:focus {color:#15ccff;border-bottom: 3px solid #15ccff;}
+.container-fluid {background-size:100% 100%;}
+.borderTopPresent {border-top: 2px solid #efefef;}
+.borderBottomPresent {border-bottom: 2px solid #efefef;}
+.spacingtopMargin .container .certificate-container.borderTopPresent{margin-top:80px;}
+.borderBottomAbsent, .borderTopAbsent {border-bottom:none;}
+.viewAll.border_yellow a:hover, .viewAll.border_yellow a:focus {border-bottom:3px solid #15ccff;text-decoration: none;}
+.viewAll.border_white a:hover, .viewAll.border_white a:focus {border-bottom:3px solid #e4e4e4;color:#e4e4e4;text-decoration: none;}
+.moreHeading span {font-size:16px;display:block;}
+#my-component p {text-align:center;}
+#my-component a {margin-bottom:40px;display:inline-block;}
+#my-component p a {font-size:14px;line-height:16px;border-bottom:2px solid #fff;padding-bottom:8px;}
+#my-component p a:hover {text-decoration:none;}
+.grad-sec {height:468px;margin:40px 0px;}
+.grad-sec h2 {color:#fff;padding:40px 0px;}
+/********************************************for link border colors********************************************/
+
+/********************************************background colors starts********************************************/
+.charcoal_grey_bg {	background-color:#464646;}
+.grey_bg {background-color:#808080;}
+.lightest_grey_bg {background-color:#efefef;}
+.light_grey_bg {background-color:#cccccc;}
+.midgrey_bg {background-color:#999999;}
+.slate_grey_bg {background-color:#666666;}
+.ash_bg {background-color:#ABACAE;}
+.symantec_gold_bg {background-color:#fdbb30}
+.pink_bg {background-color:#FFC0CB;}
+.sky_blue_bg {background-color:#00addd;}
+.black_bg {background-color:#000000;}
+.white_bg {background-color:#FFFFFF;}
+.green_bg {background-color:#008000;}
+.purple_bg {background-color:#800080;}
+.red_bg {background-color:#FF0000;}
+/********************************************background colors ends********************************************/
+
+/********************************************border colors starts********************************************/
+.charcoal_grey_border {border-top: 5px solid #464646;}
+.grey_border {border-top: 5px solid #808080;}
+.lightest_grey_border {border-top: 5px solid #efefef;}
+.light_grey_border {border-top: 5px solid #cccccc;}
+.midgrey_border {border-top: 5px solid #999999;}
+.slate_grey_border {border-top: 5px solid #666666;}
+.ash_border {border-top: 5px solid #ABACAE;}
+.symantec_gold_border {border-top: 5px solid #fdbb30;}
+.pink_border {border-top: 5px solid #FFC0CB;}
+.sky_blue_border {border-top: 5px solid #00addd;}
+.black_border {border-top: 5px solid #000000;}
+.white_border {border-top: 5px solid #FFFFFF;}
+.green_border {border-top: 5px solid #008000;}
+.purple_border {border-top: 5px solid #800080;}
+.red_border {border-top: 5px solid #FF0000;}
+/********************************************border colors ends********************************************/
+
+/********************************************gradient colors starts********************************************/
+.blue-gradient2 {background: #00619d;background: -moz-linear-gradient(left, #00619d 0%, #00AADB 100%);background: -webkit-linear-gradient(left, #00619d 0%, #00AADB 100%);background: linear-gradient(to left, #00619d 0%, #00AADB 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00AADB', endColorstr='#00619d', GradientType=1 );}
+.blue-gradientChart {background: #00619d;background: -moz-linear-gradient(left, #00619d 0%, #00AADB 100%);background: -webkit-linear-gradient(left, #00619d 0%, #00AADB 100%);background: linear-gradient(to left, #00619d 0%, #00AADB 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619d', endColorstr='#00AADB', GradientType=1 );}
+.blue-gradient3 {background: -webkit-linear-gradient(0deg, #00addd 0%, #00619e 100%);background: -moz-linear-gradient(0deg, #00addd 0%, #00619e 100%);background: -o-linear-gradient(0deg, #00addd 0%, #00619e 100%);	background: -ms-linear-gradient(0deg, #00addd 0%, #00619e 100%);background: linear-gradient(90deg, #00addd 0%, #00619e 100%);}
+.blueGradientBox {background: -webkit-linear-gradient(45deg, #00619e 0%, #00addd 100%);	background: -moz-linear-gradient(45deg, #00619e 0%, #00addd 100%);background: -o-linear-gradient(45deg, #00619e 0%, #00addd 100%);background: -ms-linear-gradient(45deg, #00619e 0%, #00addd 100%);	background: linear-gradient(45deg, #00619e 0%, #00addd 100%);}
+.blue-gradient {background: #00619e;background: -moz-linear-gradient(45deg, #00619e, #00addd);	background: -webkit-linear-gradient(45deg, #00619e, #00addd);background: linear-gradient(45deg, #00619e, #00addd);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619e', endColorstr='#7db9e8', GradientType=1 );}
+
+
+.blue-gradient-linear-lefttoright {
+  background: #00619e; 
+  background: -webkit-linear-gradient(left, #00619e , #00addd); 
+  background: -o-linear-gradient(right, #00619e, #00addd);
+  background: -moz-linear-gradient(right, #00619e, #00addd); 
+  background: linear-gradient(to right, #00619e , #00addd);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619e', endColorstr='#7db9e8', GradientType=1 );
+}
+.blue-gradient-linear-righttoleft {
+  background: #00619e; 
+  background: -webkit-linear-gradient(left, #00addd , #00619e); 
+  background: -o-linear-gradient(right, #00addd, #00619e);
+  background: -moz-linear-gradient(right, #00addd, #00619e); 
+  background: linear-gradient(to right, #00addd , #00619e);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e', GradientType=1 );
+}
+.blue-gradient-linear-toptobottom {
+    background: #00619e;
+    background: -webkit-linear-gradient(#00619e, #00addd);
+    background: -o-linear-gradient(#00619e, #00addd);
+    background: -moz-linear-gradient(#00619e, #00addd);
+    background: linear-gradient(#00619e, #00addd);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619e', endColorstr='#7db9e8', GradientType=1 );
+}
+.blue-gradient-linear-bottomtotop {
+    background: #00619e;
+    background: -webkit-linear-gradient(#00addd, #00619e);
+    background: -o-linear-gradient(#00addd, #00619e);
+    background: -moz-linear-gradient(#00addd, #00619e);
+    background: linear-gradient(#00addd, #00619e);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e', GradientType=1 );
+}
+.blue-gradient-linear-diagonal {
+    background: #00619e;
+    background: -webkit-linear-gradient(#00addd, #00619e);
+    background: -o-linear-gradient(#00addd, #00619e);
+    background: -moz-linear-gradient(#00addd, #00619e);
+    background: linear-gradient(#00addd, #00619e);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e', GradientType=1 );
+}
+.blue-gradient-linear-diagonal {
+  background: #00619e;
+  background: -webkit-linear-gradient(left top, #00619e, #00addd); 
+  background: -o-linear-gradient(bottom right, #00619e, #00addd); 
+  background: -moz-linear-gradient(bottom right, #00619e, #00addd); 
+  background: linear-gradient(to bottom right, #00619e, #00addd); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e', GradientType=1 );
+}
+/********************************************gradient colors ends********************************************/
+
+/********************************************font colors starts********************************************/
+.charcoal_grey_font {color:#464646;}
+.grey_font {color:#808080;}
+.lightest_grey_font {color:#efefef;}
+.light_grey_font {color:#cccccc;}
+.midgrey_font {color:#999999;}
+.slate_grey_font {color:#666666;}
+.ash_font {color:#ABACAE;}
+.symantec_gold_font {color:#fdbb30;}
+.pink_font {color:#FFC0CB;}
+.sky_blue_font {color:#00addd;}
+.black_font {color:#000000;}
+.white_font {color:#FFFFFF;}
+.green_font {color:#008000;}
+.purple_font {color:#800080;}
+.red_font {color:#FF0000;}
+/********************************************font colors ends********************************************/
+
+
+/********************************************container spacing.********************************************/
+.nospacingmargin {margin-top:0;}
+
+/********************************************buyrenewbanner Starts********************************************/
+.buyrenewbanner .certificate-container{padding:75px 0;}
+.buyrenewbanner .certificate-container p{padding-bottom:30px}
+.buyrenewbanner .certificate-container h2 {	padding-bottom:40px;}
+/********************************************buyrenewbanner ends********************************************/
+
+/********************************************secureappservicebanner Starts********************************************/
+.secureappservicebanner .certificate-container{padding:75px 0;}
+.secureappservicebanner .certificate-container h2 {	padding-bottom:15px;}
+.secureappservicebanner .certificate-container h5 {	padding-bottom:20px;}
+.secureappservicebanner .certificate-container p {	padding-bottom:35px;}
+/********************************************secureappservicebanner ends********************************************/
+
+
+/********************************************code signin certificate component starts********************************************/
+.signingcertificatelinks .certificate-container{padding:95px 0 0;}
+.signingcertificatelinks .certificate-container h5{padding:0 0 20px 0;}
+.signingcertificatelinks .certificate-container h2{padding:0 0 50px 0;}
+/********************************************code signin certificate component ends********************************************/
+
+
+/***************************************************************** media query Starts*******************************************************************/
+@media only screen and (max-width: 1200px) {
+
+/********************************************buyrenewbanner Starts********************************************/
+.buyrenewbanner .certificate-container{padding:70px 0;}
+.buyrenewbanner .certificate-container h2 {	padding-bottom:30px;}
+/********************************************buyrenewbanner ends********************************************/
+
+/********************************************secureappservicebanner Starts********************************************/
+.secureappservicebanner .certificate-container{padding:75px 0;}
+.secureappservicebanner .certificate-container h2 {	padding-bottom:24px;}
+.secureappservicebanner .certificate-container h5 {	padding-bottom:20px;}
+.secureappservicebanner .certificate-container p {	padding-bottom:30px;}
+/********************************************secureappservicebanner ends********************************************/
+
+h1 {font-size: 48px;}
+h2 {font-size: 30px;padding-bottom:40px;}
+h3 {font-size: 26px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
+}
+
+@media only screen and (max-width: 991px) {
+h1 {font-size: 48px;}
+h2 {font-size: 30px;}
+h3 {font-size: 26px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
+
+/********************************************container spacing.********************************************/
+
+
+/********************************************buyrenewbanner Starts********************************************/
+.buyrenewbanner .certificate-container{padding:80px 0;}
+.buyrenewbanner .certificate-container h2 {	padding-bottom:30px;}
+/********************************************buyrenewbanner ends********************************************/
+
+/********************************************secureappservicebanner Starts********************************************/
+.secureappservicebanner .certificate-container{padding:66px 0 50px;}
+.secureappservicebanner .certificate-container h2 {	padding-bottom:20px;}
+.secureappservicebanner .certificate-container h5 {	padding-bottom:20px;}
+.secureappservicebanner .certificate-container p {	padding-bottom:30px;}
+/********************************************secureappservicebanner ends********************************************/
+}
+
+@media only screen and (max-width: 767px) {
+
+/********************************************buyrenewbanner Starts********************************************/
+.buyrenewbanner .certificate-container{padding:50px 15px;}
+.buyrenewbanner .certificate-container h2 {	padding-bottom:30px;}
+/********************************************buyrenewbanner ends********************************************/
+
+/********************************************secureappservicebanner Starts********************************************/
+.secureappservicebanner .certificate-container{padding:75px 0 50px;}
+.secureappservicebanner .certificate-container h2 {	padding-bottom:15px;}
+.secureappservicebanner .certificate-container h5 {	padding-bottom:20px;}
+.secureappservicebanner .certificate-container p {	padding-bottom:30px;}
+/********************************************secureappservicebanner ends********************************************/
+
+
+/********************************************ssl certificate component starts********************************************/
+.back-cv.spacingtopMargin{margin-top:50px;}
+/********************************************ssl certificate component ends********************************************/
+
+/********************************************code signin certificate component starts********************************************/
+.signingcertificatelinks .certificate-container{padding:50px 0 0;}
+.signingcertificatelinks .certificate-container h5{padding:0 0 20px 0;}
+.signingcertificatelinks .certificate-container h2{padding:0 0 30px 0;}
+/********************************************code signin certificate component ends********************************************/
+
+h1 {font-size: 48px;}
+h2 {font-size: 25px;}
+h3 {font-size: 26px;}
+h4 {font-size: 20px;}
+h5 {font-size: 12px;}
+h6 {font-size: 16px;}
+
+/********************************************Removing column spacing 15px********************************************/
+.nospacingleft {padding-left:15px;}
+.nospacingright {padding-right:15px;}
+.col-lg-12 {padding-right:0; }
+
+/********************************************Removing column spacing 15px********************************************/
+}
+
+@media only screen and (max-width: 460px) {
+    .viewAll a{font-size:12px;}
+}
+
+/***************************************************************** media query ends*******************************************************************/
+
+

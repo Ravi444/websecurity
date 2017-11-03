@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    cq:lastReplicated="{Date}2017-02-17T05:56:09.497-07:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:lastModified="{Date}2017-02-17T06:13:13.516-07:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[cq:ReplicationStatus,rep:AccessControllable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Custom Name"
+    sling:resourceType="cq/tagging/components/tag">
+    <extended-validation/>
+    <microsoft-authenticode/>
+    <secure-app-service/>
+    <secure-site-with-ev/>
+    <secure-site/>
+    <secure-site-pro/>
+    <secure-site-pro-with-ev/>
+    <secure-site-wildcard/>
+    <home/>
+    <details/>
+</jcr:root>

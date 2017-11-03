@@ -1,0 +1,117 @@
+/* text and title start */
+ /********************************************textandtitlecomponent Starts********************************************/
+.textandtitlecomponent.spacingtopMargin{padding-top:100px;}
+.textandtitlecomponent .certificate-container h2 {	padding-bottom:38px;}
+
+/*c-certificate-block starts*/
+.c-certificate-block{padding:70px 20px 60px; display:block;}
+.c-certificate-block:hover{cursor:pointer; background: #333;}
+.c-certificate-block h6{padding:0 0 10px 0; font-size:16px; line-height:18px;}
+.c-certificate-block h5{padding:0 0 25px;font-size:16px; line-height:18px;}
+.c-certificate-block h4{padding:0 0 25px;  font-weight:600;  font-size:20px; line-height:22px;}
+.c-certificate-block p{color:#fff;font-size:16px; line-height:22px; margin:0;}
+.textandtitlecomponent .more-link{ padding:25px 0; text-align:center; margin: 0;}
+.textandtitlebackground .viewAll.text-center{ padding:52px 0 0; text-align:center; margin: 0;}
+.titleTextComp .col-lg-2{width:20%; padding:0;}
+.textandtitlecomponent .nospacingleft .c-certificate-block{padding-left:35px;}
+.textandtitlecomponent .nospacingright .c-certificate-block{padding-right:30px;}
+/*c-certificate-block ends*/
+ 
+/*border classes starts*/
+.bottom-border-section{border-bottom:2px solid #333;}
+.titleandtextsecborder{border-top:2px solid #333; float:left; width:100%;}
+.customBorder-yes{width:100%; border-top:3px solid #e4e4e4; padding-top:15px;}
+.customBorder-no{border:none;}
+/*border classes ends*/
+
+/******************************************** textandtitlecomponent Ends********************************************/
+
+/********************************************textandtitlecomponent with bg Starts********************************************/
+.textandtitlebackground.spacingtopMargin{margin-top:92px;}
+.textandtitlebackground .certificate-container{padding:90px 0;}
+.textandtitlebackground .certificate-container h2 {	padding:0 0 50px;}
+.textandtitlebackground .c-certificate-block{ border-right:2px solid #333; padding:20px;}
+.textandtitlebackground .col-lg-3{padding:0;}
+.textandtitlebackground .col-lg-3:nth-child(4) .c-certificate-block{border-right:none;}
+
+/******************************************** textandtitlecomponent with bg Ends********************************************/
+/* text and title end */
+
+
+
+@media only screen and (max-width : 1200px) {
+/********************************************textandtitlecomponent Starts********************************************/
+.textandtitlecomponent.spacingtopMargin{padding-top:65px;}
+.textandtitlecomponent .certificate-container h2 {	padding-bottom:47px;}
+.titleTextComp .col-lg-2{ width:33.33333333%;}
+.titleTextComp .col-md-4{width:33.33333333%;}
+.titleTextComp .col-md-4:nth-child(3){padding-right:0;}
+.titleTextComp .col-md-4:nth-child(4) .c-certificate-block{padding-left:40px;}
+.c-certificate-block h4{padding-bottom:4px;}
+/******************************************** textandtitlecomponent Ends********************************************/
+
+/********************************************textandtitlecomponent with bg Starts********************************************/
+.textandtitlebackground.spacingtopMargin{margin-top:50px;}
+.textandtitlebackground .certificate-container{padding:45px 0;}
+.textandtitlebackground .certificate-container h2 {	padding:0 0 15px;}
+/******************************************** textandtitlecomponent with bg Ends********************************************/
+}
+@media only screen and (max-width : 991px) {
+/********************************************textandtitlecomponent Starts********************************************/
+.textandtitlecomponent.spacingtopMargin{padding-top:92px;}
+.textandtitlecomponent .certificate-container h2 {	padding-bottom:47px;}
+.c-certificate-block{padding:50px 20px;}
+.titleTextComp .col-lg-2{ width:16.66%;}
+.titleTextComp .col-md-4{width:33.33333333%;}
+.titleTextComp .col-sm-6{width:50%;}
+.titleTextComp .col-md-4:nth-child(2) .c-certificate-block{padding-left:40px; padding-right:30px;}
+.titleTextComp .col-md-4:nth-child(3) .c-certificate-block{ padding-left:40px;}
+.titleTextComp .col-md-4:nth-child(4) .c-certificate-block{padding-right:30px;}
+.titleTextComp .col-md-4:nth-child(5) .c-certificate-block{padding-left:40px;}
+.c-certificate-block h4{padding:0px 0px 10px; font-size:20px;}
+.textandtitlecomponent .c-certificate-block h5{font-size:16px;line-height:18px; font-weight:300; padding-bottom:30px;}
+.textandtitlecomponent .c-certificate-block h6{padding-bottom:10px;font-size:16px; line-height:18px;}
+.textandtitlebackground .viewAll.text-center{padding-top:30px;}
+/******************************************** textandtitlecomponent Ends********************************************/
+
+/********************************************textandtitlecomponent with bg Starts********************************************/
+.textandtitlebackground.spacingtopMargin{margin-top:140px;}
+.textandtitlebackground .certificate-container{padding:100px 0;}
+.textandtitlebackground .certificate-container h2 {	padding:0 0 15px;}
+.textandtitlebackground .c-certificate-block{border:none;}
+/******************************************** textandtitlecomponent with bg Ends********************************************/
+
+}
+@media only screen and (max-width : 767px) {
+/********************************************textandtitlecomponent Starts********************************************/
+.textandtitlecomponent.spacingtopMargin{padding-top:72px;}
+.textandtitlecomponent .certificate-container h2 {	padding-bottom:32px;}
+.textandtitlecomponent .col-lg-2{ width:16.66%;}
+.textandtitlecomponent .col-md-4{width:33.33333333%;}
+.textandtitlecomponent .col-sm-6{width:50%;}
+.textandtitlecomponent .col-xs-12{width:100%; padding-left:0; padding-right:0;}
+.titleandtextsecborder{display:none;}
+.c-spacingboth-mobview{margin:0 15px;}
+.textandtitlecomponent .more-link{padding:20px 0; border:none;}
+.textandtitlecomponent .more-link a{font-size:12px;font-weight:700;padding-bottom: 0px;}
+.textandtitlebackground .viewAll.text-center{padding:20px 0 0;font-weight:300; border:none;}
+.titleTextComp .col-md-4:nth-child(3){padding-right:0;}
+.textandtitlecomponent .c-certificate-block{border-bottom:2px solid #333; padding:50px 20px 50px 40px;}
+.c-certificate-block h4{padding:0px 0px 20px; font-weight:300; font-size:20px}
+.textandtitlecomponent .c-certificate-block h4{font-weight:600;}
+.textandtitlecomponent .c-certificate-block h5{font-size:16px;line-height:18px; font-weight:600; padding-bottom:10px;}
+.textandtitlecomponent .c-certificate-block h6{padding-bottom:10px;font-size:16px; line-height:18px; font-weight: 600;}
+.titleTextComp .nospacingleft .c-certificate-block:nth-child(1){padding-top:48px;padding-bottom:35px;}
+/******************************************** textandtitlecomponent Ends********************************************/
+
+/********************************************textandtitlecomponent with bg Starts********************************************/
+.textandtitlebackground.spacingtopMargin{margin-top:50px;}
+.textandtitlebackground .certificate-container{padding:45px 0;}
+.textandtitlebackground .certificate-container h2 {	padding:0 0 15px;}
+/******************************************** textandtitlecomponent with bg Ends********************************************/
+}
+
+
+
+
+

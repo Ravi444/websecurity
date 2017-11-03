@@ -1,0 +1,92 @@
+
+
+<!-- Tiles Container Start -->
+<div class="container-fluid ${properties.color}">
+	<div class="container c-chartsComp">
+    	<div class="c-chartComponent">
+      		<h2 class="${properties.charttitlecolor}">${properties.charttitle}</h2>
+		 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 for-mobile-ipad-pdd-zero">
+      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 c_blackBoxArea">
+        		<div class="c_imgSecArea">
+          			<h6 class="${properties.variantscolor}">${properties.charttitle1}</h6>
+          			<div class="c_tmp"><sup>${properties.variantssign}</sup>${properties.variants}</div>
+          			<div class="c_imgArea"><img src="${properties.image}" title="${properties.imgtitle1}" alt="${properties.alternatetext1}"/></div>
+        		</div>
+        		<div class="c_imgSecArea fr">
+          			<h6 class="${properties.boltscolor}">${properties.charttitle2}</h6>
+          			<div class="c_tmp"><sup>${properties.blotssign}</sup>${properties.blots}</div>
+          			<div class="c_imgArea"><img src="${properties.image2}" title="${properties.imgtitle2}" alt="${properties.alternatetext2}"/></div>
+        		</div>
+        		<div class="clearfix"></div>
+        		<p class="linkSecArea">
+    				<sly data-sly-test="${properties.path != NULL && properties.link != NULL}">
+    					<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/chart/js/chartlink.js">
+    						<a href="${object.path}" target="${object.target}">${object.text}</a>
+    					</sly>
+    				</sly>
+    			</p>
+      		</div>
+		</div>
+      		<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 pad-rit-sec-area">
+        		<div class="c_rowBox">
+                <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 c_whitemainContainer">
+          			<div class="c_whiteBoxContainer">
+            			<h6 class="${properties.title1color}">${properties.title1}</h6>
+            			<h3 class="${properties.subtitle1color}">${properties.subtitle1}</h3>${properties.desc1 @ context = 'html'}
+            			<p class="whiteBoxLink">
+                            <sly data-sly-test="${properties.path1 != NULL && properties.link1 != NULL}">
+    							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/chart/js/chartlinktopleft.js">
+    								<a href="${object.path}" target="${object.target}">${object.text}</a>
+    							</sly>
+    						</sly>
+                        </p>
+          			</div>
+                 </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 c_blueBoxmainContainer padd-right-zero">
+          			<div class="c_blueBoxContainer  blue-gradientChart">
+            			<h6 class="${properties.title2color}">${properties.title2}</h6>
+            			<h3 class="${properties.subtitle2color}">${properties.subtitle2}</h3>
+            			<p class="blueBoxLink">
+                            <sly data-sly-test="${properties.path2 != NULL && properties.link2 != NULL}">
+    							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/chart/js/chartlinktopright.js">
+    								<a href="${object.path}" target="${object.target}">${object.text}</a>
+    							</sly>
+    						</sly>
+                        </p>
+          			</div>
+                  </div>
+        		</div>
+        		<div class="c_rowBox insideSec">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 c_blueBoxmainContainer pad-15px">
+          			<div class="c_blueBoxContainer blue-gradientChart">
+            			<h6 class="${properties.title3color}">${properties.title3}</h6>
+            			<h3 class="${properties.subtitle3color}">${properties.subtitle3}</h3>
+            			<p class="blueBoxLink">
+                             <sly data-sly-test="${properties.path3 != NULL && properties.link3 != NULL}">
+    							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/chart/js/chartlinkbottomleft.js">
+    								<a href="${object.path}" target="${object.target}">${object.text}</a>
+    							</sly>
+    						</sly>
+                        </p>
+          			</div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 c_whitemainContainer padd-right-zero">
+          			<div class="c_whiteBoxContainer">
+            			<h6 class="${properties.title4color}">${properties.title4}</h6>
+            			<h3 class="${properties.subtitle4color}">${properties.subtitle4}</h3>
+            			${properties.desc4 @ context = 'html'}
+            			<p class="whiteBoxLink">
+                            <sly data-sly-test="${properties.linkpathoverlay5 != NULL && properties.link4 != NULL}">
+    							<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/chart/js/chartlinkbottomright.js">
+    								<a href="${object.path}" target="${object.target}">${object.text}</a>
+    							</sly>
+    						</sly>
+                        </p>
+          			</div>
+                    </div>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+</div>
+<!-- Tiles Container End --> 

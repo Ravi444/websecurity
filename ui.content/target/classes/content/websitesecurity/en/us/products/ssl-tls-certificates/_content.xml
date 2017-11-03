@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-02-17T08:08:25.024-07:00"
+        cq:lastModifiedBy="michelle_madden"
+        cq:lastReplicated="{Date}2017-02-17T14:59:30.143-07:00"
+        cq:lastReplicatedBy="michelle_madden"
+        cq:lastReplicationAction="Activate"
+        cq:tags="[GSATags:Products/Products,GSATags:Products/SSLTLSCertificates,GSATags:Products/SSLCertificates,Analytics:site-section/websitesecurity,Analytics:site-sub-section/products,Analytics:custom-name/details]"
+        cq:template="/apps/websitesecurity/templates/sslcertificatespage"
+        jcr:description="SSL &amp; TLS Certificates from Symantec. Secure your website and promote customer confidence with superior encryption and authentication from Symantec SSL/TLS certificates, formerly by VeriSign."
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="SSL/TLS Certificate"
+        jcr:uuid="856ca5c8-814b-4da1-84f7-815017d38385"
+        sling:resourceType="/apps/websitesecurity/components/page/sslcertificatespage"
+        canlink="https://websitesecurity.symantec.com/ssl-certificate"
+        keywords="ssl certificate, ssl certificates, secure certificates, verisign, symantec ssl"
+        pageTitle="SSL &amp; TLS Certificates by Symantec, formerly from VeriSign.">
+        <par1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <containercomponent
+                jcr:created="{Date}2016-12-07T07:06:30.070-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-02-16T14:24:00.986-07:00"
+                jcr:lastModifiedBy="michelle_madden"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/containersection"
+                borderbottom="borderBottomAbsent"
+                color="blue-gradient3 text-center"
+                component="secureappservicebanner"
+                componentspace="no"
+                desc="What’s in a Symantec SSL/TLS certificate? Enterprise-class strength. 100% root ubiquity in today’s browsers. &amp;nbsp;And industry-recognized support from the most established Certificate Authority in the world, formerly from VeriSign."
+                desccolor="white_font"
+                innerborder="No"
+                innercolor="none"
+                linkborder="Yes"
+                linkbordercolor="border_white"
+                linkcolor="white_font"
+                margintop="nospacingmargin"
+                spacingbottom="spacingbottom"
+                spacingtop="spacingtop"
+                subtitle="SSL/TLS CERTIFICATES"
+                subtitlecolor="lightest_grey_font"
+                titlecolor="lightest_grey_font"
+                titlepadding="2px"/>
+            <menunavigation
+                jcr:created="{Date}2016-12-07T07:24:11.368-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-02-16T15:09:36.720-07:00"
+                jcr:lastModifiedBy="michelle_madden"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="websitesecurity/components/localnavigation"
+                links="[{&quot;text&quot;:&quot;At a Glance&quot;\,&quot;url&quot;:&quot;At a Glance&quot;},{&quot;text&quot;:&quot;Compare&quot;\,&quot;url&quot;:&quot;Compare&quot;},{&quot;text&quot;:&quot;Simplified Management&quot;\,&quot;url&quot;:&quot;Simplified Management&quot;},{&quot;text&quot;:&quot;Certificate Overview&quot;\,&quot;url&quot;:&quot;Certificate Overview&quot;},{&quot;text&quot;:&quot;SSL/TLS Fundamentals&quot;\,&quot;url&quot;:&quot;SSL/TLS Fundamentals&quot;}]"
+                menurightlinkkey="Renew Certificate"
+                menurightlinkvalue="https://trustcenter.websecurity.symantec.com/process/trust/console_login?application_locale=VRSN_US&amp;newLanguage=en"
+                title1="Browse"
+                titlecolor="white_font">
+                <menuparsys1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <containercomponent
+                        jcr:created="{Date}2016-12-07T08:28:06.392-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-16T13:58:49.320-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containersection"
+                        color="none"
+                        coltype="3-3-3-3-col"
+                        component="icontextandtitlecomponent"
+                        desccolor="none"
+                        innerborder="No"
+                        innercolor="none"
+                        linkborder="No"
+                        linkcolor="black"
+                        margintop="No"
+                        spacingbottom="spacingbottom"
+                        spacingtop="spacingtop"
+                        subtitle="Symantec SSL/TLS: Benefits Beyond the Certificate"
+                        subtitlecolor="grey_font"
+                        title1="AT A GLANCE"
+                        titlecolor="grey_font">
+                        <col-3-3-3-3-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:01.639-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-16T14:46:08.180-07:00"
+                                jcr:lastModifiedBy="michelle_madden"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Norton"
+                                alttext="Norton"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="Trust online starts with proof on-site. Display the #1 most recognized trust mark on the web."
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-Norton.jpg"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Norton Secured Seal"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-1>
+                        <col-3-3-3-3-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:06.390-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-10T03:49:11.656-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Seal-in-Search"
+                                alttext="Seal-in-Search"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="The Norton Secured Seal next to your search listing adds power to your brand and your click-through rates."
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-seal.jpg"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Seal-in-Search"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-2>
+                        <col-3-3-3-3-4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:15.751-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-10T03:50:09.821-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Support"
+                                alttext="Support"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="&lt;p>Security is an absolute must, every second of every day. So when you need help, we’re here. No questions asked.&lt;/p>&#xa;"
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-Customer (2).jpg"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="24/7 Customer Support"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-4>
+                        <col-3-3-3-3-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <icontextandtitle
+                                jcr:created="{Date}2016-12-07T07:53:08.219-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-16T14:36:30.458-07:00"
+                                jcr:lastModifiedBy="michelle_madden"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/icontextandtitle"
+                                alternatetext="Maleware"
+                                alttext="Maleware"
+                                bgcolor2="white_bg"
+                                bordercolor="Select Color"
+                                bottomborder="bottomBorder-no"
+                                description2="It's built right into every Symantec SSL/TLS certificate for added protection against malicious infections."
+                                imageReference="/content/dam/websitesecurity/icontextandtitle/Desktop/images/SSLCertificatespage-Icon Text and Title-Scanning.jpg"
+                                imageRotate="0"
+                                listFrom="imagecentertextbelow"
+                                title1="Daily Malware Scanning"
+                                titlecolor1="charcoal_grey_font"/>
+                        </col-3-3-3-3-3>
+                    </containercomponent>
+                </menuparsys1>
+                <menuparsys2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <staticsslcertificate
+                        cq:lastReplicated="{Date}2017-02-17T23:51:51.283-07:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:created="{Date}2017-01-03T22:50:41.545-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-17T07:14:13.173-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/staticsslcertificate"
+                        margintop="No"
+                        staticssl="&lt;div class=&quot;container&quot;>&lt;div class=&quot;c-staticsslcomponent&quot;>&lt;div class=&quot;row&quot;>&lt;div class=&quot;col-lg-12&quot;>&lt;h6>COMPARE&lt;/h6>&#xa;&lt;h2>Symantec SSL/TLS Certificates&lt;/h2>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-show Spropery-service-container &quot;>&lt;div class=&quot;left-features &quot;>&lt;div class=&quot;chart-1&quot;>&lt;div class=&quot;chart-blue1&quot;>Internal Networks&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Norton-Pic.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors&quot;>&lt;div class=&quot;for-height&quot;>&lt;p>Features&lt;/p>&#xa;&lt;div>&lt;div class=&quot;feature-col-1&quot;>&lt;div class=&quot;col-lg-1 col-md-1&quot;>Norton Secured Seal&lt;/div>&#xa;&lt;img width=&quot;105&quot; height=&quot;58&quot; src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Norton-Pic.png&quot; class=&quot;img-responsive&quot;>&lt;div style=&quot;clear: both;&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;clearfix visible-md&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Green Bar in Browsers&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>ECC: Strongest Security&lt;/div>&#xa;&lt;div class=&quot;fa-left pddng&quot;>Mutiple Subdomalns&lt;/div>&#xa;&lt;div class=&quot;fa-left pddng&quot;>Vulnerability Assessment&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>DDoS Protection&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Malware Scanning&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>24/7 Chat/email Support&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Free Cert reissue/replace&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Auto Install Tool&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Management Console&lt;/div>&#xa;&lt;div class=&quot;fa-left&quot;>Warranty&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-show-lft&quot;>&lt;div class=&quot;chart-1 rounded-brdr&quot; id=&quot;box1&quot;>&lt;div class=&quot;chart-blue1 rounded-brdr &quot;>Internal Networks&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a href=&quot;/content/websitesecurity/en/us/products/ssl-tls-certificates/secure-site&quot;>Secure Site&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Network-Icon.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;/content/websitesecurity/en/us/products/ssl-tls-certificates/secure-site&quot;>Secure Site&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,500,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&lt;span>from&lt;/span> $399&lt;span class=&quot;yrtxt&quot;>/yr&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link&quot;>&lt;a href=&quot;#&quot;>BUY&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-1 &quot; id=&quot;box2&quot;>&lt;div class=&quot;chart-blue1 chart-blue2 &quot;>Public Websites&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a href=&quot;&quot;>Secure Site with EV&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Public-Website.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;&quot;>Secure Site with EV&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,750,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&lt;span>from&lt;/span> $995&lt;span class=&quot;yrtxt&quot;>/yr&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link&quot;>&lt;a href=&quot;#&quot;>BUY&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;clearfix visible-xs&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;div class=&quot;chart-1&quot; id=&quot;box3&quot;>&lt;div class=&quot;chart-blue1 chart-blue3&quot;>Public Websites&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a href=&quot;&quot;>Secure Site Pro&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Public-Website.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;&quot;>Secure Site Pro&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,500,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&lt;span>from&lt;/span> $995&lt;span class=&quot;yrtxt&quot;>/yr&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link&quot;>&lt;a href=&quot;#&quot;>BUY&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-1  &quot; id=&quot;box4&quot;>&lt;div class=&quot;chart-blue1 chart-blue4&quot;>Transactional&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a href=&quot;&quot;> Secure Site Pro with EV&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Transactional.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;&quot;>Secure Site Pro with EV&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,750,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt &quot;>&lt;span>from&lt;/span> $1,499&lt;span class=&quot;yrtxt&quot;>/yr&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link&quot;>&lt;a href=&quot;#&quot;>BUY&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;clearfix visible-xs&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;div class=&quot;chart-1 &quot; id=&quot;box5&quot;>&lt;div class=&quot;chart-blue1 chart-blue5&quot;>Multi-Domain&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a href=&quot;/content/websitesecurity/en/us/products/ssl-tls-certificates/secure-site-wildcard&quot;>Secure Site Wildcard&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Multidomain.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;/content/websitesecurity/en/us/products/ssl-tls-certificates/secure-site-wildcard&quot;>Secure Site Wildcard&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,500,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&lt;span>from&lt;/span> $1,999&lt;span class=&quot;yrtxt&quot;>/yr&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link For-button-space&quot;>&lt;a href=&quot;#&quot;>BUY&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-1 no-brder rounded-brdr-rght&quot; id=&quot;box6&quot;>&lt;div class=&quot;chart-blue1 chart-blue6 rounded-brdr-rght  &quot;>Comprehensive&lt;div class=&quot;shw-tablet&quot;>&lt;p>&lt;a  href=&quot;&quot;>Complete Website Security&lt;/a>&lt;/p>&#xa;&lt;/div>&#xa;&lt;img src=&quot;/content/dam/websitesecurity/StaticSSLCertificate/Desktop/images/Basepage-StaticSSLCertificate-Comprehensive.png&quot;>&lt;/div>&#xa;&lt;div class=&quot;icon-colors matchHeight&quot;>&lt;div class=&quot;for-height matchHeight_head&quot;>&lt;p>&lt;a href=&quot;&quot;>Complete Website Security&lt;/a>&lt;/p>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Norton Secured Seal&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Green Bar in Browsers&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>ECC: Strongest Security&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Mutiple Subdomalns&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;sslclose-sign&quot;>&lt;/i>&lt;span>Vulnerability Assessment&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>DDoS Protection&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Malware Scanning&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>24/7 Chat/email Support&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Free Cert reissue/replace&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Auto Install Tool&lt;/span>&lt;/div>&#xa;&lt;div>&lt;i class=&quot;circle-sign&quot;>&lt;/i>&lt;span>Management Console&lt;/span>&lt;/div>&#xa;&lt;div>&lt;p class=&quot;diff-txt warrenty-txt&quot;>$1,750,000&lt;/p>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;chart-amt&quot;>&lt;span class=&quot;buy-now-contact&quot;>Please&lt;/span>&lt;span class=&quot;yrtxt&quot;>&amp;nbsp;Contact Sales&lt;/span>&lt;/div>&#xa;&lt;div class=&quot;buy-link contact-padding&quot;>&lt;a href=&quot;#&quot;>CONTACT US&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-md-12 col-sm-12 col-xs-12 text-center view-all&quot;>&lt;div class=&quot;half-bg&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;div class=&quot;grey-bg-right&quot;>&lt;div class=&quot;view-all-bg&quot;>View All Features&lt;/div>&#xa;&lt;div class=&quot;clearfix visible-xs visible-lg visible-md visible-sm&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;span href=&quot;javascript:void(0)&quot; aria-hidden=&quot;true&quot; class=&quot;glyphicon glyphicon-menu-down no-mob&quot;>&lt;/span>&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;clearfix visible-xs visible-lg visible-md visible-sm&quot;>&amp;nbsp;&lt;/div>&#xa;&lt;/div>&#xa;&lt;div class=&quot;col-lg-12 col-md-12 col-sm-12 col-xs-12 below-icon&quot;>&lt;a href=&quot;/content/dam/websitesecurity/digitalassets/desktop/pdfs/whitepaper/All_About_SSL_WP_en_us.pdf&quot;>&lt;i class=&quot;glyphicon glyphicon-share&quot;>&lt;/i>&lt;span>All About SSL/TLS&lt;/span>&lt;/a>&lt;a href=&quot;/content/dam/websitesecurity/digitalassets/desktop/pdfs/whitepaper/b-beginners-guide-to-ssl-certificates_WP.pdf&quot;>&lt;i class=&quot;glyphicon glyphicon-save&quot;>&lt;/i>&lt;span> Beginner's Guide&#xa; &lt;/span>&lt;/a>&lt;/div>&#xa;&lt;/div>&#xa;&lt;/div>"/>
+                </menuparsys2>
+                <menuparsys3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <imageandtext
+                        jcr:created="{Date}2016-11-15T18:34:51.894+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-17T08:06:47.149-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/imageandtext"
+                        alignment1="text-left-image-right"
+                        alternatetext="Website Security"
+                        alttext="website"
+                        bulletcolor="security_yellow"
+                        bullets="Bulleted_Text"
+                        bulletslink="Yes"
+                        closeicon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-crossButton.png"
+                        componentspace="componentSpace"
+                        desc="When you buy your first SSL/TLS certificate, sign up for &lt;a href=&quot;https://trustcenter.websecurity.symantec.com/process/trust/console_login?application_locale=VRSN_US&amp;amp;tid=symc_vrsn_console&quot; target=&quot;_blank&quot;>Symantec Trust Center&lt;/a> to keep your finger on the pulse of all your certificates through one cloud-based console. So you can focus on running your business, safely."
+                        embedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UYIN0IXHUoWd"
+                        fileReference="/content/dam/websitesecurity/herobanner1/Desktop/images/herobanner2.jpg"
+                        hoverclose="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-close-over.png"
+                        icon="/content/dam/websitesecurity/imageandtext/Desktop/images/buyrenew-image&amp;text-playButton.png"
+                        imageouterspace="componentouterspace"
+                        imageReference1="/content/dam/websitesecurity/imageandtext/Tablet/images/Homepage-Imageandtext-Desktop.jpg"
+                        imageRotate="[0]"
+                        imgtitle="Website Security"
+                        innercolor="white_bg"
+                        leftrighttext="\{&quot;text&quot;:&quot;1234&quot;,&quot;url&quot;:&quot;5678&quot;}"
+                        linkborder1="Yes"
+                        links1="[Link5-#,Link6-#,Link7-#,Link8-#]"
+                        linktitle="LEARN ABOUT SYMANTEC TRUST CENTER"
+                        linkvalue="https://trustcenter.websecurity.symantec.com/process/trust/console_login?application_locale=VRSN_US&amp;tid=symc_vrsn_console"
+                        listFrom="video"
+                        multifiledText="[Left text1,L2,L3]"
+                        playerID="1155633140001"
+                        playerKey="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                        requiredbgpadding="imgSpaceTopBoth"
+                        snapshot="/content/dam/websitesecurity/imageandtext/Desktop/images/SYM_Building.jpg"
+                        subtitle="PROACTIVE PROTECTION, TOTAL CONTROL"
+                        subtitlecolor="grey_font"
+                        title="Explore complete website security"
+                        title1="SIMPLIFIED MANAGEMENT"
+                        titlecolor="grey_font"
+                        ustudioembedCode="https://embed.ustudio.com/embed/DTkChBHtXcx2/UYIN0IXHUoWd"
+                        vendor="ustudio"
+                        videoID="4711421703001"
+                        videosubtitle="Why Symantec SSL/TLS?"
+                        videotitle="Why Symantec SSL/TLS?"/>
+                </menuparsys3>
+                <menuparsys4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <containercomponent
+                        jcr:created="{Date}2016-12-07T07:59:59.739-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-16T14:33:04.976-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containersection"
+                        borderbottom="borderBottomPresent"
+                        button="no"
+                        color="white_bg"
+                        coltype="4-4-4-col"
+                        component="imagetextandtitlebackground"
+                        desccolor="none"
+                        innerborder="No"
+                        innercolor="none"
+                        linkborder="Yes"
+                        linkbordercolor="border_yellow"
+                        linkcolor="black"
+                        margintop="nospacingmargin"
+                        spacingbottom="spacingbottom"
+                        spacingtop="spacingtop"
+                        subtitle="For Every Security Need, a Solution"
+                        subtitlecolor="grey_font"
+                        title1="CERTIFICATE OVERVIEW"
+                        titlecolor="grey_font">
+                        <col-4-4-4-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <imagetextandtitle
+                                jcr:created="{Date}2016-12-07T08:02:44.477-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-01T23:08:56.997-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/imagetextandtitle"
+                                alternatetext="Domain Validation"
+                                alttext="Local Networks"
+                                description="Currently, 97% of all websites are not encrypted, so their businesses and visitors are at risk. See how Symantec Encryption Everywhere changes the game for small businesses worldwide."
+                                imageReference="/content/dam/websitesecurity/imagetextandtitle/Desktop/images/Homepage-Image Text and Title-DesktopLarge1.jpg"
+                                imageRotate="0"
+                                imgtitle="Domain Validation"
+                                linkvalue="#"
+                                numberofitems="0"
+                                subtitle="Encryption"
+                                subtitlecolor="grey_font"
+                                title1="Domain Validation"
+                                titlecolor="symantec_gold_font"/>
+                        </col-4-4-4-1>
+                        <col-4-4-4-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <imagetextandtitle
+                                jcr:created="{Date}2016-12-07T08:06:54.587-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-16T15:23:56.656-07:00"
+                                jcr:lastModifiedBy="michelle_madden"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/imagetextandtitle"
+                                alternatetext="Organization Validation"
+                                alttext="Local Networks"
+                                description="Our Customer Authentication Team upholds the highest standards on the web. We use the world's strictest processes to validate any business seeking an OV certificate."
+                                imageReference="/content/dam/websitesecurity/imagetextandtitle/Desktop/images/Homepage-Image Text and Title-DesktopLarge2.jpg"
+                                imageRotate="0"
+                                imgtitle="Organization Validation"
+                                linkvalue="#"
+                                numberofitems="0"
+                                subtitle="Trust"
+                                subtitlecolor="grey_font"
+                                title1="Organization Validation"
+                                titlecolor="symantec_gold_font"/>
+                        </col-4-4-4-2>
+                        <col-4-4-4-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <imagetextandtitle
+                                jcr:created="{Date}2016-12-07T08:06:59.817-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-02T11:14:05.059-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/imagetextandtitle"
+                                alternatetext="Extended Validation"
+                                alttext="Employee Portals &amp; Collaboration"
+                                description="Our EV certificates’ ECC algorithm provides 64,000x the strength of RSA and visual cues that give customers confidence. Result: An average 17.8% lift in site conversions for business."
+                                imageReference="/content/dam/websitesecurity/imagetextandtitle/Desktop/images/Homepage-Image Text and Title-DesktopLarge3.jpg"
+                                imageRotate="0"
+                                imgtitle="Extended Validation"
+                                numberofitems="0"
+                                subtitle="Maximum security"
+                                subtitlecolor="grey_font"
+                                title1="Extended Validation"
+                                titlecolor="symantec_gold_font"/>
+                        </col-4-4-4-3>
+                    </containercomponent>
+                    <containerwithicontex
+                        jcr:created="{Date}2016-12-23T16:26:17.809+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-17T08:07:32.204-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containerwithicontextandtitle"
+                        altText="[Beyond the Call\, 24/7,Forward Thinking\, always,Agility+Growth: Opportunity]"
+                        description="[When you need us\, we’re here. That’s why our Global Customer Service Satisfaction scores remain consistently above 90%.,Our security products and services are the product of 21 years of relentless problem solving. Choose yours here.,This is security built for business: Add and/or change your solutions according to your changing needs. Without missing a beat.]"
+                        image="[/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg,/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg,/content/dam/websitesecurity/icontextandtitle/Desktop/images/SecureSiteProEV-Icon Text and Title.jpg]"
+                        imgTitle="[Beyond the Call\, 24/7,Forward Thinking\, always,Agility+Growth: Opportunity]"
+                        linkPath="[https://knowledge.symantec.com/support/ssl-certificates-support/index.html,/content/websitesecurity/en/us/products/ssl-tls-certificates,/content/dam/websitesecurity/digitalassets/desktop/pdfs/whitepaper/Symantec-CWS-Brochure-en-us.pdf]"
+                        linkText="[SUPPORT SERVICES,HELP ME CHOOSE,READ BROCHURE]"
+                        margintop="nospacingmargin"
+                        numberofitems="3"
+                        subtitle="&lt;p>Active Protection is Powerful. &lt;br>&#xa;Proactive Defense is Critical.&lt;/p>&#xa;"
+                        title="[Beyond the Call\, 24/7,Forward Thinking\, always,Agility+Growth: Opportunity]"
+                        title1="Why Symantec"/>
+                    <carousel
+                        cq:lastReplicated="{Date}2017-02-21T07:47:12.293-07:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:created="{Date}2016-12-05T23:11:56.654-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-08T09:26:29.412-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/carousel"
+                        alttext="[LocalTapiola,,,,]"
+                        color="[symantec_gold_bg,slate_grey_bg,blue-gradient grad1-sec text-center,ash_bg,sky_blue_bg]"
+                        desc="[&quot;When we were managing SSL certificates ad-hoc\, we had delays as long as two weeks to get an SSL certificate. With Symantec Managed PKI for SSL\, we get them in minutes now. It’s a one-stop shop for managing\, requesting\, renewing\, and revoking certificates on demand.&quot;,“During the test\, users were more likely to click through and make a purchase when they saw the Norton Secured Seal. Based on this\, it’s clear to me that the Norton Secured Seal had the same\, if not better\, effect on helping my customers feel&#xa;confident about making a purchase.”&#xa;,Brand protection is a top priority for ebay\, which has implemented a portfolio of Symantec security solutions as an underlying foundation; everything from data loss prevention\, to endpoint security\, to managed security\, to encryption technologies.,“With Symantec solutions\, we’re able to do more with the resources that we have. We can handle day-to-day operations while continuing to expand services to the county.”,“The trust factor was the main reason we chose Symantec. The Norton Secured Seal is very well known in the market.”]"
+                        desc1="hello"
+                        image="[/content/dam/websitesecurity/Icons/Desktop/images/Homepage-Icons-Desktop-Apache.png,/content/dam/websitesecurity/carousel/desktop/images/Timeless_Logo.jpg,/content/dam/websitesecurity/carousel/desktop/images/Carousel.png,/content/dam/websitesecurity/carousel/desktop/images/Fairfax_Logo.jpg,/content/dam/websitesecurity/carousel/desktop/images/xoom_logo.jpg]"
+                        link="[Read Success Story,Read Success Story,Read Success Story,Read Success Story,Read Success Story]"
+                        numberofitems="5"
+                        path="[https://www.symantec.com/resources/customer_success/detail.jsp?cid=apache,/content/dam/websitesecurity/digitalassets/desktop/pdfs/datasheet/b-timelesswroughtiron-CS.en-us.pdf,/content/dam/websitesecurity/digitalassets/desktop/pdfs/datasheet/eBaySuccessStory.pdf,/content/dam/websitesecurity/digitalassets/desktop/pdfs/datasheet/Fairfax_county_virginia-CS.en-us.pdf,/content/dam/websitesecurity/digitalassets/desktop/pdfs/datasheet/b-Xoom-corp-SuccessStory-en-us.pdf]"
+                        subtitle="[David Nalley\, Infrastructure,Ryan Hansen\, Owner, ,Wanda Gibson\, CTO,Sujay Jaladi\, Director]"/>
+                </menuparsys4>
+                <menuparsys5
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <containercomponent_1811965450
+                        jcr:created="{Date}2016-12-06T07:09:46.793-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-17T08:08:25.009-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/containersection"
+                        bordertop="borderTopAbsent"
+                        coltype="12-col"
+                        component="linkcomponent"
+                        innerborder="No"
+                        linkborder="No"
+                        linkcolor="black"
+                        margintop="spacingtopMargin"
+                        spacingbottom="nospacingpaddingbottom"
+                        spacingtop="spacingtop"
+                        subtitle="What you Need to Know About SSL/TLS Certificates&amp;nbsp;"
+                        subtitlecolor="grey_font"
+                        title1="SSL/TLS FUNDAMENTALS"
+                        titlecolor="grey_font">
+                        <col-6-6-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <links
+                                jcr:created="{Date}2016-12-06T07:10:30.929-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-13T02:30:37.553-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                linkpath1="/content/SSLWebsiteSecurity/English/en-us/homepage/productspage/cwspage/SSL_TLSCertificates"
+                                linktitle1="How does SSL/TLS protect my website ?"/>
+                            <links_364467425
+                                jcr:created="{Date}2016-12-07T03:06:29.601-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-07T03:06:42.476-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                linkpath1="#"
+                                linktitle1="How does malware scanning work?"/>
+                            <links_856995935
+                                jcr:created="{Date}2016-12-07T03:06:56.007-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-14T01:33:55.176-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                bottomborder="border-bottom-yes"
+                                linkpath1="/content/QAdata/Footer0/Herobannertemplate"
+                                linktitle1="Why do I need management tools?"/>
+                        </col-6-6-1>
+                        <col-6-6-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <links
+                                jcr:created="{Date}2016-12-06T07:10:38.835-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-07T03:08:27.545-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                linkpath1="#"
+                                linktitle1="Why do I need the strictest authentication standards?"/>
+                            <links_1609664794
+                                jcr:created="{Date}2016-12-06T07:10:39.468-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-07T03:08:39.727-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                linkpath1="#"
+                                linktitle1="What is DDoS protection?"/>
+                            <links_1070506435
+                                jcr:created="{Date}2016-12-07T03:08:55.254-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2016-12-14T01:34:15.644-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                bottomborder="border-bottom-yes"
+                                linkpath1="/content/QAdata/Footer0/Herobannertemplate1"
+                                linktitle1="What is content delivery network (CDN) &amp; optimization?"/>
+                        </col-6-6-2>
+                        <col-12-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <links
+                                jcr:created="{Date}2016-12-15T00:13:44.061-07:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2017-02-16T22:17:07.053-07:00"
+                                jcr:lastModifiedBy="michelle_madden"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="websitesecurity/components/links"
+                                bottomborder="[border-bottom-no,border-bottom-no]"
+                                buttons="[{&quot;text&quot;:&quot;a&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;a&quot;\,&quot;url&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;a&quot;\,&quot;url&quot;:&quot;#&quot;}]"
+                                linkpath1="[,]"
+                                links="[{&quot;text&quot;:&quot;SSL/TLS Installation Checker&quot;\,&quot;url&quot;:&quot;https://cryptoreport.websecurity.symantec.com/checker/views/certCheck.jsp&quot;},{&quot;text&quot;:&quot;How to install a SSL/TLS certificate &quot;\,&quot;url&quot;:&quot;https://knowledge.symantec.com/support/ssl-certificates-support/index?page=content&amp;id=INFO212&amp;actp=LIST&amp;viewlocale=en_US&quot;},{&quot;text&quot;:&quot;Best practices for SSL/TLS&quot;\,&quot;url&quot;:&quot;https://www.symantec.com/content/en/us/enterprise/other_resources/b-evolving-threat-landscape-ebook-en.pdf&quot;},{&quot;text&quot;:&quot;What is SSL\, TLS and HTTPS?&quot;\,&quot;url&quot;:&quot;https://www.symantec.com/page.jsp?id=ssl-information-center&quot;},{&quot;text&quot;:&quot;How to generate a CSR&quot;\,&quot;url&quot;:&quot;https://knowledge.symantec.com/support/ssl-certificates-support/index?page=content&amp;id=INFO235&amp;actp=LIST&amp;viewlocale=en_US&quot;},{&quot;text&quot;:&quot;Choosing the right SSL/TLS certificate&quot;\,&quot;url&quot;:&quot;https://www.symantec.com/connect/blogs/types-ssl-certificates-choose-right-one&quot;}]"
+                                linktitle1="[,]"/>
+                        </col-12-1>
+                    </containercomponent_1811965450>
+                    <textcomponent
+                        jcr:created="{Date}2016-12-09T05:05:01.322-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-16T22:11:29.734-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/text"
+                        drop1="blueGradientBox"
+                        drop2="symantec_gold_bg"
+                        drop3="charcoal_grey_bg"
+                        image="/content/dam/websitesecurity/textcomponent/Desktop/images/SSLCertificate-Textcomponent-TransparentImg.png"
+                        linktitle1="LEARN MORE"
+                        linktitle2="LEARN MORE"
+                        linktitle3="LEARN MORE"
+                        linkvalue1="https://cryptoreport.websecurity.symantec.com/checker/views/certCheck.jsp"
+                        linkvalue2="https://www.symantec.com/page.jsp?id=certificate-transparency"
+                        linkvalue3="https://www.symantec.com/page.jsp?id=how-ssl-works&amp;tab=sectab4"
+                        subtitle1="SSL/TLS Installation Checker                                  "
+                        subtitle2="The Emergence of Certificate Transparency"
+                        subtitle3="How SSL/TLS Works"
+                        subtitlecolor1="white_font"
+                        subtitlecolor2="white_font"
+                        subtitlecolor3="white_font"
+                        title1="Intrusion and Threat Protection"
+                        title2="Encryption"
+                        title3="Authentication"
+                        titlecolor1="symantec_gold_font"
+                        titlecolor2="grey_font"
+                        titlecolor3="symantec_gold_font"/>
+                    <footermenu
+                        jcr:created="{Date}2016-12-13T00:08:59.491-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-02-16T14:04:31.019-07:00"
+                        jcr:lastModifiedBy="michelle_madden"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="websitesecurity/components/footermenu"
+                        margintop="spacingtopMargin"
+                        numberofitems="1"
+                        path="https://www.symantec.com/page.jsp?id=ssl-my-account"
+                        title="Sign In "/>
+                </menuparsys5>
+            </menunavigation>
+        </par1>
+        <contactus
+            jcr:lastModified="{Date}2016-12-27T18:07:38.086+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="websitesecurity/components/contactus"
+            phonenumber="987654321"
+            title="Productspage">
+            <contactus
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys">
+                <contactus
+                    jcr:created="{Date}2017-01-05T16:01:26.357+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-02-15T13:31:17.074-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="websitesecurity/components/contactus"
+                    callbackicon="/content/dam/websiteSecurity/footer/images/fb.png"
+                    channelportid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    channelquestid="14A134B2-D11F-48C5-A599-F84A3BF179DD"
+                    channelstyleid="41F63BE6-8E43-4CFD-AC29-A26F0C43AD5B"
+                    chatbusinessrequirement="ecommerce"
+                    codesigningportid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    codesigningquestid="587019B8-4A4D-4828-9CA4-0EC6B0B515A1"
+                    codesigningstyleid="54E9F750-E413-44F3-84C6-8643B486A341"
+                    commercialportid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    commercialquestid="7513053D-949E-47CF-8E32-2DF92D1713F5"
+                    commercialstyleid="D9301475-4ECD-4F99-BCDC-CA6A01536A68"
+                    contactlinkpath="https://s1701211846.t.eloqua.com/e/f2?elqFormName=redirect&amp;elqSiteID=1701211846&amp;toc=TTBQ5-1603-01-26"
+                    contactlinktext="Submit Inquiry"
+                    displaylivechat="Yes"
+                    ecommerceportid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    ecommercequestid="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    ecommercestyleid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    emailicon="/content/dam/websitesecurity/footer/images/fb.png"
+                    hostref="symctrust.ehosts.net"
+                    icon="/content/dam/websitesecurity/footer/images/fb.png"
+                    iconclass="[ico-c ico-s-facebook,ico-c ico-s-linkedin,ico-c ico-s-twitter,ico-c ico-s-youtube]"
+                    iconlink="[https://www.facebook.com/Symantec/,https://www.linkedin.com/company/symantec,https://www.twitter.com/Symantec/,https://www.youtube.com/Symantec/]"
+                    livechaticon="/content/dam/websitesecurity/footer/images/fb.png"
+                    livechatlable="Live"
+                    nsgportid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    nsgquestid="6D366610-8D23-4DFA-B172-B9767FA0A42B"
+                    nsgstyleid="205788A6-2F41-4BBE-8544-16EF74E8393F"
+                    numberofitems="4"
+                    phoneicon="/content/dam/websitesecurity/footer/images/fb.png"
+                    phonenumber="1-866-893-6565"
+                    popupwindow="popuprequired"
+                    portid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    questid="5251DA6E-9925-4AA2-9780-681A34E2840A"
+                    socialicontitle="Follow Us"
+                    styleid="B19A5F61-E63D-43A4-B807-D6BCEB3BAE5F"
+                    title="Contact us"
+                    unavailable="Unavailable123"
+                    unavailablepath="#"
+                    unavailabletext="Unavailable"/>
+            </contactus>
+        </contactus>
+        <image
+            jcr:lastModified="{Date}2017-02-17T06:44:43.464-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <secure-site-pro-ev/>
+    <secure-site-pro/>
+    <secure-site-ev/>
+    <secure-site-wildcard/>
+    <secure-site/>
+</jcr:root>

@@ -1,0 +1,17 @@
+@font-face {
+        font-family: "ArticulatCF-Text";
+        src: url(/content/dam/websitesecurity/fonts/ArticulatCF-Text.eot) format('eot'), 
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Text.otf) format('otf'), 
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Text.woff) format('woff'), 
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Text.ttf) format('truetype');
+
+}
+
+@font-face {
+        font-family: "ArticulatCF-Bold";
+        src: url(/content/dam/websitesecurity/fonts/ArticulatCF-Bold.eot) format('eot'),
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Bold.otf) format('otf'), 
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Bold.woff) format('woff'), 
+        url(/content/dam/websitesecurity/fonts/ArticulatCF-Bold.ttf) format('truetype');
+}
+

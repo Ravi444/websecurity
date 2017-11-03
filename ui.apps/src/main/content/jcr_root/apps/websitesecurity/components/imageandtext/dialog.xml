@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:lastReplicated="{Date}2017-02-18T05:37:58.300-07:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Dialog"
+    manageTabs="function(tab,noSwitch){var tabs=['list','image','video'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Image and Text"
+    width="{Long}1000"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Image &amp; Text "
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Image/Video"
+                    fieldLabel="Image or Video"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            text="Image"
+                            value="image"/>
+                        <video
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video"/>
+                    </options>
+                </listFrom>
+                <backgroundcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for the background"
+                    fieldLabel="Background Color"
+                    name="./innercolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <gradient
+                            jcr:primaryType="nt:unstructured"
+                            text="Gradient"
+                            value="gradient"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_bg"/>
+                        <Symantec_x0020_Yellow
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Yellow"
+                            value="symantec_gold_bg"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_bg"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_bg"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_bg"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_bg"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_bg"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="charcoal_grey_bg"/>
+                        <Charcoal_x0020_Grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_bg"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_bg"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_bg"/>
+                    </options>
+                </backgroundcolor>
+                <imgalttext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter the Title for image"
+                    fieldLabel="Image Title"
+                    maxLength="40"
+                    name="./imgtitle"
+                    xtype="textfield"/>
+                <alternatetext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Enter Alternate Text for Image"
+                    fieldLabel="Alternate Text for Image"
+                    maxLength="40"
+                    name="./alternatetext"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter title"
+                    fieldLabel="Title"
+                    maxLength="50"
+                    name="./title1"
+                    xtype="textfield"/>
+                <titlecolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Title"
+                    fieldLabel="Title  Color"
+                    name="./titlecolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="Mid Grey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Slate Grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_font"/>
+                        <yellow
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="Pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="Black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_font"/>
+                    </options>
+                </titlecolor>
+                <subtitle
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter Subtitle"
+                    fieldLabel="Sub-Title"
+                    maxLength="105"
+                    name="./subtitle"
+                    xtype="textfield"/>
+                <subtitlecolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Sub Title"
+                    fieldLabel="SubTitle  Color"
+                    name="./subtitlecolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="Mid Grey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Slate Grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_font"/>
+                        <yellow
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="Pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="Black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_font"/>
+                    </options>
+                </subtitlecolor>
+                <desc
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="Enter description"
+                    fieldLabel="Description "
+                    name="./desc"
+                    removeSingleParagraphContainer="{Boolean}true"
+                    validateValue="function(field){var temp=this.getValue();if(temp.length == 0){this.markInvalid(&quot;Enter Description&quot;);return false;}else{this.clearInvalid();return true;}}"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <format
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <lists
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="[paste-wordhtml]"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <spellcheck
+                            jcr:primaryType="nt:unstructured"
+                            features="*"
+                            invalidStyle="background-color: #ffdddd;"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <colorpicker
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </desc>
+                <description_x0020_color
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the color for Description"
+                    fieldLabel="Description color"
+                    name="./descriptioncolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <charcoal_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Charcoal Grey"
+                            value="charcoal_grey_font"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="grey_font"/>
+                        <lightest_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Lightest Grey"
+                            value="lightest_grey_font"/>
+                        <light_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Light Grey"
+                            value="light_grey_font"/>
+                        <midgrey
+                            jcr:primaryType="nt:unstructured"
+                            text="Mid Grey"
+                            value="midgrey_font"/>
+                        <slate_grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Slate Grey"
+                            value="slate_grey_font"/>
+                        <ash
+                            jcr:primaryType="nt:unstructured"
+                            text="Ash"
+                            value="ash_font"/>
+                        <yellow
+                            jcr:primaryType="nt:unstructured"
+                            text="Symantec Gold"
+                            value="symantec_gold_font"/>
+                        <pink
+                            jcr:primaryType="nt:unstructured"
+                            text="Pink"
+                            value="pink_font"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Sky Blue"
+                            value="sky_blue_font"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="Black"
+                            value="black_font"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="White"
+                            value="white_font"/>
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Green"
+                            value="green_font"/>
+                        <purple
+                            jcr:primaryType="nt:unstructured"
+                            text="Purple"
+                            value="purple_font"/>
+                        <red
+                            jcr:primaryType="nt:unstructured"
+                            text="Red"
+                            value="red_font"/>
+                    </options>
+                </description_x0020_color>
+                <Link_x0020_title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the text "
+                    fieldLabel="Single Link Text"
+                    maxLength="78"
+                    name="./linktitle"
+                    xtype="textfield"/>
+                <Link_x0020_path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the path"
+                    fieldLabel="Single Link Path"
+                    name="./linkvalue"
+                    xtype="pathfield"/>
+                <linkborder
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Link Border"
+                    fieldLabel="Link Underline"
+                    name="./linkborder1"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="Yes"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="No"/>
+                    </options>
+                </linkborder>
+                <paddingrequired
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Image Inside Space Requiring(It should be Yes when there is Background Color other than White)."
+                    fieldLabel="Image Inside Spacing"
+                    name="./requiredbgpadding"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="imgSpaceTopBoth"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="noimgSpace"/>
+                    </options>
+                </paddingrequired>
+                <marginrequired
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose Component Outer Space"
+                    fieldLabel="Component Outer Space"
+                    name="./imageouterspace"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="nocomponentouterspace"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="componentouterspace"/>
+                    </options>
+                </marginrequired>
+                <bullets
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    defaultValue="None"
+                    fieldDescription="Select the type of links"
+                    fieldLabel="Links Type"
+                    name="./bullets"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        selectionchanged="function(box,value){var dlg = box.findParentByType('panel');if(value == &quot;Bulleted_Links&quot; || value ==&quot;Non_Bulleted_Links&quot;){dlg.getComponent('multiID').show();dlg.getComponent('textIDD').hide();dlg.getComponent('textIDcenter').hide();dlg.getComponent('textID').hide();dlg.getComponent('multiIDright').show();}else if(value ==&quot;Bulleted_Text&quot;){dlg.getComponent('textID').show();dlg.getComponent('textIDD').show();dlg.getComponent('textIDcenter').show();dlg.getComponent('multiID').hide();dlg.getComponent('multiIDright').hide();}else{dlg.getComponent('textID').hide();dlg.getComponent('multiID').hide();dlg.getComponent('multiIDright').hide();dlg.getComponent('textIDD').hide();dlg.getComponent('textIDcenter').hide();}}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <None
+                            jcr:primaryType="nt:unstructured"
+                            text="None"
+                            value="none"/>
+                        <Bulleted_x0020_Links
+                            jcr:primaryType="nt:unstructured"
+                            text="Bulleted Links"
+                            value="Bulleted_Links"/>
+                        <Non_x0020_Bulleted_x0020_Links
+                            jcr:primaryType="nt:unstructured"
+                            text="Non Bulleted Links"
+                            value="Non_Bulleted_Links"/>
+                        <Bulleted_x0020_Text
+                            jcr:primaryType="nt:unstructured"
+                            text="Bulleted Text"
+                            value="Bulleted_Text"/>
+                    </options>
+                </bullets>
+                <descriptionlinksleft
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Left Links"
+                    itemId="multiID"
+                    name="./links"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        optionsProvider="Ejst.x3.provideOptions"
+                        xtype="ejstcustom"/>
+                </descriptionlinksleft>
+                <rightdescriptionlinks
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Right Links"
+                    itemId="multiIDright"
+                    name="./rightlinks"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        optionsProvider="Ejst.x3.provideOptions"
+                        xtype="ejstcustom"/>
+                </rightdescriptionlinks>
+                <multifiledlefttext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Left Text"
+                    itemId="textID"
+                    name="./multifiledLeftText"
+                    xtype="multifield"/>
+                <multifieldrighttext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Right Text"
+                    itemId="textIDD"
+                    name="./multifiledRightText"
+                    xtype="multifield"/>
+                <bulletedcentertext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Bulleted Text in one Column"
+                    fieldLabel="Bulleted Text in One Column"
+                    itemId="textIDcenter"
+                    name="./centerbulletedtext"
+                    xtype="multifield"/>
+                <bulletcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the Bullet Color for Bulleted Text"
+                    fieldLabel="Bullet Color for Bullet Text"
+                    name="./bulletcolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey Bullets"
+                            value="security_grey"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="Yellow Bullets"
+                            value="security_yellow"/>
+                    </options>
+                </bulletcolor>
+                <centeredlinks
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Centered Links"
+                    name="./buttons"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        optionsProvider="Ejst.x3.provideOptions"
+                        xtype="ejstcustom"/>
+                </centeredlinks>
+            </items>
+        </list>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fieldLabel="Logo Image"
+            fileNameParameter="./imageName"
+            fileReferenceParameter="./imageReference"
+            mapParameter="./imageMap"
+            name="./image"
+            rotateParameter="./imageRotate"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+        </image>
+        <video
+            jcr:primaryType="cq:Widget"
+            title="Video"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <Image
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Thumbnail for the Video"
+                    fieldLabel="Thumbnail"
+                    itemId="image"
+                    name="./snapshot"
+                    xtype="pathfield"/>
+                <videoicon
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Image Path for Video Icon"
+                    fieldLabel="Video Icon"
+                    itemId="videoIcon"
+                    name="./icon"
+                    xtype="pathfield"/>
+                <closebutton
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Image Path for Close Icon"
+                    fieldLabel="Close Icon"
+                    name="./closeicon"
+                    xtype="pathfield"/>
+                <hovericon
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Specify the Image Path for Close Icon(On Hover)"
+                    fieldLabel="On hover Close Icon"
+                    name="./hoverclose"
+                    xtype="pathfield"/>
+                <vendor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Choose the  Vendor for Video"
+                    fieldLabel="Vendor"
+                    name="./vendor"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        selectionchanged="function(box,value)&#xa;{&#xa;var dlg = box.findParentByType('panel');&#xa;if(value == &quot;youtube&quot;)&#xa;{&#xa;dlg.getComponent('youtubeembed').show();&#xa;dlg.getComponent('ustudioembed').hide();&#xa;dlg.getComponent('playerID').hide();&#xa;dlg.getComponent('playerKey').hide();&#xa;dlg.getComponent('videoID').hide();&#xa;}&#xa;else if( value == &quot;brightcove&quot;)&#xa;{&#xa;dlg.getComponent('youtubeembed').hide();&#xa;dlg.getComponent('ustudioembed').hide();&#xa;dlg.getComponent('playerID').show();&#xa;dlg.getComponent('playerKey').show();&#xa;dlg.getComponent('videoID').show();&#xa;}&#xa;else&#xa;{&#xa;dlg.getComponent('youtubeembed').hide();&#xa;dlg.getComponent('ustudioembed').show();&#xa;dlg.getComponent('playerID').hide();&#xa;dlg.getComponent('playerKey').hide();&#xa;dlg.getComponent('videoID').hide();&#xa;}}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <youtube
+                            jcr:primaryType="nt:unstructured"
+                            text="You Tube"
+                            value="youtube"/>
+                        <brightcove
+                            jcr:primaryType="nt:unstructured"
+                            text="Bright Cove"
+                            value="brightcove"/>
+                        <ustudio
+                            jcr:primaryType="nt:unstructured"
+                            text="UStudio"
+                            value="ustudio"/>
+                    </options>
+                </vendor>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Title for the Video"
+                    fieldLabel="Title"
+                    name="./videotitle"
+                    xtype="textfield"/>
+                <videosubtitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Subtitle for the Video"
+                    fieldLabel="VideoSubtitle"
+                    name="./videosubtitle"
+                    xtype="textfield"/>
+                <videoduration
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Duration of the Video"
+                    fieldLabel="Video Duration"
+                    name="./videoduration"
+                    xtype="textfield"/>
+                <videoID
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="2705903283001"
+                    fieldDescription="Enter the Video ID"
+                    fieldLabel="VideoID"
+                    itemId="videoID"
+                    name="./videoID"
+                    value="2705903283001"
+                    xtype="textfield"/>
+                <playerID
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1155633140001"
+                    fieldDescription="Enter the Player ID"
+                    fieldLabel="Player ID:"
+                    itemId="playerID"
+                    name="./playerID"
+                    value="1155633140001"
+                    xtype="textfield"/>
+                <playerKey
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                    fieldDescription="Enter the Player Key"
+                    fieldLabel="Player Key:"
+                    fieldSubLabel=""
+                    itemId="playerKey"
+                    name="./playerKey"
+                    value="AQ~~,AAABDH-SF2E~,AjuLym4adgQ-7I9w_5qN_RSigj5q2rid"
+                    xtype="textfield"/>
+                <embedCode
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter the Embed Code for Video"
+                    fieldLabel="YouTube Embed Code"
+                    height="{Long}125"
+                    itemId="youtubeembed"
+                    name="./youtubeembedCode"
+                    xtype="textarea"/>
+                <UstudioembedCode
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"
+                    fieldDescription="Enter the Embed Code for Ustudio"
+                    fieldLabel="Ustudio Embed Code"
+                    height="{Long}125"
+                    itemId="ustudioembed"
+                    name="./ustudioembedCode"
+                    value="https://embed.ustudio.com/embed/DTkChBHtXcx2/UyuLNJuK57NH"
+                    xtype="textarea"/>
+            </items>
+        </video>
+    </items>
+</jcr:root>

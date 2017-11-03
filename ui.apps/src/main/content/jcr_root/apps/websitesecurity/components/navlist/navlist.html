@@ -1,0 +1,63 @@
+
+<sly data-sly-test="${properties.listFrom == 'products'}">
+    <div class="tpl-subContent-mb">
+        <div class="tpl-commonLi" data-sly-use.cpt="websitesecurity.core.utilities.NavlistProducts">
+
+            <sly data-sly-test="${properties.heading != NULL}">
+				<sly data-sly-use.navlistobject1="/etc/designs/websitesecurity/clientlibs/component/navlist/js/headlink.js">
+            		<h4>
+                        <a class="${properties.titlecolor}" href="${navlistobject1.path}" target="${navlistobject1.target}">${navlistobject1.text}</a> 
+                		<span class="glyphicon glyphicon-menu-right">
+                		</span>
+            		</h4>
+                </sly>
+            </sly>
+
+            <ul class="listSectionArea"  data-sly-list="${cpt.listData}">
+                <li class="listBorder">
+					<a href="${item.path}" target="${item.target}">${item.title}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</sly>
+
+<sly data-sly-test="${properties.listFrom == 'products_doublelist'}">
+	<div class="tpl-subContent-mb">
+        <div class="tpl-commonLi" data-sly-use.cpt="websitesecurity.core.utilities.NavlistProducts">
+
+
+
+
+            		<sly data-sly-test="${properties.heading != NULL}">
+				<sly data-sly-use.navlistobject1="/etc/designs/websitesecurity/clientlibs/component/navlist/js/headlink.js">
+            		<h4>
+                        <a class="${properties.titlecolor}" href="${navlistobject1.path}" target="${navlistobject1.target}">${navlistobject1.text}</a> 
+                		<span class="glyphicon glyphicon-menu-right">
+                		</span>
+            		</h4>
+                </sly>
+            </sly>
+
+
+
+
+            <ul class="ulist" data-sly-list="${cpt.listData}">
+				<li class="listBorder">
+					<a href="${item.path}" target="${item.target}">${item.title}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</sly>
+
+<sly data-sly-test="${properties.listFrom == 'buyrenew'}">
+    <div class="tpl-subContent-mb">
+		<div class="tpl-commonLi" data-sly-use.cpt="websitesecurity.core.utilities.Navlist">
+            <h4  class="clear  ${properties.titlecolor}">${properties.heading} <a class="fr" href="${properties.headingpath}.html">${properties.ullink}</a> <span class="glyphicon glyphicon-menu-right"></span></h4>
+			<ul class="clear" data-sly-list="${cpt.listData}">
+               	<li class="listBorder">${item.title}<a class="fr" href="${item.path}" target = ${item.target}>${item.buttonpath}</a></li>
+            </ul>
+		</div>
+    </div>
+</sly>

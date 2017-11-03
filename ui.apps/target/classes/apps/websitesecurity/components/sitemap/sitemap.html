@@ -1,0 +1,8 @@
+<sly class="row" data-sly-use.linkedPage = "${'websitesecurity.core.utilities.ChildList'}">
+	<div>
+		${linkedPage.pathvalue.title}
+		<ul data-sly-list="${linkedPage.pathvalue.listChildren}">
+			<li><a href="${item.path}.html">${item.title}</a></li>
+		</ul>
+	</div>
+</sly>

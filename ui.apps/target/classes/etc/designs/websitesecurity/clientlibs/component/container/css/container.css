@@ -1,0 +1,19 @@
+
+
+.secureappservicebanner .certificate-container h2{font-size:48px; padding-bottom:30px;}
+
+/*Button Section*/
+.certificate-container .green{color:#ffffff;font-size:13px;background: #4cd362;text-transform:uppercase;font-weight:700;text-align: center;padding: 10px 40px;display:inline-block;width: auto;height:auto; /*margin-left:13px;*/}
+.certificate-container .green:hover{background-color:#37bd4d;}
+.certificate-container .green:focus{background-color:#37bd4d;}
+
+
+/*Link Section*/
+.more-link a{ font-size:14px; text-transform:uppercase; font-weight: 700; border-bottom: 0px solid #fdbb30; padding-bottom: 8px; display:inline-block;}
+
+@media screen and (min-width:320px) and (max-width:767px){
+.secureappservicebanner .certificate-container .green{width: inherit; padding:10px 20px;}
+.secureappservicebanner .certificate-container h2{font-size:35px;}
+.certificate-container .green{margin-bottom:15px;}
+}
+

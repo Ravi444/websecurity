@@ -1,0 +1,208 @@
+/*Outer*/
+.c-chartsComp{padding:40px 0 130px;}
+
+/*Heading*/
+.c-chartComponent h6{font-size:16px; padding-bottom:20px; font-weight: 600;}
+.c-chartComponent h2{padding-bottom:40px; text-align:center; padding-top:60px;}
+.c_blueBoxContainer h3{padding:0; width:100%; line-height:30px;}
+.blackBoxContainerChart h6{text-align:center;}
+.c_rowBox h3{width:100%; padding-bottom:9px;}
+
+/*blackBoxArea*/
+/*.c-chartsComp .c-chartComponent .c_blackBoxArea{background:#464646; padding:40px 10px; text-align:center; min-height:593px;}*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea{background:#464646; padding:40px 15px 35px; text-align:center; min-height:593px;}
+
+
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea{padding-bottom: 40px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp{display: block;font-size: 60px;line-height: 51px;text-align: center;padding:0 0 15px;color: #ffffff;font-weight: 300;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_imgArea{height:91px;}
+.pad-rit-sec-area{padding-right:0;}
+
+/*linkSecArea*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea{margin:0; padding:0;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea a{color:#00addd; border-bottom:3px solid #fdbb30; display:inline-block; padding-bottom:4px; font-size:14px; font-weight:700;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea a:hover{color:#15ccff; border-bottom:3px solid #00addd; text-decoration:none;}
+
+/*WhiteBoxContainer*/
+.c-chartsComp .c-chartComponent .c_whitemainContainer{padding-left:0px;}
+.c_whiteBoxContainer{display:block;background:#fff;}
+.c_whiteBoxContainer.marNone{margin:0;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer.padd-right-zero{padding-right:0; padding-left:15px;}
+
+/*BlueBoxContainer*/
+.c-chartsComp .c_blueBoxmainContainer{padding-right:0;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer.pad-15px{padding:0 15px 0 0;}
+.c_blueBoxContainer{display:block;float:left; color:#fff;}
+.c_blueBoxContainer.marRit{margin-right:30px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer, .c-chartsComp .c_blueBoxmainContainer .c_blueBoxContainer {height:285px; padding:42px 36px 56px 30px;}
+
+/*Paragraph*/
+.c_blueBoxContainer p a{color:#fff;}
+.c_blueBoxContainer p a:hover{color:#e4e4e4;}
+.c_whiteBoxContainer p{color: #464646; margin-bottom:15px; padding-right:14px;}
+.c_rowBox p.blueBoxLink, .c_rowBox p.c_whiteBoxLink{margin:0; padding:0; font-size:14px;}
+.c_rowBox p.blueBoxLink, .c_rowBox p.c_whiteBoxLink{margin-top:10px;}
+.c_blueBoxContainer  a, .c_whiteBoxContainer a{font-size:14px; font-weight: 700;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp sup{top:-17px; left:-4px;}
+
+/*RowBox*/
+.c_rowBox{display:inline-block; padding-bottom:17px;}
+.blue-pd{padding-bottom:110px;}
+
+
+
+
+
+
+@media only screen and (max-width : 1200px){
+
+
+/*Heading*/
+.c_rowBox h3{width:100%; padding-bottom:0;}
+.c_blueBoxContainer h3{padding:0;}
+.c-chartComponent .c_whiteBoxContainer h6, .c-chartComponent .c_blueBoxContainer h6{padding-bottom:15px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea h6{padding-bottom:15px;}
+
+/*blackBoxArea*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea{min-height:573px; padding:40px 15px 25px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp sup{top:-13px;}
+
+/*WhiteBoxContainer*/
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer, .c-chartsComp .c_blueBoxmainContainer .c_blueBoxContainer {height:275px; padding:40px 20px 40px 30px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer{padding-left:12px; padding-right:11px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer {width:100%;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer.padd-right-zero{padding-left:23px;}
+
+/*BlueBoxContainer*/
+.c-chartsComp .c_blueBoxmainContainer{padding-right:0;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer.pad-15px{padding:0 11px 0 12px;}
+.c-chartsComp .c_blueBoxmainContainer .c_blueBoxContainer {width:100%;}
+.c-chartsComp .c_blueBoxmainContainer.padd-right-zero{padding-right:0; padding-left:23px;}
+
+/*Paragraph*/
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer p{display:none; padding-right:0px; margin-bottom:0px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer p.whiteBoxLink{display:inline-block; margin-top:0; position:absolute; bottom:30px;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer .c_blueBoxContainer p.blueBoxLink, .c-chartsComp .c-chartComponent .c-c_whitemainContainer .c_whiteBoxContainer p.c_whiteBoxLink{display:inline-block; position:absolute; bottom:30px; margin-top:0;}
+.c_rowBox p.blueBoxLink, .c_rowBox p.c_whiteBoxLink{margin-top:60px;}
+.c_rowBox p.c_whiteBoxLink{margin-top:66px;}
+
+/*.c_blueBoxContainer.marRit{margin-right:35px; margin-left:25px; border:5px red solid;}
+.c_blueBoxContainer.marRit{margin-right:44px; margin-left:0px;}*/
+
+.for-mobile-ipad-pdd-zero{padding-left:0; padding-right:22px;}
+.pad-rit-sec-area{padding-left:0;}
+}
+
+
+@media only screen and (max-width : 991px){
+
+/*Outer*/
+.c-chartsComp{padding-bottom:50px;}
+.c-chartComponent{padding:0;}
+.c-chartComponent .pad-rit-sec-area{padding-left:0;}
+
+
+/*blackBoxArea*/	
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp{font-size:45px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea{width:50%; float:left;padding:0px 0 0 0; text-align:center;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea.fr{float:right;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea{margin-bottom:20px; min-height:auto;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_imgArea{width:160px; margin:0 auto;height:auto;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_imgArea img{width:100%;}
+
+/*Heading*/
+.c_rowBox h3{width:90%; font-size:24px;}
+
+/*blackBoxArea*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea{min-height:inherit; padding-bottom:0;}
+.c-chartsComp .c-chartComponent .pad-rit-sec-area{padding-right:0;}
+
+/*Paragraph*/
+.c_rowBox p.c_whiteBoxLink{margin-top:44px;}
+.c_rowBox p.blueBoxLink{margin-top:32px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea{padding-top:50px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer p{display:none;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer .c_blueBoxContainer p.blueBoxLink, .c-chartsComp .c-chartComponent .c-c_whitemainContainer .c_whiteBoxContainer p.c_whiteBoxLink{display:inline-block; }
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea{display:block; padding:30px 0 40px;}
+
+/*WhiteBoxContainer*/
+.c-chartsComp .c-chartComponent .c_whitemainContainer{padding-left:0; width:50%; padding-right:20px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer {height:258px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer.padd-right-zero{padding-left:20px;}
+
+/*BlueBoxContainer*/
+.c-chartsComp .c_blueBoxmainContainer{padding-right:0;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer{width:50%; padding-left:20px;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer.pad-15px{padding:0 20px 0 0;}
+.c-chartsComp .c_blueBoxmainContainer .c_blueBoxContainer {height:258px;}
+
+/*RowBox*/
+.c_rowBox{padding-bottom:20px;}
+.for-mobile-ipad-pdd-zero{padding:0;}
+
+
+}
+
+
+@media only screen and (max-width : 767px){
+	
+/*Outer*/
+.c-chartsComp{padding-bottom:50px;}	
+.c-chartsComp .c-chartComponent .pad-rit-sec-area{padding-right:0;}
+.c-chartComponent{padding:0 15px;}
+.c-chartComponent .pad-rit-sec-area{padding-left:0;}
+
+/*Heading*/	
+.c-chartComponent h2 {padding-top:40px}
+.c_blueBoxContainer h3, .c_whiteBoxContainer h3 {font-size:22px; width:100%; height:95px;}
+.c-chartComponent h6{font-size:16px; padding-bottom:17px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea h6{padding-bottom:15px; font-size:12px;}
+
+/*blackBoxArea*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea{padding:50px 30px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp{font-size:34px; top:-9px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_imgArea img{width:92%;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_imgArea{width:100%; text-align:center; height:auto;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea .c_tmp sup{top:-7px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea{min-height:inherit; padding-bottom:0;}
+
+/*WhiteBoxContainer*/
+.c_whiteBoxContainer, .c-chartsComp .c-chartComponent .c_blackBoxArea, .c_blueBoxContainer{margin-bottom:20px;}
+.c_blueBoxContainer{margin-bottom:15px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer{padding:0;  width:100%;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer, .c-chartsComp .c_blueBoxmainContainer .c_blueBoxContainer {height:230px; padding:30px 25px 30px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer.padd-right-zero{padding-left:0;}
+
+/*BlueBoxContainer*/
+.c-chartsComp .c_blueBoxmainContainer{padding:0;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer{width:100%; padding:0;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer.pad-15px{padding:0;}
+
+/*Paragraph*/
+.c_rowBox p.blueBoxLink, .c_rowBox p.c_whiteBoxLink{margin-top:20px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer p{display:none;}
+.c-chartsComp .c-chartComponent .c_blueBoxmainContainer .c_blueBoxContainer p.blueBoxLink, .c-chartsComp .c-chartComponent .c-c_whitemainContainer .c_whiteBoxContainer p.whiteBoxLink{display:inline-block;  bottom:40px;}
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea{padding-top:55px;}
+.c-chartsComp .c-chartComponent .c_whitemainContainer .c_whiteBoxContainer p.whiteBoxLink{margin-top:0;  bottom:40px;}
+
+/*RowBox*/
+.c_rowBox{padding-bottom:0; margin-bottom:0;}
+.c_rowBox.insideSec{padding-bottom:242px; width:100%;}
+.c_rowBox.insideSec .c_blueBoxmainContainer{position:absolute; bottom:2px;}
+.box_hidden{display:none;}
+
+
+
+}
+
+@media only screen and (max-width : 480px){
+/*Heading*/	
+.c-chartComponent h2 {padding-top:40px}
+/*Paragraph*/
+.c-chartsComp .c-chartComponent .c_blackBoxArea p.linkSecArea{padding-top:30px;}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 360px){
+.c-chartsComp .c-chartComponent .c_blackBoxArea .c_imgSecArea h6{padding-bottom:0px; font-size:12px; min-height:35px;}
+}
+

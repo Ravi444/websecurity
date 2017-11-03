@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="statscodesigning"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Title
+                jcr:primaryType="cq:Panel"
+                title="statscodesigning">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <prop1
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter the description"
+                        fieldLabel="Description"
+                        name="./staticcodesigning1"
+                        validateOnBlur="true"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="\[&quot;paste-wordhtml&quot;]"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <fontstyles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <fontstyle
+                                        jcr:primaryType="cq:WidgetCollection"
+                                        cssName="css"
+                                        text="Description"/>
+                                </styles>
+                            </fontstyles>
+                            <fontcolor
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <fontcolor
+                                        jcr:primaryType="cq:WidgetCollection"
+                                        cssName="css"
+                                        text="Description"/>
+                                </styles>
+                            </fontcolor>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <style
+                                    jcr:primaryType="cq:WidgetCollection"
+                                    cssName="richtext"
+                                    text="Description"/>
+                            </styles>
+                        </rtePlugins>
+                    </prop1>
+                    <margintop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Margin Top Required"
+                        fieldLabel="Margin Top Required"
+                        name="./margintop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="spacingtopMargin"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="nospacingmargin"/>
+                        </options>
+                    </margintop>
+                </items>
+            </Title>
+        </items>
+    </items>
+</jcr:root>

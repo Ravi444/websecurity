@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="websitesecurity.core.servlets.GlobalGSASearchServlet">
+        <implementation class="websitesecurity.core.servlets.GlobalGSASearchServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/websitesecurity/globalsearch
+        </property>
+        <property name="service.pid" value="com.websitesecurity.core.impl.servlets.GlobalSearchServlet"/>
+        <property name="service.description" value="Website Security GSA Global Search"/>
+        <property name="service.vendor" value="Symantec"/>
+        <reference name="gsaSearchConfigFactoryService" interface="websitesecurity.core.utilities.GSASearchConfigFactoryService" cardinality="1..1" policy="static" bind="bindGsaSearchConfigFactoryService" unbind="unbindGsaSearchConfigFactoryService"/>
+        <reference name="mSlingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindMSlingSettingsService" unbind="unbindMSlingSettingsService"/>
+        <reference name="xssAPI" interface="com.adobe.granite.xss.XSSAPI" cardinality="1..1" policy="static" bind="bindXssAPI" unbind="unbindXssAPI"/>
+    </scr:component>
+</components>

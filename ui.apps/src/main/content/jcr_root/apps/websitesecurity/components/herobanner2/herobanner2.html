@@ -1,0 +1,27 @@
+
+
+
+<div class="container-fluid herobanner2-tablet herobanner2-mobile " style="background-image:url('${properties.imageReference @ context='unsafe'}'); background-repeat: no-repeat; ">
+	<div class="container">
+		<div class="c-product-banner-container">
+			<div class="contentArea">
+				<sly data-sly-test ="${properties.HeadingTitle != NULL}">
+					<h5  class = "${properties.titlecolor}">${properties.HeadingTitle}</h5>
+				</sly>
+				<sly data-sly-test ="${properties.subtitle != NULL}">
+					<h2  class = "${properties.subtitlecolor}">${properties.subtitle}</h2>
+        		</sly>
+        		<!--<p class="${properties.descriptioncolor}">${properties.description  @ context = 'html'}</p>-->
+        		<sly data-sly-test ="${properties.description != NULL}">
+					<p class="${properties.descriptioncolor}">${properties.description  @ context = 'html'}</p>
+         		</sly>
+        		<div class="listLink" data-sly-use.cpt="websitesecurity.core.utilities.TitleList">
+                    <span data-sly-list.key="${cpt.listData}">
+                        <a class="c-more-link" href="${key.path}" target="${key.target}">${key.title}</a>
+                    </span>
+                </div>
+			</div>
+			<div class="col-lg-6 col-md-6"></div>
+		</div>
+	</div>
+</div>

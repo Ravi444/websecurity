@@ -1,0 +1,52 @@
+<div class="container-fluid paddingbottom">
+  <div class="container">
+    <div class="c-textcomponent clearfix">
+      <div class="col-lg-6  col-md-4 col-sm-12 col-xs-12 nospacingleft tabSpacing mobileSpacing">
+        <div class="boxContainerSec matchHeight image-sec-none firstBoxTab ${properties.drop1}">
+          <h6 class="${properties.titlecolor1}">${properties.title1}</h6>
+          <h2 class="${properties.subtitlecolor1}">${properties.subtitle1}</h2>
+          <p>
+            <sly data-sly-test="${properties.linkvalue1 != NULL && properties.linktitle1 != NULL}">
+              <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/text/js/textlinks1.js"> <a href="${object.path}" target="${object.target}">${object.text}</a> </sly>
+            </sly>
+          </p>
+        </div>
+        <div class=" boxContainerSec matchHeight image-sec ${properties.drop1}">
+          <div class="textInnerSpacing" style="background-image:url('${properties.image @ context='unsafe'}'); background-repeat: no-repeat; background-position:right 0;">
+            <div class="fixedWidth">
+              <h6 class="${properties.titlecolor1}">${properties.title1}</h6>
+              <h2 class="${properties.subtitlecolor1}">${properties.subtitle1}</h2>
+            </div>
+            <p>
+              <sly data-sly-test="${properties.linkvalue1 != NULL && properties.linktitle1 != NULL}">
+                <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/text/js/textlinks1.js"> <a href="${object.path}" target="${object.target}">${object.text}</a> </sly>
+              </sly>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 left-tabSpacing mobileSpacing">
+        <div class="boxContainerSec matchHeight ${properties.drop2}">
+          <h6 class="${properties.titlecolor2}">${properties.title2}</h6>
+          <h2 class="${properties.subtitlecolor2}">${properties.subtitle2}</h2>
+          <p>
+            <sly data-sly-test="${properties.linkvalue2 != NULL && properties.linktitle2 != NULL}">
+              <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/text/js/textlinks2.js"> <a href="${object.path}" target="${object.target}">${object.text}</a> </sly>
+            </sly>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 nospacingright right-tabSpacing mobileSpacing">
+        <div class="boxContainerSec matchHeight ${properties.drop3}">
+          <h6 class="${properties.titlecolor3}">${properties.title3}</h6>
+          <h2 class="${properties.subtitlecolor3}">${properties.subtitle3}</h2>
+          <p>
+            <sly data-sly-test="${properties.linkvalue3 != NULL && properties.linktitle3 != NULL}">
+              <sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/text/js/textlinks3.js"> <a href="${object.path}" target="${object.target}">${object.text}</a> </sly>
+            </sly>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

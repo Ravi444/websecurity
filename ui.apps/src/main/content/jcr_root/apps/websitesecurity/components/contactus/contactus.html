@@ -1,0 +1,182 @@
+
+<div class="cg_float-contact">
+	<div class="popup-button">
+		<a href="#bubble1">${properties.title}</a>
+	</div>
+	<div class="popup-bubble" id="bubble1">
+		<div class="bubble-header">
+			${properties.title} <a class="bubble-close"></a>
+		</div>
+		<div class="bubble-text">
+			<ul class="options-list">
+
+                <sly data-sly-test="${properties.phonenumber != NULL}">
+					<li><a><span class="ico-c ico-c-phone"></span>${properties.phonenumber}</a></li>
+				</sly>
+
+                <sly data-sly-test="${properties.contactlinktext != NULL && properties.contactlinkpath != NULL}">
+                	<sly data-sly-use.info="websitesecurity.core.utilities.SingleLinkChecker">
+						<li><a href="${info.textPath}" target="${info.target}" ><span class="ico-c ico-c-email"></span>${info.text}</a></li>
+                    </sly>
+				</sly>
+
+				<sly data-sly-test="${properties.email != NULL && properties.emailtext != NULL}">
+					<li><a href="mailto:${properties.email}"><span class="ico-c ico-c-email"></span>${properties.emailtext}</a></li>
+				</sly>
+
+				<sly data-sly-test="${properties.chatbusinessrequirement == 'ecommerce'}">
+                	<li>
+						<div class="moxiechat" 
+                    		data-hostref="${properties.hostref}"
+							data-questid="${properties.ecommercequestid}" 
+							data-portid="${properties.ecommerceportid}" 
+							data-styleid="${properties.ecommercestyleid}">
+							<div class="chat-unavailable">
+								<sly data-sly-test="${properties.displaylivechat == 'No'}"></sly>
+								<sly data-sly-test="${properties.displaylivechat == 'Yes'}">
+                                    <sly data-sly-test="${properties.unavailablepath != NULL && properties.unavailabletext != NULL}">
+    									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/contactus/js/unavailablelinkchecker.js">
+    										<a class="parentLink" target="${object.target}" href="${object.path}" ><span class="ico-c ico-c-chat"></span>${object.text}</a>
+    									</sly>
+    								</sly>
+								</sly>
+							</div>
+							<div class="chat-available">
+								<sly data-sly-test="${properties.popupwindow == 'popuprequired'}">
+									<a class="chatLink" id="availableLink" target="popup" href="" onclick="popupWindow()"><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+								<sly data-sly-test="${properties.popupwindow == 'popupnotrequired'}">
+									<a class="chatLink" href=""><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+							</div>
+						</div>
+					</li>
+				</sly>
+                <sly data-sly-test="${properties.chatbusinessrequirement == 'codesigning'}">
+					<li>
+						<div class="moxiechat" 
+                        	data-hostref="${properties.hostref}"
+							data-questid="${properties.codesigningquestid}" 
+							data-portid="${properties.codesigningportid}" 
+							data-styleid="${properties.codesigningstyleid}">
+							<div class="chat-unavailable">
+								<sly data-sly-test="${properties.displaylivechat == 'No'}"></sly>
+								<sly data-sly-test="${properties.displaylivechat == 'Yes'}">
+									<sly data-sly-test="${properties.unavailablepath != NULL && properties.unavailabletext != NULL}">
+    									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/contactus/js/unavailablelinkchecker.js">
+    										<a class="parentLink" target="${object.target}" href="${object.path}" ><span class="ico-c ico-c-chat"></span>${object.text}</a>
+    									</sly>
+    								</sly>
+								</sly>
+							</div>
+							<div class="chat-available">
+								<sly data-sly-test="${properties.popupwindow == 'popuprequired'}">
+									<a class="chatLink" id="availableLink" target="popup" href="" onclick="popupWindow()"><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+								<sly data-sly-test="${properties.popupwindow == 'popupnotrequired'}">
+									<a class="chatLink" href=""><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+							</div>
+						</div>
+					</li>
+				</sly>
+                <sly data-sly-test="${properties.chatbusinessrequirement == 'commercial'}">
+					<li>
+						<div class="moxiechat" 
+                        	data-hostref="${properties.hostref}"
+							data-questid="${properties.commercialquestid}" 
+							data-portid="${properties.commercialportid}" 
+							data-styleid="${properties.commercialstyleid}">
+							<div class="chat-unavailable">
+								<sly data-sly-test="${properties.displaylivechat == 'No'}"></sly>
+								<sly data-sly-test="${properties.displaylivechat == 'Yes'}">
+									<sly data-sly-test="${properties.unavailablepath != NULL && properties.unavailabletext != NULL}">
+    									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/contactus/js/unavailablelinkchecker.js">
+    										<a class="parentLink" target="${object.target}" href="${object.path}" ><span class="ico-c ico-c-chat"></span>${object.text}</a>
+    									</sly>
+    								</sly>
+								</sly>
+							</div>
+							<div class="chat-available">
+								<sly data-sly-test="${properties.popupwindow == 'popuprequired'}">
+									<a class="chatLink" id="availableLink" target="popup" href="" onclick="popupWindow()"><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+								<sly data-sly-test="${properties.popupwindow == 'popupnotrequired'}">
+									<a class="chatLink" href=""><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+							</div>
+						</div>
+					</li>
+				</sly>
+                <sly data-sly-test="${properties.chatbusinessrequirement == 'channel'}">
+					<li>
+						<div class="moxiechat" 
+                        	data-hostref="${properties.hostref}"
+							data-questid="${properties.channelquestid}" 
+							data-portid="${properties.channelportid}" 
+							data-styleid="${properties.channelstyleid}">
+							<div class="chat-unavailable">
+								<sly data-sly-test="${properties.displaylivechat == 'No'}"></sly>
+								<sly data-sly-test="${properties.displaylivechat == 'Yes'}">
+									<sly data-sly-test="${properties.unavailablepath != NULL && properties.unavailabletext != NULL}">
+    									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/contactus/js/unavailablelinkchecker.js">
+    										<a class="parentLink" target="${object.target}" href="${object.path}" ><span class="ico-c ico-c-chat"></span>${object.text}</a>
+    									</sly>
+    								</sly>
+								</sly>
+							</div>
+							<div class="chat-available">
+								<sly data-sly-test="${properties.popupwindow == 'popuprequired'}">
+									<a class="chatLink" id="availableLink" target="popup" href="" onclick="popupWindow()"><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+								<sly data-sly-test="${properties.popupwindow == 'popupnotrequired'}">
+									<a class="chatLink" href=""><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+							</div>
+						</div>
+					</li>
+				</sly>
+                <sly data-sly-test="${properties.chatbusinessrequirement == 'nsg'}">
+					<li>
+						<div class="moxiechat" 
+                        	data-hostref="${properties.hostref}"
+							data-questid="${properties.nsgquestid}" 
+							data-portid="${properties.nsgportid}" 
+							data-styleid="${properties.nsgstyleid}">
+							<div class="chat-unavailable">
+								<sly data-sly-test="${properties.displaylivechat == 'No'}"></sly>
+								<sly data-sly-test="${properties.displaylivechat == 'Yes'}">
+									<sly data-sly-test="${properties.unavailablepath != NULL && properties.unavailabletext != NULL}">
+    									<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/contactus/js/unavailablelinkchecker.js">
+    										<a class="parentLink" target="${object.target}" href="${object.path}" ><span class="ico-c ico-c-chat"></span>${object.text}</a>
+    									</sly>
+    								</sly>
+								</sly>
+							</div>
+							<div class="chat-available">
+								<sly data-sly-test="${properties.popupwindow == 'popuprequired'}">
+									<a class="chatLink" id="availableLink" target="popup" href="" onclick="popupWindow()"><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+								<sly data-sly-test="${properties.popupwindow == 'popupnotrequired'}">
+									<a class="chatLink" href=""><span class="ico-c ico-c-chat"></span>${properties.livechatlable}</a>
+								</sly>
+							</div>
+						</div>
+					</li>
+				</sly>
+                
+			</ul>
+			<div class="social-section">
+				<div class="social-heading">${properties.socialicontitle}</div>
+				<ul>
+					<sly data-sly-use.icons="websitesecurity.core.utilities.FooterBottomIcons">
+						<sly data-sly-list.keys="${icons.map}">
+							<li><a href="${icons.map[keys]}" target="_blank"><span class="${keys}"></span></a></li>
+						</sly>
+					</sly>
+				</ul>
+			</div>
+			<div class="bubble-text_arrow"></div>
+		</div>
+	</div>
+</div>

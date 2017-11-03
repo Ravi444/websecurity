@@ -1,0 +1,226 @@
+
+<input type="hidden" class="urlName" value="${properties.url}">
+<input type="hidden" class="countryName" value="${properties.country}">
+<input type="hidden" class="brandName" value="${properties.brand}">
+<input type="hidden" class="interName" value="${properties.isInternational}">
+<input type="hidden" class="alertName" value="${properties.failuresectiontitle}">
+<input type="hidden" class="btnName" value="${properties.path1}">
+<input type="hidden" class="productName" value="${properties.producttype}">
+<input type="hidden" class="localName" value="${properties.locale}">
+<input type="hidden" class="failureName" value="${properties.failuretitle}">
+<input type="hidden" class="timeName" value="${properties.timeout}">
+<input type="hidden" class="amountName" value="${properties.amount}"> 
+<input type="hidden" class="productName" value="${properties.productname}">  
+<input type="hidden" class="inid" value="${properties.inid}">  
+<!--stat html start-->
+<div class="container-fluid statsPage">
+
+<div class="container c-statscomponent">
+
+<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+
+<div class="c-statscomponent_lhs">
+
+<div class="buy_outer">
+
+<div class="form-group content">
+
+<label class="control-label">${properties.start}</label>
+<div id="amount">
+<span class="price_size">${properties.amount}</span>
+
+<div class="button_outer">
+
+	<sly data-sly-test="${properties.button1 != NULL && properties.path1 != NULL}">
+		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/stats/js/statslink1.js">
+            <a class="btn btn-success button_radius buy_button" role="button" href="${object.path}" target="${object.target}">${object.text}</a>
+        </sly>
+	</sly>
+
+    <sly data-sly-test="${properties.freetrail != NULL && properties.button2 != NULL}">
+		<sly data-sly-use.object="/etc/designs/websitesecurity/clientlibs/component/stats/js/statslink2.js">
+            <a class="btn btn-success button_radius" role="button" href="${object.path}" target="${object.target}">${object.text}</a>
+        </sly>
+	</sly>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="buy_text_outer">
+
+<div class="richtext_security">
+
+<span class="price_heading">${properties.descplugin @context='html' }</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 spc_right">
+
+<div class="c-statscomponent_rhs ${properties.background}">
+
+<h4 class="${properties.title1color}">${properties.rightsectiontitle}</h4>
+
+<form class="form-horizontal">
+
+<sly data-sly-use.object="websitesecurity.core.utilities.DynamicDropdown">
+
+<div class="form-group">
+
+<span class="control-label_size">
+
+<label class="control-label">${properties.Validitytextlabel}</label>
+
+</span>
+
+<div class="form_control_outer">
+
+<div class="btn-wid btn-group btn-input clearfix">
+
+<button id="yearSelect" type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+
+<span data-bind="label">1 Year</span>
+
+<span class="caret"></span>
+
+<span class="inputBox"></span>
+
+</button>
+
+<ul class="dropdown-menu_first dropdown-menu" role="menu" data-sly-list.key="${object.map1}">
+
+<li onclick="printLabelTextYear(this);getInfo();" value="${object.map1[key]}">${key} Year</li>
+
+</ul>
+<input type="hidden" class="hiddenYear" value="1">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<span class="control-label_size">
+
+<label class="control-label"> ${properties.servertextlabel} </label>
+
+</span>
+
+<div class="form_control_outer">
+
+<div class="form_control_size">
+
+<div class="btn-wid_small btn-group btn-input clearfix">
+
+<input type="text" class="c-statscomponent_server_data" value="1" pattern="^[1-9]\d{0,2}" />
+<input type="hidden" class="hiddenServer" value="1">
+
+</div>
+
+</div>
+
+<div class="dollar_size">
+
+<span id="price1">${properties.serveramount}</span> ${properties.serverrate}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<span class="control-label_size">
+
+<label class="control-label last_form_lable">${properties.santextlabel}</label>
+
+</span>
+
+<div class="form_control_outer">
+
+<div class="form_control_size">
+
+<div class="btn-wid_small btn-group btn-input clearfix">
+
+<button id="sanSelect" type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+
+<span data-bind="label">0</span>
+
+<span class="caret"></span>
+
+<span class="inputBox"></span>
+
+</button>
+
+<ul class="dropdown-menu" role="menu" data-sly-list.key="${object.map3}">
+
+<li onclick="printLabelTextSans(this);getInfo();" value="${object.map3[key]}">${key}</li>
+
+</ul>
+<input type="hidden" class="hiddenSans" value="0">
+
+</div>
+
+</div>
+
+<div class="dollar_size">
+
+<span id="price2">${properties.sanamount}</span> ${properties.sanrate}
+
+</div>
+
+</div>
+
+</div>
+
+</sly>
+
+</form>
+
+</div>
+
+</div>
+
+<!--stat html end-->
+
+<!--pricing comparioson html start-->
+
+<div class="price_comparison_container">
+<div class="price_comparison_divider"></div>
+<div class="price-pro-head">${properties.downsectionheading}</div>
+<div class="price_comparison_box">
+
+<sly data-sly-use.cpt="websitesecurity.core.utilities.PricingApi">
+<sly data-sly-list="${cpt.listData}">
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="tile-price bg-white">
+<div class="price-head matchHeight_head"><a href="${item.path}">${item.title}</a></div>
+<div>${item.subtitle}</div>
+<div class="price-comp-${itemList.count} ${item.value}"></div>
+<ul>
+<li class="${item.image1}">${item.details1}</li>
+<li class="${item.image2}">${item.details2}</li>
+<li class="${item.image3}">${item.details3}</li>
+</ul>
+</div>
+</div>
+</sly>
+</sly>
+</div>
+</div>
+</div>
+</div>
+<!--pricing comparioson html end-->

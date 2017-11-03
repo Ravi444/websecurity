@@ -1,0 +1,129 @@
+/*Subscription Outer*/
+.c-subscription {	display:block;	padding:30px 90px;}
+.c-subscription .outer {	width:75%;	float:left;}
+
+/*Subscription Heading*/
+.c-subscription h2 {font-size:32px;	padding-bottom:5px;	color:#464646;}
+
+/*Subscription Paragraph*/
+.c-subscription P {	font-size:16px;	color:#464646;}
+
+/*Subscription Right Section*/
+.c-subscription .right_outerSubs {padding-top:25px;float:right;}
+
+/*Subscription Button*/
+.c-subscription .contact_button {background-color:transparent;	border:2px #fdbb30 solid;	color:#464646;	text-align: center;	text-decoration: none;	font-size: 13px;	border-radius:0px;	padding:8px 40px;	text-transform: uppercase;font-weight:700;}
+.c-subscription .contact_button a:hover{ color:#ffffff;}
+.c-subscription .contact_button:hover{background:#fdbb30;color:#ffffff; cursor:pointer}
+.c-subscription .contact_button a{color:#464646;text-decoration: none;}
+/********************************************subscription starts********************************************/
+.componentouterspace.subscription-outer-space{margin:65px 0 0;}
+/********************************************subscription ends********************************************/
+
+
+
+
+/*********************************************************************************
+
+ @media all and (max-width: 1200px) and (min-width: 992px)
+
+*********************************************************************************/
+
+ @media all and (max-width: 1200px) and (min-width: 992px) {
+
+/*Subscription Outer*/
+.c-subscription {display:block;padding:30px 30px;}
+
+ }
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 991px)
+
+*********************************************************************************/
+@media only screen and (max-width : 991px) {
+
+
+/*Subscription Outer*/
+.c-subscription {display:block;padding:30px 30px;}
+
+/*Subscription Heading*/
+.c-subscription h2 {font-size:24px;}
+
+/*Subscription Right Section*/
+.c-subscription.c-subscription .right_outerSubs{ padding-top:28px;}
+.c-subscription .right_outerSubs { float:left;}
+.c-subscription .visible-xs {float: left;}
+
+/*Subscription Button*/
+.c-subscription .contact_button {padding: 7px 27px 7px 27px;line-height: 34px;}
+
+}
+
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 767px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 767px) {
+
+
+/*Subscription Outer*/
+.c-subscription {display:block; padding:30px; margin:0 15px;}
+.c-subscription .outer{width:100%;}
+
+/*Subscription Heading*/
+.c-subscription h2 {font-size:20px;}
+
+/*Subscription Right Section*/
+.c-subscription .right_outerSubs {float:left; width:100%;}
+
+/*Subscription Button*/
+.c-subscription.contact_button {background-color:transparent; display:block; padding: 7px 27px 7px 27px;   line-height: 34px; }
+
+
+}
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 640px)
+
+*********************************************************************************/
+@media only screen and (max-width : 640px) {
+
+/*Subscription Outer*/
+.c-subscription .outer { width:100%;}
+.c-subscription {display:block; padding:30px;}
+
+/*Subscription Right Section*/
+.c-subscription .right_outerSubs { float:left;}
+
+/*Subscription Button*/
+.c-subscription .contact_button {display:inherit;}
+
+}
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 310px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 310px) {
+
+/*Subscription Outer*/
+.c-subscription {display:block; padding:18px 10px;}
+
+/*Subscription Button*/
+.c-subscription .contact_button { background-color:transparent; border:2px #f9a626 solid;}
+}
+

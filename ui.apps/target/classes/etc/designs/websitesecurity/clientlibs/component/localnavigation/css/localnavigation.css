@@ -1,0 +1,166 @@
+
+/*Mobile View*/
+.c_mobile-view {display:none;}
+
+
+/*Container Fluid*/
+.container-fluid-parent.active{margin-bottom:60px;}
+
+/*Nav Anchor*/
+.c-nav-anchor-height{display:none; background:red; width:100%; clear:both;}
+
+/*Nav*/
+.navbar{border:none;}
+.nav_bg { padding:0; width:100%;}
+.nav_bgBox{background-color:#464646; padding:0 15px; width:100%;  height:56px; top:0; left:0; z-index:999;}
+.nav_bgBox .stickytop{position:fixed}
+.nav_bgBox{ -webkit-backface-visibility: hidden;}
+.nav_bgBox.cloned{position:fixed; top:0; z-index:99999;}
+
+/*Renew Button*/
+.renew_button{float:right; margin-top:16px;}
+.renew_button span a{padding:5px 20px; border:2px #f9a626 solid; font-weight:700; text-transform:uppercase; color:#fff;display: none;}
+.renew_button span a.active, .renew_button span a:hover{display:block; padding:5px 20px;border:2px #f9a626 solid; background-color:#f9a626; color:#fff;}
+.nav_bgBox.cloned .renew_button span a{padding:5px 11px; border:2px #f9a626 solid; font-weight:700; text-transform:uppercase; color:#fff;display: none; font-size:12px;}
+.nav_bgBox.cloned .renew_button span a.active, .nav_bgBox.cloned .renew_button span a:hover{display:block; padding:5px 11px;border:2px #f9a626 solid; background-color:#f9a626; color:#fff;}
+
+/*Sticky Nav*/
+.sticky_nav{position:fixed;z-index:99999; margin-top:0; top:0;}
+.sticky_nav .renew_button span a{display:block; padding:5px 20px; border:2px #f9a626 solid; font-weight:700; text-transform:uppercase; color:#fff;}
+.sticky_nav .renew_button span a:hover{display:block; padding:5px 20px;border:2px #f9a626 solid; background-color:#f9a626; color:#fff;}
+
+
+/*Nav List*/
+#nav_secure {list-style: none; padding:0; margin:0; float: left}
+#nav_secure li {float:left; display:block; }
+#nav_secure li a {display: block; padding:17px 0px 15px; text-decoration: none; color: #ffffff; margin:0px 15px;}
+#nav_secure li a:hover, #nav_secure li a:focus, #nav_secure li.active a{color:#ffffff; border-bottom:4px #FFBC2F solid; padding-bottom: 15px; background:none;}
+#nav_secure li:first-child a{padding-left:0; margin-left:0;}
+.nav_bgBox.cloned #nav_secure li a{font-size:14px;}
+
+
+/*Nav Contact Button*/
+.contact_button {background-color:transparent;border:2px #f9a626 solid;	color:#464646;	text-align: center;	text-decoration: none;	font-size: 13px;border-radius:0px;	padding:10px 20px;text-transform: uppercase;font-weight:bold;}
+.contact_button a, .contact_button a:hover {color:#fff;	text-decoration: none;}
+
+
+/* end */
+
+
+/* @media For Local Nav mobile max 1200px */
+@media only screen and (max-width : 1200px) {
+
+
+/*Container Outer*/
+.certificates-container .outer_area {width:75%;}
+
+
+/*Sticky Nav*/
+.nav_bg.sticky_nav #nav_secure li a, .nav_bg.sticky_nav #nav_secure li a:hover { width: 80px; text-align: center; word-wrap: break-word; }
+.nav_bg.sticky_nav #nav_secure li a:hover, .nav_bg.sticky_nav #nav_secure li.active a { width: 80px; text-align: center; word-wrap: break-word; padding-bottom: 11px;}
+#nav_secure li a:hover, #nav_secure li.active a{color:#ffffff; border-bottom:4px #FFBC2F solid;}
+.nav_bg.sticky_nav .nav_bgBox { height: auto;}
+#nav_secure li a{margin:0 12px;}
+}
+
+
+/* @media For Local Nav mobile max 991px */
+@media only screen and (max-width : 991px) {
+
+/*Nav*/
+.nav_bgBox{height:auto;}
+
+/*Sticky Nav Outer*/
+.outer_area.sticky_nav_list li{width:auto;}
+.outer_area.sticky_nav_list .renew_button{margin-top:17px;}
+.outer_area.sticky_nav_list #nav_secure li a{font-size:12px;}
+.sticky_nav .renew_button span a{font-size:13px;}
+
+
+/*Nav Secure*/
+#nav_secure li a {padding:17px 0px 15px; margin:0px 7px; font-size:15px;}
+#nav_secure li a:hover{border-bottom:none;}
+#nav_secure li.active a{border-bottom:4px #FFBC2F solid;}
+
+
+}
+
+/* @media For Local Nav mobile max 767px */
+@media only screen and (max-width : 767px) {
+
+
+/*Sticky Nav*/
+.sticky_nav .renew_button span a{font-size:13px;}
+.nav_bgBox.cloned .renew_button span a{padding:5px 11px; border:2px #f9a626 solid; font-weight:700; text-transform:uppercase; color:#fff;display: none;}
+.nav_bgBox.cloned .renew_button span a.active, .nav_bgBox.cloned .renew_button span a:hover{display:block; padding:5px 11px;border:2px #f9a626 solid; background-color:#f9a626; color:#fff;}
+.renew_button span a{padding:5px 11px; border:2px #f9a626 solid; font-weight:700; text-transform:uppercase; color:#fff;display: none; font-size:13px;}
+.renew_button span a.active, .nav_bgBox.cloned .renew_button span a:hover{display:block; padding:5px 11px;border:2px #f9a626 solid; background-color:#f9a626; color:#fff;}
+
+
+.nav_bg.sticky_nav #nav_secure li a, .nav_bg.sticky_nav #nav_secure li a:hover { width: 100%; text-align: left; padding-bottom: 11px;}
+.nav_bg.sticky_nav #nav_secure li.active a {  padding-bottom: 11px; width: 100%; text-align: left;}
+
+/*Nav Container Outer*/
+.certificates-container .outer_area {width:82%;}
+.certificates-container .outer_area_right {width:18%;}
+.product-container .moreHeading { padding-bottom: 0px; width: 100%; margin: 0; padding-left: 0; }
+
+/*Nav Richtext Padding*/
+.richtextpaddingzero { margin-bottom: 0;}
+
+
+/*Nav Button*/
+.nav-button .contact_button {margin: 0px 15px 0 0;float:right;	padding: 4px 18px;}
+
+/*Nav Secure*/
+#nav_secure {list-style: none; position:absolute; top:60px; width:100%; background-color:#EFEFEF; left:0; display:none; z-index:999; padding-top:20px; padding-bottom:20px; overflow:visible;}
+#nav_secure li {display:block; padding:5px 0; float:none;}
+#nav_secure li a {display: block; padding:10px 15px;text-decoration: none;color: #464646; font-size: 20px; font-weight: 300; line-height: 20px;}
+#nav_secure li a:hover{color: #464646; border-bottom:none; padding-bottom: none; width: 100%; text-align: left;}
+#nav_secure li:first-child a{padding-left:10px; margin-left:15px; font-size: 20px; font-weight: 300; line-height: 20px;}
+#nav_secure li a:hover, #nav_secure li.active a { border: none; color: #464646; padding-bottom: 10px;}
+
+
+
+/*Nav Mobile View*/
+.c_mobile-view {display:inline-block;float:left; margin:0; padding:18px 0 14px; cursor:pointer; border-bottom:4px solid #464646;}
+.c_mobile-view.active{border-bottom:4px solid #FFBC2F;}
+
+
+/*Nav Renew Button*/
+.renew_button{margin-top:11px;}
+
+/*Sticky Nav*/
+.outer_area.sticky_nav_list li{width:auto;}
+.outer_area.sticky_nav_list .renew_button{margin-top:20px;}
+.outer_area.sticky_nav_list #nav_secure li a{font-size:20px;}
+
+}
+
+/* @media For Local Nav mobile max 480px */
+@media only screen and (max-width : 480px) {
+
+/*Sticky Nav*/
+.sticky_nav .renew_button span a{font-size:13px;} 
+
+/*Nav Certificates Container*/
+.certificates-container p {padding:10px 0px 0px 20px;}
+
+/*Nav Button*/
+.nav-button .contact_button {margin: -6px 15px 0 0;	float:right;padding: 4px 18px;}
+
+/*Nav Secure*/
+#nav_secure li a:hover{border-bottom:0px #FFBC2F solid;}
+}         
+
+/* @media For Local Nav mobile max 640px */
+@media only screen and (max-width : 640px) {
+
+/*Sticky Nav*/
+.sticky_nav .renew_button span a{font-size:13px;}  
+
+/*Nav Button*/
+.nav-button .contact_button {margin: -6px 15px 0 0;	float:right;padding: 4px 18px;}
+
+}
+

@@ -1,0 +1,274 @@
+.tpl-commonLi h4, .expiredcertificate h4{display:block;	padding-bottom:10px; font-weight:600; font-size:20px;line-height:26px;}
+.tpl-commonLi h4:nth-child(1) a{font-weight:600; font-size:20px;}
+.tpl-commonLi li{display:block;	padding:8px 0;	border-top:1px solid #efefef;}
+.tpl-commonLi li a{color:#464646;font-size:16px;line-height:20px;}
+.tpl-commonLi ul.ulist li{width:46%; display:inline-block; margin-right:15px;}
+.titleandtext1 h4{padding-bottom:10px; font-weight:700;}
+.tpl-commonLi .fr{float:right;}
+.tpl-commonLi li span a{font-size:14px; color:#00addd; font-weight:700; text-transform:uppercase;}
+.expiredcertificate a{font-size:14px; font-weight:700; text-transform:uppercase;}
+.tpl-colRight1{margin-bottom:20px;}
+.tpl-commonLi li span a:hover{text-decoration:underline;}
+.tpl-commonLi h4 a:hover, .tpl-commonLi li span a:hover, .expiredcertificate a:hover{color:#15ccff;}
+.header .tabPanels .tpl-commonLi li a:hover, .header .tabPanels .tpl-commonLi li a:focus{color:#15ccff;text-decoration:none;}
+
+/* Header Navigation For Buy And Renew  */
+.header .tabPanels .buyandrenew-nav, .header .tabPanels .buyandrenew-nav2{width:34.1%;}
+.header .tabPanels .buyandrenew-nav{padding-left:0;padding-right:30px;}
+.header .tabPanels .buyandrenew-nav2{padding-left:30px; padding-right:0;}
+.header .tabPanels .buyandrenew-nav-box{padding-right:0; padding-left:20px;width:25%;float:right;}
+.buyandrenew-nav .tpl-commonLi h4 a, .buyandrenew-nav2 .tpl-commonLi h4 a{font-size:14px; color:#00addd; font-weight:700; text-transform:uppercase;} 
+.header .tabPanels .buyandrenew-nav ul li a, .header .tabPanels .buyandrenew-nav2 ul li a{font-size:14px; line-height:24px; font-weight:700; color:#00addd;}
+.header .tabPanels .buyandrenew-nav .navlist:nth-child(1){margin-bottom:33px;}
+.header .tabPanels .buyandrenew-nav ul li:last-child, .header .tabPanels .buyandrenew-nav2 ul li:last-child{border-bottom:1px solid #efefef;}
+.header .tabPanels .buyandrenew-nav h4 span, .header .tabPanels .buyandrenew-nav2 h4 span{display:none;}
+
+/* Header Navigation For Right Arrow  */
+.header .tabPanels .nav-padding-left h4 span, .header .tabPanels .code-sining-certificate h4 span{display:none;}
+
+
+/* Header Navigation For Support By Category  */
+.header .tabPanels .supportbycategory{padding-left:0;}
+.header .tabPanels .supportbycategory h4 span, .header .tabPanels .othersupport h4 span, .supportbyproduct h4 span{display:none;}
+.support-box .blue-gradient-helpmechoose h4{font-weight:normal;}
+.header .tabPanels .support-box{padding-left:20px;}
+.header .tabPanels .code-sining-certificate ul li:nth-child(8){border-bottom:1px solid #efefef;}
+.header .tabPanels .titleandtext h4{display:block;padding-bottom:0;line-height:26px; margin-bottom:5px;}
+.header .tabPanels .titleandtext h4 a{font-weight:600; font-size:20px;}
+.header .tabPanels .titleandtext h4 a:hover{color:#15ccff;}
+
+
+/* Header Navigation For Security Topics  */
+.header .tabPanels .security-topics-left-container{padding-left:0;}
+.header .tabPanels .security-topics-right-container{padding-right:0;}
+.header .tabPanels .security-topics-left-container .navlist, .header .tabPanels .security-topics-right-container .navlist{width:50%; float:left;}
+.header .tabPanels .security-topics-left-container .navlist:nth-child(1), .header .tabPanels .security-topics-right-container .navlist:nth-child(1){padding-right:15px;}
+.header .tabPanels .security-topics-left-container .navlist:nth-child(2), .header .tabPanels .security-topics-right-container .navlist:nth-child(2){padding-left:15px;}
+.security-topics-left-container h4 span, .security-topics-right-container h4 span{display:none;}
+
+
+.header .tabPanels .security-topics-right-container .titleandtext:nth-child(1){padding-left:15px;}
+.header .tabPanels .security-topics-left-container .titleandtext h4, .header .tabPanels .security-topics-right-container .titleandtext h4{padding-bottom:10px; font-weight:700;}
+
+
+/* Header Navigation For All h4 padding and  ul li border bottom */
+.header .tabPanels .supportbycategory h4, .header .tabPanels .supportbyproduct h4, .header .tabPanels .othersupport h4, .header .tabPanels .support-box h4{padding-bottom:10px;	font-weight:700;}
+.header .tabPanels .security-topics-left-container ul li:last-child, .header .tabPanels .security-topics-right-container ul li:last-child, .header .tabPanels .nav-padding-left ul li:last-child, .header .tabPanels .code-sining-certificate ul li:last-child, .header .tabPanels .supportbycategory ul li:last-child, .supportbyproduct ul li:last-child, .header .tabPanels .othersupport ul li:last-child, .header .tabPanels .support-box ul li:last-child{border-bottom:1px solid #efefef;} 
+
+
+@media only screen and (min-width : 992px) and (max-width : 1200px){
+.helpMeBox h4{letter-spacing:-1px;}
+
+.header .tabPanels .nav-cws-container{width:65%; padding-top:0;}
+.header .tabPanels .tab-device{width:35%; padding-top:5px;}
+.header .tabPanels .tpl-commonLi ul.ulist li{width: 48.3%; padding-right:0;}
+/*Css For Only FireFox*/
+@-moz-document url-prefix(){.header .tabPanels .tpl-commonLi ul.ulist li{width:48.2%;}}
+.header .tabPanels .tpl-commonLi ul.ulist li:nth-child(2n){margin-right:0;}
+.header .tabPanels .code-sining-certificate{width:70%; padding-right:0;}
+
+.header .tabPanels .nav-padding-left{width:30%;} 
+
+/* Header Navigation blue box and yellow box  */
+.header .tabPanels .small-device1{width:50%; padding-right:15px;}
+.header .tabPanels .small-device2{width:50%; padding-right:0;}
+.header .tabPanels .small-device2 p{width:100%;}
+.header .tabPanels .small-device2 .tpl-colRight1{padding-right:35px;}
+.header .tabPanels .small-device1 .tpl-colRight1, .header .tabPanels .small-device2 .tpl-colRight1{padding-bottom:13px; padding-top:13px;}
+.header .tabPanels .top-border{padding-bottom:30px;}
+
+/* Header Navigation For Buy And Renew  */
+.header .tabPanels .buyandrenew-nav{padding-right:20px;}
+.header .tabPanels .buyandrenew-nav2{padding-left:20px;}
+.header .tabPanels .buyandrenew-nav, .header .tabPanels .buyandrenew-nav2{width:33.33333333%;}
+.header .tabPanels .buyandrenew-nav-box {padding-right:0; padding-left:40px; width:33.33333333%; float:right;}
+.header .tabPanels .buyandrenew-nav .tpl-commonLi li, .header .tabPanels .buyandrenew-nav2 .tpl-commonLi li{position:relative; padding-right:35px;}
+.header .tabPanels .buyandrenew-nav ul li a, .header .tabPanels .buyandrenew-nav2 ul li a{position:absolute; right:0; top:10px;}
+.header .tabPanels .buyandrenew-nav-box .tpl-colRight1{padding:15px 21px 10px;}
+.header .tabPanels .buyandrenew-nav .tpl-commonLi .fr, .header .tabPanels .buyandrenew-nav2 .tpl-commonLi .fr{float:none; display:block;}
+
+/* Header Navigation For Support  */
+.header .tabPanels .supportbycategory, .header .tabPanels .supportbyproduct, .header .tabPanels .othersupport, .header .tabPanels .support-box{width:50%;}
+.header .tabPanels .supportbycategory h4, .header .tabPanels .supportbyproduct h4, .header .tabPanels .othersupport h4, .header .tabPanels .support-box h4{padding-bottom:10px;}
+.header .tabPanels .supportbycategory ul{margin-bottom:0;}
+.header .tabPanels .support-box{padding-left:15px;}
+.header .tabPanels .othersupport{padding-left:0; clear:left;}
+.header .tabPanels .support-box .blue-gradient-helpmechoose p{width:99%;}
+.header .tabPanels .supportbyproduct{padding-right:0;  margin-bottom:30px;}
+.header .tabPanels .supportbycategory{margin-bottom:30px;}
+.header .tabPanels .othersupport .tpl-subContent-mb:nth-child(1){margin-top:-40px;}
+
+
+
+
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+.expiredcertificate h4{padding-bottom:0;}
+
+/* Header Navigation blue box and yellow box  */
+.header .tabPanels .small-device2 p{width:100%;  white-space:inherit;}
+
+/* Header Navigation border for product Section  */
+.header .tabPanels .top-border{padding-bottom:30px; margin-top:30px;}
+.header .tabPanels .tab-pane .imgDes h3{line-height:35px;}
+
+/* Header Navigation for Buy and renew order list  */
+.header .tabPanels .tpl-commonLi ul.ulist li{float:left; width:44%;}
+.header .tabPanels .tpl-commonLi ul.ulist li:nth-child(2n){margin-left:15px;}
+
+/* Header Navigation Code sining certificate */
+.header .tabPanels .code-sining-certificate{width:67%; padding-right:0;}
+/* Header Navigation Code sining certificate */
+.header .tabPanels .nav-padding-left{width:33%;}
+.header .tabPanels .nav-cws-container{padding-top:0;}
+/* Header Navigation for Buy and renew */
+.header .tabPanels .buyandrenew-nav, .header .tabPanels .buyandrenew-nav2{width:50%;}
+.header .tabPanels .buyandrenew-nav-box{width:100%; padding-left:0; margin-top:30px;}
+.header .tabPanels .buyandrenew-nav-box .helpmechoose:nth-child(1){width:47%; display:inline-block; margin-right:18px;}
+.header .tabPanels .buyandrenew-nav-box .helpmechoose:nth-child(2){width:47%; display:inline-block; margin-left:18px;}
+.header .tabPanels .buyandrenew-nav .tpl-commonLi .fr, .header .tabPanels .buyandrenew-nav2 .tpl-commonLi .fr{float:right; display:block;}
+.header .tabPanels .buyandrenew-nav-box .tpl-colRight1{padding:15px 56px 10px 21px;}
+
+/* Header Navigation for Security topics */
+.header .tabPanels .security-topics-left-container{padding-left:0; padding-right:20px;}
+.header .tabPanels .security-topics-right-container{padding-right:0; padding-left:20px;}
+.header .tabPanels .security-topics-left-container .navlist, .header .tabPanels .security-topics-right-container .navlist{width:100%;}
+.header .tabPanels .security-topics-left-container .navlist:nth-child(1), .header .tabPanels .security-topics-right-container .navlist:nth-child(1){padding-right:0;}
+.header .tabPanels .security-topics-left-container .navlist:nth-child(2), .header .tabPanels .security-topics-right-container .navlist:nth-child(2){padding-left:0; margin-top:24px;} 
+
+/* Header Navigation for Support By Category */
+.header .tabPanels .supportbycategory{padding-right:20px;}
+.header .tabPanels .supportbyproduct{padding-left:20px;}
+.header .tabPanels .support-box{padding-left:20px;}
+.header .tabPanels .othersupport .navlist:nth-child(1){margin-top:0;}
+.header .tabPanels .support-box .helpmechoose{margin-top:36px;}
+.header .tabPanels .support-box .blue-gradient-helpmechoose p{width:100%;  white-space:inherit;}
+.header .tabPanels .othersupport{padding-right:20px; padding-left:0px;}
+.header .tabPanels .supportbycategory h4, .header .tabPanels .supportbyproduct h4, .header .tabPanels .othersupport h4, .header .tabPanels .support-box h4{padding-bottom:10px;}
+.header .tabPanels .tpl-colRight1{padding:23px 56px 29px 25px;}
+
+
+}
+
+
+
+
+
+
+
+ @media only screen and (min-width : 320px) and (max-width : 767px) {
+/* Header Navigation for header menu */
+.header .tabPanels .tpl-commonLi ul{display:none; margin-top:15px; margin-bottom:0;}
+.header .tpl-commonLi p{display:none;}
+
+
+
+/* Header Navigation for Buy and renew order list  */
+.header .tabPanels .tpl-commonLi ul.ulist li{float:inherit;  width:100%;}
+.header .tabPanels .tpl-commonLi ul.ulist li:nth-child(2n){margin-left:0;}
+
+/* Header Navigation border for product Section  */
+.header .tabPanels .imgDes a{display:none;}
+.header .tabPanels .imgSec img{width:75px; height:75px;}
+.header .tabPanels .imgDes h3{font-size:20px; line-height:inherit;}
+
+.header .tabPanels .nav-cws-container p{font-size:14px;}
+/* Header Navigation border for product Section  */
+.header .tabPanels .tpl-colRight1{margin-bottom:0;}
+.header .tabPanels  .top-border{width:100%; margin:0; padding:0;}
+.header .tabPanels .helpMeBox h4{font-size:20px;}
+.header .tabPanels .helpMeBox p{font-size:14px;}
+
+/* Header Navigation for product Section  */
+.header .tabPanels .nav-cws-container{width:100%; padding-right:0; border-bottom:1px solid #e4e4e4;  padding-bottom:15px; margin-top:15px;}
+.header .tabPanels .code-sining-certificate{width:100%; padding:0;}
+
+/* Header Navigation blue box and yellow box  */
+.header .tabPanels .tab-device{width:100%; padding:0 0 0 0;}
+.header .tabPanels .tab-device p{display:none;}
+.header .tabPanels .small-device1{padding-right:15px;}
+.header .tabPanels .small-device2{padding-right:0;}
+.header .tabPanels .small-device1, .header .tabPanels .small-device2{margin-top:20px;}
+
+/* Header Navigation For Nav Padding  */
+.header .tabPanels .nav-padding-left{width:100% ; padding:0;}
+.header .tabPanels .nav-padding-left h4, .header .tabPanels .code-sining-certificate h4, .header .tabPanels .tab-device h4{padding:0; margin-bottom:0; line-height:inherit; color:#464646; font-weight:normal; cursor:pointer; position:relative;}
+.header .tabPanels .nav-padding-left, .header .tabPanels .code-sining-certificate, .header .tabPanels .tab-device{border-bottom:1px solid #e4e4e4; padding:10px 0 12px;}
+
+
+
+/* Header Navigation for All width */
+.header .tabPanels .buyandrenew-nav, .header .tabPanels .buyandrenew-nav2, .header .tabPanels .supportbycategory, .header .tabPanels .supportbyproduct, .header .tabPanels .othersupport{width:100%; margin-bottom:0; padding-right:0; padding-left:0;}
+
+/* Header Navigation for Buy and renew */
+.header .tabPanels .buyandrenew-nav .tpl-commonLi h4 .fr, .header .tabPanels .buyandrenew-nav2 .tpl-commonLi h4 .fr{display:none;}
+.header .tabPanels .buyandrenew-nav .navlist:nth-child(1){margin-bottom:0; padding-top:0;}
+.header .tabPanels .buyandrenew-nav .navlist{margin-bottom:0; padding:10px 0 12px; border-bottom:1px solid #e4e4e4;}
+.header .tabPanels .tpl-commonLi h4, .header .tabPanels .expiredcertificate h4{padding:0; font-weight:normal; cursor:pointer; position:relative; padding-right:20px;}
+.header .tabPanels .buyandrenew-nav2{padding:10px 0 12px; border-bottom:1px solid #e4e4e4;}
+.header .tabPanels .buyandrenew-nav h4 span, .header .tabPanels .buyandrenew-nav2 h4 span{display:inline-block; float:right; margin-top:2px; color:#cccccc; }
+.header .tabPanels .buyandrenew-nav-box .helpmechoose:nth-child(2){width:46%; margin-left:0; float:right;}
+.header .tabPanels .buyandrenew-nav-box .helpmechoose:nth-child(1){width:46%; margin-right:15px;  float:left;}
+.header .tabPanels .buyandrenew-nav ul li:last-child, .buyandrenew-nav2 ul li:last-child{padding-bottom:8px;}
+.header .tabPanels .tpl-commonLi li{border-top:1px solid #e4e4e4; padding-right:30px; position:relative;}
+.header .tabPanels .buyandrenew-nav-box{margin-top:15px; width:100%; padding:0;}
+.header .tabPanels .buyandrenew-nav ul li a, .header .tabPanels .buyandrenew-nav2 ul li a{position:absolute; right:0; top:9px;}
+
+
+/* Header Navigation for expiredcertificate */
+.expiredcertificate{width:100%; float:left; margin-top:15px;}
+.header .tabPanels .expiredcertificate h4{font-size:16px; font-weight:600;}
+
+
+/* Header Navigation for Support By Category */
+.header .tabPanels .supportbycategory:nth-child(1), .header .tabPanels .supportbycategory .navlist:nth-child(1){margin-bottom:0; padding-top:0;}
+.header .tabPanels .supportbycategory .navlist, .header .tabPanels .supportbyproduct .navlist, .header .tabPanels .othersupport .navlist{margin-bottom:0;}
+.header .tabPanels .othersupport .tpl-subContent-mb:nth-child(1){margin-top:inherit;}
+.header .tabPanels .support-box{width:100%; padding-left:0;}
+.header .tabPanels .support-box h4{width:100%; padding-left:0; margin-top:15px; padding-bottom:0; position:relative;  padding-right:20px; padding-bottom:12px; border-bottom:1px solid #e4e4e4;}
+.header .tabPanels .support-box .helpmechoose h4{border:0; padding-top:0;}
+.header .tabPanels .support-box .helpmechoose{margin-top:15px;}
+
+.header .tabPanels .supportbycategory h4 span, .header .tabPanels .othersupport h4 span, .header .tabPanels .supportbyproduct h4 span{display:inline-block; position:absolute; right:0; top:3px; color:#cccccc; }
+
+.header .tabPanels .supportbycategory, .header .tabPanels .supportbyproduct, .header .tabPanels .othersupport{margin-bottom:0; padding:10px 0 12px; border-bottom:1px solid #e4e4e4;}
+.header .tabPanels .supportbycategory h4, .header .tabPanels .supportbyproduct h4, .header .tabPanels .othersupport h4, .header .tabPanels .support-box h4{font-weight:normal; }
+.header .tabPanels .supportbycategory p, .header .tabPanels .supportbyproduct p, .othersupport p, .support-box p{display:none;}
+
+.header .tabPanels .support-box .blue-gradient-helpmechoose p{display:inline-block;}
+.header .tabPanels .security-topics-left-container, .header .tabPanels .security-topics-right-container{padding-left:0; padding-right:0; width:100%;}
+.header .tabPanels .security-topics-left-container:nth-child(1), .header .tabPanels .security-topics-left-container .navlist:nth-child(1){margin-bottom:0; padding-top:0; width:100%; padding-left:0; padding-right:0;}
+.header .tabPanels .security-topics-left-container .navlist:nth-child(2), .header .tabPanels .security-topics-right-container .navlist:nth-child(2){margin-top:0; width:100%; padding-left:0; padding-right:0;}
+.header .tabPanels .security-topics-left-container .navlist, .header .tabPanels .security-topics-right-container .navlist{margin-bottom:0; padding:10px 0 12px 0; border-bottom:1px solid #e4e4e4; width:100%;}
+.header .tabPanels .security-topics-left-container h4 span, .header .tabPanels .security-topics-right-container h4 span{display:inline-block; float:right; margin-top:2px; color:#cccccc; }
+.header .tabPanels .security-topics-left-container .navlist:nth-child(1), .header .tabPanels .security-topics-right-container .navlist:nth-child(1){padding-left:0; padding-right:0;}
+
+.header .tabPanels .security-topics-left-container ul li:last-child, .header .tabPanels .security-topics-right-container ul li:last-child{padding-bottom:0;}
+
+.header .tabPanels .supportbycategory h4 span, .header .tabPanels .othersupport h4 span, .header .tabPanels .supportbyproduct h4 span{display:inline-block;}
+.header .tabPanels .security-topics-left-container h4 span, .header .tabPanels .security-topics-right-container h4 span{display:inline-block; position:absolute; right:0; top:3px;}
+.header .tabPanels .nav-padding-left h4 span, .header .tabPanels .code-sining-certificate h4 span{display:inline-block; position:absolute; right:0; top:3px;}
+.header .tabPanels .buyandrenew-nav h4 span, .header .tabPanels .buyandrenew-nav2 h4 span{display:inline-block; position:absolute; right:0; top:3px;}
+.header .tabPanels .supportbycategory h4, .header .tabPanels .supportbyproduct h4, .header .tabPanels .othersupport h4{padding-bottom:0; position:relative;  padding-right:20px;}
+
+
+
+.header .tabPanels .security-topics-left-container .titleandtext:nth-child(1){padding:0 0 12px 0; border-bottom:1px solid #e4e4e4;}
+.header .tabPanels .security-topics-right-container .titleandtext:nth-child(1){padding:10px 0 12px 0; border-bottom:1px solid #e4e4e4;}
+
+.header .tabPanels .security-topics-left-container .titleandtext h4, .header .tabPanels .security-topics-right-container .titleandtext h4{margin-bottom:0; padding:0; width:100%; font-weight:normal;}
+.header .tabPanels .security-topics-left-container .titleandtext p, .header .tabPanels .security-topics-right-container .titleandtext p{display:none;}
+/* Header Navigation for click on any link after show tabPanels */
+.header .tabPanels .tpl-commonLi h4.activeThirdlevel, .header .tabPanels .expiredcertificate h4.activeThirdlevel{font-weight:700; cursor:text;}
+.header .tabPanels .tpl-commonLi h4.activeThirdlevel span, .header .tabPanels .expiredcertificate h4.activeThirdlevel span{display:none;}
+.header .tabPanels .third-level-child.active{padding:0;}
+
+}
+
+
+
+
+
+

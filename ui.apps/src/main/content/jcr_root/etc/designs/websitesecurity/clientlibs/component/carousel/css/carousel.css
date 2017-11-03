@@ -1,0 +1,83 @@
+.margin-zero {margin:0}
+.c-spc {padding:0;}
+
+/* Carousel section start*/
+.gradient-sec {padding: 90px 150px; text-align:center;}
+
+
+.gradient-sec h2{color:#ffffff; padding:0 0px 30px 0px;}
+
+
+.gradient-sec p{color:#ffffff; font-size:36px; font-weight:normal;line-height:38px;}
+
+
+.gradient-sec span{color:#ffffff; font-size:16px;padding:30px 0 55px; display:block;}
+
+
+.gradient-sec .img-responsive{margin:0 auto; display:;}
+
+/*Carousel Previous Button*/
+.bx-prev {left: 1px; background: url(/content/dam/websitesecurity/common/Desktop/images/prev.png) no-repeat;}
+.bx-prev:hover {left: 1px; background:#333333 url(/content/dam/websitesecurity/carousel/desktop/images/prev_hover.png) no-repeat;}
+
+.bx-next {right: 1px; background: url(/content/dam/websitesecurity/common/Desktop/images/next.png) no-repeat;}
+.bx-next:hover {right: 1px; background:#333333 url(/content/dam/websitesecurity/carousel/desktop/images/next_hover.png) no-repeat;}
+
+.carousel-control1 span {position: absolute; top: 44%; outline: 0; width: 60px; height: 60px; text-indent: -9999px; z-index: 9999; }
+.bx-wrapper .bx-controls-direction a.disabled {display: none;}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {width: 70%; margin: auto;}
+
+.thumbnail{padding:0 !important; border:none !important; margin-bottom:0;}
+
+
+.gradient-sec p.read a { color:#ffffff;border-bottom: 3px solid #ffffff; padding-bottom: 5px; text-transform:uppercase; font-size:14px; font-weight: 700; }
+.gradient-sec p.read a:hover {text-decoration: none;/*color:#15ccff;*/color: #e4e4e4; border-bottom: 3px solid #e4e4e4;}
+/* Carousel section end*/
+
+
+/*********************************************************************************
+
+@media all and (max-width: 1200px) and (min-width: 992px)
+
+*********************************************************************************/
+@media all and (max-width: 1200px) and (min-width: 992px) {
+.gradient-sec p { color:#ffffff; font-size:26px;}
+.gradient-sec span, .gradient-sec p.read a{color:#ffffff;}
+.gradient-sec p.read a{border-bottom: 3px solid #ffffff;}
+}
+
+
+/*********************************************************************************
+
+@media all and (max-width: 991px) and (min-width: 768px)
+
+*********************************************************************************/
+@media all and (max-width: 991px) and (min-width: 768px) {
+.gradient-sec p { color:#ffffff; font-size:26px;}
+.gradient-sec span, .gradient-sec p.read a{color:#ffffff;}
+.gradient-sec p.read a{border-bottom: 3px solid #ffffff;}
+
+}
+
+
+/*********************************************************************************
+
+@media all and (max-width: 767px)
+
+*********************************************************************************/
+@media all and (max-width: 767px)  {
+.gradient-sec p { color:#ffffff; font-size:20px; line-height:31px;}
+.gradient-sec span, .gradient-sec p.read a{color:#ffffff; font-size:12px;}
+.gradient-sec p.read a{border-bottom: 3px solid #ffffff;}
+.gradient-sec {padding:46px 70px;}
+.carousel-control1 span {position: absolute; top: 40%; outline: 0; width: 30px; height: 30px; text-indent: -9999px; z-index: 99; }
+.bx-prev {background-size:100% 100%;}
+.bx-next {background-size:100% 100%;}
+
+.bx-prev:hover{background-size:30px 30px;}
+.bx-next:hover{background-size:30px 30px;}
+.gradient-sec .img-responsive{margin:0 auto; display:;}
+
+}

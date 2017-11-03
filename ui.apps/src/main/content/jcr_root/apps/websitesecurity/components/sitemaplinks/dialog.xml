@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Sitemap Links"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Site Map List">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        maxLength="40"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <path
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Path for the Title"
+                        fieldLabel="Title Path"
+                        name="./titlepath"
+                        xtype="pathfield"/>
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Links"
+                        name="./links"
+                        orderable="{Boolean}false"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            xtype="ejstcustom"/>
+                    </links>
+                    <spacingtop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Top Spacing Required"
+                        fieldLabel="Top Spacing Required"
+                        name="./sitemap_spacingtop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="sitemap_top"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="siteamap_nospacingpaddingtop"/>
+                        </options>
+                    </spacingtop>
+                    <spacingtopsmalldesktop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="No"
+                        fieldDescription="Top Spacing Required in smaller desktop"
+                        fieldLabel="Top Spacing Required in smaller desktop"
+                        name="./spacingtopsmalldesktop"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="sitemap_top_small"/>
+                            <No
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="siteamap_nospacingpaddingtop_small"/>
+                        </options>
+                    </spacingtopsmalldesktop>
+                </items>
+            </Component_x0020_details>
+        </items>
+    </items>
+</jcr:root>

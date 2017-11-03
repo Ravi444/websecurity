@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Complete Website Security"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Logo Image"
+                fileNameParameter="./imageName"
+                fileReferenceParameter="./imageReference"
+                mapParameter="./imageMap"
+                name="./image"
+                rotateParameter="./imageRotate"
+                sizeLimit="100"
+                title="Image"
+                xtype="html5smartimage"/>
+            <Imageproperties
+                jcr:primaryType="cq:Panel"
+                title="Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Title for the Image"
+                        fieldLabel="Image Title"
+                        name="./cwsimagetitle"
+                        xtype="textfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        name="./cwstitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <titlecolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Choose the color of the title text"
+                        fieldLabel="Title Color"
+                        name="./titlecolor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <charcoal_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Charcoal Grey"
+                                value="charcoal_grey_font"/>
+                            <grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey"
+                                value="grey_font"/>
+                            <lightest_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Lightest Grey"
+                                value="lightest_grey_font"/>
+                            <light_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Grey"
+                                value="light_grey_font"/>
+                            <midgrey
+                                jcr:primaryType="nt:unstructured"
+                                text="Mid Grey"
+                                value="midgrey_font"/>
+                            <slate_grey
+                                jcr:primaryType="nt:unstructured"
+                                text="Slate Grey"
+                                value="slate_grey_font"/>
+                            <ash
+                                jcr:primaryType="nt:unstructured"
+                                text="Ash"
+                                value="ash_font"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Symantec Gold"
+                                value="symantec_gold_font"/>
+                            <pink
+                                jcr:primaryType="nt:unstructured"
+                                text="Pink"
+                                value="pink_font"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Sky Blue"
+                                value="sky_blue_font"/>
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="black_font"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="white_font"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green_font"/>
+                            <purple
+                                jcr:primaryType="nt:unstructured"
+                                text="Purple"
+                                value="purple_font"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red_font"/>
+                        </options>
+                    </titlecolor>
+                    <rt
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter Description"
+                        fieldLabel="Description"
+                        name="./cwsdescription"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="\[&quot;paste-wordhtml&quot;]"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <fontstyles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <fontstyle
+                                        jcr:primaryType="cq:WidgetCollection"
+                                        cssName="css"
+                                        text="Description"/>
+                                </styles>
+                            </fontstyles>
+                            <fontcolor
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <fontcolor
+                                        jcr:primaryType="cq:WidgetCollection"
+                                        cssName="css"
+                                        text="Description"/>
+                                </styles>
+                            </fontcolor>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <style
+                                    jcr:primaryType="cq:WidgetCollection"
+                                    cssName="richtext"
+                                    text="Description"/>
+                            </styles>
+                        </rtePlugins>
+                    </rt>
+                    <Link_x0020_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the title of the Link"
+                        fieldLabel="Link Title"
+                        name="./cwslinkkey"
+                        xtype="textfield"/>
+                    <Link_x0020_value
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the path of the link"
+                        fieldLabel="Link path"
+                        name="./cwslinkvalue"
+                        xtype="textfield"/>
+                    <alternatetextforimage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter the Alternate text for image"
+                        fieldLabel="Alternate Text for Image"
+                        maxLength="30"
+                        name="./alternatetext"
+                        xtype="textfield"/>
+                </items>
+            </Imageproperties>
+        </items>
+    </items>
+</jcr:root>

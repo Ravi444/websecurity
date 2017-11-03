@@ -1,0 +1,29 @@
+
+
+
+<div class="c-error ${properties.color}">
+				<h2 class="${properties.titlecolor}">${properties.title1}</h2>
+				<p class="${properties.descriptioncolor}"> ${properties.desc} </p>
+				<h4 class="${properties.redirectcolor}"> ${properties.redirect} </h4>
+
+
+<div class="" data-sly-use.cpt="websitesecurity.core.utilities.TitleList">
+	<p class="">
+
+    </p>
+	<ul class="error_link" data-sly-list.key="${cpt.listData}">
+		<li><a href=${key.path} target="${key.target}">${key.title}</a></li>
+	</ul>
+
+	<div class="clear"></div>
+    <div class="clearfix visible-xs"></div>
+</div>
+<div data-sly-test.author="${wcmModes.wcmmode.edit || wcmModes.wcmmode.design}">
+  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='custommultifieldfield'}"/>
+
+</div>
+
+
+	</div>
+
+

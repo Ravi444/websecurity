@@ -1,0 +1,676 @@
+
+
+
+/**********************************************************************************************************************/
+
+/*Stats Main Outer*/
+.c-statscomponent{background-color:#efefef; color:#464646; padding:16px; margin-top:50px;}
+
+
+/*Stats Heading*/
+.c-statscomponent h6{font-size:16px; line-height:20px; color:#999999; margin-bottom:22px; text-transform:uppercase;}
+.c-statscomponent h4{font-size:40px; line-height:44px; margin-bottom:42px; font-weight:normal;}
+/*****************End*****************/
+
+ /*Stats Right Blue Background*/
+.c-statscomponent_rhs{padding:40px 10px 40px 35px; color:#ffffff; /*background: rgba(0,173,221,1);
+background: -moz-linear-gradient(45deg, rgba(0,173,221,1) 0%, rgba(0,97,158,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,173,221,1)), color-stop(100%, rgba(0,97,158,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,173,221,1) 0%, rgba(0,97,158,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,173,221,1) 0%, rgba(0,97,158,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,173,221,1) 0%, rgba(0,97,158,1) 100%);
+background: linear-gradient(45deg, rgba(0,173,221,1) 0%, rgba(0,97,158,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00addd', endColorstr='#00619e', GradientType=1 );*/}
+
+/*****************END*****************/
+
+ 
+
+/*.recomnd-rhs h4*/
+
+.c-statscomponent_rhs h4{margin-bottom:28px; font-size:20px; text-align:left; font-weight:600;}
+
+/*.recomnd-rhs .control-label*/
+
+.c-statscomponent_rhs .control-label{text-align:left; font-size:16px; float:left; margin-right:10px; border-bottom:0px #fff solid; position:relative;}
+
+/*.recomnd-rhs .btn-success*/
+
+.c-statscomponent_rhs .btn-success{border-radius:0; border:none; font-size:13px; line-height:15px; padding:13px 30px; background-color:#4cd362;}
+
+/*.recomnd-rhs .btn-cust*/
+
+.c-statscomponent_rhs .btn-cust{background-color:#ffffff; width:100%; color:#999999; text-align:left; padding:8px 33px 8px 10px; font-size:16px;}
+
+/*.recomnd-rhs .btn-cust:hover*/
+
+.c-statscomponent_rhs .btn-cust:hover{background-color:#ffffff;}
+
+/*.recomnd-rhs .caret*/
+
+.c-statscomponent_rhs .caret{border-top:6px solid #767676; border-right:6px solid transparent; border-left:6px solid transparent; position:absolute; top:45%; right:8%;}
+
+/*.recomnd-rhs .caret:after*/
+
+.c-statscomponent_rhs .caret:after{content:''; height:24px; width:1px; background-color:#e4e4e4; position:absolute; left:-20px; top:-15px;}
+
+/*.recomnd-rhs .dropdown-menu*/
+
+.c-statscomponent_rhs .dropdown-menu{width:100%; min-width:auto; top:96%; color:#464646; padding:10px; overflow-y: scroll; height:300px;}
+
+ 
+/*.h-divider*/
+.c-statscomponent .h-divider{height:1px; width:100%; background-color:#00addd; margin-bottom:20px;}
+
+/*.recomnd-rhs .totprice h5*/
+
+.c-statscomponent_rhs .totprice h5{font-size:48px; line-height:52px; margin-bottom:15px;}
+
+/*.recomnd-rhs .totprice p*/
+
+.c-statscomponent_rhs .totprice p{color:#53daff;}
+
+ 
+
+/*.recomnd-rhs .dropdown-menu_first*/
+
+.c-statscomponent_rhs .dropdown-menu_first{height:auto; overflow: hidden;}
+
+/*.recomnd-rhs .control-label:after*/
+
+.c-statscomponent_rhs .control-label:after{border-bottom:1px solid #ffffff; content:""; width:100%; bottom:2px; position:absolute; height:1px; left:0px;}
+
+ 
+
+/*.right_outer*/
+
+.c-statscomponent_rhs .right_outer{width:60%; float:left;margin:0px;padding:0px; }   
+
+ 
+
+/*.dollar_size*/
+
+.c-statscomponent_rhs .dollar_size{width:40%;float:left;padding-top:14px;}
+
+ 
+
+/*.content*/
+.c-statscomponent .content{text-align:center;}   
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+ /*Stats LHS*/
+.c-statscomponent_lhs{font-size:16px; line-height:26px; padding:64px 0px 0px 0px;}
+
+
+
+/*Stats Paragraph*/
+.c-statscomponent_lhs p{font-size:inherit; margin-bottom:30px;}
+
+/*.recomnd-lhs p*/
+
+
+
+/*Stats Heading*/
+.c-statscomponent_lhs h4{font-size:20px; margin-bottom:20px;}
+
+
+ 
+/*Firefox CSS Section*/
+@-moz-document url-prefix() { .control-label_size .last_form_lable { margin-right: 23px; } .btn-wid_small{margin-left:3px;} 
+
+        .c-statscomponent_rhs .last_form_lable{margin-right:23px!important;}
+    }
+/*End*/
+
+ 
+/*DropDown Arrow*/
+.c-statscomponent_rhs .dropdown .btn-cust, .dropdown .caret{box-sizing:border-box;}
+.c-statscomponent_rhs .btn-input .btn.form-control .caret{margin-top: -1px;position: absolute;right: 16px;top: 50%;}
+
+
+/*Stats RHS Input Button*/
+.c-statscomponent_rhs .btn-input{display: block;}
+.c-statscomponent_rhs .inputBox{float:right; margin-right:20px;}
+
+/*.btn-input*/
+.c-statscomponent_rhs .btn-wid{width:43%;}
+.c-statscomponent_rhs .btn-wid_small{width:100%;}
+
+/*.control-label_size*/
+.c-statscomponent_rhs .btn-input .btn.form-control{text-align: left;padding:22px 20px 22px 20px;font-size:16px;}
+.c-statscomponent_rhs .btn-input .btn.form-control span:first-child{left: 10px;overflow: hidden;position: absolute;right: 25px;}
+.c-statscomponent_rhs .btn-input .btn.form-control span:first-child{right:35px;top:12px;}
+.c-statscomponent_rhs .form-horizontal .form-group{margin-bottom:8px;}
+.c-statscomponent_rhs .form_control_size1{width:35%;float:left;}
+.c-statscomponent_rhs .form_control_size{width:33%;float:left;margin-right:3%;}
+.c-statscomponent_rhs .form_control_outer{width:68%;float:left;}
+.c-statscomponent_rhs .control-label_size{width:32%;}
+.c-statscomponent_rhs .last_form_lable{margin-right:18px; -moz-margin-right: 10px;}
+.c-statscomponent_rhs .form-horizontal{padding-left: 15px;width: 100%;}
+.c-statscomponent_rhs .form_control{height:45px;border-radius:0px;font-size:16px;}
+
+
+/*Stats Button*/
+.c-statscomponent_lhs .button_outer{width:100%; margin:20px 0px 10px 0px;}
+.c-statscomponent_lhs .button_radius{border-radius:0px;padding:10px 35px;margin-right:10px;font-size:13px;font-weight:bold;}
+.c-statscomponent .btn:hover {background-color:none;border:0;border:1px solid transparent;}
+.c-statscomponent .btn-default:active:hover, .c-statscomponent .btn-default.active:hover, .c-statscomponent .open > .dropdown-toggle.btn-default:hover,  .c-statscomponent .btn-default.active:focus, .c-statscomponent .open > .dropdown-toggle.btn-default:focus, .c-statscomponent .btn-default:active.focus, .c-statscomponent .btn-default.active.focus, .c-statscomponent .open > .dropdown-toggle.btn-default.focus
+.btn-default:active, .c-statscomponent .btn-default.active, .c-statscomponent .open > .dropdown-toggle.btn-default{background-color:#ffffff; box-shadow:none; border:1px #fff solid;}
+.c-statscomponent .btn-default:hover {background-color:white;}
+.c-statscomponent .btn-default:focus {background-color:white; border:1px #fff solid;}
+.c-statscomponent .btn-default:active {background-color:white;}
+.c-statscomponent .btn-success:hover, .c-statscomponent .btn-success:focus{background-color:#37bd4d;}
+.c-statscomponent_server_data { color: #333; width:100%; height: 45px; border-radius: 5px; padding-left: 10px; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075); border: 1px solid #ccc;}
+.c-statscomponent .btn-success{background-color:#4cd362; border-color:#4cd362;}
+
+
+ 
+
+/*********************************************************************************
+
+END Button 
+
+*********************************************************************************/
+
+ 
+
+ 
+
+/*********************************************************************************
+
+Price Section
+
+*********************************************************************************/
+
+ 
+
+.price_size{font-size:70px; padding:20px 0px 24px 0px; display:block;color:#666666; word-wrap:break-word; line-height:4rem;}
+
+.price_heading{font-size:20px; font-weight:bold; color:#666666;}
+
+.price_heading p{padding-bottom:10px;}
+
+ 
+
+
+
+.price_comparison_container{width:100%; float:left;}
+
+.price_comparison_container .price_comparison_divider{height:3px; background-color:#e4e4e4; margin-top:20px; margin-left:-15px; margin-right:-15px;}
+
+.price_comparison_container .price_comparison_box .col-lg-3{padding:0 3px;}
+
+.price_comparison_container .price-pro-head{text-align:center; font-size:2rem; color:#464646; font-weight:700; padding:20px 0;}
+
+.price_comparison_container .price_comparison_box .tile-price{padding:30px 15px 30px 30px;}
+
+.price_comparison_container .bg-white{background-color:#fff;}
+
+.price_comparison_container .price_comparison_box .price-head{font-size:2.6rem; line-height:3.4rem; margin-bottom:5px; text-align:left; color:#00addd;}
+
+.price_comparison_container .price_comparison_box .price-comp-1{font-size:4rem; margin:0 0 20px; color:#666666;line-height:4rem; word-wrap:break-word;}
+
+.price_comparison_container .price_comparison_box .price-comp-2{font-size:4rem; margin:0 0 20px; color:#666666;line-height:4rem;}
+.price_comparison_container .price_comparison_box .price-comp-3{font-size:4rem; margin:0 0 20px; color:#666666;line-height:4rem;}
+.price_comparison_container .price_comparison_box .price-comp-4{font-size:4rem; margin:0 0 20px; color:#666666;line-height:4rem;}
+.price_comparison_container .price_comparison_box ul{margin:0; padding:0; list-style:none; width:100%; display:block; clear:left;}
+
+.price_comparison_container .price_comparison_box ul li{list-style:none; color:#464646; font-size:1.6rem; padding:5px 0 5px 28px; position:relative;}
+
+.price_comparison_container .price_comparison_box ul li.deactive:before{background:url(/content/dam/websitesecurity/common/Desktop/images/secure-site-pro-ev-stat-cross.png
+
+) no-repeat left; width:17px; height:17px; position:absolute; content:""; left:0; top:6px; font-size:2rem; color:#464646;}
+
+.price_comparison_container .price_comparison_box ul li.active:before{background:url(/content/dam/websitesecurity/common/Desktop/images/secure-site-pro-ev-stat-green.png) no-repeat left; width:12px; height:12px; position:absolute; content:""; left:3px; top:9px; font-size:2rem; color:#464646;}
+
+ 
+
+ 
+
+ 
+
+/*********************************************************************************
+
+Price Description Section
+
+*********************************************************************************/
+
+.c-statscomponent_lhs .richtext_security ul{margin:0px;padding:0px;font-size:20px;font-weight:normal;list-style-type: none;}
+
+.c-statscomponent_lhs .richtext_security li {width:100%;position:relative;float:left;padding:4px 0px 4px 20px;color:#666666;}
+
+.c-statscomponent_lhs .richtext_security li:before {content: '';background-color:#fdbb30;padding-right:6px;height:6px;position: absolute;top: 15px;left: 0;}
+
+ 
+
+.c-statscomponent .org-list li{position:relative; padding-left:18px; font-size:inherit;}
+
+.c-statscomponent .org-list li:after{content:''; height:6px; width:6px; background-color:#fdbb30; position:absolute; left:0; top:9px;}
+
+ 
+
+/*********************************************************************************
+
+Price Description Section End
+
+*********************************************************************************/
+
+ 
+
+ 
+
+/*********************************************************************************
+
+Price Section End
+
+*********************************************************************************/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/*********************************************************************************
+
+Stats LHS End
+
+*********************************************************************************/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/*********************************************************************************
+
+Stats Buy Section 
+
+*********************************************************************************/
+
+ 
+
+.c-statscomponent_lhs .buy_outer{width:58%; float:left;}        
+
+.c-statscomponent_lhs .buy_text_outer{width:42%; float:left;}   
+
+ 
+
+ 
+
+/*********************************************************************************
+
+END Stats Buy Section 
+
+*********************************************************************************/
+
+ 
+
+
+
+/*********************************************************************************
+
+CSS Use for Spacing
+
+*********************************************************************************/
+
+ 
+
+.c-statscomponent .spac-btm{margin-bottom:29px;}
+
+.c-statscomponent .spc_right{padding:0px;}
+
+
+
+ 
+
+/*********************************************************************************
+
+END CSS Use for Spacing
+
+*********************************************************************************/
+
+ 
+
+ 
+
+ 
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 1200px)
+
+*********************************************************************************/
+
+ 
+
+@media only screen and (max-width : 1200px) {
+
+ 
+
+/*Stats Main Outer*/
+.c-statscomponent{margin:60px auto 15px auto; padding:20px;}
+/*END*/
+
+
+/*Stats RHS*/
+.c-statscomponent_rhs{padding:100px 10px 100px 95px;}
+.c-statscomponent_lhs .dollar_size{padding-top:18px;}
+
+/*Stats LHS*/
+.c-statscomponent_lhs{padding:100px 0px 100px 0px;}
+.c-statscomponent_lhs .buy_text_outer{padding:8% 0 0 22%;width:100%;} 
+.c-statscomponent_lhs .buy_outer{width:100%;}  
+.c-statscomponent_lhs .richtext_security li:before{content: '';background-color:#999999;} 
+
+
+/*RHS form_control*/
+.c-statscomponent_rhs .form_control_outer{width:100%;}
+ 
+
+/*.control-label_size*/
+.c-statscomponent_rhs .control-label_size{width:100%;}
+.c-statscomponent_rhs .form_control_size{width:30%;margin-top:8px;}
+.c-statscomponent_rhs .form_control_size1{margin-top:8px;}
+.c-statscomponent_rhs .recomnd-rhs .control-label{width:auto;} 
+/*END*/
+
+
+/*Stats RHS Input Button*/
+.c-statscomponent_rhs .btn-wid{padding-top:8px; width:55%;} 
+.c-statscomponent_rhs .btn-wid_small{width:100%;}
+/*END*/
+
+
+.price_comparison_container .price_comparison_box .tile-price{margin-bottom:10px;}
+.price_comparison_container .price_comparison_box .col-lg-3{padding:0 5px;}
+.price_comparison_container .price_comparison_divider{margin-left:-20px; margin-right:-20px;}
+.statsPage h6{display: none;}
+
+
+}
+
+
+
+/*********************************************************************************
+
+@media only screen and (max-width : 979px)
+
+*********************************************************************************/
+
+@media only screen and (max-width : 991px) {
+
+ 
+
+/*Stats Main Outer*/
+.c-statscomponent{margin:50px auto 0; margin-bottom:0px; padding:15px 20px}  
+/*End*/
+
+
+/*Stats RHS*/
+.c-statscomponent_rhs{padding:90px 10px 90px 46px;}
+.c-statscomponent_lhs p{margin-bottom: 5px;}
+/*End*/
+
+
+/*Stats LHS*/
+.c-statscomponent_lhs{padding:90px 0px 90px 0px;}
+.c-statscomponent_lhs .buy_outer{width:100%;} 
+.c-statscomponent_lhs .buy_text_outer{padding:8% 0 0 13%;width:100%;}  
+/*End*/
+
+
+/*RHS form_control*/
+.c-statscomponent_rhs .form_control_size{width:35%; margin-top:8px;}
+.c-statscomponent_rhs .form_control_size1{width:40%; margin-top:8px;}
+.c-statscomponent_rhs .control-label_size{width:100%;}
+.control-label_size .form_control_outer{width:100%;}
+.c-statscomponent_rhs .control-label{width:auto;}  
+.c-statscomponent_rhs .dollar_size{/*padding-top:12px;*/ width:44%;float:left;padding-top:20px;}
+/*End*/
+
+
+/*Stats Button*/
+.c-statscomponent .button_radius{padding:12px 35px;}
+/*End*/
+
+
+/*RHS Padding left*/
+.c-statscomponent .spc_right{padding-left:0px;}
+/*END*/
+
+
+.price_comparison_container .price_comparison_box .tile-price{margin-bottom:10px;}
+.price_comparison_container .price_comparison_box .col-lg-3{padding:0 5px;}
+.price_comparison_container .price_comparison_divider{margin-left:-20px; margin-right:-20px;}
+.statsPage h6{display: none;}
+
+}
+
+ 
+
+/*********************************************************************************
+
+END
+
+*********************************************************************************/
+
+ 
+
+ 
+
+
+
+ 
+
+@media only screen and (max-width : 767px) {
+
+
+
+/*Stats Main Outer*/
+.c-statscomponent{margin:60px 15px 0;}
+.c-statscomponent .col-xs-12:nth-child(1){padding:0;}
+/*End*/
+
+
+/*Stats RHS*/
+.c-statscomponent_rhs{padding:12% 0 12% 32%; margin-left:0;}
+.c-statscomponent_lhs p{margin-bottom:5px;}
+/*End*/
+
+
+/*Stats LHS*/
+.c-statscomponent_lhs {padding:60px 0px 90px 0px;}
+.c-statscomponent_lhs .richtext_security ul{font-size:16px;}
+.c-statscomponent_lhs .richtext_security li:before{content: ''; background-color:#999999;}
+.c-statscomponent_lhs .buy_outer{width:100%;}   
+.c-statscomponent_lhs .buy_text_outer {padding: 10% 0 10% 34%;} 
+/*End*/
+
+
+
+/*RHS form_control*/
+.c-statscomponent_rhs .form_control_outer{width:100%;}
+.c-statscomponent_rhs .control-label_size{margin-top:10px; width:25%; margin-left:0px;}
+.c-statscomponent_rhs .form_control_size1{margin-top:10px;}
+.c-statscomponent_rhs .form-horizontal .form-group{margin-bottom:25px;}
+.c-statscomponent_rhs .dollar_size{width:30%; font-size:12px; text-align:left;}
+.c-statscomponent_server_data {border-radius:0px; border:0;}
+/*END*/
+
+
+
+/*Stats RHS Input Button*/
+.c-statscomponent_rhs .btn-wid{width:41%;}
+.c-statscomponent_rhs .btn-wid_small{width:100%}
+/*END*/
+
+
+/*Stats heading*/
+.c-statscomponent_rhs h4{font-size:16px;}
+/*End*/
+
+
+
+/*Stats Button*/
+.c-statscomponent_lhs .button_outer{margin:23px 0 0px 0;}
+.c-statscomponent .button_radius{margin:5px 5px 15px 0px; width:100%;padding:20px}
+.c-statscomponent .btn{border-radius:0px; border:0px #fff solid;}
+.c-statscomponent .btn-default:active:hover, .c-statscomponent .btn-default.active:hover, .c-statscomponent .open > .dropdown-toggle.btn-default:hover,  .c-statscomponent .btn-default.active:focus, .c-statscomponent .open > .dropdown-toggle.btn-default:focus, .c-statscomponent .btn-default:active.focus, .c-statscomponent .btn-default.active.focus, .c-statscomponent .open > .dropdown-toggle.btn-default.focus
+.btn-default:active, .c-statscomponent .btn-default.active, .c-statscomponent .open > .dropdown-toggle.btn-default{background-color:#ffffff; box-shadow:none; border:0px #fff solid;}
+.c-statscomponent .btn-default:focus {background-color:white;border:0px #fff solid;}
+.c-statscomponent .btn:hover{border:0px #fff solid;}
+/*End*/
+
+
+
+.price_comparison_container .price_comparison_box .tile-price{margin-bottom:10px;}
+
+.price_comparison_container .price_comparison_box .col-lg-3{padding:0;}
+
+.price_comparison_container .price_comparison_box .price-head{font-size:2.2rem;}
+.price_comparison_container .price_comparison_box .price-comp-1, .price_comparison_container .price_comparison_box .price-comp-2, .price_comparison_container .price_comparison_box .price-comp-3, .price_comparison_container .price_comparison_box .price-comp-4{font-size:4rem; word-wrap:break-word;}
+ 
+.statsPage h6{display: none;}
+ 
+
+}
+
+ 
+
+ 
+
+/*********************************************************************************
+
+END
+
+*********************************************************************************/
+
+
+
+ 
+
+/*********************************************************************************
+
+@media only screen and (max-width : 480px)
+
+*********************************************************************************/
+@media only screen and (max-width : 480px) {
+
+/*Stats LHS*/
+.c-statscomponent_lhs{padding:60px 0px 90px 0px;}
+.c-statscomponent_rhs h4{font-size:16px;}
+.c-statscomponent_lhs .price_heading{font-size:16px;}
+.c-statscomponent_lhs .richtext_security li{font-size:14px;}
+.c-statscomponent_lhs .buy_text_outer{padding:5% 0 15% 20%; }   
+/*END*/
+
+/*Stats RHS*/
+.c-statscomponent_rhs{padding:15% 0 15% 17%;}
+/*END*/
+
+
+/*RHS form_control*/
+.c-statscomponent_rhs .control-label{width:auto; font-size:13px;} 
+.c-statscomponent_rhs .form_control_size{width:35%; margin-top:8px;}
+.c-statscomponent_rhs .form_control_size1{width:60%; margin-top:8px;}
+.c-statscomponent_rhs .dollar_size{width:50%;font-size:12px;padding-top:23px; text-align:left;}
+/*END*/
+
+
+/*Stats RHS Input Button*/
+.c-statscomponent_rhs .btn-wid{width:62%; margin-bottom:15px;}
+.c-statscomponent_rhs .btn-wid_small{width:100%; margin-bottom:15px;}
+/*END*/
+
+
+/*Stats Button*/
+.c-statscomponent .button_radius{margin:0px 0px 20px 0px;}
+.c-statscomponent .button_outer{margin:23px 0 0px 0;}
+.c-statscomponent .btn{border-radius:0; border:0px #fff solid;}
+.c-statscomponent .btn-default:active:hover, .c-statscomponent .btn-default.active:hover, .c-statscomponent .open > .dropdown-toggle.btn-default:hover,  .c-statscomponent .btn-default.active:focus, .c-statscomponent .open > .dropdown-toggle.btn-default:focus, .c-statscomponent .btn-default:active.focus, .c-statscomponent .btn-default.active.focus, .c-statscomponent .open > .dropdown-toggle.btn-default.focus
+.btn-default:active, .c-statscomponent .btn-default.active, .c-statscomponent .open > .dropdown-toggle.btn-default{background-color:#ffffff; box-shadow:none; border:0px #fff solid;}
+.c-statscomponent .btn-default:focus {background-color:white;border:0px #fff solid;}
+.c-statscomponent .btn:hover{border:0px #fff solid;}
+/*END*/
+
+
+/*RHS Padding Right*/
+.c-statscomponent .right_spc{padding-right:15px;}
+/*END*/
+
+}
+
+
+/*********************************************************************************
+
+END
+
+*********************************************************************************/
+
+
+
+
+
+/*********************************************************************************
+
+@media all and (max-width: 479px) and (min-width: 320px)
+
+*********************************************************************************/
+@media all and (max-width: 479px) and (min-width: 320px) {
+
+/*Stats LHS*/
+.c-statscomponent_lhs .buy_text_outer{padding:5% 0 15% 18%;} 
+/*END*/
+
+/*Stats RHS*/
+.c-statscomponent_rhs{padding:15% 0 15% 13%;}
+/*END*/
+.price_size{font-size:40px;}
+}
+
+/*********************************************************************************
+
+END
+
+*********************************************************************************/

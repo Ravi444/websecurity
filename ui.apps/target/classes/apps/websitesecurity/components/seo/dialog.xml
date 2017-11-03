@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="SEO"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Title
+                jcr:primaryType="cq:Panel"
+                title="SEO">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <seorequired
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="SEO Required"
+                        fieldLabel="SEO Required"
+                        name="./seoselection"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="Yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="No"/>
+                        </options>
+                    </seorequired>
+                </items>
+            </Title>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,187 @@
+ /********************************************icontextandtitlecomponent Starts********************************************/
+
+.icontextandtitlecomponent .certificate-container{padding-top:81px;}
+.icontextandtitlecomponent .certificate-container h2 {	padding-bottom:37px;}
+/******************************************** icontextandtitlecomponent Ends********************************************/
+
+/********************************************icontextandtitlecomponent with bg Starts********************************************/
+.icontextandtitlebackground .certificate-container{padding:80px 0 100px;}
+.icontextandtitlebackground .certificate-container h2 {	padding-bottom:58px;}
+/******************************************** icontextandtitlecomponent with bg Ends********************************************/
+
+/**************************************************home page icon text and title starts ************************************************/
+.c-additional-product-block{ display:block; padding:50px 35px 65px; position:relative;}
+.c-additional-product-block .c_rowhead{display:block; margin-bottom:25px;}
+.c-additional-product-block .c_rowhead .c_rowhead_table{display:block; width:100%;}
+.c-additional-product-block .c_rowhead .c_rowhead_table .c_imgbox{margin-right: 18px; height:56px;width: 56px; display: inline-block;}
+.c-additional-product-block .c_rowhead .c_rowhead_table h3{font-size: 26px;line-height: 28px; display: inline-block;}
+.c-additional-product-block p{ display:block; font-size:16px; line-height:26px; margin-bottom:20px;}
+.c-additional-product-block .viewAllLink{position:absolute; bottom:50px; left:35px;color:#00addd; font-size:14px; line-height:16px; text-transform:uppercase; font-weight:700; padding:0; margin:0;}
+/**************************************************home page icon text and title ends ************************************************/
+
+/**************************************************centet aligned icon text and title starts ************************************************/
+.c-certificates-icon{ display:block; text-align:center; padding-bottom:60px;}
+.c-certificates-icon .c_certificates-Img-block{margin:0 auto; width:99px;text-align:center; height:60px;}
+.c-certificates-Img img{max-width:100%;}
+.c-certificatescontent{ display:block; padding-top:20px;}
+.c-certificatescontent h3{ font-size:25px; line-height:27px; padding-bottom:20px; margin:0;}
+.c-certificatescontent p{margin:0; font-size:16px; line-height:24px;}
+.icontextandtitlecomponent .viewAll.text-center{padding-top:0;}
+/**************************************************centet aligned icon text and title starts ************************************************/
+
+/**************************************************product page starts ************************************************/
+.c-product-section h5{font-weight: 700; padding: 10px 0 30px 0; font-size:16px; line-height:18px;}
+.c_rowheadtable h3{font-size: 26px;line-height: 28px; display: inline-block;}
+.c-product-section .c_rowhead{display: block; padding-bottom: 12px;}
+.c_imgboxproduct{margin-right: 15px; width: 68px; vertical-align: middle; height: 80px; padding-right: 0;}
+.c-product-section p{line-height: 26px; margin:0; font-size:16px;}
+/**************************************************product page end************************************************/
+
+/**************************************************icon text and title with view all feture starts ************************************************/
+.c-icontextandtitleext{display:block; padding:30px 0 38px 0; border-bottom:1px solid #e4e4e4;}
+.c_iconhead{display:block; padding-bottom:20px;}
+.c_iconhead .c_iconhead_img{display:inline-block; vertical-align:middle; padding-right:25px;}
+.c_iconhead h3{display:inline-block; vertical-align:middle; font-size:26px; line-height:28px; width:85%;}
+.c_iconhead h3 a{ color:#00addd;}
+.c_iconhead h3 a:hover{ color:#15ccff;}
+.c-icontextandtitleext p{display:block; margin:0; font-size:16px; line-height:24px; }
+.topborder-yes, .c-bordernone{border-top: 1px solid #e4e4e4;}
+
+/**************************************************icon text and title with view all feture ends ************************************************/
+
+@media only screen and (max-width : 1200px) {
+ /********************************************icontextandtitlecomponent Starts********************************************/
+.icontextandtitlecomponent .certificate-container{padding-top:58px;}
+.icontextandtitlecomponent .certificate-container h2 {	padding-bottom:45px;}
+/******************************************** icontextandtitlecomponent Ends********************************************/
+
+
+/********************************************icontextandtitlecomponent with bg Starts********************************************/
+
+.icontextandtitlebackground .certificate-block{padding:80px 0 72px;}
+.icontextandtitlebackground .certificate-block h2 {	padding-bottom:55px;}
+/******************************************** icontextandtitlecomponent with bg Ends********************************************/	
+
+.c-additional-product-block{padding:35px 35px 52px;}
+.c-additional-product-block .c_rowhead .c_rowhead_table td{float:left; width:100%;}
+.c-additional-product-block .c_rowhead{margin-bottom:25px;}
+.c-additional-product-block .c_rowhead .c_rowhead_table .c_imgbox{margin-bottom:30px;}
+.c-additional-product-block p{margin-bottom:15px; }
+
+/**************************************************centet aligned icon text and title starts ************************************************/
+.c-product-section .c_rowhead {padding-bottom: 10px;}
+.c-certificates-icon{padding-bottom:0;}
+.c-certificatescontent{padding:30px 0 60px;}
+.c-certificatescontent h3{ font-size:26px; line-height:28px; padding-bottom:20px; margin:0;}
+.c-certificatescontent p{font-size:16px; line-height:24px;}
+.icontextandtitlecomponent .viewAll.text-center{padding-top:0;}
+/**************************************************centet aligned icon text and title starts ************************************************/
+
+/**************************************************product page starts ************************************************/
+.c-product-section{padding-bottom:60px;}
+.icontextandtitlebackground .col-md-6:nth-child(2), .icontextandtitlebackground .col-md-6:nth-child(4){padding-right:0;}
+.icontextandtitlebackground .col-md-6:nth-child(3){padding-left:0;}
+.icontextandtitlebackground .col-md-6:nth-child(3) .c-product-section, .icontextandtitlebackground .col-md-6:nth-child(4) .c-product-section{padding-bottom:0;}
+/**************************************************product page end************************************************/
+
+/**************************************************icon text and title with view all feture starts ************************************************/
+.c-icontextandtitleext{padding:30px 0;}
+.c_iconhead .c_iconhead_img{padding-right:20px;}
+.c_iconhead h3{font-size:22px; width:84%;}
+/**************************************************icon text and title with view all feture ends ************************************************/
+	
+}
+
+@media only screen and (max-width : 991px) {
+ /********************************************icontextandtitlecomponent Starts********************************************/
+.icontextandtitlecomponent .certificate-container{padding-top:68px;}
+.icontextandtitlecomponent .certificate-container h2 {	padding-bottom:45px;}
+/******************************************** icontextandtitlecomponent Ends********************************************/
+
+/********************************************icontextandtitlecomponent with bg Starts********************************************/
+.icontextandtitlebackground .certificate-block{padding:74px 0 75px;}
+.icontextandtitlebackground .certificate-block h2 {	padding-bottom:58px;}
+/******************************************** icontextandtitlecomponent with bg Ends********************************************/
+.c-additional-product-block{padding:35px 35px 30px 35px}
+.icontextandtitlecomponent .col-sm-12{padding:0;}
+.icontextandtitlecomponent .col-sm-12 .nospacingleft{padding:0;}
+.icontextandtitlecomponent .col-sm-12 .nospacingright{padding:0;}
+.c-additional-product-block .c_rowhead .c_rowhead_table .c_imgbox{margin-bottom:0;}
+.c-additional-product-block .c_rowhead .c_rowhead_table td{float:none; width:auto;}
+.c-additional-product-block .c_rowhead .c_rowhead_table h3{font-size:22px; line-height:24px;}
+.c-additional-product-block .c_rowhead{margin-bottom:20px;}
+.c-additional-product-block p{margin-bottom:20px; font-size:16px; line-height:18px;}
+.c-additional-product-block .viewAllLink{position: static; font-size:14px; line-height:16px;}
+
+/**************************************************centet aligned icon text and title starts ************************************************/
+.c-certificates-Img img{max-width:100%;}
+.c-certificatescontent{ display:block; padding:20px 0 60px;}
+.c-certificatescontent h3{ font-size:26px; line-height:28px; padding-bottom:20px; margin:0;}
+.c-certificatescontent p{margin:0; font-size:16px; line-height:24px;}
+.icontextandtitlecomponent .viewAll.text-center{padding-top:30px;}
+
+/**************************************************centet aligned icon text and title starts ************************************************/
+
+/**************************************************icon text and title with view all feture starts ************************************************/
+.c-icontextandtitleext{padding:30px 0;}
+.c_iconhead .c_iconhead_img{padding-right:18px;}
+.c_iconhead h3{font-size:22px; width:80%;}
+/**************************************************icon text and title with view all feture ends ************************************************/
+
+}
+@media only screen and (max-width : 767px) {
+ /********************************************icontextandtitlecomponent Starts********************************************/
+.icontextandtitlecomponent .certificate-container{padding-top:65px;}
+.icontextandtitlecomponent .certificate-container h2 {	padding-bottom:23px;}
+/******************************************** icontextandtitlecomponent Ends********************************************/
+
+/********************************************icontextandtitlecomponent with bg Starts********************************************/
+.icontextandtitlebackground .certificate-block{padding:50px 0 50px;}
+.icontextandtitlebackground .certificate-block h2 {	padding-bottom:42px;}
+.icontextandtitlecomponent .c-spacingboth-mobview{margin:0;}
+/******************************************** icontextandtitlecomponent with bg Ends********************************************/
+.c-additional-product-block{padding:35px 20px;}
+.c-additional-product-block .c_rowhead{margin-bottom:15px;}
+.c-additional-product-block .c_rowhead .c_rowhead_table h3{font-size: 22px;line-height: 24px;}
+.c-additional-product-block .viewAllLink{ font-size:12px; line-height:22px;}
+.c-additional-product-block p{margin-bottom:10px;}
+
+/**************************************************centet aligned icon text and title starts ************************************************/
+.c-certificates-icon{padding-bottom:0; clear:both; text-align:left;}
+.c-certificates-icon .c_certificates-Img-block{ padding-right:15px; float:left; margin:0;}
+.c-certificates-Img img{max-width:100%;}
+.c-certificatescontent{padding-top:0;float:left; padding-bottom:25px; width:80%;}
+.c-certificatescontent h3{ font-size:22px; line-height:24px; padding-bottom:15px;}
+.c-certificatescontent p{font-size:16px; line-height:24px;}
+.icontextandtitlecomponent .viewAll.text-center{padding-top:30px;}
+.icontextandtitlecomponent .col-xs-12{padding-right:15px; padding-left:15px;}
+/**************************************************centet aligned icon text and title starts ************************************************/
+
+/**************************************************product page starts ************************************************/
+.c-product-section{padding-bottom:50px;}
+.c-product-section h5{font-weight: 700; padding: 15px 0;}
+.c-product-section .c_rowheadtable h3{font-size: 22px;line-height: 24px;}
+.c-product-section .c_rowhead{padding-bottom: 20px;}
+.c-product-section p{line-height: 32px; font-size:16px;}
+.icontextandtitlebackground .col-xs-12{padding-right:15px; padding-left:15px;}
+.icontextandtitlebackground .col-md-6:nth-child(3){padding-left:15px;}
+.icontextandtitlebackground .col-md-6:nth-child(2), .icontextandtitlebackground .col-md-6:nth-child(4){padding-right:15px;}
+.icontextandtitlebackground .col-xs-12:nth-child(4){ padding-bottom:0;}
+.icontextandtitlebackground .col-md-6:nth-child(3){padding-bottom:50px;}
+/**************************************************product page end************************************************/
+/**************************************************icon text and title with view all feture starts ************************************************/
+.c_iconhead .c_iconhead_img{padding-right:15px;}
+.c_iconhead{padding-bottom:15px;}
+.c_iconhead h3{font-size:22px; width:80%;}
+.c-icontextandtitleext.c-bordernone{border-top:none;}
+
+/**************************************************icon text and title with view all feture ends ************************************************/
+
+}
+@media only screen and (max-width : 480px) {
+.c-certificatescontent{width:58%;}	
+.c_iconhead h3{font-size:22px; width:70%;}
+}
+
+
+  

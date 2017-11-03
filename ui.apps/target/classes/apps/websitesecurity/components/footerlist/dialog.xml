@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    modal="{Boolean}true"
+    title="Footer List"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Component_x0020_details
+                jcr:primaryType="cq:Panel"
+                title="Footer List Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        maxLength="15"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <titlepath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Enter Title Path"
+                        fieldLabel="Path"
+                        name="./titlepath"
+                        xtype="pathfield"/>
+                    <list_x0020_data
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new data"
+                        fieldLabel="Footer's List Data"
+                        maxItems="6"
+                        name="./devdata"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Enter Unique Text for the Link."
+                                fieldLabel="Link"
+                                maxLength="30"
+                                name="./title"
+                                xtype="textfield"/>
+                            <multifield
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldDescription="Specify path for the Link."
+                                fieldLabel="Link Path"
+                                name="./path"
+                                xtype="pathfield"/>
+                        </fieldConfig>
+                    </list_x0020_data>
+                </items>
+            </Component_x0020_details>
+        </items>
+    </items>
+</jcr:root>
